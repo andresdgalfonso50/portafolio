@@ -1,0 +1,161 @@
+================================================================================
+GUÍA DE USO - CV YEISON ALFONSO
+================================================================================
+
+ARCHIVOS DISPONIBLES EN ESTA CARPETA:
+================================================================================
+
+1. cv-yeison-alfonso.html
+   -> CV diseñado, listo para exportar a PDF
+   -> Estilo coherente con tu portafolio (Inter, azul #2563EB)
+   -> Diseño de 2 columnas con sidebar oscuro
+
+2. cv-yeison-alfonso-ats.txt
+   -> Versión de texto plano, compatible con ATS
+   -> Copia y pega en Word, Google Docs o formularios de aplicación
+
+3. perfil-linkedin.txt
+   -> Contenido completo para tu perfil de LinkedIn
+   -> Incluye titular, acerca de, experiencia, habilidades, etc.
+
+================================================================================
+CÓMO EXPORTAR EL CV A PDF (DESDE HTML)
+================================================================================
+
+OPCIÓN 1 - Google Chrome (Recomendada):
+1. Abre cv-yeison-alfonso.html en Google Chrome
+2. Presiona Ctrl + P (Imprimir)
+3. En Destino selecciona: "Guardar como PDF"
+4. En Más configuración:
+   - Tamaño de papel: A4
+   - Márgenes: Ninguno
+   - Marca la casilla "Gráficos de fondo"
+5. Haz clic en Guardar
+6. Nombra el archivo: YeisonAlfonso_ProductDesigner.pdf
+
+OPCIÓN 2 - Microsoft Edge:
+1. Abre el archivo en Edge
+2. Ctrl + P
+3. Selecciona "Guardar como PDF"
+4. Asegúrate de marcar "Gráficos de fondo"
+5. Guarda como: YeisonAlfonso_ProductDesigner.pdf
+
+OPCIÓN 3 - Firefox:
+1. Abre el archivo en Firefox
+2. Ctrl + P
+3. Selecciona "Microsoft Print to PDF" o "Guardar como PDF"
+4. Guarda como: YeisonAlfonso_ProductDesigner.pdf
+
+NOTA IMPORTANTE:
+- El archivo HTML está diseñado para verse perfecto en A4
+- Si al imprimir se corta contenido, ajusta la escala en la ventana de impresión
+- Verifica siempre el PDF antes de enviarlo
+
+================================================================================
+CÓMO USAR LA VERSIÓN ATS (TXT)
+================================================================================
+
+PARA WORD:
+1. Abre Microsoft Word
+2. Abre cv-yeison-alfonso-ats.txt
+3. Selecciona todo el texto (Ctrl + A)
+4. Copia (Ctrl + C)
+5. Pega en un documento nuevo de Word (Ctrl + V)
+6. Aplica formato:
+   - Fuente: Calibri o Arial, tamaño 11
+   - Nombre: tamaño 16, negrita
+   - Títulos de sección: tamaño 13, negrita, mayúsculas
+   - Espaciado entre líneas: 1.15
+   - Espaciado entre párrafos: 6pt después
+7. Guarda como: YeisonAlfonso_ProductDesigner.docx
+
+PARA GOOGLE DOCS:
+1. Abre Google Docs
+2. Pega el contenido del archivo .txt
+3. Aplica formato similar al de Word
+4. Descarga como .docx o .pdf
+
+PARA FORMULARIOS DE APLICACIÓN:
+1. Copia secciones individuales del archivo .txt
+2. Pega en los campos correspondientes del formulario
+3. Usa el resumen profesional para el campo "About me" o "Summary"
+
+================================================================================
+CÓMO CONFIGURAR LINKEDIN
+================================================================================
+
+PASO 1 - ACTUALIZAR TITULAR:
+1. Ve a tu perfil de LinkedIn
+2. Haz clic en el icono de lápiz junto a tu titular
+3. Reemplaza con el titular del archivo perfil-linkedin.txt
+
+PASO 2 - ACTUALIZAR ACERCA DE:
+1. En tu perfil, busca la sección "Acerca de"
+2. Haz clic en el icono de lápiz
+3. Pega el contenido de la sección "ACERCA DE" del archivo
+
+PASO 3 - ACTUALIZAR EXPERIENCIA:
+1. Ve a la sección Experiencia
+2. Edita cada posición con el contenido del archivo
+3. Asegúrate de incluir las métricas y resultados
+
+PASO 4 - AGREGAR HABILIDADES:
+1. Ve a la sección Aptitudes
+2. Agrega las habilidades listadas en el archivo
+3. Pon las más relevantes primero (UX Design, Product Design, Figma)
+
+PASO 5 - PERSONALIZAR URL:
+1. Ve a tu perfil público
+2. Haz clic en "Editar URL y perfil público"
+3. Cambia a: linkedin.com/in/yeison-alfonso-product-designer
+
+PASO 6 - ACTIVAR #OPENTOWORK:
+1. En tu perfil, haz clic en "Open to"
+2. Selecciona "Finding a new job"
+3. Configura:
+   - Títulos: Product Designer, UX Designer, UI Designer
+   - Ubicación: Bogotá, Colombia + Remoto
+   - Tipo: Tiempo completo, Contrato
+   - Visible para: Solo reclutadores
+
+================================================================================
+CÓMO USAR TU PORTAFOLIO
+================================================================================
+
+1. Publica tu portafolio (GitHub Pages, Vercel, Netlify, etc.)
+2. Una vez publicado, reemplaza [LINK] en:
+   - cv-yeison-alfonso.html (busca "Portafolio: [LINK]")
+   - cv-yeison-alfonso-ats.txt (busca "Portafolio: [LINK]")
+   - perfil-linkedin.txt (si quieres agregarlo en Acerca de)
+3. Comparteme el link y ajusto todo
+
+================================================================================
+RECOMENDACIONES FINALES
+================================================================================
+
+1. NOMBRE DE ARCHIVO:
+   - SÍ: YeisonAlfonso_ProductDesigner.pdf
+   - NO: CV_final_v3.pdf, hoja_de_vida.pdf, documento1.pdf
+
+2. FORMATO DE ENVÍO:
+   - Email directo: PDF diseñado
+   - Portal de empleo: PDF o Word (según lo que pidan)
+   - ATS corporativo: Word o texto plano
+   - LinkedIn: Link a tu portafolio + PDF en la sección Destacados
+
+3. PERSONALIZACIÓN POR VACANTE:
+   - Lee la descripción del puesto
+   - Identifica las palabras clave
+   - Ajusta tu perfil y experiencia para incluir esas palabras
+   - Ejemplo: si piden "Design System", agrega esa habilidad
+
+4. SEGUIMIENTO:
+   - Después de aplicar, conecta con el reclutador en LinkedIn
+   - Envía un mensaje corto y profesional mencionando tu aplicación
+
+5. PORTAFOLIO:
+   - Tu portafolio es MÁS importante que tu CV para roles de diseño
+   - Asegúrate de que los casos de estudio muestren proceso, no solo resultado
+   - El caso del 4x en e-commerce debe ser tu pieza estrella
+
+================================================================================
