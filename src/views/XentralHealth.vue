@@ -29,7 +29,7 @@
           </div>
         </div>
         <div class="hero-visual fade-in stagger-2">
-          <img src="/assets/images/heroes/hero-xentral.jpg" alt="Plataforma de telemedicina moderna" width="1400" height="800" fetchpriority="high" decoding="async">
+          <img src="/assets/images/xentral-health/hero-xentral.jpg" alt="Plataforma de telemedicina moderna" width="1400" height="800" fetchpriority="high" decoding="async">
         </div>
       </div>
     </section>

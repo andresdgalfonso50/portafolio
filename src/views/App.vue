@@ -26,7 +26,7 @@
           </div>
         </div>
         <div class="hero-visual fade-in stagger-2">
-          <img src="/assets/images/heroes/hero-app.jpg" alt="App mobile moderna con interfaz premium" width="1400" height="800" fetchpriority="high" decoding="async">
+          <img src="/assets/images/app/hero-app.jpg" alt="App mobile moderna con interfaz premium" width="1400" height="800" fetchpriority="high" decoding="async">
         </div>
       </div>
     </section>
@@ -134,7 +134,7 @@
           </div>
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full max-w-6xl mx-auto mt-16">
             <div class="ui-image-wrapper">
-              <img src="/assets/images/app-before.png" alt="App anterior con baja retención y errores" class="w-full rounded-2xl border border-slate-200 shadow-md object-cover aspect-[4/3]">
+              <img src="/assets/images/app/app-before.png" alt="App anterior con baja retención y errores" class="w-full rounded-2xl border border-slate-200 shadow-md object-cover aspect-[4/3]">
             </div>
             <div class="ui-observations space-y-6">
               <div class="observation-item flex gap-5 p-5 bg-white rounded-xl border border-slate-100 shadow-sm">
@@ -617,7 +617,7 @@
         <div class="solution-screens fade-in stagger-1">
           <div class="screen-card">
             <div class="screen-image overflow-hidden rounded-[2rem] border-[6px] border-slate-100 shadow-xl">
-              <img src="/assets/images/app-screen-2.jpg" alt="Chat de Soporte con IA" class="w-full h-auto object-cover">
+              <img src="/assets/images/app/app-screen-2.jpg" alt="Chat de Soporte con IA" class="w-full h-auto object-cover">
               <div class="screen-insight">
                 <span class="insight-label">Funcionalidad</span>
                 <p>Chatea con Agente IA para resolver dudas sobre tus beneficios y servicios.</p>
@@ -631,7 +631,7 @@
 
           <div class="screen-card">
             <div class="screen-image overflow-hidden rounded-[2rem] border-[6px] border-slate-100 shadow-xl">
-              <img src="/assets/images/app-screen-3.jpg" alt="Wallet de beneficios" class="w-full h-auto object-cover">
+              <img src="/assets/images/app/app-screen-3.jpg" alt="Wallet de beneficios" class="w-full h-auto object-cover">
               <div class="screen-insight">
                 <span class="insight-label">Funcionalidad</span>
                 <p>Tus vouchers, coberturas y beneficios siempre contigo.</p>
@@ -645,7 +645,7 @@
 
           <div class="screen-card">
             <div class="screen-image overflow-hidden rounded-[2rem] border-[6px] border-slate-100 shadow-xl">
-              <img src="/assets/images/app-screen-4.jpg" alt="Emergencias 24/7" class="w-full h-auto object-cover">
+              <img src="/assets/images/app/app-screen-4.jpg" alt="Emergencias 24/7" class="w-full h-auto object-cover">
               <div class="screen-insight">
                 <span class="insight-label">Funcionalidad</span>
                 <p>Acceso directo a asistencia médica y soporte de emergencia.</p>
@@ -659,7 +659,7 @@
 
           <div class="screen-card">
             <div class="screen-image overflow-hidden rounded-[2rem] border-[6px] border-slate-100 shadow-xl">
-              <img src="/assets/images/app-screen-5.jpg" alt="Cotizador en 4 pasos" class="w-full h-auto object-cover">
+              <img src="/assets/images/app/app-screen-5.jpg" alt="Cotizador en 4 pasos" class="w-full h-auto object-cover">
               <div class="screen-insight">
                 <span class="insight-label">Funcionalidad</span>
                 <p>Cotiza y activa planes en minutos, no en horas.</p>
@@ -673,7 +673,7 @@
 
           <div class="screen-card">
             <div class="screen-image overflow-hidden rounded-[2rem] border-[6px] border-slate-100 shadow-xl">
-              <img src="/assets/images/app-screen-1.jpg" alt="Beneficios adicionales" class="w-full h-auto object-cover">
+              <img src="/assets/images/app/app-screen-1.jpg" alt="Beneficios adicionales" class="w-full h-auto object-cover">
               <div class="screen-insight">
                 <span class="insight-label">Funcionalidad</span>
                 <p>Xentral Pass, salas VIP, medicamentos, roaming y más.</p>

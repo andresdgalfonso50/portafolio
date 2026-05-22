@@ -58,7 +58,7 @@ useScrollAnimations()
           </div>
         </div>
         <div class="hero-visual fade-in stagger-2">
-          <img src="/assets/images/heroes/hero-ecommerce.jpg" alt="Dashboard de analytics mostrando métricas de conversión" width="1400" height="800" fetchpriority="high" decoding="async">
+          <img src="/assets/images/ecommerce/hero-ecommerce.jpg" alt="Dashboard de analytics mostrando métricas de conversión" width="1400" height="800" fetchpriority="high" decoding="async">
         </div>
       </div>
     </header>
@@ -451,7 +451,7 @@ useScrollAnimations()
         <div class="solution-screens fade-in stagger-2">
           <div class="screen-card">
             <div class="screen-image overflow-hidden rounded-2xl border border-slate-200 shadow-xl">
-              <img src="/assets/images/despues-1.jpg" alt="Pantalla de selección de plan" class="w-full h-auto object-cover">
+              <img src="/assets/images/ecommerce/despues-1.jpg" alt="Pantalla de selección de plan" class="w-full h-auto object-cover">
               <div class="screen-insight">
                 <span class="insight-label">Insight</span>
                 <p>Diseño claro de planes con diferenciación visual para facilitar decisión y-upselling.</p>
@@ -465,7 +465,7 @@ useScrollAnimations()
 
           <div class="screen-card">
             <div class="screen-image overflow-hidden rounded-2xl border border-slate-200 shadow-xl">
-              <img src="/assets/images/despues-2.jpg" alt="Checkout simplificado" class="w-full h-auto object-cover">
+              <img src="/assets/images/ecommerce/despues-2.jpg" alt="Checkout simplificado" class="w-full h-auto object-cover">
               <div class="screen-insight">
                 <span class="insight-label">Insight</span>
                 <p>Validación en tiempo real reduce errores y aumenta confianza.</p>
@@ -493,13 +493,13 @@ useScrollAnimations()
           <div class="flex flex-col gap-4">
             <span class="inline-block px-3 py-1 bg-rose-100 text-rose-700 font-bold tracking-widest uppercase text-xs rounded-full mb-4">Antes</span>
             <div class="bg-slate-100 rounded-xl overflow-hidden border border-slate-200 shadow-sm">
-              <img src="/assets/images/comparacion-antes.jpg" alt="E-commerce antes del rediseño" class="w-full aspect-[4/3] md:aspect-video object-cover object-top rounded-xl border border-slate-200 shadow-sm">
+              <img src="/assets/images/ecommerce/comparacion-antes.jpg" alt="E-commerce antes del rediseño" class="w-full aspect-[4/3] md:aspect-video object-cover object-top rounded-xl border border-slate-200 shadow-sm">
             </div>
           </div>
           <div class="flex flex-col gap-4">
             <span class="inline-block px-3 py-1 bg-emerald-100 text-emerald-700 font-bold tracking-widest uppercase text-xs rounded-full mb-4">Después</span>
             <div class="bg-white rounded-xl overflow-hidden border border-slate-200 shadow-sm">
-              <img src="/assets/images/comparacion-despues.jpg" alt="E-commerce después del rediseño" class="w-full aspect-[4/3] md:aspect-video object-cover object-top rounded-xl border border-slate-200 shadow-sm">
+              <img src="/assets/images/ecommerce/comparacion-despues.jpg" alt="E-commerce después del rediseño" class="w-full aspect-[4/3] md:aspect-video object-cover object-top rounded-xl border border-slate-200 shadow-sm">
             </div>
           </div>
         </div>

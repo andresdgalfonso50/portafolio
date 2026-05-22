@@ -31,7 +31,7 @@
           </div>
           <div class="about-photo-wrapper fade-in stagger-2 md:ml-auto">
             <div class="about-photo-frame rounded-2xl overflow-hidden">
-              <img src="/assets/images/yeison-profile.png" alt="Yeison Alfonso - Product Designer UX/UI" class="about-photo" width="600" height="750" fetchpriority="high" decoding="async">
+              <img src="/assets/images/about/yeison-profile.png" alt="Yeison Alfonso - Product Designer UX/UI" class="about-photo" width="600" height="750" fetchpriority="high" decoding="async">
             </div>
           </div>
         </div>
