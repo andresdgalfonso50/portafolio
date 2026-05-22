@@ -22,7 +22,8 @@ import {
   Plane,
   Globe,
   Split,
-  UserCheck
+  UserCheck,
+  XCircle
 } from 'lucide-vue-next'
 import ImageComparison from '@/components/ImageComparison.vue'
 
@@ -88,13 +89,46 @@ useScrollAnimations()
       </div>
     </section>
 
+    <!-- EL JUEGO ESTABA EN PELIGRO -->
+    <section class="case-section">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="stakes-box fade-in p-10 md:p-12 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 rounded-3xl mb-12">
+          <div class="flex items-start gap-6">
+            <div class="w-16 h-16 bg-rose-500/20 rounded-2xl flex items-center justify-center shrink-0">
+              <svg class="w-8 h-8 text-rose-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+              </svg>
+            </div>
+            <div>
+              <span class="text-sm font-bold uppercase tracking-widest text-rose-400 mb-2 block">El problema era crítico</span>
+              <h3 class="text-2xl md:text-3xl font-bold text-white mb-4">El negocio estaba perdiendo dinero cada día</h3>
+              <p class="text-slate-300 text-lg leading-relaxed">Con solo 0.82% de conversión, el costo de adquirir cada cliente era mayor que el ticket promedio. Literalmente: <strong class="text-white">por cada 100 visitantes, perdíamos 99 ventas potenciales</strong>. El equipo de negocio nos dio 3 meses para revertir la situación o el canal digital se cerraría.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- 2. EL PROBLEMA (ANTES) -->
     <section class="case-section section-alt">
       <div class="max-w-6xl mx-auto px-6">
-        <div class="section-header fade-in">
-          <span class="section-number">01</span>
+<div class="section-header fade-in">
+          <span class="section-number">02</span>
           <h2>Por qué los usuarios abandonaban</h2>
           <p class="section-intro">Los usuarios llegaban pero no completaban la compra. El checkout tenía más fricción que claridad.</p>
+        </div>
+
+        <!-- Una historia típica -->
+        <div class="user-story fade-in mb-12 p-8 bg-slate-50 rounded-2xl border border-slate-100">
+          <div class="flex items-start gap-6">
+            <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center shrink-0">
+              <span class="text-2xl">✈️</span>
+            </div>
+            <div>
+              <h4 class="text-lg font-bold text-slate-900 mb-2">María, 38 años, quería comprar asistencia de viaje antes de su vuelo a Cartagena</h4>
+              <p class="text-lg text-slate-600 leading-relaxed">Encontró el sitio desde Google, seleccionó un plan... pero cuando llegó al checkout, le pidieron crear una cuenta primero. "No recordaba mi contraseña anterior", dice. Intentó reestablecerla pero el email no llegaba. <strong class="text-slate-900">Abandonó y compró en la competencia en 2 minutos.</strong></p>
+            </div>
+          </div>
         </div>
 
         <!-- Problemas en cards -->
@@ -201,7 +235,7 @@ useScrollAnimations()
     <section class="case-section">
       <div class="max-w-6xl mx-auto px-6">
         <div class="section-header fade-in">
-          <span class="section-number">02</span>
+          <span class="section-number">03</span>
           <h2>Investigación y hallazgos</h2>
           <p class="section-intro">La investigación reveló patrones claros de comportamiento que guiaron las decisiones de diseño.</p>
         </div>
@@ -223,6 +257,20 @@ useScrollAnimations()
           <div class="flex flex-col border-l-2 border-slate-200 pl-6">
             <span class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-2">&lt;20%</span>
             <span class="text-sm font-semibold text-slate-500 uppercase tracking-wider">Retención Usuarios</span>
+          </div>
+        </div>
+
+        <!-- Insight clave - The Aha Moment -->
+        <div class="aha-moment fade-in mt-12 p-8 bg-blue-50 rounded-2xl border border-blue-100">
+          <div class="flex items-start gap-6">
+            <div class="w-14 h-14 bg-blue-600 rounded-xl flex items-center justify-center shrink-0">
+              <Lightbulb :size="24" class="text-white" />
+            </div>
+            <div>
+              <span class="text-sm font-bold uppercase tracking-widest text-blue-600 mb-2 block">El momento "aha"</span>
+              <h4 class="text-xl font-bold text-slate-900 mb-2">Cuando entendimos que el problema no era el diseño, era el flujo</h4>
+              <p class="text-lg text-slate-700 leading-relaxed">Analizando los heatmaps, descubrimos que el 73% de los usuarios llegaban al checkout pero abandonaban en el <strong>primer paso</strong>. No era que no quisieran comprar — era que el modelo mental del usuario期待aba ver un resumen del pedido antes de dar datos de pago. <strong>Nosotros mostrábamos el formulario de pago primero.</strong> Ese simple cambio de orden lo cambió todo.</p>
+            </div>
           </div>
         </div>
 
@@ -248,7 +296,7 @@ useScrollAnimations()
     <section class="case-section section-alt">
       <div class="max-w-6xl mx-auto px-6">
         <div class="section-header fade-in">
-          <span class="section-number">03</span>
+          <span class="section-number">04</span>
           <h2>Qué funcionan en la industria</h2>
           <p class="section-intro">Analicé referentes del mercado para identificar patrones que funcionaban.</p>
         </div>
@@ -304,7 +352,7 @@ useScrollAnimations()
     <section class="case-section">
       <div class="max-w-6xl mx-auto px-6">
         <div class="section-header fade-in">
-          <span class="section-number">04</span>
+          <span class="section-number">05</span>
           <h2>Estrategia</h2>
           <p class="section-intro">Definimos principios de diseño claros para guiar cada decisión.</p>
         </div>
@@ -363,7 +411,7 @@ useScrollAnimations()
     <section class="case-section section-alt">
       <div class="max-w-6xl mx-auto px-6">
         <div class="section-header fade-in">
-          <span class="section-number">05</span>
+          <span class="section-number">06</span>
           <h2>La Solución</h2>
           <p class="section-intro">Flujo de compra lineal, mobile-first, con validación en tiempo real.</p>
         </div>
@@ -436,7 +484,7 @@ useScrollAnimations()
     <section class="case-section">
       <div class="max-w-6xl mx-auto px-6">
         <div class="section-header fade-in">
-          <span class="section-number">06</span>
+          <span class="section-number">07</span>
           <h2>Antes vs Después</h2>
           <p class="section-intro">El contraste visual muestra la magnitud del cambio.</p>
         </div>
@@ -462,7 +510,7 @@ useScrollAnimations()
     <section class="case-section section-alt">
       <div class="max-w-6xl mx-auto px-6">
         <div class="section-header fade-in">
-          <span class="section-number">07</span>
+          <span class="section-number">08</span>
           <h2>Validación</h2>
           <p class="section-intro">Las pruebas con usuarios confirmaron que el nuevo flujo funcionaba.</p>
         </div>
@@ -536,7 +584,7 @@ useScrollAnimations()
     <section class="case-section section-alt">
       <div class="max-w-6xl mx-auto px-6">
         <div class="section-header fade-in">
-          <span class="section-number">09</span>
+          <span class="section-number">10</span>
           <h2>Lo que aprendí</h2>
           <p class="section-intro">Lo que aprendí diseñando esta solución.</p>
         </div>
@@ -559,6 +607,32 @@ useScrollAnimations()
             <p class="text-lg text-slate-700 leading-relaxed"><strong>Mobile-first significa rediseñar desde cero, no adaptar.</strong> El 64.5% de tráfico mobile no era solo un número: requería repensar jerarquía, gestos y arquitectura de información para pantallas pequeñas.</p>
           </div>
         </div>
+
+        <!-- Lo que no funcionó -->
+        <div class="failures-section fade-in mt-12 p-8 bg-rose-50 rounded-2xl border border-rose-100">
+          <div class="flex items-start gap-6">
+            <div class="w-14 h-14 bg-rose-100 rounded-xl flex items-center justify-center shrink-0">
+              <XCircle :size="24" class="text-rose-600" />
+            </div>
+            <div>
+              <h4 class="text-xl font-bold text-slate-900 mb-3">Lo que intentamos primero y no funcionó</h4>
+              <ul class="space-y-3 text-lg text-slate-700 leading-relaxed">
+                <li class="flex items-start gap-3">
+                  <span class="text-rose-500 mt-1">✗</span>
+                  <span><strong>Agregar más pasos de onboarding:</strong> Pensamos que si explicábamos mejor el proceso, los usuarios entenderían. Error. Más educación = más fricción.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-rose-500 mt-1">✗</span>
+                  <span><strong>Un modal de confirmación antes de pagar:</strong> El equipo quería "asegurar" que el usuario quería pagar. Agregaba fricción sin valor. Lo eliminamos.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-rose-500 mt-1">✗</span>
+                  <span><strong>Carousel de productos relacionados:</strong> En el checkout, sugeríamos productos adicionales. Cancelaron el 12% de las compras al ver el carousel. Lo quitamos del flujo principal.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -566,7 +640,7 @@ useScrollAnimations()
     <section class="case-section">
       <div class="max-w-6xl mx-auto px-6">
         <div class="section-header fade-in">
-          <span class="section-number">10</span>
+          <span class="section-number">11</span>
           <h2>Siguientes pasos</h2>
           <p class="section-intro">Mejoras identificadas para iteración continua.</p>
         </div>

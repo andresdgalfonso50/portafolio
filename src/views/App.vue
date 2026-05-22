@@ -745,7 +745,7 @@
           <h2>Impacto</h2>
           <p class="section-intro">La nueva app fue diseñada para resolver los problemas críticos de la versión anterior.</p>
         </div>
-<div class="w-full max-w-6xl mx-auto mt-12">
+        <div class="w-full max-w-6xl mx-auto mt-12">
           <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 w-full">
             <div class="flex flex-col items-center justify-center text-center p-10 bg-slate-50 rounded-3xl border border-slate-100 shadow-sm transition-transform duration-300 hover:-translate-y-2 overflow-hidden">
               <span class="text-5xl md:text-7xl font-black text-slate-900 tracking-tighter mb-4 block">1.5%→25%</span>
@@ -767,11 +767,39 @@
       </div>
     </section>
 
+    <!-- VALIDACIÓN CON USUARIOS -->
+    <section class="py-16 md:py-24">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-number">09b</span>
+          <h2>Lo que dijeron los usuarios</h2>
+          <p class="section-intro">Las pruebas de usabilidad confirmaron que la nueva experiencia funcionaba.</p>
+        </div>
+
+        <div class="validation-quotes fade-in stagger-1 mt-12">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="p-8 bg-slate-50 rounded-2xl border border-slate-100">
+              <blockquote>
+                <p class="text-xl text-slate-700 leading-relaxed italic mb-4">"Por fin puedo ver todos mis beneficios en un solo lugar. Antes tenía que entrar a 3 páginas diferentes para saber qué cubría mi plan."</p>
+                <cite class="text-base font-semibold text-slate-500 block">— Laura M., Viajera Frecuente, 35 años</cite>
+              </blockquote>
+            </div>
+            <div class="p-8 bg-slate-50 rounded-2xl border border-slate-100">
+              <blockquote>
+                <p class="text-xl text-slate-700 leading-relaxed italic mb-4">"El botón de emergencia es lo que más valoro. Sé que si algo pasa en el viaje, tengo ayuda inmediata. Antes no tenía idea de cómo-contactar asistencia."</p>
+                <cite class="text-base font-semibold text-slate-500 block">— Ricardo T., Ejecutivo Corporativo, 45 años</cite>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- LEARNINGS -->
     <section class="py-16 md:py-24">
       <div class="container">
         <div class="section-header fade-in">
-          <span class="section-number">10</span>
+          <span class="section-number">11</span>
           <h2>Lo que aprendí</h2>
           <p class="section-intro">Lo que aprendí diseñando esta solución.</p>
         </div>
@@ -801,7 +829,7 @@
     <section class="py-16 md:py-24 section-alt">
       <div class="container">
         <div class="section-header fade-in">
-          <span class="section-number">11</span>
+          <span class="section-number">12</span>
           <h2>Siguientes pasos</h2>
           <p class="section-intro">Roadmap para iteración continua basada en datos reales.</p>
         </div>
