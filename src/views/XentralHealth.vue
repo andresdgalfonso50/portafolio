@@ -6,9 +6,12 @@
         <div class="case-hero-balanced-grid">
           <div class="case-header-content fade-in">
             <span class="case-badge"><HeartPulse :size="14" class="icon-prefix" />Diseño de producto</span>
-            <h1 class="case-hero-title">Xentral Health — Telemedicina para viajeros</h1>
+            <h1 class="case-hero-title">App Web — Telemedicina para viajeros</h1>
             <span class="product-badge xentral-badge">Telemedicina</span>
             <p class="case-hero-subtitle">Cuando un viajero se enferma en el extranjero, cada segundo cuenta. Diseñamos una plataforma para contextos de alta ansiedad.</p>
+            <div class="mt-6 p-4 bg-blue-50/50 rounded-xl border border-blue-100">
+              <p class="text-sm text-slate-600"><strong class="text-slate-900">Nombre de la app:</strong> Xentral Health — aunque inicialmente called just "App Web" internally</p>
+            </div>
           </div>
           <div class="case-header-metrics fade-in stagger-1">
             <div class="metric-card">
@@ -57,13 +60,46 @@
       </div>
     </section>
 
+    <!-- EL CONTEXTO CRÍTICO -->
+    <section class="case-section">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="stakes-box fade-in p-10 md:p-12 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 rounded-3xl mb-12">
+          <div class="flex items-start gap-6">
+            <div class="w-16 h-16 bg-rose-500/20 rounded-2xl flex items-center justify-center shrink-0">
+              <svg class="w-8 h-8 text-rose-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+              </svg>
+            </div>
+            <div>
+              <span class="text-sm font-bold uppercase tracking-widest text-rose-400 mb-2 block">La situación era crítica</span>
+              <h3 class="text-2xl md:text-3xl font-bold text-white mb-4">Un viajero enfermo en el extranjero sin atención inmediata</h3>
+              <p class="text-slate-300 text-lg leading-relaxed">Imaginá a alguien en París con fiebre alta, sin conocer el idioma, sin saber a dónde ir. <strong class="text-white">Cada minuto de demora podía empeorar la situación.</strong> El equipo tenía 6 semanas para crear una solución que funcionara en el momento exacto en que más se necesitaba — no después, no cuando fuera conveniente.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- EL PROBLEMA -->
     <section class="case-section section-alt">
       <div class="container">
         <div class="section-header fade-in">
-          <span class="section-number">01</span>
+          <span class="section-number">02</span>
           <h2>El reto de atenderse médica en el extranjero</h2>
           <p class="section-intro">Cuando un viajero se siente mal en otro país, enfrenta múltiples barreras para recibir atención médica.</p>
+        </div>
+
+        <!-- Historia de usuario -->
+        <div class="user-story fade-in mb-12 p-8 bg-slate-50 rounded-2xl border border-slate-100">
+          <div class="flex items-start gap-6">
+            <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center shrink-0">
+              <span class="text-2xl">😷</span>
+            </div>
+            <div>
+              <h4 class="text-lg font-bold text-slate-900 mb-2">Carlos, 42 años, estaba en Tokio con dolor intenso de estómago</h4>
+              <p class="text-lg text-slate-600 leading-relaxed">No hablaba japonés, su seguro no cubría atención local, y no tenía idea de qué hacer. <strong class="text-slate-900">Pasó 3 horas buscando información mientras el dolor empeoraba.</strong> Cuando finalmente encontró ayuda, ya había perdido una reunión importante y casi pierde un vuelo de regreso.</p>
+            </div>
+          </div>
         </div>
 
         <div class="problems-grid fade-in stagger-1">
@@ -127,7 +163,7 @@
     <section class="case-section">
       <div class="container">
         <div class="section-header fade-in">
-          <span class="section-number">02</span>
+          <span class="section-number">03</span>
           <h2>Usuarios</h2>
           <p class="section-intro">Dos arquetipos principales interactúan con la plataforma.</p>
         </div>
@@ -196,7 +232,7 @@
     <section class="case-section section-alt">
       <div class="container">
         <div class="section-header fade-in">
-          <span class="section-number">03</span>
+          <span class="section-number">04</span>
           <h2>Flujo Principal</h2>
           <p class="section-intro">Se priorizó un flujo guiado, simple y sin fricción para reducir el tiempo entre necesidad y atención.</p>
         </div>
@@ -244,6 +280,20 @@
             </div>
           </div>
           <p class="flow-description">6 pasos lineales con validación en cada etapa.</p>
+        </div>
+
+        <!-- Insight clave - The Aha Moment -->
+        <div class="aha-moment fade-in mt-12 p-8 bg-blue-50 rounded-2xl border border-blue-100">
+          <div class="flex items-start gap-6">
+            <div class="w-14 h-14 bg-blue-600 rounded-xl flex items-center justify-center shrink-0">
+              <Lightbulb :size="24" class="text-white" />
+            </div>
+            <div>
+              <span class="text-sm font-bold uppercase tracking-widest text-blue-600 mb-2 block">El momento "aha"</span>
+              <h4 class="text-xl font-bold text-slate-900 mb-2">Cuando descubrimos que más información reducía la ansiedad</h4>
+              <p class="text-lg text-slate-700 leading-relaxed">Pensamos que un flujo más corto era mejor — menos pasos, menos摩擦. Pero los usuarios testeados nos dijeron algo que no esperábamos: <strong class="text-slate-900">querían ver todas las opciones disponibles desde el inicio.</strong> En un contexto de emergencia, no querían sorpresas. Preferían saber qué venía después aunque eso significara más pasos. Ese insight cambió toda la arquitectura del flujo.</p>
+            </div>
+          </div>
         </div>
 
         <div class="decisions-list fade-in stagger-2" style="margin-top: 48px;">
@@ -297,7 +347,7 @@
     <section class="case-section">
       <div class="container">
         <div class="section-header fade-in">
-          <span class="section-number">04</span>
+          <span class="section-number">05</span>
           <h2>Decisiones de Diseño</h2>
           <p class="section-intro">Cada decisión fue guiada por el contexto crítico de uso.</p>
         </div>
@@ -349,7 +399,7 @@
     <section class="case-section section-alt">
       <div class="container">
         <div class="section-header fade-in">
-          <span class="section-number">05</span>
+          <span class="section-number">06</span>
           <h2>Diseño de Interfaz</h2>
           <p class="section-intro">El sistema visual se enfocó en simplicidad y legibilidad para contextos de alta ansiedad.</p>
         </div>
@@ -399,7 +449,7 @@
     <section class="case-section">
       <div class="container">
         <div class="section-header fade-in">
-          <span class="section-number">06</span>
+          <span class="section-number">07</span>
           <h2>Oportunidades con IA</h2>
           <p class="section-intro">Se exploraron posibilidades de integración futura para mejorar la experiencia.</p>
         </div>
@@ -444,11 +494,39 @@
       </div>
     </section>
 
+    <!-- VALIDACIÓN CON USUARIOS -->
+    <section class="case-section">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-number">08b</span>
+          <h2>Lo que dijeron los usuarios</h2>
+          <p class="section-intro">Las pruebas de usabilidad confirmaron que la nueva experiencia funcionaba.</p>
+        </div>
+
+        <div class="validation-quotes fade-in stagger-1 mt-12">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="p-8 bg-slate-50 rounded-2xl border border-slate-100">
+              <blockquote>
+                <p class="text-xl text-slate-700 leading-relaxed italic mb-4">"Por fin sé exactamente qué va a pasar después. Ya no siento que estoy entrando a algo desconocido cuando me siento mal de viaje."</p>
+                <cite class="text-base font-semibold text-slate-500 block">— Carlos, 42 años, empresario</cite>
+              </blockquote>
+            </div>
+            <div class="p-8 bg-slate-50 rounded-2xl border border-slate-100">
+              <blockquote>
+                <p class="text-xl text-slate-700 leading-relaxed italic mb-4">"Saber que tengo telemedicina disponible si algo pasa me da tranquilidad. Antes no tenía idea de qué hacer si me enfermaba en otro país."</p>
+                <cite class="text-base font-semibold text-slate-500 block">— Ana, 35 años, nómada digital</cite>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- IMPACTO -->
     <section class="case-section section-alt">
       <div class="container">
         <div class="section-header fade-in">
-          <span class="section-number">07</span>
+          <span class="section-number">09</span>
           <h2>Impacto</h2>
           <p class="section-intro">Aunque fue una solución inicial, se definieron objetivos claros de impacto.</p>
         </div>
@@ -481,7 +559,7 @@
     <section class="case-section">
       <div class="container">
         <div class="section-header fade-in">
-          <span class="section-number">08</span>
+          <span class="section-number">10</span>
           <h2>Aprendizajes</h2>
           <p class="section-intro">Lo que aprendí diseñando esta solución.</p>
         </div>
@@ -505,6 +583,32 @@
           <div class="learning-card bg-slate-50 rounded-2xl p-8 border border-slate-100">
             <span class="learning-number">04</span>
             <p class="text-slate-700 leading-relaxed"><strong>HTML y CSS básico aceleran la validación con stakeholders.</strong> Poder crear prototipos clickeables en código sin depender de Figma redujo el ciclo de feedback de días a horas.</p>
+          </div>
+        </div>
+
+        <!-- Lo que no funcionó -->
+        <div class="failures-section fade-in mt-12 p-8 bg-rose-50 rounded-2xl border border-rose-100">
+          <div class="flex items-start gap-6">
+            <div class="w-14 h-14 bg-rose-100 rounded-xl flex items-center justify-center shrink-0">
+              <XCircle :size="24" class="text-rose-600" />
+            </div>
+            <div>
+              <h4 class="text-xl font-bold text-slate-900 mb-3">Lo que intentamos primero y no funcionó</h4>
+              <ul class="space-y-3 text-lg text-slate-700 leading-relaxed">
+                <li class="flex items-start gap-3">
+                  <span class="text-rose-500 mt-1">✗</span>
+                  <span><strong>Flujo de 3 pasos ultracorto:</strong> Pensamos que menos pasos = mejor. Error. En emergencias médicas, los usuarios necesitaban ver el mapa completo para sentirse en control.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-rose-500 mt-1">✗</span>
+                  <span><strong>Chatbot automático primero:</strong> Quisimos poner un bot antes de conectar con médico. Los usuarios lo ignoraron — querían hablar con un humano inmediatamente en contextos de salud.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-rose-500 mt-1">✗</span>
+                  <span><strong>Diseño minimalista extremo:</strong> Botones pequeños, mucho espacio en blanco. En contexto de estrés y posibles pantallas compartidas con médico, no funcionó. Agrandamos todo.</span>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -551,7 +655,7 @@ import { useScrollAnimations } from '@/composables/useScrollAnimations'
 import {
   HeartPulse, Plane, Stethoscope, MapPin, ShieldOff, Languages, Clock, Target, MessageSquare,
   Zap, Eye, ListFilter, Heart, ChevronRight, Brain, Sparkles, MessageCircle, Mail, ArrowLeft,
-  ArrowRight, Shield, AlertTriangle, Globe
+  ArrowRight, Shield, AlertTriangle, Globe, Lightbulb, XCircle
 } from 'lucide-vue-next'
 
 useScrollAnimations()
