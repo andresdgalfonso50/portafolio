@@ -1,6 +1,0 @@
-User-agent: *
-Allow: /
-
-Disallow: /CVs/
-
-Sitemap: https://yeisonalfonso.com/sitemap.xml
