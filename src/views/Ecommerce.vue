@@ -201,7 +201,7 @@ useScrollAnimations()
           </div>
           <div class="ui-antes-grid">
             <div class="ui-image-wrapper">
-              <img src="/assets/images/ui-comparisons/ui-ecommerce-antes.jpg" alt="UI del e-commerce antes del rediseño" class="ui-image">
+              <img src="/assets/images/ecommerce/ui-comparisons/ui-ecommerce-antes.jpg" alt="UI del e-commerce antes del rediseño" class="ui-image">
             </div>
             <div class="ui-observations">
               <div class="observation-item">

@@ -2,7 +2,7 @@
   <main>
     <!-- HERO SECTION -->
     <section class="home-hero section">
-      <div class="container">
+      <div class="container max-w-[1440px]">
         <div class="home-hero-grid">
           <div class="home-hero-content fade-in">
             <span class="label">UX/UI Designer</span>
@@ -24,7 +24,7 @@
             </div>
           </div>
           <div class="home-hero-visual fade-in stagger-2">
-            <div class="hero-image-wrapper aspect-video rounded-2xl overflow-hidden">
+            <div class="hero-image-wrapper rounded-2xl overflow-hidden">
               <img src="/assets/images/home/hero-home.jpg" alt="Diseño de producto digital - Interface moderna" width="1400" height="800" fetchpriority="high" decoding="async">
             </div>
           </div>
