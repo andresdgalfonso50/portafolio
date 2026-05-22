@@ -408,7 +408,7 @@
         </div>
 
         <div class="strategy-grid fade-in stagger-1">
-          <div class="strategy-objective p-10 md:p-12 bg-slate-900 rounded-3xl mb-8">
+          <div class="strategy-objective p-10 md:p-12 bg-gradient-to-br from-slate-800 via-slate-700 to-slate-800 rounded-3xl mb-8">
             <span class="text-sm font-bold uppercase tracking-widest px-3 py-1 bg-blue-600 text-white rounded-full mb-6 inline-block">Objetivo</span>
             <h3 class="text-2xl md:text-3xl font-bold text-white mb-4">Crear una experiencia premium que genere confianza y adopción</h3>
             <p class="text-slate-300 text-lg md:text-xl leading-relaxed mt-4">Diseñar una app que los usuarios quieran abrir, no que tengan que abrir. Integrar servicios de forma natural en el contexto del viaje.</p>

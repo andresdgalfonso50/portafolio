@@ -25,7 +25,7 @@
           </div>
           <div class="home-hero-visual fade-in stagger-2">
             <div class="hero-image-wrapper aspect-video rounded-2xl overflow-hidden">
-              <img src="/assets/images/home/hero-home.webp" alt="Diseño de producto digital - Interface moderna" width="1400" height="800" fetchpriority="high" decoding="async">
+              <img src="/assets/images/home/hero-home.jpg" alt="Diseño de producto digital - Interface moderna" width="1400" height="800" fetchpriority="high" decoding="async">
             </div>
           </div>
         </div>

@@ -63,17 +63,17 @@
     <!-- EL CONTEXTO CRÍTICO -->
     <section class="case-section">
       <div class="max-w-6xl mx-auto px-6">
-        <div class="stakes-box fade-in p-10 md:p-12 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 rounded-3xl mb-12">
+        <div class="stakes-box fade-in p-10 md:p-12 bg-gradient-to-br from-slate-100 via-slate-50 to-slate-100 rounded-3xl mb-12 border border-slate-200">
           <div class="flex items-start gap-6">
-            <div class="w-16 h-16 bg-rose-500/20 rounded-2xl flex items-center justify-center shrink-0">
-              <svg class="w-8 h-8 text-rose-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="w-16 h-16 bg-rose-100 rounded-2xl flex items-center justify-center shrink-0">
+              <svg class="w-8 h-8 text-rose-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
               </svg>
             </div>
             <div>
-              <span class="text-sm font-bold uppercase tracking-widest text-rose-400 mb-2 block">La situación era crítica</span>
-              <h3 class="text-2xl md:text-3xl font-bold text-white mb-4">Un viajero enfermo en el extranjero sin atención inmediata</h3>
-              <p class="text-slate-300 text-lg leading-relaxed">Imaginá a alguien en París con fiebre alta, sin conocer el idioma, sin saber a dónde ir. <strong class="text-white">Cada minuto de demora podía empeorar la situación.</strong> El equipo tenía 6 semanas para crear una solución que funcionara en el momento exacto en que más se necesitaba — no después, no cuando fuera conveniente.</p>
+              <span class="text-sm font-bold uppercase tracking-widest text-rose-600 mb-2 block">La situación era crítica</span>
+              <h3 class="text-2xl md:text-3xl font-bold text-slate-900 mb-4">Un viajero enfermo en el extranjero sin atención inmediata</h3>
+              <p class="text-slate-600 text-lg leading-relaxed">Imaginá a alguien en París con fiebre alta, sin conocer el idioma, sin saber a dónde ir. <strong class="text-slate-900">Cada minuto de demora podía empeorar la situación.</strong> El equipo tenía 6 semanas para crear una solución que funcionara en el momento exacto en que más se necesitaba — no después, no cuando fuera conveniente.</p>
             </div>
           </div>
         </div>
@@ -387,8 +387,8 @@
         </div>
 
         <div class="case-image fade-in stagger-2" style="margin-top: 48px;">
-          <div class="w-full h-[400px] md:h-[600px] bg-slate-900 rounded-3xl flex items-center justify-center border-4 border-slate-800 shadow-2xl overflow-hidden relative">
-            <span class="text-slate-400 font-medium text-lg z-10">Insertar Mockup Dual (App Viajero + Dashboard Médico)</span>
+          <div class="w-full h-[400px] md:h-[600px] bg-slate-100 rounded-3xl flex items-center justify-center border-4 border-slate-200 shadow-xl overflow-hidden relative">
+            <span class="text-slate-500 font-medium text-lg z-10">Insertar Mockup Dual (App Viajero + Dashboard Médico)</span>
             <div class="absolute inset-0 bg-gradient-to-br from-blue-900/20 to-purple-900/20"></div>
           </div>
         </div>
@@ -498,7 +498,7 @@
     <section class="case-section">
       <div class="container">
         <div class="section-header fade-in">
-          <span class="section-number">08b</span>
+          <span class="section-number">09</span>
           <h2>Lo que dijeron los usuarios</h2>
           <p class="section-intro">Las pruebas de usabilidad confirmaron que la nueva experiencia funcionaba.</p>
         </div>
@@ -523,34 +523,29 @@
     </section>
 
     <!-- IMPACTO -->
-    <section class="case-section section-alt">
-      <div class="container">
-        <div class="section-header fade-in">
-          <span class="section-number">09</span>
-          <h2>Impacto</h2>
-          <p class="section-intro">Aunque fue una solución inicial, se definieron objetivos claros de impacto.</p>
+    <section class="w-full max-w-6xl mx-auto px-6 py-24">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold text-slate-900 mb-4 tracking-tight">Impacto</h2>
+        <p class="text-lg text-slate-500">Resultados proyectados del rediseño de la experiencia.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 w-full">
+        <div class="flex flex-col items-center justify-center text-center p-10 bg-slate-50 rounded-3xl border border-slate-100 shadow-sm transition-transform duration-300 hover:-translate-y-2 overflow-hidden">
+          <span class="text-6xl md:text-8xl font-black text-slate-900 tracking-tighter mb-4">-60%</span>
+          <h3 class="text-lg font-bold text-slate-500 uppercase tracking-widest mb-2">Tiempo de acceso</h3>
+          <p class="text-sm text-slate-400">Reducir el tiempo entre necesidad y atención médica</p>
         </div>
 
-        <div class="impact-metrics fade-in stagger-1">
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
-            <div class="p-8 bg-blue-50/50 rounded-2xl border border-blue-100 transition-all hover:bg-blue-50">
-              <div class="text-4xl font-bold text-blue-600 mb-2">-60%</div>
-              <h4 class="text-lg font-semibold text-slate-900 mb-1">Tiempo de acceso</h4>
-              <p class="text-slate-600 font-medium">Reducir el tiempo entre necesidad y atención médica</p>
-            </div>
+        <div class="flex flex-col items-center justify-center text-center p-10 bg-slate-50 rounded-3xl border border-slate-100 shadow-sm transition-transform duration-300 hover:-translate-y-2 overflow-hidden">
+          <span class="text-6xl md:text-8xl font-black text-slate-900 tracking-tighter mb-4">+90%</span>
+          <h3 class="text-lg font-bold text-slate-500 uppercase tracking-widest mb-2">Claridad del proceso</h3>
+          <p class="text-sm text-slate-400">Mejorar la claridad del proceso de atención</p>
+        </div>
 
-            <div class="p-8 bg-blue-50/50 rounded-2xl border border-blue-100 transition-all hover:bg-blue-50">
-              <div class="text-4xl font-bold text-blue-600 mb-2">+90%</div>
-              <h4 class="text-lg font-semibold text-slate-900 mb-1">Claridad del proceso</h4>
-              <p class="text-slate-600 font-medium">Mejorar la claridad del proceso de atención</p>
-            </div>
-
-            <div class="p-8 bg-blue-50/50 rounded-2xl border border-blue-100 transition-all hover:bg-blue-50">
-              <div class="text-4xl font-bold text-blue-600 mb-2">100%</div>
-              <h4 class="text-lg font-semibold text-slate-900 mb-1">Cobertura visible</h4>
-              <p class="text-slate-600 font-medium">El usuario siempre sabe qué servicios tiene disponibles</p>
-            </div>
-          </div>
+        <div class="flex flex-col items-center justify-center text-center p-10 bg-slate-50 rounded-3xl border border-slate-100 shadow-sm transition-transform duration-300 hover:-translate-y-2 overflow-hidden">
+          <span class="text-6xl md:text-8xl font-black text-slate-900 tracking-tighter mb-4">100%</span>
+          <h3 class="text-lg font-bold text-slate-500 uppercase tracking-widest mb-2">Cobertura visible</h3>
+          <p class="text-sm text-slate-400">El usuario siempre sabe qué servicios tiene disponibles</p>
         </div>
       </div>
     </section>
@@ -616,35 +611,48 @@
 
     <!-- CTA -->
     <section class="case-cta section">
-      <div class="container">
-        <div class="cta-box fade-in">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="cta-content fade-in">
           <h2>¿Hablamos?</h2>
           <p>Explora otro caso de estudio o contáctame para discutir proyectos.</p>
           <div class="cta-buttons">
-            <router-link to="/app" class="btn btn-secondary">
-              <ArrowLeft :size="16" />
+            <RouterLink to="/app" class="btn btn-secondary">
+              <ArrowLeft :size="16" style="margin-right:8px;" />
               Caso anterior
-            </router-link>
-            <router-link to="/contacto" class="btn btn-accent">
-              <Mail :size="16" />
+            </RouterLink>
+            <RouterLink to="/contacto" class="btn btn-accent">
+              <Mail :size="16" style="margin-right:8px;" />
               Contactar
-            </router-link>
+            </RouterLink>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Case Navigation -->
-    <nav class="case-nav">
-      <div class="container">
-        <router-link to="/ecommerce" class="case-nav-link">
-          <span>Caso anterior</span>
-          <h4><ArrowLeft :size="16" />Rediseño E-commerce</h4>
-        </router-link>
-        <router-link to="/contacto" class="case-nav-link next">
-          <span>Siguiente caso</span>
-          <h4>Contacto <ArrowRight :size="16" /></h4>
-        </router-link>
+    <nav class="py-24 border-t border-slate-100">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <RouterLink to="/app" class="group flex items-center justify-between p-8 bg-white rounded-3xl border border-slate-200 transition-all duration-300 hover:border-blue-600 hover:shadow-xl hover:-translate-y-1">
+            <div class="flex flex-col">
+              <span class="text-sm font-bold text-slate-400 uppercase tracking-widest mb-2">Caso anterior</span>
+              <h4 class="text-2xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors">App de Asistencia en Viajes</h4>
+            </div>
+            <div class="w-12 h-12 rounded-full bg-slate-50 flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition-all duration-300">
+              <ArrowLeft :size="24" />
+            </div>
+          </RouterLink>
+
+          <RouterLink to="/contacto" class="group flex items-center justify-between p-8 bg-white rounded-3xl border border-slate-200 transition-all duration-300 hover:border-blue-600 hover:shadow-xl hover:-translate-y-1">
+            <div class="flex flex-col">
+              <span class="text-sm font-bold text-slate-400 uppercase tracking-widest mb-2">Siguiente caso</span>
+              <h4 class="text-2xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors">Contacto</h4>
+            </div>
+            <div class="w-12 h-12 rounded-full bg-slate-50 flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition-all duration-300">
+              <ArrowRight :size="24" />
+            </div>
+          </RouterLink>
+        </div>
       </div>
     </nav>
   </main>

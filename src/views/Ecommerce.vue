@@ -92,17 +92,17 @@ useScrollAnimations()
     <!-- EL JUEGO ESTABA EN PELIGRO -->
     <section class="case-section">
       <div class="max-w-6xl mx-auto px-6">
-        <div class="stakes-box fade-in p-10 md:p-12 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 rounded-3xl mb-12">
+        <div class="stakes-box fade-in p-10 md:p-12 bg-gradient-to-br from-slate-100 via-slate-50 to-slate-100 rounded-3xl mb-12 border border-slate-200">
           <div class="flex items-start gap-6">
-            <div class="w-16 h-16 bg-rose-500/20 rounded-2xl flex items-center justify-center shrink-0">
-              <svg class="w-8 h-8 text-rose-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="w-16 h-16 bg-rose-100 rounded-2xl flex items-center justify-center shrink-0">
+              <svg class="w-8 h-8 text-rose-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
               </svg>
             </div>
-            <div>
-              <span class="text-sm font-bold uppercase tracking-widest text-rose-400 mb-2 block">El problema era crítico</span>
-              <h3 class="text-2xl md:text-3xl font-bold text-white mb-4">El negocio estaba perdiendo dinero cada día</h3>
-              <p class="text-slate-300 text-lg leading-relaxed">Con solo 0.82% de conversión, el costo de adquirir cada cliente era mayor que el ticket promedio. Literalmente: <strong class="text-white">por cada 100 visitantes, perdíamos 99 ventas potenciales</strong>. El equipo de negocio nos dio 3 meses para revertir la situación o el canal digital se cerraría.</p>
+<div>
+              <span class="text-sm font-bold uppercase tracking-widest text-rose-600 mb-2 block">La situación era crítica</span>
+              <h3 class="text-2xl md:text-3xl font-bold text-slate-900 mb-4">El negocio estaba perdiendo dinero cada día</h3>
+              <p class="text-slate-600 text-lg leading-relaxed">Con solo 0.82% de conversión, el costo de adquirir cada cliente era mayor que el ticket promedio. Literalmente: <strong class="text-slate-900">por cada 100 visitantes, perdíamos 99 ventas potenciales</strong>. El equipo de negocio nos dio 3 meses para revertir la situación o el canal digital se cerraría.</p>
             </div>
           </div>
         </div>
@@ -358,7 +358,7 @@ useScrollAnimations()
         </div>
 
         <div class="strategy-grid fade-in stagger-1">
-          <div class="strategy-objective p-10 md:p-12 bg-slate-900 rounded-3xl mb-8">
+          <div class="strategy-objective p-10 md:p-12 bg-gradient-to-br from-slate-800 via-slate-700 to-slate-800 rounded-3xl mb-8">
             <span class="strategy-badge text-sm font-bold uppercase tracking-widest px-3 py-1 bg-blue-600 text-white rounded-full mb-6 inline-block">Objetivo</span>
             <h3 class="text-2xl md:text-3xl font-bold text-white mb-4">Incrementar conversión eliminando fricciones</h3>
             <p class="text-slate-300 text-lg md:text-xl leading-relaxed mt-4">Reducir el tiempo entre la intención de compra y la confirmación. Minimizar puntos de abandono.</p>
