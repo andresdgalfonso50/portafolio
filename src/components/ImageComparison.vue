@@ -55,7 +55,7 @@
             </div>
 
             <!-- Image Area -->
-            <div class="relative bg-slate-900 flex items-center justify-center min-h-[60vh]">
+            <div class="relative bg-slate-100 flex items-center justify-center min-h-[60vh]">
               <img
                 :src="currentSrc"
                 :alt="currentLabel"

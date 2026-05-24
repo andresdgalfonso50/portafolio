@@ -58,7 +58,7 @@ useScrollAnimations()
           </div>
         </div>
         <div class="hero-visual fade-in stagger-2">
-          <img src="/assets/images/ecommerce/hero-ecommerce.jpg" alt="Dashboard de analytics mostrando métricas de conversión" width="1400" height="800" fetchpriority="high" decoding="async">
+          <img src="/assets/images/ecommerce/ecommerce-hero.jpg" alt="Dashboard de analytics mostrando métricas de conversión" width="1400" height="800" fetchpriority="high" decoding="async">
         </div>
       </div>
     </header>
@@ -201,7 +201,7 @@ useScrollAnimations()
           </div>
           <div class="ui-antes-grid">
             <div class="ui-image-wrapper">
-              <img src="/assets/images/ecommerce/ui-comparisons/ui-ecommerce-antes.jpg" alt="UI del e-commerce antes del rediseño" class="ui-image">
+              <img src="/assets/images/ecommerce/mockup-ecommerce-comparacion.jpg" alt="UI del e-commerce antes del rediseño" class="ui-image">
             </div>
             <div class="ui-observations">
               <div class="observation-item">
@@ -358,10 +358,10 @@ useScrollAnimations()
         </div>
 
         <div class="strategy-grid fade-in stagger-1">
-          <div class="strategy-objective p-10 md:p-12 bg-gradient-to-br from-slate-800 via-slate-700 to-slate-800 rounded-3xl mb-8">
+          <div class="strategy-objective p-10 md:p-12 bg-gradient-to-br from-slate-100 via-slate-50 to-slate-100 rounded-3xl mb-8">
             <span class="strategy-badge text-sm font-bold uppercase tracking-widest px-3 py-1 bg-blue-600 text-white rounded-full mb-6 inline-block">Objetivo</span>
-            <h3 class="text-2xl md:text-3xl font-bold text-white mb-4">Incrementar conversión eliminando fricciones</h3>
-            <p class="text-slate-300 text-lg md:text-xl leading-relaxed mt-4">Reducir el tiempo entre la intención de compra y la confirmación. Minimizar puntos de abandono.</p>
+            <h3 class="text-2xl md:text-3xl font-bold text-slate-900 mb-4">Incrementar conversión eliminando fricciones</h3>
+            <p class="text-slate-600 text-lg md:text-xl leading-relaxed mt-4">Reducir el tiempo entre la intención de compra y la confirmación. Minimizar puntos de abandono.</p>
           </div>
 
           <div class="principles-list">
@@ -493,13 +493,13 @@ useScrollAnimations()
           <div class="flex flex-col gap-4">
             <span class="inline-block px-3 py-1 bg-rose-100 text-rose-700 font-bold tracking-widest uppercase text-xs rounded-full mb-4">Antes</span>
             <div class="bg-slate-100 rounded-xl overflow-hidden border border-slate-200 shadow-sm">
-              <img src="/assets/images/ecommerce/comparacion-antes.jpg" alt="E-commerce antes del rediseño" class="w-full aspect-[4/3] md:aspect-video object-cover object-top rounded-xl border border-slate-200 shadow-sm">
+              <img src="/assets/images/ecommerce/antes-1.jpg" alt="E-commerce antes del rediseño" class="w-full aspect-[4/3] md:aspect-video object-cover object-top rounded-xl border border-slate-200 shadow-sm">
             </div>
           </div>
           <div class="flex flex-col gap-4">
             <span class="inline-block px-3 py-1 bg-emerald-100 text-emerald-700 font-bold tracking-widest uppercase text-xs rounded-full mb-4">Después</span>
             <div class="bg-white rounded-xl overflow-hidden border border-slate-200 shadow-sm">
-              <img src="/assets/images/ecommerce/comparacion-despues.jpg" alt="E-commerce después del rediseño" class="w-full aspect-[4/3] md:aspect-video object-cover object-top rounded-xl border border-slate-200 shadow-sm">
+              <img src="/assets/images/ecommerce/mockup-ecommerce-products.jpg" alt="E-commerce después del rediseño" class="w-full aspect-[4/3] md:aspect-video object-cover object-top rounded-xl border border-slate-200 shadow-sm">
             </div>
           </div>
         </div>

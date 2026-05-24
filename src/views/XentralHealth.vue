@@ -388,8 +388,7 @@
 
         <div class="case-image fade-in stagger-2" style="margin-top: 48px;">
           <div class="w-full h-[400px] md:h-[600px] bg-slate-100 rounded-3xl flex items-center justify-center border-4 border-slate-200 shadow-xl overflow-hidden relative">
-            <span class="text-slate-500 font-medium text-lg z-10">Insertar Mockup Dual (App Viajero + Dashboard Médico)</span>
-            <div class="absolute inset-0 bg-gradient-to-br from-blue-900/20 to-purple-900/20"></div>
+            <img src="/assets/images/xentral-health/mockup-xentral-comparacion.jpg" alt="Mockup dual - App Viajero y Dashboard Médico" class="w-full h-full object-cover rounded-3xl">
           </div>
         </div>
       </div>
@@ -440,7 +439,7 @@
         </div>
 
         <div class="case-image fade-in stagger-3" style="margin-top: 48px;">
-          <img src="/assets/images/xentral-health/xentral-03.png" alt="Pantallas finales de Xentral Health" width="1200" height="675" loading="lazy">
+          <img src="/assets/images/xentral-health/xentral-dashboard-lifestyle.jpg" alt="Dashboard de Xentral Health para médicos" class="w-full h-auto object-cover rounded-2xl">
         </div>
       </div>
     </section>

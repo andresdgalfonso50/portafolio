@@ -26,7 +26,7 @@
           </div>
         </div>
         <div class="hero-visual fade-in stagger-2">
-          <img src="/assets/images/app/hero-app.jpg" alt="App mobile moderna con interfaz premium" width="1400" height="800" fetchpriority="high" decoding="async">
+          <img src="/assets/images/app/hero-app-lifestyle.jpg" alt="App mobile moderna con interfaz premium" width="1400" height="800" fetchpriority="high" decoding="async">
         </div>
       </div>
     </section>
@@ -134,25 +134,25 @@
           </div>
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full max-w-6xl mx-auto mt-16">
             <div class="ui-image-wrapper">
-              <img src="/assets/images/app/app-before.png" alt="App anterior con baja retención y errores" class="w-full rounded-2xl border border-slate-200 shadow-md object-cover aspect-[4/3]">
+              <img src="/assets/images/app/mockup-app-comparacion.jpg" alt="Comparación UI app antes y después" class="w-full rounded-2xl border border-slate-200 shadow-md object-cover aspect-[4/3]">
             </div>
             <div class="ui-observations space-y-6">
               <div class="observation-item flex gap-5 p-5 bg-white rounded-xl border border-slate-100 shadow-sm">
-                <div class="observation-number w-10 h-10 rounded-full bg-slate-900 text-white flex items-center justify-center font-bold text-lg shrink-0">1</div>
+                <div class="observation-number w-10 h-10 rounded-full bg-slate-200 text-slate-700 flex items-center justify-center font-bold text-lg shrink-0">1</div>
                 <div class="observation-text">
                   <h4 class="text-lg font-bold text-slate-900 mb-2">Navegación confusa</h4>
                   <p class="text-lg text-slate-600 leading-relaxed">Los usuarios no encontraban lo que necesitaban. Estructura sin jerarquía clara.</p>
                 </div>
               </div>
               <div class="observation-item flex gap-5 p-5 bg-white rounded-xl border border-slate-100 shadow-sm">
-                <div class="observation-number w-10 h-10 rounded-full bg-slate-900 text-white flex items-center justify-center font-bold text-lg shrink-0">2</div>
+                <div class="observation-number w-10 h-10 rounded-full bg-slate-200 text-slate-700 flex items-center justify-center font-bold text-lg shrink-0">2</div>
                 <div class="observation-text">
                   <h4 class="text-lg font-bold text-slate-900 mb-2">Sin feedback de estados</h4>
                   <p class="text-lg text-slate-600 leading-relaxed">No había transparencia en vouchers, reembolsos o coberturas activas.</p>
                 </div>
               </div>
               <div class="observation-item flex gap-5 p-5 bg-white rounded-xl border border-slate-100 shadow-sm">
-                <div class="observation-number w-10 h-10 rounded-full bg-slate-900 text-white flex items-center justify-center font-bold text-lg shrink-0">3</div>
+                <div class="observation-number w-10 h-10 rounded-full bg-slate-200 text-slate-700 flex items-center justify-center font-bold text-lg shrink-0">3</div>
                 <div class="observation-text">
                   <h4 class="text-lg font-bold text-slate-900 mb-2">Interfaz genérica</h4>
                   <p class="text-lg text-slate-600 leading-relaxed">No transmitía confianza ni experiencia premium. No se diferenciaba de la competencia.</p>
@@ -408,10 +408,10 @@
         </div>
 
         <div class="strategy-grid fade-in stagger-1">
-          <div class="strategy-objective p-10 md:p-12 bg-gradient-to-br from-slate-800 via-slate-700 to-slate-800 rounded-3xl mb-8">
+          <div class="strategy-objective p-10 md:p-12 bg-gradient-to-br from-slate-100 via-slate-50 to-slate-100 rounded-3xl mb-8">
             <span class="text-sm font-bold uppercase tracking-widest px-3 py-1 bg-blue-600 text-white rounded-full mb-6 inline-block">Objetivo</span>
-            <h3 class="text-2xl md:text-3xl font-bold text-white mb-4">Crear una experiencia premium que genere confianza y adopción</h3>
-            <p class="text-slate-300 text-lg md:text-xl leading-relaxed mt-4">Diseñar una app que los usuarios quieran abrir, no que tengan que abrir. Integrar servicios de forma natural en el contexto del viaje.</p>
+            <h3 class="text-2xl md:text-3xl font-bold text-slate-900 mb-4">Crear una experiencia premium que genere confianza y adopción</h3>
+            <p class="text-slate-600 text-lg md:text-xl leading-relaxed mt-4">Diseñar una app que los usuarios quieran abrir, no que tengan que abrir. Integrar servicios de forma natural en el contexto del viaje.</p>
           </div>
 
           <div class="principles-list">
@@ -617,7 +617,7 @@
         <div class="solution-screens fade-in stagger-1">
           <div class="screen-card">
             <div class="screen-image overflow-hidden rounded-[2rem] border-[6px] border-slate-100 shadow-xl">
-              <img src="/assets/images/app/app-screen-2.jpg" alt="Chat de Soporte con IA" class="w-full h-auto object-cover">
+              <img src="/assets/images/app/app-screen-5.jpg" alt="Chat de soporte en la app" class="w-full h-auto object-cover">
               <div class="screen-insight">
                 <span class="insight-label">Funcionalidad</span>
                 <p>Chatea con Agente IA para resolver dudas sobre tus beneficios y servicios.</p>
@@ -631,7 +631,7 @@
 
           <div class="screen-card">
             <div class="screen-image overflow-hidden rounded-[2rem] border-[6px] border-slate-100 shadow-xl">
-              <img src="/assets/images/app/app-screen-3.jpg" alt="Wallet de beneficios" class="w-full h-auto object-cover">
+              <img src="/assets/images/app/app-screen-1.jpg" alt="Pantalla de inicio de la app" class="w-full h-auto object-cover">
               <div class="screen-insight">
                 <span class="insight-label">Funcionalidad</span>
                 <p>Tus vouchers, coberturas y beneficios siempre contigo.</p>
@@ -645,7 +645,7 @@
 
           <div class="screen-card">
             <div class="screen-image overflow-hidden rounded-[2rem] border-[6px] border-slate-100 shadow-xl">
-              <img src="/assets/images/app/app-screen-4.jpg" alt="Emergencias 24/7" class="w-full h-auto object-cover">
+              <img src="/assets/images/app/app-screen-3.jpg" alt="Wallet de beneficios" class="w-full h-auto object-cover">
               <div class="screen-insight">
                 <span class="insight-label">Funcionalidad</span>
                 <p>Acceso directo a asistencia médica y soporte de emergencia.</p>
@@ -659,7 +659,7 @@
 
           <div class="screen-card">
             <div class="screen-image overflow-hidden rounded-[2rem] border-[6px] border-slate-100 shadow-xl">
-              <img src="/assets/images/app/app-screen-5.jpg" alt="Cotizador en 4 pasos" class="w-full h-auto object-cover">
+              <img src="/assets/images/app/app-screen-4.jpg" alt="Cotizador en 4 pasos" class="w-full h-auto object-cover">
               <div class="screen-insight">
                 <span class="insight-label">Funcionalidad</span>
                 <p>Cotiza y activa planes en minutos, no en horas.</p>
@@ -673,7 +673,7 @@
 
           <div class="screen-card">
             <div class="screen-image overflow-hidden rounded-[2rem] border-[6px] border-slate-100 shadow-xl">
-              <img src="/assets/images/app/app-screen-1.jpg" alt="Beneficios adicionales" class="w-full h-auto object-cover">
+              <img src="/assets/images/app/mockup-app-benefits.jpg" alt="Benchmark de apps de asistencia - Heymondo, Lifemiles, Booking" class="w-full h-auto rounded-2xl shadow-md">
               <div class="screen-insight">
                 <span class="insight-label">Funcionalidad</span>
                 <p>Xentral Pass, salas VIP, medicamentos, roaming y más.</p>

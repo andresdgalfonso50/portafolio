@@ -121,7 +121,7 @@
             <router-link to="/app" class="project-slide">
               <div class="card">
                 <div class="card-image">
-                  <img src="/assets/images/thumbnails/thumb-app.jpg" alt="App mobile - Interfaz moderna" width="800" height="500" loading="lazy">
+                  <img src="/assets/images/app/card-app.jpg" alt="App mobile - Interfaz moderna" width="800" height="500" loading="lazy">
                   <span class="card-badge">App Mobile</span>
                   <div class="card-overlay">
                     <span class="card-cta">Ver caso de estudio →</span>
@@ -141,7 +141,7 @@
             <router-link to="/ecommerce" class="project-slide">
               <div class="card">
                 <div class="card-image">
-                  <img src="/assets/images/thumbnails/thumb-ecommerce.jpg" alt="Rediseño de e-commerce - Dashboard analytics" width="800" height="500" loading="lazy">
+                  <img src="/assets/images/ecommerce/card-ecommerce.jpg" alt="Rediseño de e-commerce - Dashboard analytics" width="800" height="500" loading="lazy">
                   <span class="card-badge">E-commerce</span>
                   <div class="card-overlay">
                     <span class="card-cta">Ver caso de estudio →</span>
@@ -161,7 +161,7 @@
             <router-link to="/xentral-health" class="project-slide">
               <div class="card">
                 <div class="card-image">
-                  <img src="/assets/images/thumbnails/thumb-xentral.jpg" alt="Xentral Health - Telemedicina para viajeros" width="800" height="500" loading="lazy">
+                  <img src="/assets/images/xentral-health/card-xentral.jpg" alt="Xentral Health - Telemedicina para viajeros" width="800" height="500" loading="lazy">
                   <span class="card-badge">Telemedicina</span>
                   <div class="card-overlay">
                     <span class="card-cta">Ver caso de estudio →</span>
