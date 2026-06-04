@@ -7,6 +7,7 @@
       aria-hidden="true"
     ></div>
     <div
+      ref="menuRef"
       id="mobile-menu"
       class="mobile-menu"
       :class="{ open: mobileMenuOpen }"
@@ -22,10 +23,10 @@
       </button>
       <nav aria-label="Menú principal">
         <router-link to="/" @click="closeMobileMenu">Home</router-link>
-        <router-link to="/ecommerce" @click="closeMobileMenu">E-commerce</router-link>
         <router-link to="/app" @click="closeMobileMenu">App</router-link>
-        <router-link to="/xentral-health" @click="closeMobileMenu">Xentral Health</router-link>
-        <router-link to="/about" @click="closeMobileMenu">About</router-link>
+        <router-link to="/ecommerce" @click="closeMobileMenu">E-commerce</router-link>
+        <router-link to="/app-web" @click="closeMobileMenu">App Web</router-link>
+        <router-link to="/sobre-mi" @click="closeMobileMenu">Sobre mí</router-link>
         <router-link to="/contacto" @click="closeMobileMenu">Contacto</router-link>
       </nav>
     </div>

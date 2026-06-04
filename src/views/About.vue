@@ -1,13 +1,20 @@
 <template>
-  <main>
+  <div class="view-wrapper">
     <!-- HERO SECTION -->
-    <section class="about-hero section">
-      <div class="container">
+    <AuroraBg variant="hero" class="about-hero section">
+      <div class="container relative z-10">
         <div class="about-hero-grid md:grid-cols-2 md:gap-12 items-center">
           <div class="about-hero-content fade-in">
-            <span class="label">Sobre mí</span>
-            <h1 class="about-name">Yeison Alfonso</h1>
-            <p class="about-tagline text-xl md:text-2xl leading-relaxed">Product Designer con Maestría en UX/UI. Especialidad en conversión y experiencia de usuario. Diseño productos que generan resultados medibles.</p>
+            <span class="label text-violet-600">Product Designer · Bogotá</span>
+            <h1 class="font-display text-5xl md:text-6xl font-extrabold tracking-tight leading-[1.1] text-slate-950 mb-6">
+              Diseño
+              <span class="text-gradient-violet">productos</span>
+              que el negocio defiende con
+              <span class="font-light italic text-violet-600">números</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-600 mt-6 max-w-lg leading-relaxed drop-cap">
+              Product Designer con Maestría en UX/UI. Convierto complejidad en flujos medibles.
+            </p>
             <div class="about-meta">
               <span class="about-meta-item">
                 <MapPin :size="16" />
@@ -30,94 +37,88 @@
             </div>
           </div>
           <div class="about-photo-wrapper fade-in stagger-2 md:ml-auto">
-            <div class="about-photo-frame rounded-2xl overflow-hidden">
+            <div class="about-photo-frame rounded-2xl overflow-hidden shadow-glow-violet">
               <img src="/assets/images/about/yeison-profile.png" alt="Yeison Alfonso - Product Designer UX/UI" class="about-photo" width="600" height="750" fetchpriority="high" decoding="async">
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </AuroraBg>
 
-    <!-- IMPACT METRICS -->
-    <section class="section metrics-section-dark">
-      <div class="container">
-        <div class="about-metrics-grid fade-in">
-          <div class="about-metric-item">
-            <span class="about-metric-number">+4x</span>
-            <span class="about-metric-label">Ingresos en proyectos de e-commerce</span>
+    <!-- IMPACT METRICS - RAW -->
+    <AuroraBg variant="dark" class="py-24">
+      <div class="max-w-6xl mx-auto px-6 relative z-10">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
+          <div class="text-center">
+            <span class="font-display text-5xl md:text-7xl font-black text-gradient-blue tracking-tighter block leading-[0.85]">+4x</span>
+            <span class="text-xs font-bold text-slate-400 uppercase tracking-widest mt-3 block">Ingresos en e-commerce</span>
           </div>
-          <div class="about-metric-item">
-            <span class="about-metric-number">4+</span>
-            <span class="about-metric-label">Años de experiencia</span>
+          <div class="text-center">
+            <span class="font-display text-5xl md:text-7xl font-black text-gradient-violet tracking-tighter block leading-[0.85]">4+</span>
+            <span class="text-xs font-bold text-slate-400 uppercase tracking-widest mt-3 block">Años de experiencia</span>
           </div>
-          <div class="about-metric-item">
-            <span class="about-metric-number">10+</span>
-            <span class="about-metric-label">Proyectos end-to-end</span>
+          <div class="text-center">
+            <span class="font-display text-5xl md:text-7xl font-black text-emerald-400 tracking-tighter block leading-[0.85]">10+</span>
+            <span class="text-xs font-bold text-slate-400 uppercase tracking-widest mt-3 block">Proyectos end-to-end</span>
           </div>
-          <div class="about-metric-item">
-            <span class="about-metric-number">2</span>
-            <span class="about-metric-label">Apps en producción</span>
+          <div class="text-center">
+            <span class="font-display text-5xl md:text-7xl font-black text-white tracking-tighter block leading-[0.85]">2</span>
+            <span class="text-xs font-bold text-slate-400 uppercase tracking-widest mt-3 block">Apps en producción</span>
           </div>
         </div>
       </div>
-    </section>
+    </AuroraBg>
 
     <!-- EXPERIENCE SECTION -->
     <section class="section section-alt">
       <div class="container">
         <div class="section-header fade-in">
           <span class="label">Trayectoria</span>
-          <h2>Experiencia Profesional</h2>
+          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-slate-950 mb-8">Experiencia Profesional</h2>
         </div>
 
-        <div class="experience-grid">
-          <div class="experience-card card">
-            <div class="experience-header">
-              <div class="experience-company">
-                <h3>Continental Assist</h3>
-                <span class="experience-period">Ago 2025 – Presente</span>
-              </div>
+        <div class="grid grid-cols-1 gap-6">
+          <div class="card-elevated--violet p-8 md:p-10">
+            <div class="flex items-start justify-between mb-4">
+              <h3 class="text-lg font-bold text-slate-900">Continental Assist</h3>
+              <span class="inline-block px-3 py-1 bg-violet-100 text-violet-700 text-[11px] font-bold uppercase tracking-widest rounded-full">Actual</span>
             </div>
-            <p class="experience-role">Product Designer</p>
-            <p class="experience-desc">Liderando el rediseño de la plataforma de asistencia. Mobile-first, enfoque en conversión y experiencia de usuario.</p>
-            <div class="experience-tags">
-              <span class="experience-tag">UX Research</span>
-              <span class="experience-tag">UI Design</span>
-              <span class="experience-tag">Prototyping</span>
-              <span class="experience-tag">A/B Testing</span>
+            <p class="text-sm font-semibold text-violet-700 mb-2">Product Designer</p>
+            <p class="text-sm text-slate-600 leading-relaxed mb-4">De 0.82% a 3.8% de conversión. Lidero el rediseño mobile-first de la plataforma de asistencia.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="inline-block px-3 py-1 bg-violet-50 text-violet-700 text-[11px] font-bold uppercase tracking-widest rounded-full">UX Research</span>
+              <span class="inline-block px-3 py-1 bg-violet-50 text-violet-700 text-[11px] font-bold uppercase tracking-widest rounded-full">UI Design</span>
+              <span class="inline-block px-3 py-1 bg-violet-50 text-violet-700 text-[11px] font-bold uppercase tracking-widest rounded-full">Prototyping</span>
+              <span class="inline-block px-3 py-1 bg-violet-50 text-violet-700 text-[11px] font-bold uppercase tracking-widest rounded-full">A/B Testing</span>
             </div>
           </div>
 
-          <div class="experience-card card">
-            <div class="experience-header">
-              <div class="experience-company">
-                <h3>ASSA ABLOY (YALE)</h3>
-                <span class="experience-period">Feb 2024 – Jun 2024</span>
-              </div>
+          <div class="card-elevated--blue p-8 md:p-10">
+            <div class="flex items-start justify-between mb-4">
+              <h3 class="text-lg font-bold text-slate-900">ASSA ABLOY (YALE)</h3>
+              <span class="text-xs font-medium text-slate-400">Feb 2024 – Jun 2024</span>
             </div>
-            <p class="experience-role">Diseñador UX/UI</p>
-            <p class="experience-desc">Diseño IoT y experiencia mobile. Validación heurística y testing con usuarios reales.</p>
-            <div class="experience-tags">
-              <span class="experience-tag">IoT Design</span>
-              <span class="experience-tag">Mobile App</span>
-              <span class="experience-tag">Design System</span>
+            <p class="text-sm font-semibold text-blue-700 mb-2">Diseñador UX/UI</p>
+            <p class="text-sm text-slate-600 leading-relaxed mb-4">Diseñé la experiencia mobile de cerraduras inteligentes IoT. Testing con usuarios reales para validar cada flujo.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="inline-block px-3 py-1 bg-blue-50 text-blue-700 text-[11px] font-bold uppercase tracking-widest rounded-full">IoT Design</span>
+              <span class="inline-block px-3 py-1 bg-blue-50 text-blue-700 text-[11px] font-bold uppercase tracking-widest rounded-full">Mobile App</span>
+              <span class="inline-block px-3 py-1 bg-blue-50 text-blue-700 text-[11px] font-bold uppercase tracking-widest rounded-full">Design System</span>
             </div>
           </div>
 
-          <div class="experience-card card">
-            <div class="experience-header">
-              <div class="experience-company">
-                <h3>Azzorti (Dupree)</h3>
-                <span class="experience-period">Feb 2021 – Ago 2025</span>
-              </div>
+          <div class="card-elevated--emerald p-8 md:p-10">
+            <div class="flex items-start justify-between mb-4">
+              <h3 class="text-lg font-bold text-slate-900">Azzorti (Dupree)</h3>
+              <span class="text-xs font-medium text-slate-400">Feb 2021 – Ago 2025</span>
             </div>
-            <p class="experience-role">Diseñador Gráfico</p>
-            <p class="experience-desc">Diseño de marca, material POP y gestión de redes sociales. Gestión de identidad visual para 5 países.</p>
-            <div class="experience-tags">
-              <span class="experience-tag">Branding</span>
-              <span class="experience-tag">Social Media</span>
-              <span class="experience-tag">Print</span>
-              <span class="experience-tag">Packaging</span>
+            <p class="text-sm font-semibold text-emerald-700 mb-2">Diseñador Gráfico</p>
+            <p class="text-sm text-slate-600 leading-relaxed mb-4">Diseñé la identidad visual de la marca desplegada en 5 países. Gestión integral de branding, redes y material impreso.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="inline-block px-3 py-1 bg-emerald-50 text-emerald-700 text-[11px] font-bold uppercase tracking-widest rounded-full">Branding</span>
+              <span class="inline-block px-3 py-1 bg-emerald-50 text-emerald-700 text-[11px] font-bold uppercase tracking-widest rounded-full">Social Media</span>
+              <span class="inline-block px-3 py-1 bg-emerald-50 text-emerald-700 text-[11px] font-bold uppercase tracking-widest rounded-full">Print</span>
+              <span class="inline-block px-3 py-1 bg-emerald-50 text-emerald-700 text-[11px] font-bold uppercase tracking-widest rounded-full">Packaging</span>
             </div>
           </div>
         </div>
@@ -146,29 +147,29 @@
       <div class="container">
         <div class="section-header fade-in">
           <span class="label">Formación</span>
-          <h2>Educación</h2>
+          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-slate-950 mb-8">Educación</h2>
         </div>
 
-        <div class="education-grid">
-          <div class="education-card card">
-            <div class="education-icon">
-              <GraduationCap :size="20" />
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="card-elevated--violet p-8 md:p-10 flex items-start gap-5">
+            <div class="w-12 h-12 bg-violet-100 rounded-xl flex items-center justify-center shrink-0">
+              <GraduationCap :size="22" class="text-violet-600" />
             </div>
-            <div class="education-content">
-              <h4>Máster en Diseño UX/UI</h4>
-              <p class="education-school">Universidad Internacional de La Rioja – España</p>
-              <span class="education-year">2023–2024</span>
+            <div>
+              <h4 class="font-bold text-slate-900 text-base mb-1">Máster en Diseño UX/UI</h4>
+              <p class="text-sm text-slate-600">Universidad Internacional de La Rioja – España</p>
+              <span class="text-xs font-medium text-slate-400 mt-1 block">2023–2024</span>
             </div>
           </div>
 
-          <div class="education-card card">
-            <div class="education-icon">
-              <Palette :size="20" />
+          <div class="card-elevated--emerald p-8 md:p-10 flex items-start gap-5">
+            <div class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center shrink-0">
+              <Palette :size="22" class="text-emerald-600" />
             </div>
-            <div class="education-content">
-              <h4>Diseño Gráfico Profesional</h4>
-              <p class="education-school">Escuela de Artes y Letras – Bogotá</p>
-              <span class="education-year">2018</span>
+            <div>
+              <h4 class="font-bold text-slate-900 text-base mb-1">Diseño Gráfico Profesional</h4>
+              <p class="text-sm text-slate-600">Escuela de Artes y Letras – Bogotá</p>
+              <span class="text-xs font-medium text-slate-400 mt-1 block">2018</span>
             </div>
           </div>
         </div>
@@ -179,76 +180,55 @@
     <section class="section section-alt">
       <div class="container">
         <div class="section-header fade-in">
-          <span class="label">Capacidades</span>
-          <h2>Habilidades</h2>
+          <span class="label">Stack</span>
+          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-slate-950 mb-8">Habilidades</h2>
         </div>
 
-        <div class="skills-3-pillars fade-in">
-          <!-- UX/UI Design Pillar -->
-          <div class="skill-pillar">
-            <div class="skill-pillar-icon">
-              <PenTool :size="24" />
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 fade-in">
+          <!-- UX/UI Design Pillar (Opción Principal) -->
+          <div class="card-elevated--violet p-8 md:p-10">
+            <div class="w-12 h-12 bg-violet-100 rounded-xl flex items-center justify-center mb-5">
+              <PenTool :size="22" class="text-violet-600" />
             </div>
-            <h4 class="skill-pillar-title">UX/UI Design</h4>
-            <div class="skill-pillar-list">
-              <span class="skill-badge flex items-center gap-2">
-                <svg class="w-3 h-3" viewBox="0 0 24 24" fill="currentColor"><path d="M15.85 15.85c-.47-.47-1.24-.47-1.24-2.36V3.9l1.42-1.42a1.52 1.52 0 0 1 2.12 0c.59.59.59 1.54 0 2.12l-.59.59 1.77 1.77-8.63 8.63-1.77-1.77 1.06-1.06c.59-.59 1.54-.59 2.12 0 .59.59.59 1.54 0 2.12l-.59.59zM3 21.25V12l7.25-7.25L12 6l-9 9 1.5 1.5-4.5 4.5c-.47.47-.47 1.24.35 2.12l1.77 1.77c.47.47 1.24.47 1.24 2.36V22H3z"/></svg>
-                Figma
-              </span>
-              <span class="skill-badge flex items-center gap-2">
-                <svg class="w-3 h-3" viewBox="0 0 24 24" fill="currentColor"><path d="M19.5 6h-15A1.5 1.5 0 0 0 3 7.5v9A1.5 1.5 0 0 0 4.5 18h15a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 19.5 6zM5 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0zm3.5 4.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm4.5-1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm3-4.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm1.5-1.5a1 1 0 1 1 2 0 1 1 0 0 1-2 0z"/></svg>
-                Adobe XD
-              </span>
-              <span class="skill-badge">Research</span>
-              <span class="skill-badge">Architecture</span>
-              <span class="skill-badge">User flows</span>
-              <span class="skill-badge">Wireframes</span>
-              <span class="skill-badge">Testing</span>
+            <h4 class="font-bold text-slate-900 text-base mb-4">UX/UI Design</h4>
+            <div class="flex flex-wrap gap-2">
+              <span class="inline-block px-3 py-1 bg-violet-50 text-violet-700 text-[11px] font-bold uppercase tracking-widest rounded-full">Figma</span>
+              <span class="inline-block px-3 py-1 bg-violet-50 text-violet-700 text-[11px] font-bold uppercase tracking-widest rounded-full">Adobe XD</span>
+              <span class="inline-block px-3 py-1 bg-violet-50 text-violet-700 text-[11px] font-bold uppercase tracking-widest rounded-full">Research</span>
+              <span class="inline-block px-3 py-1 bg-violet-50 text-violet-700 text-[11px] font-bold uppercase tracking-widest rounded-full">Architecture</span>
+              <span class="inline-block px-3 py-1 bg-violet-50 text-violet-700 text-[11px] font-bold uppercase tracking-widest rounded-full">User flows</span>
+              <span class="inline-block px-3 py-1 bg-violet-50 text-violet-700 text-[11px] font-bold uppercase tracking-widest rounded-full">Wireframes</span>
+              <span class="inline-block px-3 py-1 bg-violet-50 text-violet-700 text-[11px] font-bold uppercase tracking-widest rounded-full">Testing</span>
             </div>
           </div>
 
-          <!-- Research Pillar -->
-          <div class="skill-pillar">
-            <div class="skill-pillar-icon">
-              <BarChart2 :size="24" />
+          <!-- Research Pillar (Opción Principal) -->
+          <div class="card-elevated--blue p-8 md:p-10">
+            <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-5">
+              <BarChart2 :size="22" class="text-blue-600" />
             </div>
-            <h4 class="skill-pillar-title">Research</h4>
-            <div class="skill-pillar-list">
-              <span class="skill-badge flex items-center gap-2">
-                <svg class="w-3 h-3" viewBox="0 0 24 24" fill="currentColor"><path d="M21.75 14v-5.25c0-.89-.57-1.71-1.48-2.03l-3.38-1.2c-.13-.05-.27-.1-.4-.1H7.78L5.84 2.57A2.99 2.99 0 0 0 3.4 0H.6c-.66 0-1.2.54-1.2 1.2v4.95c0 .66.54 1.2 1.2 1.2h1.8v9.9c0 .66.54 1.2 1.2 1.2h3.9c.66 0 1.2-.54 1.2-1.2v-4.8h7.5l1.95 3.25c.13.22.37.36.62.36h2.93c.66 0 1.2-.54 1.2-1.2V15c0-.66-.54-1.2-1.2-1.2h-2.1zM6 15a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/></svg>
-                Analytics
-              </span>
-              <span class="skill-badge flex items-center gap-2">
-                <svg class="w-3 h-3" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-                A/B Testing
-              </span>
-              <span class="skill-badge flex items-center gap-2">
-                <svg class="w-3 h-3" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
-                Clarity
-              </span>
-              <span class="skill-badge">User research</span>
-              <span class="skill-badge">Hotjar</span>
+            <h4 class="font-bold text-slate-900 text-base mb-4">Research</h4>
+            <div class="flex flex-wrap gap-2">
+              <span class="inline-block px-3 py-1 bg-blue-50 text-blue-700 text-[11px] font-bold uppercase tracking-widest rounded-full">Analytics</span>
+              <span class="inline-block px-3 py-1 bg-blue-50 text-blue-700 text-[11px] font-bold uppercase tracking-widest rounded-full">A/B Testing</span>
+              <span class="inline-block px-3 py-1 bg-blue-50 text-blue-700 text-[11px] font-bold uppercase tracking-widest rounded-full">Clarity</span>
+              <span class="inline-block px-3 py-1 bg-blue-50 text-blue-700 text-[11px] font-bold uppercase tracking-widest rounded-full">User research</span>
+              <span class="inline-block px-3 py-1 bg-blue-50 text-blue-700 text-[11px] font-bold uppercase tracking-widest rounded-full">Hotjar</span>
             </div>
           </div>
 
-          <!-- Development Pillar -->
-          <div class="skill-pillar">
-            <div class="skill-pillar-icon">
-              <Code2 :size="24" />
+          <!-- Development Pillar (Opción Principal) -->
+          <div class="card-elevated--emerald p-8 md:p-10">
+            <div class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center mb-5">
+              <Code2 :size="22" class="text-emerald-600" />
             </div>
-            <h4 class="skill-pillar-title">Development</h4>
-            <div class="skill-pillar-list">
-              <span class="skill-badge flex items-center gap-2">
-                <svg class="w-3 h-3" viewBox="0 0 24 24" fill="currentColor"><path d="M3 3h18v2H3V3zm0 4h18v2H3V7zm0 4h12v2H3v-2zm0 4h18v2H3v-2zm0 4h12v2H3v-2z"/></svg>
-                HTML/CSS
-              </span>
-              <span class="skill-badge flex items-center gap-2">
-                <svg class="w-3 h-3" viewBox="0 0 24 24" fill="currentColor"><path d="M8 11h3v10h2V11h3l-4-4-4 4zM4 3v2h16V3H4z"/></svg>
-                Vue.js
-              </span>
-              <span class="skill-badge">Figma to code</span>
-              <span class="skill-badge">Dev collaboration</span>
-              <span class="skill-badge">Prototyping</span>
+            <h4 class="font-bold text-slate-900 text-base mb-4">Development</h4>
+            <div class="flex flex-wrap gap-2">
+              <span class="inline-block px-3 py-1 bg-emerald-50 text-emerald-700 text-[11px] font-bold uppercase tracking-widest rounded-full">HTML/CSS</span>
+              <span class="inline-block px-3 py-1 bg-emerald-50 text-emerald-700 text-[11px] font-bold uppercase tracking-widest rounded-full">Vue.js</span>
+              <span class="inline-block px-3 py-1 bg-emerald-50 text-emerald-700 text-[11px] font-bold uppercase tracking-widest rounded-full">Figma to code</span>
+              <span class="inline-block px-3 py-1 bg-emerald-50 text-emerald-700 text-[11px] font-bold uppercase tracking-widest rounded-full">Dev collab</span>
+              <span class="inline-block px-3 py-1 bg-emerald-50 text-emerald-700 text-[11px] font-bold uppercase tracking-widest rounded-full">Prototyping</span>
             </div>
           </div>
         </div>
@@ -256,29 +236,40 @@
     </section>
 
     <!-- CTA SECTION -->
-    <section class="section about-cta">
-      <div class="container">
-        <div class="cta-box fade-in">
-          <h2>¿Hablamos?</h2>
-          <p>Disponible para roles de Product Design, UX/UI Design y proyectos donde el diseño pueda generar impacto medible.</p>
-          <div class="cta-buttons">
-            <router-link to="/contacto" class="btn btn-accent">
-              <Mail :size="18" />
-              Contactar
-            </router-link>
-            <a href="/assets/cv-yeison-alfonso.html" target="_blank" class="btn btn-secondary">
-              <Download :size="18" />
-              Descargar CV
-            </a>
-          </div>
+    <AuroraBg variant="dark" class="py-32">
+      <div class="max-w-4xl mx-auto text-center px-6 relative z-10">
+        <h2 class="font-display text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-6 leading-[1.1]">
+          ¿Te
+          <span class="text-gradient-mixed">sumas</span>?
+        </h2>
+        <p class="text-lg text-slate-300 mb-10 max-w-xl mx-auto leading-relaxed">
+          Disponible para proyectos. Respondo en 24h.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+          <router-link
+            to="/contacto"
+            class="inline-flex items-center gap-2 px-8 py-4 bg-violet-600 text-white font-semibold rounded-full shadow-glow-violet-lg hover:shadow-glow-violet hover:bg-violet-500 hover:scale-[1.02] transition-all duration-200"
+          >
+            <Mail :size="18" />
+            Iniciar conversación
+          </router-link>
+          <a
+            href="/assets/cv-yeison-alfonso.html"
+            target="_blank"
+            class="inline-flex items-center gap-3 px-6 py-3.5 bg-white/10 backdrop-blur-sm text-white font-semibold rounded-full border border-white/20 hover:bg-white/20 hover:scale-[1.02] transition-all duration-200"
+          >
+            <Download :size="18" />
+            Descargar CV
+          </a>
         </div>
       </div>
-    </section>
-  </main>
+    </AuroraBg>
+  </div>
 </template>
 
 <script setup>
 import { MapPin, GraduationCap, Palette, BarChart2, Code2, PenTool, Mail, Download } from 'lucide-vue-next'
 import { useScrollAnimations } from '@/composables/useScrollAnimations'
+import AuroraBg from '@/components/primitives/AuroraBg.vue'
 useScrollAnimations()
 </script>

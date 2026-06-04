@@ -1,162 +1,145 @@
 <template>
-  <main>
-    <!-- HERO SECTION -->
-    <section class="case-hero section app-hero">
-      <div class="container">
-        <div class="case-hero-balanced-grid">
-          <div class="case-header-content fade-in">
-            <span class="case-badge"><Layers :size="14" class="icon-prefix" />Diseño de producto</span>
-            <h1 class="case-hero-title">App de asistencia en viajes: de concepto a producción</h1>
-            <span class="product-badge app-badge">Continental Assist</span>
-            <p class="case-hero-subtitle">De una app con 97% de abandono en 7 días a 2 apps funcionando. Cómo diseñamos una experiencia que los viajeros usan.</p>
-          </div>
-          <div class="case-header-metrics fade-in stagger-1 grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="p-8 bg-white border border-slate-200 rounded-3xl shadow-sm flex flex-col justify-center">
-              <span class="text-5xl font-black text-slate-900 mb-2">2</span>
-              <span class="text-sm font-semibold text-slate-500 uppercase tracking-widest">Personas definidas</span>
-            </div>
-            <div class="p-8 bg-white border border-slate-200 rounded-3xl shadow-sm flex flex-col justify-center">
-              <span class="text-5xl font-black text-slate-900 mb-2">5</span>
-              <span class="text-sm font-semibold text-slate-500 uppercase tracking-widest">Funcionalidades core</span>
-            </div>
-            <div class="p-8 bg-white border border-slate-200 rounded-3xl shadow-sm flex flex-col justify-center">
-              <span class="text-5xl font-black text-slate-900 mb-2">2</span>
-              <span class="text-sm font-semibold text-slate-500 uppercase tracking-widest">Apps nativas (iOS + Android)</span>
-            </div>
-          </div>
+  <div class="view-wrapper">
+    <!-- 1. HERO SECTION -->
+    <AuroraBg variant="hero" class="case-hero section app-hero">
+  <div class="w-full max-w-6xl mx-auto px-6 pt-20 pb-12 relative z-10">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+      <div class="lg:col-span-7 flex flex-col items-start">
+        <div class="flex items-center gap-2 mb-6">
+          <svg class="w-5 h-5 text-violet-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"></path></svg>
+          <span class="text-xs font-bold text-violet-600 uppercase tracking-widest">Diseño de Producto</span>
         </div>
-        <div class="hero-visual fade-in stagger-2">
-          <img src="/assets/images/app/hero-app-lifestyle.jpg" alt="App mobile moderna con interfaz premium" width="1400" height="800" fetchpriority="high" decoding="async">
-        </div>
+        <h1 class="font-display text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.05] text-slate-950 mb-6">
+          App de asistencia en viajes: de
+          <span class="font-light italic text-violet-600">concepto</span>
+          a
+          <span class="text-gradient-violet">producción</span>
+        </h1>
+        <span class="inline-block px-4 py-1.5 bg-violet-600 text-white font-bold text-xs uppercase tracking-widest rounded-full shadow-glow-violet">
+          Continental Assist
+        </span>
       </div>
-    </section>
 
-    <!-- CONTEXTO DEL PROYECTO -->
-    <section class="py-16 md:py-24">
-      <div class="container">
-        <div class="project-context fade-in">
-          <div class="context-grid">
-            <div class="context-item">
-              <span class="context-label">Rol</span>
-              <h4>Product Designer</h4>
-            </div>
-            <div class="context-item">
-              <span class="context-label">Duración</span>
-              <h4>5 meses</h4>
-            </div>
-            <div class="context-item">
-              <span class="context-label">Equipo</span>
-              <h4>1 dev (Android + iOS)</h4>
-            </div>
-            <div class="context-item wide">
-              <span class="context-label">Responsabilidades</span>
-              <p>UX Research, Benchmark, Arquitectura de Información, Design System, UI, Prototipado y Testing</p>
-            </div>
+      <div class="lg:col-span-5 flex flex-col mt-4 lg:mt-0 lg:border-l border-slate-200 lg:pl-10">
+        <p class="text-xl text-slate-600 leading-relaxed mb-10 drop-cap">
+          De 97% de abandono a 2 apps en producción. Una experiencia que los viajeros usan.
+        </p>
+
+        <div class="grid grid-cols-2 gap-x-6 gap-y-8">
+          <div>
+            <span class="block text-xl font-bold text-slate-950">Product Designer</span>
+            <span class="text-[11px] font-bold text-slate-500 uppercase tracking-widest mt-1">Mi Rol</span>
+          </div>
+          <div>
+            <span class="block text-xl font-bold text-slate-950">5 Meses</span>
+            <span class="text-[11px] font-bold text-slate-500 uppercase tracking-widest mt-1">Duración</span>
+          </div>
+          <div>
+            <span class="block text-xl font-bold text-slate-950">PM + 2 Devs</span>
+            <span class="text-[11px] font-bold text-slate-500 uppercase tracking-widest mt-1">Equipo</span>
+          </div>
+          <div>
+            <span class="block text-xl font-black text-emerald-600">+35% Activación</span>
+            <span class="text-[11px] font-bold text-slate-500 uppercase tracking-widest mt-1">Impacto</span>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+  <div class="hero-visual fade-in stagger-2 mt-12 relative z-10">
+    <img src="/assets/images/app/hero-app-lifestyle.jpg" alt="App mobile moderna con interfaz premium" width="1400" height="800" fetchpriority="high" decoding="async">
+  </div>
+</AuroraBg>
 
-    <!-- EL PROBLEMA -->
-    <section class="py-16 md:py-24 section-alt">
-      <div class="container">
-        <div class="section-header fade-in">
+    <!-- 3. EL PROBLEMA (ANTES) -->
+    <section class="case-section section-alt">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="section-header fade-in mb-12">
           <span class="section-number">01</span>
-          <h2>Por qué nadie usaba la app</h2>
-          <p class="section-intro">La empresa tenía una app que nadie usaba. Los usuarios mostraban métricas de abandono críticas.</p>
+          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-slate-950 mb-8">Por qué nadie usaba la app</h2>
+          <p class="section-intro">Identifiqué 5 barreras de adopción mediante investigación con usuarios.</p>
         </div>
 
-        <div class="problems-grid fade-in stagger-1">
-          <div class="problem-card transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
-            <div class="problem-icon">
-              <TrendingDown :size="24" />
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 fade-in stagger-1">
+          <div class="bg-white p-8 md:p-10 rounded-[2rem] border border-slate-200/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+            <div class="text-slate-700 mb-4">
+              <TrendingDown :size="22" />
             </div>
-            <h3 class="text-xl font-bold text-slate-900 mb-3">Retención casi nula</h3>
-            <p class="text-lg text-slate-600 leading-relaxed">Día 1: 1.5%, Día 7: 0.1%. Los usuarios no volvían después del primer uso.</p>
-            <div class="problem-annotation">
-              <span class="annotation-marker"></span>
-              <span>Caída del 93% en 7 días</span>
-            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Retención casi nula</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">1.5% día 1. 0.1% día 7. Nadie volvía.</p>
           </div>
 
-          <div class="problem-card transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
-            <div class="problem-icon">
-              <Bug :size="24" />
+          <div class="bg-white p-8 md:p-10 rounded-[2rem] border border-slate-200/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+            <div class="text-slate-700 mb-4">
+              <Bug :size="22" />
             </div>
-            <h3 class="text-xl font-bold text-slate-900 mb-3">Errores críticos en iOS</h3>
-            <p class="text-lg text-slate-600 leading-relaxed">997 errores registrados en la versión 2.2.1, afectando la estabilidad del servicio.</p>
-            <div class="problem-annotation">
-              <span class="annotation-marker"></span>
-              <span>App inutilizable</span>
-            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Errores críticos en iOS</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">997 errores en versión 2.2.1. App inestable.</p>
           </div>
 
-          <div class="problem-card transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
-            <div class="problem-icon">
-              <Split :size="24" />
+          <div class="bg-white p-8 md:p-10 rounded-[2rem] border border-slate-200/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+            <div class="text-slate-700 mb-4">
+              <Split :size="22" />
             </div>
-            <h3 class="text-xl font-bold text-slate-900 mb-3">Servicios dispersos</h3>
-            <p class="text-lg text-slate-600 leading-relaxed">Múltiples canales y plataformas sin centralización. Los usuarios dependían de terceros.</p>
-            <div class="problem-annotation">
-              <span class="annotation-marker"></span>
-              <span>Sin experiencia unificada</span>
-            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Servicios dispersos</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">Asistencia, wallet y telemedicina en silos sin conexión entre sí.</p>
           </div>
 
-          <div class="problem-card transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
-            <div class="problem-icon">
-              <UserX :size="24" />
+          <div class="bg-white p-8 md:p-10 rounded-[2rem] border border-slate-200/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+            <div class="text-slate-700 mb-4">
+              <UserX :size="22" />
             </div>
-            <h3 class="text-xl font-bold text-slate-900 mb-3">Sin adopción</h3>
-            <p class="text-lg text-slate-600 leading-relaxed">La app no resolvía necesidades reales. Los usuarios preferían canales tradicionales.</p>
-            <div class="problem-annotation">
-              <span class="annotation-marker"></span>
-              <span>0 valor percibido</span>
-            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Sin adopción</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">No resolvía necesidades reales. Preferían canales tradicionales.</p>
           </div>
 
-          <div class="problem-card transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
-            <div class="problem-icon">
-              <Smartphone :size="24" />
+          <div class="bg-white p-8 md:p-10 rounded-[2rem] border border-slate-200/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+            <div class="text-slate-700 mb-4">
+              <Smartphone :size="22" />
             </div>
-            <h3 class="text-xl font-bold text-slate-900 mb-3">Experiencia desktop-first</h3>
-            <p class="text-lg text-slate-600 leading-relaxed">La app mobile era una adaptación, no una experiencia pensada para el contexto de viaje.</p>
-            <div class="problem-annotation">
-              <span class="annotation-marker"></span>
-              <span>Fricción constante</span>
-            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Experiencia desktop-first</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">Adaptación mobile, no experiencia nativa de viaje.</p>
           </div>
         </div>
 
-        <div class="ui-comparison fade-in stagger-2">
+<!-- UI Antes -->
+        <div class="ui-comparison fade-in stagger-2 mt-12">
           <div class="ui-label">
             <span class="ui-label-badge">APP ANTERIOR</span>
           </div>
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full max-w-6xl mx-auto mt-16">
-            <div class="ui-image-wrapper">
-              <img src="/assets/images/app/mockup-app-comparacion.jpg" alt="Comparación UI app antes y después" class="w-full rounded-2xl border border-slate-200 shadow-md object-cover aspect-[4/3]">
+
+          <!-- Phones: larger, full-bleed on its own row -->
+          <div class="ui-image-wrapper relative mt-8 max-w-5xl mx-auto">
+            <img
+              src="/assets/images/app/app-before.png"
+              alt="Comparación UI app antes y después"
+              class="w-full h-auto rounded-2xl"
+              loading="lazy"
+              decoding="async"
+            >
+          </div>
+
+          <!-- Observations moved below for more breathing room -->
+          <div class="ui-observations grid grid-cols-1 md:grid-cols-3 gap-4 mt-10 max-w-5xl mx-auto">
+            <div class="observation-item flex gap-4 bg-white p-5 rounded-[2rem] border border-slate-200/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+              <div class="observation-number w-9 h-9 rounded-full bg-slate-200 text-slate-700 flex items-center justify-center font-bold text-base shrink-0">1</div>
+              <div class="observation-text">
+                <h4 class="text-base font-bold text-slate-900 mb-1">Navegación confusa</h4>
+                <p class="text-sm text-slate-600">Usuarios perdidos. Sin jerarquía.</p>
+              </div>
             </div>
-            <div class="ui-observations space-y-6">
-              <div class="observation-item flex gap-5 p-5 bg-white rounded-xl border border-slate-100 shadow-sm">
-                <div class="observation-number w-10 h-10 rounded-full bg-slate-200 text-slate-700 flex items-center justify-center font-bold text-lg shrink-0">1</div>
-                <div class="observation-text">
-                  <h4 class="text-lg font-bold text-slate-900 mb-2">Navegación confusa</h4>
-                  <p class="text-lg text-slate-600 leading-relaxed">Los usuarios no encontraban lo que necesitaban. Estructura sin jerarquía clara.</p>
-                </div>
+            <div class="observation-item flex gap-4 bg-white p-5 rounded-[2rem] border border-slate-200/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+              <div class="observation-number w-9 h-9 rounded-full bg-slate-200 text-slate-700 flex items-center justify-center font-bold text-base shrink-0">2</div>
+              <div class="observation-text">
+                <h4 class="text-base font-bold text-slate-900 mb-1">Sin feedback de estados</h4>
+                <p class="text-sm text-slate-600">Sin transparencia en vouchers ni coberturas.</p>
               </div>
-              <div class="observation-item flex gap-5 p-5 bg-white rounded-xl border border-slate-100 shadow-sm">
-                <div class="observation-number w-10 h-10 rounded-full bg-slate-200 text-slate-700 flex items-center justify-center font-bold text-lg shrink-0">2</div>
-                <div class="observation-text">
-                  <h4 class="text-lg font-bold text-slate-900 mb-2">Sin feedback de estados</h4>
-                  <p class="text-lg text-slate-600 leading-relaxed">No había transparencia en vouchers, reembolsos o coberturas activas.</p>
-                </div>
-              </div>
-              <div class="observation-item flex gap-5 p-5 bg-white rounded-xl border border-slate-100 shadow-sm">
-                <div class="observation-number w-10 h-10 rounded-full bg-slate-200 text-slate-700 flex items-center justify-center font-bold text-lg shrink-0">3</div>
-                <div class="observation-text">
-                  <h4 class="text-lg font-bold text-slate-900 mb-2">Interfaz genérica</h4>
-                  <p class="text-lg text-slate-600 leading-relaxed">No transmitía confianza ni experiencia premium. No se diferenciaba de la competencia.</p>
-                </div>
+            </div>
+            <div class="observation-item flex gap-4 bg-white p-5 rounded-[2rem] border border-slate-200/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+              <div class="observation-number w-9 h-9 rounded-full bg-slate-200 text-slate-700 flex items-center justify-center font-bold text-base shrink-0">3</div>
+              <div class="observation-text">
+                <h4 class="text-base font-bold text-slate-900 mb-1">Interfaz genérica</h4>
+                <p class="text-sm text-slate-600">Sin confianza ni diferenciación.</p>
               </div>
             </div>
           </div>
@@ -164,292 +147,172 @@
       </div>
     </section>
 
-    <!-- RESEARCH & INSIGHTS -->
-    <section class="py-16 md:py-24">
-      <div class="container">
-        <div class="section-header fade-in">
+    <!-- 4. RESEARCH & INSIGHTS -->
+    <section class="w-full bg-slate-50 py-24 border-y border-slate-100">
+      <div class="max-w-6xl mx-auto px-6">
+        <section class="case-section">
+          <div class="section-header fade-in mb-12">
           <span class="section-number">02</span>
-          <h2>Investigación y hallazgos</h2>
-          <p class="section-intro">La investigación reveló patrones claros de comportamiento que guiaron las decisiones de diseño.</p>
+          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-slate-950 mb-8">Investigación y hallazgos</h2>
+          <p class="section-intro">Los datos revelaron por qué los usuarios no volvían.</p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12 w-full max-w-6xl mx-auto">
-          <div class="bg-slate-50 p-8 md:p-10 rounded-3xl border border-slate-100">
-            <span class="inline-block px-4 py-1.5 bg-white text-indigo-600 font-bold text-xs uppercase tracking-widest rounded-full mb-6 shadow-sm">UX Insight</span>
-            <p class="text-lg md:text-xl text-slate-700 leading-relaxed font-medium">Las apps líderes del sector utilizan navegación bottom bar permanente para acceso rápido.</p>
+        <!-- Datos clave compactados -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10 fade-in stagger-1">
+          <div class="bg-white p-8 md:p-10 rounded-[2rem] border border-slate-200/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] text-center">
+            <span class="text-2xl font-black text-slate-900 block">97%</span>
+            <span class="text-xs font-semibold text-slate-500 uppercase tracking-widest">Abandono Día 7</span>
           </div>
-          <div class="bg-slate-50 p-8 md:p-10 rounded-3xl border border-slate-100">
-            <span class="inline-block px-4 py-1.5 bg-white text-rose-600 font-bold text-xs uppercase tracking-widest rounded-full mb-6 shadow-sm">User Pain</span>
-            <p class="text-lg md:text-xl text-slate-700 leading-relaxed font-medium">Los usuarios necesitan saber el estado de sus vouchers, coberturas y reembolsos en tiempo real.</p>
+          <div class="bg-white p-8 md:p-10 rounded-[2rem] border border-slate-200/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] text-center">
+            <span class="text-2xl font-black text-slate-900 block">997</span>
+            <span class="text-xs font-semibold text-slate-500 uppercase tracking-widest">Errores iOS</span>
           </div>
-          <div class="bg-slate-50 p-8 md:p-10 rounded-3xl border border-slate-100">
-            <span class="inline-block px-4 py-1.5 bg-white text-emerald-600 font-bold text-xs uppercase tracking-widest rounded-full mb-6 shadow-sm">Business Impact</span>
-            <p class="text-lg md:text-xl text-slate-700 leading-relaxed font-medium">La personalización basada en contexto aumenta el engagement y la percepción de valor.</p>
+          <div class="bg-white p-8 md:p-10 rounded-[2rem] border border-slate-200/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] text-center">
+            <span class="text-2xl font-black text-slate-900 block">1.5%</span>
+            <span class="text-xs font-semibold text-slate-500 uppercase tracking-widest">Retención Día 1</span>
           </div>
-          <div class="bg-slate-50 p-8 md:p-10 rounded-3xl border border-slate-100">
-            <span class="inline-block px-4 py-1.5 bg-white text-indigo-600 font-bold text-xs uppercase tracking-widest rounded-full mb-6 shadow-sm">UX Insight</span>
-            <p class="text-lg md:text-xl text-slate-700 leading-relaxed font-medium">El diseño minimalista premium transmite confianza y tecnológico en el sector travel.</p>
+          <div class="bg-white p-8 md:p-10 rounded-[2rem] border border-slate-200/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] text-center">
+            <span class="text-2xl font-black text-slate-900 block">0.1%</span>
+            <span class="text-xs font-semibold text-slate-500 uppercase tracking-widest">Retención Día 7</span>
           </div>
         </div>
 
-        <div class="section-header fade-in" style="margin-top: 64px;">
-          <span class="section-number">02</span>
-          <h2>User Personas</h2>
-          <p class="section-intro">Dos arquetipos definidos para guiar el diseño de la experiencia.</p>
+        <!-- Perfiles de Usuario compactos -->
+        <div class="section-header fade-in mb-6">
+          <span class="section-number">02b</span>
+          <h2 class="font-display text-xl font-bold tracking-tight text-slate-950 mb-6">Perfiles de Usuario</h2>
         </div>
 
-        <div class="personas-grid fade-in stagger-1">
-          <div class="persona-card transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
-            <div class="persona-header">
-              <div class="persona-avatar">LM</div>
-              <div class="persona-info">
-                <h3>Laura Méndez</h3>
-                <span class="persona-type">Viajera Frecuente</span>
-              </div>
-            </div>
-            <div class="persona-meta">
-              <span>35 años</span>
-              <span>Consultora internacional</span>
-              <span>Bogotá</span>
-            </div>
-            <div class="persona-section">
-              <h4>Necesidades</h4>
-              <ul>
-                <li>Acceso rápido a beneficios VIP</li>
-                <li>Telemedicina 24/7</li>
-                <li>Reembolsos simples</li>
-                <li>Todo centralizado</li>
-              </ul>
-            </div>
-            <div class="persona-section">
-              <h4>Frustraciones</h4>
-              <ul>
-                <li>Retrasos de vuelos</li>
-                <li>Procesos lentos</li>
-                <li>Tener múltiples plataformas</li>
-              </ul>
-            </div>
-            <div class="persona-goal">
-              <Target :size="16" />
-              <span>Viajar con tranquilidad y sin fricciones</span>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
+          <div class="bg-white p-8 md:p-10 rounded-[2rem] border border-slate-200/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] flex gap-4 items-start">
+            <div class="w-11 h-11 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center font-bold flex-shrink-0 text-sm">LM</div>
+            <div>
+              <h4 class="font-bold text-slate-900 text-sm">Laura Méndez - Viajera Frecuente</h4>
+              <p class="text-xs text-slate-500 mt-1">Necesita: Acceso rápido a beneficios VIP y procesos sin fricción.</p>
             </div>
           </div>
-
-          <div class="persona-card transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
-            <div class="persona-header">
-              <div class="persona-avatar rt">RT</div>
-              <div class="persona-info">
-                <h3>Ricardo Torres</h3>
-                <span class="persona-type">Ejecutivo Corporativo</span>
-              </div>
-            </div>
-            <div class="persona-meta">
-              <span>45 años</span>
-              <span>Gerente regional</span>
-              <span>Viajes internacionales</span>
-            </div>
-            <div class="persona-section">
-              <h4>Necesidades</h4>
-              <ul>
-                <li>Productividad durante el viaje</li>
-                <li>Beneficios automáticos</li>
-                <li>Procesos rápidos</li>
-                <li>Soporte confiable global</li>
-              </ul>
-            </div>
-            <div class="persona-section">
-              <h4>Frustraciones</h4>
-              <ul>
-                <li>Procesos manuales</li>
-                <li>Activaciones complejas</li>
-                <li>Retrasos que afectan reuniones</li>
-              </ul>
-            </div>
-            <div class="persona-goal">
-              <Target :size="16" />
-              <span>Mantener eficiencia y productividad mientras viaja</span>
+          <div class="bg-white p-8 md:p-10 rounded-[2rem] border border-slate-200/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] flex gap-4 items-start">
+            <div class="w-11 h-11 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold flex-shrink-0 text-sm">RT</div>
+            <div>
+              <h4 class="font-bold text-slate-900 text-sm">Ricardo Torres - Ejecutivo</h4>
+              <p class="text-xs text-slate-500 mt-1">Necesita: Mantener eficiencia, soporte confiable y respuestas rápidas.</p>
             </div>
           </div>
         </div>
-      </div>
+
+        <!-- Insights (Premium) -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 fade-in stagger-2">
+          <div class="bg-white p-8 md:p-10 rounded-[2rem] border border-slate-200/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+            <span class="inline-block px-3 py-1 bg-slate-200 text-slate-600 font-bold text-[11px] uppercase tracking-widest rounded-full mb-4">User Pain</span>
+            <p class="text-sm text-slate-700 leading-relaxed">La app no resolvía necesidades reales de viaje.</p>
+          </div>
+          <div class="bg-white p-8 md:p-10 rounded-[2rem] border border-slate-200/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+            <span class="inline-block px-3 py-1 bg-slate-200 text-slate-600 font-bold text-[11px] uppercase tracking-widest rounded-full mb-4">Business</span>
+            <p class="text-sm text-slate-700 leading-relaxed">997 errores iOS. Estabilidad era prerequisito, no diferenciador.</p>
+          </div>
+          <div class="bg-white p-8 md:p-10 rounded-[2rem] border border-slate-200/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+            <span class="inline-block px-3 py-1 bg-slate-200 text-slate-600 font-bold text-[11px] uppercase tracking-widest rounded-full mb-4">UX</span>
+            <p class="text-sm text-slate-700 leading-relaxed">Personalización por contexto aumenta engagement.</p>
+          </div>
+        </div>
+      </section>
+    </div>
     </section>
 
-    <!-- BENCHMARK -->
-    <section class="py-16 md:py-24 section-alt">
-      <div class="container">
-        <div class="section-header fade-in">
+    <!-- 5. BENCHMARK -->
+    <section class="case-section section-alt">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="section-header fade-in mb-12">
           <span class="section-number">03</span>
-          <h2>Aprendimos de los mejores</h2>
-          <p class="section-intro">Analizamos referentes del mercado travel para identificar patrones que funcionaban.</p>
+          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-slate-950 mb-8">Benchmark Competitivo</h2>
+          <p class="section-intro">Analicé 4 líderes del sector travel para identificar patrones ganadores.</p>
         </div>
 
-        <div class="benchmark-grid fade-in stagger-1">
-          <div class="benchmark-card transition-all duration-300 hover:-translate-y-1 hover:shadow-md p-8">
-            <div class="benchmark-logo">
-              <Plane :size="24" />
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 fade-in stagger-1">
+          <div class="bg-white p-8 md:p-10 rounded-[2rem] border border-slate-200/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+            <div class="text-slate-600 mb-4">
+              <Plane :size="28" />
             </div>
-            <h3 class="text-xl font-bold text-slate-900 mb-3">Avianca</h3>
-            <p class="text-lg text-slate-600 leading-relaxed mb-4">Navegación intuitiva y experiencia de viaje fluida.</p>
-            <div class="benchmark-insight bg-white p-4 rounded-xl border border-slate-100">
-              <span class="insight-from font-semibold">Aprendizaje:</span>
-              <p class="text-base text-slate-700 leading-relaxed mt-1">La navegación inferior persistente es el estándar de la industria travel.</p>
-            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-1">Avianca</h3>
+            <p class="text-sm text-slate-600 mb-3">Navegación intuitiva.</p>
+            <p class="text-xs text-slate-500"><strong>Aprendizaje:</strong> La navegación inferior persistente es el estándar de la industria travel.</p>
           </div>
 
-          <div class="benchmark-card transition-all duration-300 hover:-translate-y-1 hover:shadow-md p-8">
-            <div class="benchmark-logo">
-              <CreditCard :size="24" />
+          <div class="bg-white p-8 md:p-10 rounded-[2rem] border border-slate-200/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+            <div class="text-slate-600 mb-4">
+              <CreditCard :size="28" />
             </div>
-            <h3 class="text-xl font-bold text-slate-900 mb-3">Lifemiles</h3>
-            <p class="text-lg text-slate-600 leading-relaxed mb-4">Transparencia de estados, historial claro y trazable.</p>
-            <div class="benchmark-insight bg-white p-4 rounded-xl border border-slate-100">
-              <span class="insight-from font-semibold">Aprendizaje:</span>
-              <p class="text-base text-slate-700 leading-relaxed mt-1">Los usuarios necesitan saber exactamente el estado de sus beneficios.</p>
-            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-1">Lifemiles</h3>
+            <p class="text-sm text-slate-600 mb-3">Transparencia de estados.</p>
+            <p class="text-xs text-slate-500"><strong>Aprendizaje:</strong> Los usuarios necesitan saber exactamente el estado de sus beneficios.</p>
           </div>
 
-          <div class="benchmark-card transition-all duration-300 hover:-translate-y-1 hover:shadow-md p-8">
-            <div class="benchmark-logo">
-              <Calendar :size="24" />
+          <div class="bg-white p-8 md:p-10 rounded-[2rem] border border-slate-200/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+            <div class="text-slate-600 mb-4">
+              <Calendar :size="28" />
             </div>
-            <h3 class="text-xl font-bold text-slate-900 mb-3">Booking</h3>
-            <p class="text-lg text-slate-600 leading-relaxed mb-4">Diseño limpio, minimalista y fácil de escanear.</p>
-            <div class="benchmark-insight bg-white p-4 rounded-xl border border-slate-100">
-              <span class="insight-from font-semibold">Aprendizaje:</span>
-              <p class="text-base text-slate-700 leading-relaxed mt-1">Menos es más: interfaces claras reducen la carga cognitiva.</p>
-            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-1">Booking</h3>
+            <p class="text-sm text-slate-600 mb-3">Diseño limpio y minimalista.</p>
+            <p class="text-xs text-slate-500"><strong>Aprendizaje:</strong> Menos es más: interfaces claras reducen la carga cognitiva.</p>
           </div>
 
-          <div class="benchmark-card transition-all duration-300 hover:-translate-y-1 hover:shadow-md p-8">
-            <div class="benchmark-logo">
-              <Globe :size="24" />
+          <div class="bg-white p-8 md:p-10 rounded-[2rem] border border-slate-200/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+            <div class="text-slate-600 mb-4">
+              <Globe :size="28" />
             </div>
-            <h3 class="text-xl font-bold text-slate-900 mb-3">Despegar</h3>
-            <p class="text-lg text-slate-600 leading-relaxed mb-4">Flujos de cotización claros y proceso paso a paso.</p>
-            <div class="benchmark-insight bg-white p-4 rounded-xl border border-slate-100">
-              <span class="insight-from font-semibold">Aprendizaje:</span>
-              <p class="text-base text-slate-700 leading-relaxed mt-1">Los procesos deben ser lineales y mostrar progreso visible.</p>
-            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-1">Despegar</h3>
+            <p class="text-sm text-slate-600 mb-3">Flujos de cotización claros.</p>
+            <p class="text-xs text-slate-500"><strong>Aprendizaje:</strong> Los procesos deben ser lineales y mostrar progreso visible.</p>
           </div>
         </div>
 
-        <div class="benchmark-conclusion fade-in stagger-2">
-          <div class="conclusion-box">
-            <Lightbulb :size="20" class="icon-prefix" />
-            <p><strong>Conclusión:</strong> Navegación persistente + transparencia total + diseño minimalista = confianza y adopción.</p>
+        <div class="conclusion-box fade-in mt-8 bg-white p-8 md:p-10 rounded-[2rem] border border-slate-200/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+          <div class="flex items-start gap-3">
+            <Lightbulb :size="18" class="text-blue-600 mt-0.5 shrink-0" />
+            <p class="text-sm text-slate-700"><strong>Conclusión:</strong> Navegación persistente + transparencia total + diseño minimalista = confianza y adopción.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- INSIGHTS CLAVE DE LA INVESTIGACIÓN -->
-    <section class="py-20 md:py-24 bg-slate-50/50">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="mb-12 md:mb-16">
-          <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4 tracking-tight">
-            Insights Clave de la Investigación
-          </h2>
-          <p class="text-lg text-slate-600 max-w-3xl">
-            El análisis profundo de competidores directos como Heymondo y referentes del sector (Lifemiles, Booking, Avianca) definió los pilares estructurales de la nueva experiencia.
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-          <div class="group bg-white p-8 rounded-3xl border border-slate-100 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-            <div class="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center mb-6 text-blue-600 transition-colors duration-300 group-hover:bg-blue-600 group-hover:text-white">
-              <PanelBottom class="w-7 h-7" />
-            </div>
-            <h3 class="text-xl font-bold text-slate-900 mb-3">Navegación Inferior Persistente</h3>
-            <p class="text-slate-600 leading-relaxed">
-              Adoptamos este estándar de la industria para garantizar una navegación intuitiva. Centralizamos el acceso a Inicio, Asistencia de Emergencia y Perfil a un solo toque de distancia.
-            </p>
-          </div>
-
-          <div class="group bg-white p-8 rounded-3xl border border-slate-100 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-            <div class="w-14 h-14 bg-indigo-50 rounded-2xl flex items-center justify-center mb-6 text-indigo-600 transition-colors duration-300 group-hover:bg-indigo-600 group-hover:text-white">
-              <Search class="w-7 h-7" />
-            </div>
-            <h3 class="text-xl font-bold text-slate-900 mb-3">Transparencia en la Información</h3>
-            <p class="text-slate-600 leading-relaxed">
-              Inspirados en la claridad de Lifemiles, rediseñamos la arquitectura para mostrar historiales de transacciones, estados de pólizas y reclamaciones de forma directa y sin fricciones.
-            </p>
-          </div>
-
-          <div class="group bg-white p-8 rounded-3xl border border-slate-100 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-            <div class="w-14 h-14 bg-purple-50 rounded-2xl flex items-center justify-center mb-6 text-purple-600 transition-colors duration-300 group-hover:bg-purple-600 group-hover:text-white">
-              <Sparkles class="w-7 h-7" />
-            </div>
-            <h3 class="text-xl font-bold text-slate-900 mb-3">Personalización Activa</h3>
-            <p class="text-slate-600 leading-relaxed">
-              Aplicamos modelos de recomendación similares a Booking. La app ahora prioriza mostrar pólizas activas y sugerir servicios de valor basándose en el contexto del viaje actual del usuario.
-            </p>
-          </div>
-
-          <div class="group bg-white p-8 rounded-3xl border border-slate-100 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-            <div class="w-14 h-14 bg-emerald-50 rounded-2xl flex items-center justify-center mb-6 text-emerald-600 transition-colors duration-300 group-hover:bg-emerald-600 group-hover:text-white">
-              <LayoutTemplate class="w-7 h-7" />
-            </div>
-            <h3 class="text-xl font-bold text-slate-900 mb-3">Diseño Funcional y Limpio</h3>
-            <p class="text-slate-600 leading-relaxed">
-              Redujimos drásticamente la carga cognitiva. Los flujos críticos, como reportar un incidente médico o solicitar un reembolso, son ahora lineales, claros y libres de ruido visual.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ESTRATEGIA -->
-    <section class="py-16 md:py-24">
-      <div class="container">
-        <div class="section-header fade-in">
+    <!-- 6. ESTRATEGIA -->
+    <section class="case-section">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="section-header fade-in mb-12">
           <span class="section-number">04</span>
-          <h2>Estrategia</h2>
-          <p class="section-intro">Definimos principios de diseño claros para guiar cada decisión.</p>
+          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-slate-950 mb-8">Estrategia</h2>
+          <p class="section-intro">4 principios que gobernaron cada decisión de diseño.</p>
         </div>
 
         <div class="strategy-grid fade-in stagger-1">
-          <div class="strategy-objective p-10 md:p-12 bg-gradient-to-br from-slate-100 via-slate-50 to-slate-100 rounded-3xl mb-8">
-            <span class="text-sm font-bold uppercase tracking-widest px-3 py-1 bg-blue-600 text-white rounded-full mb-6 inline-block">Objetivo</span>
-            <h3 class="text-2xl md:text-3xl font-bold text-slate-900 mb-4">Crear una experiencia premium que genere confianza y adopción</h3>
-            <p class="text-slate-600 text-lg md:text-xl leading-relaxed mt-4">Diseñar una app que los usuarios quieran abrir, no que tengan que abrir. Integrar servicios de forma natural en el contexto del viaje.</p>
+          <div class="strategy-objective p-8 bg-slate-900 rounded-xl mb-10">
+            <span class="strategy-badge text-xs font-bold uppercase tracking-widest px-2 py-1 bg-blue-600 text-white rounded-full mb-4 inline-block">Objetivo</span>
+            <h3 class="text-xl font-bold text-white mb-2">De app ignorada a herramienta esencial de viaje</h3>
+            <p class="text-sm text-slate-400">2 apps en producción con 25% retención día 1.</p>
           </div>
 
           <div class="principles-list">
-            <h4 class="text-xl font-bold text-slate-900 mb-6">Principios de diseño</h4>
-            <div class="principle-item transition-all duration-300 hover:-translate-y-1 hover:shadow-md p-6 bg-white rounded-2xl border border-slate-100 mb-4">
-              <div class="principle-icon">
-                <Smartphone :size="20" />
+            <h4 class="text-sm font-bold uppercase tracking-widest text-slate-500 mb-4">Principios aplicados</h4>
+            <div class="grid grid-cols-2 gap-4">
+              <div class="principle-mini p-4 bg-white rounded-[2rem] border border-slate-200/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+                <Smartphone :size="18" class="text-blue-600 mb-2" />
+                <span class="text-sm font-semibold text-slate-900 block">Mobile-first</span>
+                <span class="text-xs text-slate-500">El contexto donde ocurre la urgencia es el punto de partida para cada decisión.</span>
               </div>
-              <div>
-                <h5 class="text-lg font-bold text-slate-900 mb-2">Mobile-first</h5>
-                <p class="text-base text-slate-600 leading-relaxed">Toda la experiencia pensada desde el contexto real: movimiento, urgencia, viajes</p>
+              <div class="principle-mini p-4 bg-white rounded-[2rem] border border-slate-200/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+                <Eye :size="18" class="text-blue-600 mb-2" />
+                <span class="text-sm font-semibold text-slate-900 block">Claridad > Estética</span>
+                <span class="text-xs text-slate-500">Interfaces limpias que reducen carga cognitiva en momentos de estrés.</span>
               </div>
-            </div>
-            <div class="principle-item transition-all duration-300 hover:-translate-y-1 hover:shadow-md p-6 bg-white rounded-2xl border border-slate-100 mb-4">
-              <div class="principle-icon">
-                <Eye :size="20" />
+              <div class="principle-mini p-4 bg-white rounded-[2rem] border border-slate-200/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+                <Zap :size="18" class="text-blue-600 mb-2" />
+                <span class="text-sm font-semibold text-slate-900 block">Velocidad = Confianza</span>
+                <span class="text-xs text-slate-500">Respuesta inmediata elimina la incertidumbre del usuario en crisis.</span>
               </div>
-              <div>
-                <h5 class="text-lg font-bold text-slate-900 mb-2">Claridad > Estética</h5>
-                <p class="text-base text-slate-600 leading-relaxed">Priorizar la función sobre lo decorativo. Información clave siempre visible.</p>
-              </div>
-            </div>
-            <div class="principle-item transition-all duration-300 hover:-translate-y-1 hover:shadow-md p-6 bg-white rounded-2xl border border-slate-100 mb-4">
-              <div class="principle-icon">
-                <Zap :size="20" />
-              </div>
-              <div>
-                <h5 class="text-lg font-bold text-slate-900 mb-2">Velocidad = Confianza</h5>
-                <p class="text-base text-slate-600 leading-relaxed">Acciones rápidas y feedback inmediato transmite reliability.</p>
-              </div>
-            </div>
-            <div class="principle-item transition-all duration-300 hover:-translate-y-1 hover:shadow-md p-6 bg-white rounded-2xl border border-slate-100">
-              <div class="principle-icon">
-                <ShieldCheck :size="20" />
-              </div>
-              <div>
-                <h5 class="text-lg font-bold text-slate-900 mb-2">Confianza visual</h5>
-                <p class="text-base text-slate-600 leading-relaxed">Diseño premium que transmite seguridad tecnológica y profesionalismo.</p>
+              <div class="principle-mini p-4 bg-white rounded-[2rem] border border-slate-200/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+                <ShieldCheck :size="18" class="text-blue-600 mb-2" />
+                <span class="text-sm font-semibold text-slate-900 block">Confianza visual</span>
+                <span class="text-xs text-slate-500">Estética profesional que transmite seguridad y legitimidad al usuario.</span>
               </div>
             </div>
           </div>
@@ -457,454 +320,594 @@
       </div>
     </section>
 
-    <!-- ARQUITECTURA DE INFORMACIÓN -->
-    <section class="py-16 md:py-24 section-alt">
-      <div class="container">
-        <div class="section-header fade-in">
-          <span class="section-number">05</span>
-          <h2>Arquitectura de Información</h2>
-          <p class="section-intro">Estructura de navegación diseñada para acceso rápido en cualquier contexto.</p>
-        </div>
-
-        <div class="nav-structure fade-in stagger-1 flex flex-wrap justify-center gap-8 md:gap-12 bg-slate-50 py-10 px-6 rounded-3xl w-full max-w-6xl mx-auto">
-          <div class="nav-item flex flex-col items-center gap-3">
-            <div class="nav-icon w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-slate-700 shadow-sm"><Home :size="20" /></div>
-            <span class="text-sm font-medium text-slate-600">Inicio</span>
-          </div>
-          <div class="nav-item flex flex-col items-center gap-3">
-            <div class="nav-icon w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-slate-700 shadow-sm"><HeartPulse :size="20" /></div>
-            <span class="text-sm font-medium text-slate-600">Asistencia</span>
-          </div>
-          <div class="nav-item flex flex-col items-center gap-3">
-            <div class="nav-icon w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-slate-700 shadow-sm"><Gift :size="20" /></div>
-            <span class="text-sm font-medium text-slate-600">Beneficios</span>
-          </div>
-          <div class="nav-item flex flex-col items-center gap-3">
-            <div class="nav-icon w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-slate-700 shadow-sm"><Wallet :size="20" /></div>
-            <span class="text-sm font-medium text-slate-600">Wallet</span>
-          </div>
-          <div class="nav-item flex flex-col items-center gap-3">
-            <div class="nav-icon w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-slate-700 shadow-sm"><User :size="20" /></div>
-            <span class="text-sm font-medium text-slate-600">Perfil</span>
-          </div>
-        </div>
-
-        <div class="section-header fade-in" style="margin-top: 64px;">
-          <span class="section-number">05b</span>
-          <h2>User Flows Principales</h2>
-        </div>
-
-        <div class="flows-grid fade-in stagger-1">
-          <div class="flow-card p-6 bg-white rounded-2xl border border-slate-100 shadow-sm">
-            <h4 class="text-lg font-bold text-slate-900 mb-3"><Rocket :size="18" class="icon-prefix inline mr-2" />Onboarding → Activación</h4>
-            <p class="text-lg text-slate-600 leading-relaxed">Login → Ver beneficios activos → Activar servicios automáticamente</p>
-          </div>
-          <div class="flow-card p-6 bg-white rounded-2xl border border-slate-100 shadow-sm">
-            <h4 class="text-lg font-bold text-slate-900 mb-3"><FileText :size="18" class="icon-prefix inline mr-2" />Consulta de Vouchers</h4>
-            <p class="text-lg text-slate-600 leading-relaxed">Wallet → Seleccionar plan → Ver vouchers y coberturas vigentes</p>
-          </div>
-          <div class="flow-card p-6 bg-white rounded-2xl border border-slate-100 shadow-sm">
-            <h4 class="text-lg font-bold text-slate-900 mb-3"><Receipt :size="18" class="icon-prefix inline mr-2" />Solicitud de Reembolso</h4>
-            <p class="text-lg text-slate-600 leading-relaxed">Perfil → Reembolsos → Nueva solicitud → Subir documentación → Seguir estado</p>
-          </div>
-          <div class="flow-card p-6 bg-white rounded-2xl border border-slate-100 shadow-sm">
-            <h4 class="text-lg font-bold text-slate-900 mb-3"><Siren :size="18" class="icon-prefix inline mr-2" />Acceso a Emergencias</h4>
-            <p class="text-lg text-slate-600 leading-relaxed">Tap en Emergency → Confirmar ubicación → Contacto inmediato con asistencia</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- DESIGN SYSTEM -->
-    <section class="py-16 md:py-24">
+    <!-- 7. ARQUITECTURA DE INFORMACIÓN -->
+    <section class="case-section section-alt">
       <div class="max-w-6xl mx-auto px-6">
-        <div class="section-header fade-in">
+        <div class="section-header fade-in mb-12">
+          <span class="section-number">05</span>
+          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-slate-950 mb-8">Arquitectura de Información</h2>
+          <p class="section-intro">5 tabs. Acceso a emergencia en 1 tap.</p>
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-6 md:gap-10 bg-white p-8 md:p-10 rounded-[2rem] border border-slate-200/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] w-full mb-12">
+          <div class="flex flex-col items-center gap-2">
+            <div class="w-12 h-12 bg-white rounded-[2.5rem] flex items-center justify-center text-slate-700 shadow-[0_8px_30px_rgb(0,0,0,0.04)]"><Home :size="18" /></div>
+            <span class="text-xs font-medium text-slate-600">Inicio</span>
+          </div>
+          <div class="flex flex-col items-center gap-2">
+            <div class="w-12 h-12 bg-white rounded-[2.5rem] flex items-center justify-center text-slate-700 shadow-[0_8px_30px_rgb(0,0,0,0.04)]"><HeartPulse :size="18" /></div>
+            <span class="text-xs font-medium text-slate-600">Asistencia</span>
+          </div>
+          <div class="flex flex-col items-center gap-2">
+            <div class="w-12 h-12 bg-white rounded-[2.5rem] flex items-center justify-center text-slate-700 shadow-[0_8px_30px_rgb(0,0,0,0.04)]"><Gift :size="18" /></div>
+            <span class="text-xs font-medium text-slate-600">Beneficios</span>
+          </div>
+          <div class="flex flex-col items-center gap-2">
+            <div class="w-12 h-12 bg-white rounded-[2.5rem] flex items-center justify-center text-slate-700 shadow-[0_8px_30px_rgb(0,0,0,0.04)]"><Wallet :size="18" /></div>
+            <span class="text-xs font-medium text-slate-600">Wallet</span>
+          </div>
+          <div class="flex flex-col items-center gap-2">
+            <div class="w-12 h-12 bg-white rounded-[2.5rem] flex items-center justify-center text-slate-700 shadow-[0_8px_30px_rgb(0,0,0,0.04)]"><User :size="18" /></div>
+            <span class="text-xs font-medium text-slate-600">Perfil</span>
+          </div>
+        </div>
+
+        <div class="section-header fade-in mb-6">
+          <span class="section-number">05b</span>
+          <h2 class="font-display text-xl font-bold tracking-tight text-slate-950 mb-6">User Flows Principales</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="bg-white p-5 rounded-[2rem] border border-slate-200/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+            <h4 class="text-sm font-bold text-slate-900 mb-2"><Rocket :size="16" class="inline mr-2 text-blue-600" />Onboarding → Activación</h4>
+            <p class="text-xs text-slate-600">Login → Ver beneficios activos → Activar servicios automáticamente. Elimina fricción desde el primer uso.</p>
+          </div>
+          <div class="bg-white p-5 rounded-[2rem] border border-slate-200/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+            <h4 class="text-sm font-bold text-slate-900 mb-2"><FileText :size="16" class="inline mr-2 text-blue-600" />Consulta de Vouchers</h4>
+            <p class="text-xs text-slate-600">Wallet → Seleccionar plan → Ver vouchers y coberturas vigentes. Todo en 3 taps.</p>
+          </div>
+          <div class="bg-white p-5 rounded-[2rem] border border-slate-200/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+            <h4 class="text-sm font-bold text-slate-900 mb-2"><Receipt :size="16" class="inline mr-2 text-blue-600" />Solicitud de Reembolso</h4>
+            <p class="text-xs text-slate-600">Perfil → Reembolsos → Nueva solicitud → Subir documentación → Seguir estado. Proceso transparente.</p>
+          </div>
+          <div class="bg-white p-5 rounded-[2rem] border border-slate-200/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+            <h4 class="text-sm font-bold text-slate-900 mb-2"><Siren :size="16" class="inline mr-2 text-blue-600" />Acceso a Emergencias</h4>
+            <p class="text-xs text-slate-600">Tap en Emergency → Confirmar ubicación → Contacto inmediato con asistencia. Sin fricción en crisis.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. DESIGN SYSTEM -->
+    <section class="case-section">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="section-header fade-in mb-12">
           <span class="section-number">06</span>
-          <h2>Design System</h2>
-          <p class="section-intro">Sistema visual coherente que transmite premium, tecnología y confianza.</p>
+          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-slate-950 mb-8">Design System</h2>
+          <p class="section-intro">Componentes que aceleraron el desarrollo en 30%.</p>
         </div>
 
-        <div class="w-full max-w-6xl mx-auto mt-12">
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16 w-full">
-            <div class="p-8 bg-slate-50 rounded-3xl border border-slate-100">
-              <h3 class="text-xl font-bold text-slate-900 mb-2">Tipografía</h3>
-              <p class="text-slate-600">Galano / Inter</p>
-            </div>
-            <div class="p-8 bg-slate-50 rounded-3xl border border-slate-100">
-              <h3 class="text-xl font-bold text-slate-900 mb-2">Espaciado</h3>
-              <p class="text-slate-600">Sistema de 8px</p>
-            </div>
-            <div class="p-8 bg-slate-50 rounded-3xl border border-slate-100">
-              <h3 class="text-xl font-bold text-slate-900 mb-2">Bordes</h3>
-              <p class="text-slate-600">Radius 16px</p>
-            </div>
-            <div class="p-8 bg-slate-50 rounded-3xl border border-slate-100">
-              <h3 class="text-xl font-bold text-slate-900 mb-2">Sombras</h3>
-              <p class="text-slate-600">Sutiles y profundas</p>
-            </div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
+          <div class="bg-white p-8 md:p-10 rounded-[2rem] border border-slate-200/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+            <h3 class="text-sm font-bold text-slate-900 mb-1">Tipografía</h3>
+            <p class="text-xs text-slate-600">Galano Grotesque + Inter. Claridad y jerarquía visual para contextos de alta presión.</p>
           </div>
+          <div class="bg-white p-8 md:p-10 rounded-[2rem] border border-slate-200/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+            <h3 class="text-sm font-bold text-slate-900 mb-1">Espaciado</h3>
+            <p class="text-xs text-slate-600">Sistema de 8px. Consistencia visual en toda la interfaz para reducir carga cognitiva.</p>
+          </div>
+          <div class="bg-white p-8 md:p-10 rounded-[2rem] border border-slate-200/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+            <h3 class="text-sm font-bold text-slate-900 mb-1">Bordes</h3>
+            <p class="text-xs text-slate-600">Radius 16px. Suavidad visual que transmite calma en contextos de urgencia.</p>
+          </div>
+          <div class="bg-white p-8 md:p-10 rounded-[2rem] border border-slate-200/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+            <h3 class="text-sm font-bold text-slate-900 mb-1">Sombras</h3>
+            <p class="text-xs text-slate-600">3 niveles de profundidad. Jerarquía clara para orientar la atención del usuario.</p>
+          </div>
+</div>
 
-          <h3 class="text-lg font-bold text-slate-500 uppercase tracking-widest mb-8">Paleta de Color</h3>
-          <div class="flex flex-wrap gap-10 w-full">
-            <div class="flex flex-col items-center gap-4">
-              <div class="w-20 h-20 rounded-full shadow-md bg-[#1f3a7a]"></div>
-              <div class="text-center">
-                <span class="block text-sm font-bold text-slate-900">Primary</span>
-                <span class="block text-xs text-slate-500 uppercase">#1F3A7A</span>
-              </div>
-            </div>
-            <div class="flex flex-col items-center gap-4">
-              <div class="w-20 h-20 rounded-full shadow-md bg-[#3b82f6]"></div>
-              <div class="text-center">
-                <span class="block text-sm font-bold text-slate-900">Accent</span>
-                <span class="block text-xs text-slate-500 uppercase">#3B82F6</span>
-              </div>
-            </div>
-            <div class="flex flex-col items-center gap-4">
-              <div class="w-20 h-20 rounded-full shadow-md bg-[#10b981]"></div>
-              <div class="text-center">
-                <span class="block text-sm font-bold text-slate-900">Success</span>
-                <span class="block text-xs text-slate-500 uppercase">#10B981</span>
-              </div>
-            </div>
-            <div class="flex flex-col items-center gap-4">
-              <div class="w-20 h-20 rounded-full shadow-md bg-[#f59e0b]"></div>
-              <div class="text-center">
-                <span class="block text-sm font-bold text-slate-900">Warning</span>
-                <span class="block text-xs text-slate-500 uppercase">#F59E0B</span>
-              </div>
-            </div>
-            <div class="flex flex-col items-center gap-4">
-              <div class="w-20 h-20 rounded-full shadow-md bg-[#0f172a]"></div>
-              <div class="text-center">
-                <span class="block text-sm font-bold text-slate-900">Dark</span>
-                <span class="block text-xs text-slate-500 uppercase">#0F172A</span>
-              </div>
-            </div>
-            <div class="flex flex-col items-center gap-4">
-              <div class="w-20 h-20 rounded-full shadow-md bg-[#f8fafc] border border-slate-200"></div>
-              <div class="text-center">
-                <span class="block text-sm font-bold text-slate-900">Light</span>
-                <span class="block text-xs text-slate-500 uppercase">#F8FAFC</span>
-              </div>
-            </div>
+        <h3 class="text-sm font-bold text-slate-500 uppercase tracking-widest mb-6">Paleta de Color</h3>
+        <div class="flex flex-wrap gap-6 md:gap-8 mb-12">
+          <div class="flex flex-col items-center gap-2">
+            <div class="w-16 h-16 md:w-20 md:h-20 rounded-full shadow-sm" style="background-color: #1f3a7a;"></div>
+            <span class="text-xs font-bold text-slate-900">Primary</span>
+            <span class="text-xs text-slate-500">#1F3A7A</span>
+          </div>
+          <div class="flex flex-col items-center gap-2">
+            <div class="w-16 h-16 md:w-20 md:h-20 rounded-full shadow-sm" style="background-color: #3b82f6;"></div>
+            <span class="text-xs font-bold text-slate-900">Accent</span>
+            <span class="text-xs text-slate-500">#3B82F6</span>
+          </div>
+          <div class="flex flex-col items-center gap-2">
+            <div class="w-16 h-16 md:w-20 md:h-20 rounded-full shadow-sm" style="background-color: #10b981;"></div>
+            <span class="text-xs font-bold text-slate-900">Success</span>
+            <span class="text-xs text-slate-500">#10B981</span>
+          </div>
+          <div class="flex flex-col items-center gap-2">
+            <div class="w-16 h-16 md:w-20 md:h-20 rounded-full shadow-sm" style="background-color: #f59e0b;"></div>
+            <span class="text-xs font-bold text-slate-900">Warning</span>
+            <span class="text-xs text-slate-500">#F59E0B</span>
+          </div>
+          <div class="flex flex-col items-center gap-2">
+            <div class="w-16 h-16 md:w-20 md:h-20 rounded-full shadow-sm" style="background-color: #ef4444;"></div>
+            <span class="text-xs font-bold text-slate-900">Error</span>
+            <span class="text-xs text-slate-500">#EF4444</span>
+          </div>
+          <div class="flex flex-col items-center gap-2">
+            <div class="w-16 h-16 md:w-20 md:h-20 rounded-full shadow-sm" style="background-color: #0f172a;"></div>
+            <span class="text-xs font-bold text-slate-900">Dark</span>
+            <span class="text-xs text-slate-500">#0F172A</span>
           </div>
         </div>
 
-        <div class="ui-style fade-in stagger-2">
-          <h4>UI Style</h4>
-          <div class="style-tags">
-            <span class="style-tag">Glassmorphism sutil</span>
-            <span class="style-tag">Gradientes oscuros</span>
-            <span class="style-tag">Espacio en blanco generoso</span>
-            <span class="style-tag">Cards limpias</span>
-            <span class="style-tag">Jerarquía tipográfica fuerte</span>
-            <span class="style-tag">Diseño minimalista</span>
-          </div>
+        <h3 class="text-sm font-bold text-slate-900 mb-4">Componentes, Tokens & Escalabilidad</h3>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div class="bg-white p-8 md:p-10 rounded-[2rem] border border-slate-200/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] text-center text-xs font-semibold text-slate-600">Botones & Estados</div>
+          <div class="bg-white p-8 md:p-10 rounded-[2rem] border border-slate-200/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] text-center text-xs font-semibold text-slate-600">Inputs & Validaciones</div>
+          <div class="bg-white p-8 md:p-10 rounded-[2rem] border border-slate-200/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] text-center text-xs font-semibold text-slate-600">Grid & Responsive</div>
+          <div class="bg-white p-8 md:p-10 rounded-[2rem] border border-slate-200/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] text-center text-xs font-semibold text-slate-600">Accesibilidad (a11y)</div>
         </div>
       </div>
     </section>
 
-    <!-- LA SOLUCIÓN -->
-    <section class="py-16 md:py-24 section-alt">
-      <div class="container">
-        <div class="section-header fade-in">
+    <!-- 9. LA SOLUCIÓN -->
+    <section class="case-section section-alt">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="section-header fade-in mb-12">
           <span class="section-number">07</span>
-          <h2>La Solución</h2>
-          <p class="section-intro">App nativa para Android e iOS con experiencia unificada y diferenciada por plataforma.</p>
+          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-slate-950 mb-8">La Solución</h2>
+          <p class="section-intro">4 features nativas. Retención día 1: 1.5% → 25%.</p>
         </div>
 
-        <div class="solution-screens fade-in stagger-1">
-          <div class="screen-card">
-            <div class="screen-image overflow-hidden rounded-[2rem] border-[6px] border-slate-100 shadow-xl">
-              <img src="/assets/images/app/app-screen-5.jpg" alt="Chat de soporte en la app" class="w-full h-auto object-cover">
-              <div class="screen-insight">
-                <span class="insight-label">Funcionalidad</span>
-                <p>Chatea con Agente IA para resolver dudas sobre tus beneficios y servicios.</p>
-              </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="bg-white rounded-[2rem] border border-slate-200/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] overflow-hidden">
+            <div class="overflow-hidden">
+              <img src="/assets/images/app/Soporte-con-IA-Generativa.png" alt="Chat de soporte" class="w-full h-auto object-cover">
             </div>
-            <div class="screen-info">
-              <h4>Soporte Inteligente con IA Generativa</h4>
-              <p>Asistente virtual 24/7 que resuelve dudas complejas en segundos, integrando datos reales del plan del usuario.</p>
+            <div class="p-5">
+              <h4 class="text-sm font-bold text-slate-900 mb-1">Soporte con IA Generativa</h4>
+              <p class="text-xs text-slate-600">Asistente virtual 24/7 que resuelve dudas complejas en segundos.</p>
             </div>
           </div>
-
-          <div class="screen-card">
-            <div class="screen-image overflow-hidden rounded-[2rem] border-[6px] border-slate-100 shadow-xl">
-              <img src="/assets/images/app/app-screen-1.jpg" alt="Pantalla de inicio de la app" class="w-full h-auto object-cover">
-              <div class="screen-insight">
-                <span class="insight-label">Funcionalidad</span>
-                <p>Tus vouchers, coberturas y beneficios siempre contigo.</p>
-              </div>
+          <div class="bg-white rounded-[2rem] border border-slate-200/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] overflow-hidden">
+            <div class="overflow-hidden">
+              <img src="/assets/images/app/Gestión-de-Viajes-Premium.png" alt="Pantalla de inicio" class="w-full h-auto object-cover">
             </div>
-            <div class="screen-info">
-              <h4>Gestión de Viajes y Vouchers Premium</h4>
-              <p>Transformamos el voucher tradicional en una experiencia visual, integrando destinos y estados de cobertura en tiempo real.</p>
+            <div class="p-5">
+              <h4 class="text-sm font-bold text-slate-900 mb-1">Gestión de Viajes Premium</h4>
+              <p class="text-xs text-slate-600">Vouchers, coberturas y beneficios en tiempo real.</p>
             </div>
           </div>
-
-          <div class="screen-card">
-            <div class="screen-image overflow-hidden rounded-[2rem] border-[6px] border-slate-100 shadow-xl">
-              <img src="/assets/images/app/app-screen-3.jpg" alt="Wallet de beneficios" class="w-full h-auto object-cover">
-              <div class="screen-insight">
-                <span class="insight-label">Funcionalidad</span>
-                <p>Acceso directo a asistencia médica y soporte de emergencia.</p>
-              </div>
+          <div class="bg-white rounded-[2rem] border border-slate-200/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] overflow-hidden">
+            <div class="overflow-hidden">
+              <img src="/assets/images/app/Emergencias-24-7.png" alt="Wallet de beneficios" class="w-full h-auto object-cover">
             </div>
-            <div class="screen-info">
-              <h4>Acceso Crítico a Emergencias 24/7</h4>
-              <p>Soporte instantáneo y geolocalizado para situaciones críticas, garantizando respuesta inmediata en cualquier parte del mundo.</p>
+            <div class="p-5">
+              <h4 class="text-sm font-bold text-slate-900 mb-1">Emergencias 24/7</h4>
+              <p class="text-xs text-slate-600">Soporte geolocalizado para situaciones críticas.</p>
             </div>
           </div>
-
-          <div class="screen-card">
-            <div class="screen-image overflow-hidden rounded-[2rem] border-[6px] border-slate-100 shadow-xl">
-              <img src="/assets/images/app/app-screen-4.jpg" alt="Cotizador en 4 pasos" class="w-full h-auto object-cover">
-              <div class="screen-insight">
-                <span class="insight-label">Funcionalidad</span>
-                <p>Cotiza y activa planes en minutos, no en horas.</p>
-              </div>
+          <div class="bg-white rounded-[2rem] border border-slate-200/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] overflow-hidden">
+            <div class="overflow-hidden">
+              <img src="/assets/images/app/Flujo-de-Cotización-Optimizado.png" alt="Cotizador" class="w-full h-auto object-cover">
             </div>
-            <div class="screen-info">
-              <h4>Flujo de Cotización Optimizado</h4>
-              <p>Redujimos la fricción de compra a un proceso intuitivo de 4 pasos, aumentando la tasa de conversión y facilidad de uso.</p>
+            <div class="p-5">
+              <h4 class="text-sm font-bold text-slate-900 mb-1">Flujo de Cotización Optimizado</h4>
+              <p class="text-xs text-slate-600">Proceso intuitivo de 4 pasos que aumentó la conversión.</p>
             </div>
           </div>
-
-          <div class="screen-card">
-            <div class="screen-image overflow-hidden rounded-[2rem] border-[6px] border-slate-100 shadow-xl">
-              <img src="/assets/images/app/mockup-app-benefits.jpg" alt="Benchmark de apps de asistencia - Heymondo, Lifemiles, Booking" class="w-full h-auto rounded-2xl shadow-md">
-              <div class="screen-insight">
-                <span class="insight-label">Funcionalidad</span>
-                <p>Xentral Pass, salas VIP, medicamentos, roaming y más.</p>
-              </div>
+          <div class="bg-white rounded-[2rem] border border-slate-200/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] overflow-hidden">
+            <div class="overflow-hidden">
+              <img src="/assets/images/app/Ecosistema-de-Beneficios-Premium.png" alt="Ecosistema de beneficios" class="w-full h-auto object-cover">
             </div>
-            <div class="screen-info">
-              <h4>Ecosistema de Beneficios Premium</h4>
-              <p>Integración de partners estratégicos (Avis, Holafly, rxless) para añadir valor real al viaje más allá de la asistencia médica.</p>
+            <div class="p-5">
+              <h4 class="text-sm font-bold text-slate-900 mb-1">Ecosistema de Beneficios Premium</h4>
+              <p class="text-xs text-slate-600">Integración de partners (Avis, Holafly, rxless) para añadir valor real.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- FUNCIONALIDADES CORE -->
-    <section class="py-16 md:py-24">
-      <div class="container">
-        <div class="section-header fade-in">
+    <!-- 10. FUNCIONALIDADES CORE -->
+    <section class="case-section">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="section-header fade-in mb-12">
           <span class="section-number">08</span>
-          <h2>Funcionalidades Core</h2>
-          <p class="section-intro">Cada feature diseñada para resolver una necesidad específica del viajero.</p>
+          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-slate-950 mb-8">Funcionalidades Core</h2>
+          <p class="section-intro">4 features. Cubren el 90% del uso real.</p>
         </div>
 
-        <div class="features-grid fade-in stagger-1">
-          <div class="feature-card transition-all duration-300 hover:-translate-y-1 hover:shadow-md p-8 bg-white rounded-2xl border border-slate-100">
-            <div class="feature-icon">
-              <Wallet :size="24" />
-            </div>
-            <h4 class="text-xl font-bold text-slate-900 mb-3">Wallet Digital</h4>
-            <p class="text-lg text-slate-600 leading-relaxed">Vouchers, coberturas y beneficios en un solo lugar. Historial completo y trazable.</p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="bg-white p-5 rounded-[2rem] border border-slate-200/80 shadow-[0_8px/30px_rgb(0,0,0,0.04)]">
+            <Wallet :size="20" class="text-blue-600 mb-3" />
+            <h4 class="text-sm font-bold text-slate-900 mb-1">Wallet Digital</h4>
+            <p class="text-xs text-slate-600">Vouchers, coberturas y beneficios en un solo lugar. Sin buscar en múltiples sitios.</p>
           </div>
-          <div class="feature-card transition-all duration-300 hover:-translate-y-1 hover:shadow-md p-8 bg-white rounded-2xl border border-slate-100">
-            <div class="feature-icon">
-              <Crown :size="24" />
-            </div>
-            <h4 class="text-xl font-bold text-slate-900 mb-3">Xentral Pass</h4>
-            <p class="text-lg text-slate-600 leading-relaxed">Acceso automático a salas VIP por retrasos de vuelos. Beneficio sin fricción.</p>
+          <div class="bg-white p-5 rounded-[2rem] border border-slate-200/80 shadow-[0_8px/30px_rgb(0,0,0,0.04)]">
+            <Crown :size="20" class="text-blue-600 mb-3" />
+            <h4 class="text-sm font-bold text-slate-900 mb-1">Xentral Pass</h4>
+            <p class="text-xs text-slate-600">Acceso a salas VIP por retrasos de vuelo. Beneficio tangible sin fricción.</p>
           </div>
-          <div class="feature-card transition-all duration-300 hover:-translate-y-1 hover:shadow-md p-8 bg-white rounded-2xl border border-slate-100">
-            <div class="feature-icon">
-              <Stethoscope :size="24" />
-            </div>
-            <h4 class="text-xl font-bold text-slate-900 mb-3">Telemedicina 24/7</h4>
-            <p class="text-lg text-slate-600 leading-relaxed">Asistencia médica online inmediata. Consultas sin esperar, prescriptions incluidas.</p>
+          <div class="bg-white p-5 rounded-[2rem] border border-slate-200/80 shadow-[0_8px/30px_rgb(0,0,0,0.04)]">
+            <Stethoscope :size="20" class="text-blue-600 mb-3" />
+            <h4 class="text-sm font-bold text-slate-900 mb-1">Telemedicina 24/7</h4>
+            <p class="text-xs text-slate-600">Asistencia médica online inmediata. Resuelve antes de que escalada.</p>
           </div>
-          <div class="feature-card transition-all duration-300 hover:-translate-y-1 hover:shadow-md p-8 bg-white rounded-2xl border border-slate-100">
-            <div class="feature-icon">
-              <MessageCircle :size="24" />
-            </div>
-            <h4 class="text-xl font-bold text-slate-900 mb-3">Chat de Soporte</h4>
-            <p class="text-lg text-slate-600 leading-relaxed">Genesys integration para atención humana o automatizada según necesidad.</p>
+          <div class="bg-white p-5 rounded-[2rem] border border-slate-200/80 shadow-[0_8px/30px_rgb(0,0,0,0.04)]">
+            <MessageCircle :size="20" class="text-blue-600 mb-3" />
+            <h4 class="text-sm font-bold text-slate-900 mb-1">Chat de Soporte</h4>
+            <p class="text-xs text-slate-600">Genesys integration para atención humana o automatizada según urgencia.</p>
           </div>
-          <div class="feature-card transition-all duration-300 hover:-translate-y-1 hover:shadow-md p-8 bg-white rounded-2xl border border-slate-100">
-            <div class="feature-icon">
-              <Bell :size="24" />
-            </div>
-            <h4 class="text-xl font-bold text-slate-900 mb-3">Notificaciones Inteligentes</h4>
-            <p class="text-lg text-slate-600 leading-relaxed">Alertas de vuelos, beneficios disponibles y recordatorios de activación.</p>
+          <div class="bg-white p-5 rounded-[2rem] border border-slate-200/80 shadow-[0_8px/30px_rgb(0,0,0,0.04)]">
+            <Bell :size="20" class="text-blue-600 mb-3" />
+            <h4 class="text-sm font-bold text-slate-900 mb-1">Notificaciones Inteligentes</h4>
+            <p class="text-xs text-slate-600">Alertas de vuelos y recordatorios de activación. Mantiene al usuario activo.</p>
+          </div>
+</div>
+      </div>
+    </section>
+
+    <!-- 11. ANTES VS DESPUÉS -->
+    <section class="w-full bg-black py-24 border-y border-slate-800">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="section-header fade-in mb-12">
+          <span class="section-number text-white">09</span>
+          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-white mb-8">Evolución de la UI</h2>
+          <p class="text-lg text-slate-400">Antes y después de la experiencia.</p>
+        </div>
+
+        <div class="relative max-w-5xl mx-auto">
+          <div class="absolute top-6 left-6 z-20 bg-white/10 backdrop-blur-md border border-white/20 px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest text-white">
+            Antes
+          </div>
+
+          <div class="rounded-[2.5rem] overflow-hidden shadow-2xl">
+            <img src="/assets/images/app/mockup-app-comparacion.png" alt="Comparativa de Evolución UI" class="w-full h-auto object-cover" />
+          </div>
+
+          <div class="absolute bottom-6 right-6 z-20 bg-white/10 backdrop-blur-md border border-white/20 px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest text-white">
+            Después
           </div>
         </div>
       </div>
     </section>
 
-    <!-- IMPACTO -->
-    <section class="py-16 md:py-24 section-alt">
-      <div class="container">
-        <div class="section-header fade-in">
-          <span class="section-number">09</span>
-          <h2>Impacto</h2>
-          <p class="section-intro">La nueva app fue diseñada para resolver los problemas críticos de la versión anterior.</p>
+    <!-- 12. IMPACTO - RESULTS THAT MATTER -->
+    <section class="w-full max-w-6xl mx-auto px-6 py-24">
+      <div class="text-center mb-20">
+        <span class="text-sm font-bold uppercase tracking-widest text-slate-400 mb-3 block">12</span>
+        <h2 class="text-4xl md:text-5xl font-display font-extrabold text-slate-950 tracking-tight mb-4">Impacto</h2>
+        <p class="text-lg text-slate-500 max-w-2xl mx-auto">Los resultados validaron la estrategia de diseño.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 max-w-6xl mx-auto">
+
+        <!-- METRIC 1: RETENCIÓN DÍA 1 -->
+        <div class="metric-card group">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="flex flex-col">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-1">Antes</span>
+              <span class="font-display text-xl font-medium text-slate-300 tracking-tight tabular-nums leading-none">1.5%</span>
+            </div>
+            <svg class="w-6 h-6 text-slate-300 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+            <div class="flex flex-col">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-blue-600 mb-1">Después</span>
+              <span class="font-display text-4xl md:text-5xl font-black text-slate-950 tracking-tighter tabular-nums leading-none">25%</span>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-2 mb-4">
+            <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 text-xs font-bold tracking-wide">
+              <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" /></svg>
+              +23.5pp
+            </span>
+            <span class="text-xs font-medium text-slate-400">16x más</span>
+          </div>
+
+          <h3 class="text-base font-semibold text-slate-950 mb-1">Retención Día 1</h3>
+          <p class="text-sm text-slate-500 leading-relaxed">Crecimiento exponencial en adopción inicial.</p>
         </div>
-        <div class="w-full max-w-6xl mx-auto mt-12">
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 w-full">
-            <div class="flex flex-col items-center justify-center text-center p-10 bg-slate-50 rounded-3xl border border-slate-100 shadow-sm transition-transform duration-300 hover:-translate-y-2 overflow-hidden">
-              <span class="text-5xl md:text-7xl font-black text-slate-900 tracking-tighter mb-4 block">1.5%→25%</span>
-              <h3 class="text-lg font-bold text-slate-500 uppercase tracking-widest mb-2 whitespace-nowrap">Retención Día 1</h3>
-              <p class="text-sm text-slate-400 max-w-[200px]">Crecimiento exponencial en adopción inicial</p>
+
+        <!-- METRIC 2: RETENCIÓN DÍA 7 -->
+        <div class="metric-card group md:border-l md:border-slate-200 md:pl-8">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="flex flex-col">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-1">Antes</span>
+              <span class="font-display text-xl font-medium text-slate-300 tracking-tight tabular-nums leading-none">0.1%</span>
             </div>
-            <div class="flex flex-col items-center justify-center text-center p-10 bg-slate-50 rounded-3xl border border-slate-100 shadow-sm transition-transform duration-300 hover:-translate-y-2 overflow-hidden">
-              <span class="text-5xl md:text-7xl font-black text-slate-900 tracking-tighter mb-4 block">0.1%→12%</span>
-              <h3 class="text-lg font-bold text-slate-500 uppercase tracking-widest mb-2 whitespace-nowrap">Retención Día 7</h3>
-              <p class="text-sm text-slate-400 max-w-[200px]">Mejora drástica en el engagement a largo plazo</p>
+            <svg class="w-6 h-6 text-slate-300 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+            <div class="flex flex-col">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-blue-600 mb-1">Después</span>
+              <span class="font-display text-4xl md:text-5xl font-black text-slate-950 tracking-tighter tabular-nums leading-none">12%</span>
             </div>
-            <div class="flex flex-col items-center justify-center text-center p-10 bg-slate-50 rounded-3xl border border-slate-100 shadow-sm transition-transform duration-300 hover:-translate-y-2 overflow-hidden">
-              <span class="text-5xl md:text-7xl font-black text-slate-900 tracking-tighter mb-4 block">0</span>
-              <h3 class="text-lg font-bold text-slate-500 uppercase tracking-widest mb-2 whitespace-nowrap">Errores iOS</h3>
-              <p class="text-sm text-slate-400 max-w-[200px]">Eliminación de crashes críticos en versión final</p>
+          </div>
+
+          <div class="flex items-center gap-2 mb-4">
+            <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 text-xs font-bold tracking-wide">
+              <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" /></svg>
+              +11.9pp
+            </span>
+            <span class="text-xs font-medium text-slate-400">120x más</span>
+          </div>
+
+          <h3 class="text-base font-semibold text-slate-950 mb-1">Retención Día 7</h3>
+          <p class="text-sm text-slate-500 leading-relaxed">Mejora drástica en engagement sostenido.</p>
+        </div>
+
+        <!-- METRIC 3: ERRORES iOS -->
+        <div class="metric-card group md:border-l md:border-slate-200 md:pl-8">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="flex flex-col">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-1">Antes</span>
+              <span class="font-display text-xl font-medium text-slate-300 tracking-tight tabular-nums leading-none">997</span>
             </div>
+            <svg class="w-6 h-6 text-slate-300 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+            <div class="flex flex-col">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-blue-600 mb-1">Después</span>
+              <span class="font-display text-4xl md:text-5xl font-black text-slate-950 tracking-tighter tabular-nums leading-none">0</span>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-2 mb-4">
+            <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 text-xs font-bold tracking-wide">
+              <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+              -100%
+            </span>
+            <span class="text-xs font-medium text-slate-400">estable</span>
+          </div>
+
+          <h3 class="text-base font-semibold text-slate-950 mb-1">Errores iOS</h3>
+          <p class="text-sm text-slate-500 leading-relaxed">Crashes críticos eliminados por completo.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 13. VALIDACIÓN -->
+    <section class="case-section section-alt">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="section-header fade-in mb-12">
+          <span class="section-number">10</span>
+          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-slate-950 mb-8">Validación con Usuarios</h2>
+          <p class="section-intro">Tests de usabilidad validaron la nueva experiencia.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="bg-white p-8 md:p-10 rounded-[2rem] border border-slate-200/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+            <blockquote>
+              <p class="text-sm text-slate-700 leading-relaxed italic mb-3">"Por fin puedo ver todos mis beneficios en un solo lugar. Antes tenía que entrar a 3 páginas diferentes."</p>
+              <cite class="text-xs font-semibold text-slate-500">— Laura M., Viajera Frecuente</cite>
+            </blockquote>
+          </div>
+          <div class="bg-white p-8 md:p-10 rounded-[2rem] border border-slate-200/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+            <blockquote>
+              <p class="text-sm text-slate-700 leading-relaxed italic mb-3">"El botón de emergencia es lo que más valoro. Sé que si algo pasa, tengo ayuda inmediata."</p>
+              <cite class="text-xs font-semibold text-slate-500">— Ricardo T., Ejecutivo Corporativo</cite>
+            </blockquote>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- VALIDACIÓN CON USUARIOS -->
-    <section class="py-16 md:py-24">
-      <div class="container">
-        <div class="section-header fade-in">
-          <span class="section-number">09b</span>
-          <h2>Lo que dijeron los usuarios</h2>
-          <p class="section-intro">Las pruebas de usabilidad confirmaron que la nueva experiencia funcionaba.</p>
-        </div>
-
-        <div class="validation-quotes fade-in stagger-1 mt-12">
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div class="p-8 bg-slate-50 rounded-2xl border border-slate-100">
-              <blockquote>
-                <p class="text-xl text-slate-700 leading-relaxed italic mb-4">"Por fin puedo ver todos mis beneficios en un solo lugar. Antes tenía que entrar a 3 páginas diferentes para saber qué cubría mi plan."</p>
-                <cite class="text-base font-semibold text-slate-500 block">— Laura M., Viajera Frecuente, 35 años</cite>
-              </blockquote>
-            </div>
-            <div class="p-8 bg-slate-50 rounded-2xl border border-slate-100">
-              <blockquote>
-                <p class="text-xl text-slate-700 leading-relaxed italic mb-4">"El botón de emergencia es lo que más valoro. Sé que si algo pasa en el viaje, tengo ayuda inmediata. Antes no tenía idea de cómo-contactar asistencia."</p>
-                <cite class="text-base font-semibold text-slate-500 block">— Ricardo T., Ejecutivo Corporativo, 45 años</cite>
-              </blockquote>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- LEARNINGS -->
-    <section class="py-16 md:py-24">
-      <div class="container">
-        <div class="section-header fade-in">
+    <!-- 14. LEARNINGS -->
+    <section class="case-section">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="section-header fade-in mb-12">
           <span class="section-number">11</span>
-          <h2>Lo que aprendí</h2>
-          <p class="section-intro">Lo que aprendí diseñando esta solución.</p>
+          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-slate-950 mb-8">Lo que aprendí</h2>
+          <p class="section-intro">4 lecciones del proyecto.</p>
         </div>
 
-        <div class="learnings-grid fade-in stagger-1">
-          <div class="learning-card bg-slate-50 rounded-2xl p-8 border border-slate-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
-            <span class="learning-number">01</span>
-            <p class="text-slate-700 leading-relaxed"><strong>El contexto de uso define el diseño, no la plataforma.</strong> Descubrimos que los viajeros abandonaban la app no por mal diseño, sino porque necesitaban resolver problemas urgentes desde pantallas pequeñas. Priorizar el flujo de emergencia sobre el de exploración fue la decisión más impactante.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="bg-white p-8 md:p-10 rounded-[2rem] border border-slate-200/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+            <span class="text-2xl font-black text-slate-200 mb-3 block">01</span>
+            <p class="text-sm text-slate-700 leading-relaxed"><strong>El contexto define el diseño.</strong> No era mal diseño: necesitaban resolver urgencias desde el móvil. Priorizar emergencia fue lo más impactante.</p>
           </div>
-          <div class="learning-card bg-slate-50 rounded-2xl p-8 border border-slate-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
-            <span class="learning-number">02</span>
-            <p class="text-slate-700 leading-relaxed"><strong>La transparencia no es solo mostrar datos, es anticipar preguntas.</strong> Los usuarios no llamaban a emergencias por no saber qué cubría su plan. Diseñamos un dashboard que respondía preguntas antes de que surgieran, reduciendo llamadas de soporte en 40%.</p>
+          <div class="bg-white p-8 md:p-10 rounded-[2rem] border border-slate-200/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+            <span class="text-2xl font-black text-slate-200 mb-3 block">02</span>
+            <p class="text-sm text-slate-700 leading-relaxed"><strong>Transparencia anticipa preguntas.</strong> Dashboard que respondía dudas antes de que surgieran. -40% llamadas de soporte.</p>
           </div>
-          <div class="learning-card bg-slate-50 rounded-2xl p-8 border border-slate-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
-            <span class="learning-number">03</span>
-            <p class="text-slate-700 leading-relaxed"><strong>Diseño premium requiere constraints claros, no más features.</strong> El equipo quería incluir 8 features en el v1. Tras priorizar con datos de uso, redujimos a 3 core flows que representaban el 90% del uso real.</p>
+          <div class="bg-white p-8 md:p-10 rounded-[2rem] border border-slate-200/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+            <span class="text-2xl font-black text-slate-200 mb-3 block">03</span>
+            <p class="text-sm text-slate-700 leading-relaxed"><strong>Menos features, más impacto.</strong> De 8 features a 3 flows core. 90% del uso real.</p>
           </div>
-          <div class="learning-card bg-slate-50 rounded-2xl p-8 border border-slate-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
-            <span class="learning-number">04</span>
-            <p class="text-slate-700 leading-relaxed"><strong>Un desarrollador full-stack tiene límites de contexto, no de capacidad.</strong> La solución fue crear documentation exhaustiva de interacción y prototipos de alta fidelidad que eliminaran ambigüedad antes de cada sprint.</p>
+          <div class="bg-white p-8 md:p-10 rounded-[2rem] border border-slate-200/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+            <span class="text-2xl font-black text-slate-200 mb-3 block">04</span>
+            <p class="text-sm text-slate-700 leading-relaxed"><strong>Documentación elimina ambigüedad.</strong> Prototipos HD y specs claras antes de cada sprint.</p>
+          </div>
+        </div>
+
+        <!-- Lo que no funcionó -->
+        <div class="failures-section fade-in w-full max-w-5xl mx-auto bg-rose-50/50 border border-rose-100 rounded-[2rem] p-8 md:p-10 mb-16">
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-rose-100 rounded-xl flex items-center justify-center shrink-0">
+              <XCircle :size="18" class="text-rose-600" />
+            </div>
+            <div>
+              <h4 class="text-sm font-bold text-slate-900 mb-3">Lo que intentamos y no funcionó</h4>
+              <ul class="space-y-2 text-lg text-slate-800">
+                <li class="flex items-start gap-2">
+                  <span class="text-rose-500 mt-0.5">✗</span>
+                  <span><strong>Más onboarding:</strong> Más educación = más fricción. Lo eliminamos.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-rose-500 mt-0.5">✗</span>
+                  <span><strong>Modal de confirmación:</strong> Agregaba fricción sin valor. Lo eliminamos.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-rose-500 mt-0.5">✗</span>
+                  <span><strong>Productos relacionados en checkout:</strong> Cancelaban compras al ver el carousel. Lo quitamos.</span>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- NEXT STEPS -->
-    <section class="py-16 md:py-24 section-alt">
-      <div class="container">
-        <div class="section-header fade-in">
+    <!-- 15. NEXT STEPS -->
+    <section class="case-section section-alt">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="section-header fade-in mb-12">
           <span class="section-number">12</span>
-          <h2>Siguientes pasos</h2>
-          <p class="section-intro">Roadmap para iteración continua basada en datos reales.</p>
+          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-slate-950 mb-8">Siguientes pasos</h2>
+          <p class="section-intro">3 sprints: features, testing, métricas post-lanzamiento.</p>
         </div>
 
-        <div class="next-steps-grid fade-in stagger-1">
-          <div class="next-step-card">
-            <div class="next-step-icon">
-              <BarChart2 :size="24" />
-            </div>
-            <h4>Métricas Post-lanzamiento</h4>
-            <p>Medir retención, engagement y satisfacción después del launch.</p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="bg-white p-5 rounded-[2rem] border border-slate-200/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+            <BarChart2 :size="20" class="text-slate-600 mb-3" />
+            <h4 class="text-sm font-bold text-slate-900 mb-1">Métricas Post-lanzamiento</h4>
+            <p class="text-xs text-slate-600">Medir retención, engagement y satisfacción después del launch.</p>
           </div>
-          <div class="next-step-card">
-            <div class="next-step-icon">
-              <UserCheck :size="24" />
-            </div>
-            <h4>Testing con Usuarios</h4>
-            <p>Validar flujos críticos con usuarios reales en contexto de viaje.</p>
+          <div class="bg-white p-5 rounded-[2rem] border border-slate-200/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+            <UserCheck :size="20" class="text-slate-600 mb-3" />
+            <h4 class="text-sm font-bold text-slate-900 mb-1">Testing con Usuarios</h4>
+            <p class="text-xs text-slate-600">Validar flujos críticos con usuarios reales en contexto de viaje.</p>
           </div>
-          <div class="next-step-card">
-            <div class="next-step-icon">
-              <Layers :size="24" />
-            </div>
-            <h4>Iteración de Features</h4>
-            <p>Priorizar mejoras según datos de uso y feedback.</p>
+          <div class="bg-white p-5 rounded-[2rem] border border-slate-200/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+            <Layers :size="20" class="text-slate-600 mb-3" />
+            <h4 class="text-sm font-bold text-slate-900 mb-1">Iteración de Features</h4>
+            <p class="text-xs text-slate-600">Priorizar mejoras según datos de uso y feedback.</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- CTA -->
-    <section class="case-cta section">
-      <div class="container">
-        <div class="cta-box fade-in">
-          <h2>¿Hablamos?</h2>
-          <p>Explora otro caso de estudio o contáctame para discutir proyectos.</p>
-          <div class="cta-buttons">
-            <router-link to="/ecommerce" class="btn btn-secondary">
-              <ArrowLeft :size="16" />
-              Caso anterior
-            </router-link>
-            <router-link to="/xentral-health" class="btn btn-accent transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
-              Siguiente caso
-              <ArrowRight :size="16" />
-            </router-link>
-          </div>
+    <AuroraBg variant="dark" class="py-32">
+      <div class="max-w-4xl mx-auto text-center px-6 relative z-10">
+        <h2 class="font-display text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-6 leading-[1.1]">
+          ¿Tu próximo
+          <span class="text-gradient-mixed">caso</span>?
+        </h2>
+        <p class="text-lg text-slate-300 mb-10 max-w-xl mx-auto leading-relaxed">
+          Explora otro caso de estudio o contáctame para discutir proyectos donde el diseño genera impacto medible.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+          <router-link
+            to="/contacto"
+            class="inline-flex items-center gap-2 px-8 py-4 bg-violet-600 text-white font-semibold rounded-full shadow-glow-violet-lg hover:shadow-glow-violet hover:bg-violet-500 hover:scale-[1.02] transition-all duration-200"
+          >
+            Iniciar conversación
+          </router-link>
+          <router-link
+            to="/ecommerce"
+            class="inline-flex items-center gap-3 px-6 py-3.5 bg-white/10 backdrop-blur-sm text-white font-semibold rounded-full border border-white/20 hover:bg-white/20 hover:scale-[1.02] transition-all duration-200"
+          >
+            <div class="flex flex-col text-left">
+              <span class="text-[10px] font-bold text-slate-300 uppercase tracking-widest">Siguiente Caso</span>
+              <span class="text-sm font-bold text-white">Rediseño E-commerce</span>
+            </div>
+            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+          </router-link>
         </div>
       </div>
-    </section>
-
-    <!-- Case Navigation -->
-    <nav class="py-24 border-t border-slate-100">
-      <div class="max-w-6xl mx-auto px-6">
-        <RouterLink to="/ecommerce" class="group flex items-center justify-between p-8 bg-white rounded-3xl border border-slate-200 transition-all duration-300 hover:border-blue-600 hover:shadow-xl hover:-translate-y-1">
-          <div class="flex flex-col">
-            <span class="text-sm font-bold text-slate-400 uppercase tracking-widest mb-2">Caso siguiente</span>
-            <h4 class="text-2xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors">Rediseño E-commerce</h4>
-          </div>
-          <div class="w-12 h-12 rounded-full bg-slate-50 flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition-all duration-300">
-            <ArrowRight :size="24" />
-          </div>
-        </RouterLink>
-      </div>
-    </nav>
-  </main>
+    </AuroraBg>
+  </div>
 </template>
 
 <script setup>
 import { useScrollAnimations } from '@/composables/useScrollAnimations'
+import AuroraBg from '@/components/primitives/AuroraBg.vue'
 import {
-  Layers, TrendingDown, Bug, Split, UserX, Smartphone, Target, Plane, CreditCard, Calendar, Globe,
-  Lightbulb, Eye, Zap, ShieldCheck, Home, HeartPulse, Gift, Wallet, User, Rocket, FileText, Receipt,
-  Siren, Crown, Stethoscope, MessageCircle, Bell, BarChart2, UserCheck, ArrowRight, ArrowLeft, Check, X,
-  Mail, Tablet, PanelBottom, Search, Sparkles, LayoutTemplate
+  Layers,
+  GitBranch,
+  ClipboardList,
+  ShieldOff,
+  Smartphone,
+  Package,
+  CreditCard,
+  ChevronRight,
+  ArrowRight,
+  ArrowLeft,
+  CheckCircle,
+  MapPin,
+  MessageSquare,
+  Mail,
+  Lightbulb,
+  Eye,
+  ListOrdered,
+  Plane,
+  Globe,
+  Split,
+  UserCheck,
+  XCircle,
+  Bug,
+  TrendingDown,
+  UserX,
+  Calendar,
+  Wallet,
+  Crown,
+  Stethoscope,
+  MessageCircle,
+  Bell,
+  Home,
+  HeartPulse,
+  Gift,
+  User,
+  Rocket,
+  FileText,
+  Receipt,
+  Siren,
+  Zap,
+  ShieldCheck,
+  BarChart2
 } from 'lucide-vue-next'
 
 useScrollAnimations()
 </script>
+
+<style scoped>
+.metric-card {
+  position: relative;
+  background: transparent !important;
+  border: 0 !important;
+  padding: 24px 0 !important;
+  border-radius: 0 !important;
+  transition: transform 0.2s ease-out;
+}
+
+.metric-card:hover {
+  transform: translateY(-2px);
+}
+
+/* Subtle accent line that appears on hover */
+.metric-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #10b981 0%, #059669 100%);
+  transition: width 0.3s ease-out;
+}
+
+.metric-card:hover::before {
+  width: 48px;
+}
+
+@media (max-width: 768px) {
+  .metric-card {
+    padding-bottom: 32px !important;
+    border-bottom: 1px solid rgb(226 232 240) !important;
+  }
+
+  .metric-card:last-child {
+    border-bottom: none !important;
+    padding-bottom: 0 !important;
+  }
+
+  .metric-card::before {
+    display: none;
+  }
+}
+</style>

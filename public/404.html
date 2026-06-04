@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yeison Alfonso | UX/UI Product Designer</title>
+  <script>
+    // SPA fallback para GitHub Pages
+    // Redirige todas las rutas no encontradas a index.html
+    const segmentCount = window.location.pathname.split('/').length - 1;
+    let redirect = '';
+    if (segmentCount === 0) {
+      redirect = '.';
+    } else {
+      redirect = '.';
+      for (let i = 0; i < segmentCount - 1; i++) {
+        redirect += '/..';
+      }
+    }
+    window.location.replace(redirect + '/');
+  </script>
+</head>
+<body>
+  <p>Redirigiendo…</p>
+</body>
+</html>

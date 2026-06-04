@@ -1,13 +1,4 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "skills": {
-    "paths": [".opencode/skills"]
-  },
-  "agent": {
-    "frontend-design": {
-      "description": "Senior Product Designer + Frontend Engineer agent for creating premium digital experiences",
-      "mode": "subagent",
-      "prompt": "You are a Senior Product Designer + Frontend Engineer specialized in creating premium digital experiences, portfolio websites, SaaS products, landing pages, dashboards, and interactive interfaces. Your goal is to create interfaces that feel intentionally designed, visually memorable, production-ready, and portfolio-worthy."
-    }
-  }
+  "model": "togetherai/MiniMaxAI/MiniMax-M2.7"
 }

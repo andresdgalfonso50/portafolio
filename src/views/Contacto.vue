@@ -1,11 +1,16 @@
 <template>
-  <main>
-    <section class="contact-page">
-      <div class="container">
+  <div class="view-wrapper">
+    <AuroraBg variant="hero" class="contact-page section">
+      <div class="container relative z-10">
         <div class="contact-header fade-in">
-          <span class="label">Contacto</span>
-          <h1>¿Hablamos?</h1>
-          <p class="contact-subtitle">¿Tienes un proyecto donde el diseño puede generar impacto? Conversemos sobre cómo ayudarte.</p>
+          <span class="label text-blue-600">Contacto</span>
+          <h1 class="font-display text-5xl md:text-6xl font-extrabold tracking-tight leading-[1.1] text-slate-950 mb-6">
+            ¿
+            <span class="text-gradient-blue">Hablamos</span>?
+          </h1>
+          <p class="contact-subtitle drop-cap">
+            Proyectos donde el diseño genera resultados medibles. Conversemos sobre el tuyo.
+          </p>
         </div>
 
         <div class="contact-grid">
@@ -135,7 +140,7 @@
                 <textarea
                   id="message"
                   v-model="form.message"
-                  placeholder="Cuéntame sobre tu proyecto, objetivos y timeline..."
+                  placeholder="Cuéntame de tu proyecto..."
                   rows="5"
                   required
                   aria-required="true"
@@ -152,28 +157,34 @@
                   {{ errors.message }}
                 </span>
               </div>
-              <button type="submit" class="btn btn-primary btn-full" :disabled="isSubmitting" :aria-busy="isSubmitting">
+              <button type="submit" class="btn btn-primary btn-full shadow-glow-blue" :disabled="isSubmitting || isSent" :aria-busy="isSubmitting">
                 <span v-if="isSubmitting" class="btn-spinner"></span>
+                <CheckCircle v-else-if="isSent" :size="18" />
                 <Send v-else :size="18" />
-                <span aria-live="polite">{{ isSubmitting ? 'Enviando...' : 'Enviar mensaje' }}</span>
+                <span aria-live="polite">{{ isSubmitting ? 'Enviando...' : isSent ? 'Enviado' : 'Enviar mensaje' }}</span>
               </button>
             </form>
-            <p v-if="submitMessage" class="submit-message" :class="{ success: submitSuccess }" role="status">
+            <div v-if="submitMessage" class="submit-message" :class="{ success: submitSuccess, error: !submitSuccess }" role="status">
+              <CheckCircle v-if="submitSuccess" :size="16" class="inline mr-1" />
               {{ submitMessage }}
-            </p>
+            </div>
           </div>
         </div>
       </div>
-    </section>
-  </main>
+    </AuroraBg>
+  </div>
 </template>
 
 <script setup>
 import { ref, reactive } from 'vue'
-import { Mail, Phone, Linkedin, MapPin, Send } from 'lucide-vue-next'
+import { Mail, Phone, Linkedin, MapPin, Send, CheckCircle } from 'lucide-vue-next'
 import { useScrollAnimations } from '@/composables/useScrollAnimations'
+import AuroraBg from '@/components/primitives/AuroraBg.vue'
+import emailjs from '@emailjs/browser'
 
 useScrollAnimations()
+
+emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY || '')
 
 const form = reactive({
   name: '',
@@ -192,6 +203,7 @@ const errors = reactive({
 const isSubmitting = ref(false)
 const submitMessage = ref('')
 const submitSuccess = ref(false)
+const isSent = ref(false)
 
 function validateField(field) {
   errors[field] = ''
@@ -235,29 +247,45 @@ function validateForm() {
   return !errors.name && !errors.email && !errors.project && !errors.message
 }
 
-function handleSubmit() {
+async function handleSubmit() {
   if (!validateForm()) {
     return
   }
 
   isSubmitting.value = true
+  submitMessage.value = ''
 
-  const mailtoLink = `mailto:andresdgalfonso@gmail.com?subject=Proyecto desde Portfolio: ${form.name}&body=${encodeURIComponent(
-    `Nombre: ${form.name}\nEmail: ${form.email}\nTipo de proyecto: ${form.project}\n\nMensaje:\n${form.message}`
-  )}`
+  const templateParams = {
+    from_name: form.name,
+    from_email: form.email,
+    project_type: form.project,
+    message: form.message,
+    to_email: 'andresdgalfonso@gmail.com'
+  }
 
-  window.location.href = mailtoLink
+  try {
+    const response = await emailjs.send(
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      templateParams
+    )
 
-  setTimeout(() => {
+    if (response.status === 200) {
+      isSent.value = true
+      submitSuccess.value = true
+      submitMessage.value = 'Mensaje enviado correctamente. Te responderé pronto.'
+
+      form.name = ''
+      form.email = ''
+      form.project = ''
+      form.message = ''
+      Object.keys(errors).forEach(key => errors[key] = '')
+    }
+  } catch (error) {
+    submitSuccess.value = false
+    submitMessage.value = 'Hubo un error al enviar el mensaje. Escríbeme directamente a andresdgalfonso@gmail.com'
+  } finally {
     isSubmitting.value = false
-    submitSuccess.value = true
-    submitMessage.value = 'Abriendo cliente de email... Si no se abre, escribe directamente a andresdgalfonso@gmail.com'
-
-    form.name = ''
-    form.email = ''
-    form.project = ''
-    form.message = ''
-    Object.keys(errors).forEach(key => errors[key] = '')
-  }, 500)
+  }
 }
 </script>
