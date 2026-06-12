@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+}
+
 /* ============================================
    FONT-FACE: LOCAL FONTS (performance - no CDN)
    ============================================ */
@@ -74,17 +81,26 @@
 }
 
 /* ============================================
-   DESIGN TOKENS - SOFT RADIUS SYSTEM
-   Radius: 8px (small), 16px (medium), 24px (large)
+   DESIGN TOKENS - APPLE-STYLE MONOCHROME
+   Ultra-minimalist: pure white canvas, charcoal text,
+   single interactive accent. No color tints.
    ============================================ */
 :root {
-  --apple-gray: #86868b;
-  --apple-black: #1d1d1f;
-  --apple-blue: #0071e3;
-  --apple-bg: #fbfbfd;
-  --border-color: #e5e5e5;
-  --surface: #ffffff;
-  --surface-elevated: #f8fafc;
+  /* Apple-inspired semantic palette (refactor 2026-06) */
+  --color-primary: #00184C;       /* deep structural blue — branding/footers only */
+  --color-bg-pure: #FFFFFF;       /* pure white canvas */
+  --color-text-main: #1D1D1F;     /* Apple-style dark charcoal for primary text */
+  --color-text-secondary: #6E6E73;/* muted gray for body copy and captions */
+  --color-system-blue: #0071e3;   /* the ONLY interactive accent (Apple's exact blue) */
+
+  /* Legacy aliases (kept to avoid full migration — all point to the new system) */
+  --apple-gray: var(--color-text-secondary);
+  --apple-black: var(--color-text-main);
+  --apple-blue: var(--color-system-blue);
+  --apple-bg: var(--color-bg-pure);
+  --border-color: rgba(0, 0, 0, 0.08);
+  --surface: var(--color-bg-pure);
+  --surface-elevated: var(--color-bg-pure);
 }
 
 /* ============================================
@@ -198,8 +214,13 @@ select:focus-visible {
 .section-number {
   display: block;
   font-size: 14px;
-  font-weight: 500;
-  color: #94a3b8;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  background: linear-gradient(135deg, #0066CC 0%, #1D1D1F 50%, #0066CC 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   margin-bottom: 8px;
 }
 
@@ -419,13 +440,11 @@ select:focus-visible {
    ============================================ */
 .fade-in {
   opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  transition: opacity 0.4s ease-out;
 }
 
 .fade-in.visible {
   opacity: 1;
-  transform: translateY(0);
 }
 
 .stagger-1 { transition-delay: 0.1s; }
@@ -544,8 +563,7 @@ select:focus-visible {
    HOME HERO
    ============================================ */
 .home-hero {
-  padding-top: 140px;
-  padding-bottom: 100px;
+  /* padding ahora viene del inner div: pt-20 pb-12 */
 }
 
 .home-hero-grid {
@@ -556,7 +574,7 @@ select:focus-visible {
 }
 
 .home-hero-content {
-  max-width: 560px;
+  /* max-width: 560px; */
 }
 
 .home-title {
@@ -1050,12 +1068,7 @@ select:focus-visible {
   max-width: 600px;
 }
 
-.case-hero-balanced-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 48px;
-  align-items: start;
-}
+/* legacy: .case-hero-balanced-grid removed — heroes now use a single-column layout */
 
 .case-header-metrics {
   display: flex;
@@ -1090,9 +1103,6 @@ select:focus-visible {
 
 .hero-visual {
   margin-top: 60px;
-  border-radius: 16px;
-  overflow: hidden;
-  border: 1px solid var(--border-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1101,7 +1111,6 @@ select:focus-visible {
 .hero-visual img {
   width: 100%;
   height: auto;
-  border-radius: 16px;
   display: block;
 }
 
@@ -1114,9 +1123,6 @@ select:focus-visible {
 }
 
 @media (max-width: 768px) {
-  .case-hero-balanced-grid {
-    grid-template-columns: 1fr;
-  }
   .case-hero-title {
     font-size: 40px;
   }
@@ -1958,6 +1964,10 @@ select:focus-visible {
 .contact-subtitle {
   font-size: 22px;
   color: var(--apple-gray);
+  text-align: left;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contact-grid {
@@ -2451,6 +2461,26 @@ select:focus-visible {
   overflow-x: hidden;
 }
 
+/* App shell: grid layout so footer stays at bottom without causing CLS */
+.app-shell {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 100%;
+  min-height: 100vh;
+}
+
+.app-main {
+  /* Reserve space to prevent footer shift when images load */
+  min-height: 80vh;
+  width: 100%;
+  max-width: 100%;
+}
+
+.app-footer {
+  /* Footer content height ~ 400px on desktop */
+  min-height: 400px;
+}
+
 /* ============================================
    ADDITIONAL UTILITIES
    ============================================ */
@@ -2465,7 +2495,7 @@ select:focus-visible {
 
 /* Gradient text — clip text to gradient background */
 .text-gradient-blue {
-  background: linear-gradient(135deg, #2563EB 0%, #7C3AED 100%);
+  background: linear-gradient(135deg, var(--color-system-blue) 0%, var(--color-text-main) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -2473,7 +2503,7 @@ select:focus-visible {
 }
 
 .text-gradient-violet {
-  background: linear-gradient(135deg, #8B5CF6 0%, #6D28D9 100%);
+  background: linear-gradient(135deg, var(--color-text-main) 0%, var(--color-text-secondary) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -2481,7 +2511,7 @@ select:focus-visible {
 }
 
 .text-gradient-mixed {
-  background: linear-gradient(135deg, #6D28D9 0%, #2563EB 50%, #10B981 100%);
+  background: linear-gradient(135deg, var(--color-text-main) 0%, var(--color-text-secondary) 50%, var(--color-system-blue) 100%);
   background-size: 200% 200%;
   -webkit-background-clip: text;
   background-clip: text;
@@ -2514,15 +2544,15 @@ select:focus-visible {
 }
 
 .aurora-blob--violet {
-  background: radial-gradient(circle, #8B5CF6 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(0, 102, 204, 0.06) 0%, transparent 70%);
 }
 
 .aurora-blob--blue {
-  background: radial-gradient(circle, #3B82F6 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(0, 102, 204, 0.06) 0%, transparent 70%);
 }
 
 .aurora-blob--emerald {
-  background: radial-gradient(circle, #10B981 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(0, 102, 204, 0.06) 0%, transparent 70%);
 }
 
 /* Glass card — used only in dark/aurora sections */
@@ -2541,72 +2571,83 @@ select:focus-visible {
   border: 1px solid rgba(255, 255, 255, 0.6);
 }
 
-/* Card variants — replaces repeated bg-white p-8 rounded-[2rem] pattern */
+/* Card variants — Apple-style monochrome (refactor 2026-06)
+   No color tints. Pure white canvas, hairline neutral borders,
+   diffused gray shadows. */
 .card-flat {
-  background: var(--surface);
-  border: 1px solid var(--border-color);
+  background: var(--color-bg-pure);
+  border: 1px solid rgba(0, 0, 0, 0.04);
   border-radius: 24px;
-  transition: transform 0.2s ease-out, border-color 0.2s ease-out;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .card-flat:hover {
   transform: translateY(-2px);
-  border-color: #d1d5db;
+  box-shadow: 0 12px 32px -8px rgba(0, 0, 0, 0.06);
+  border-color: rgba(0, 0, 0, 0.08);
 }
 
 .card-elevated {
-  background: var(--surface);
-  border: 1px solid var(--border-color);
+  background: var(--color-bg-pure);
+  border: 1px solid rgba(0, 0, 0, 0.06);
   border-radius: 24px;
-  box-shadow: 0 20px 60px -20px rgba(0, 0, 0, 0.08);
-  transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.04);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .card-elevated:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 30px 80px -20px rgba(0, 0, 0, 0.12);
+  transform: scale(1.01);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.06);
+}
+
+.card-glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 24px;
 }
 
 .card-elevated--violet {
-  background: var(--surface);
-  border: 1px solid var(--border-color);
+  background: var(--color-bg-pure);
+  border: 1px solid rgba(0, 0, 0, 0.06);
   border-radius: 24px;
-  box-shadow: 0 20px 60px -20px rgba(124, 58, 237, 0.25);
-  transition: transform 0.2s ease-out, box-shadow 0.2s ease-out, border-color 0.2s ease-out;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.04);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .card-elevated--violet:hover {
   transform: translateY(-4px);
-  box-shadow: 0 30px 80px -20px rgba(124, 58, 237, 0.35);
-  border-color: rgba(124, 58, 237, 0.3);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.06);
+  border-color: rgba(0, 0, 0, 0.08);
 }
 
 .card-elevated--blue {
-  background: var(--surface);
-  border: 1px solid var(--border-color);
+  background: var(--color-bg-pure);
+  border: 1px solid rgba(0, 0, 0, 0.06);
   border-radius: 24px;
-  box-shadow: 0 20px 60px -20px rgba(59, 130, 246, 0.25);
-  transition: transform 0.2s ease-out, box-shadow 0.2s ease-out, border-color 0.2s ease-out;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.04);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .card-elevated--blue:hover {
   transform: translateY(-4px);
-  box-shadow: 0 30px 80px -20px rgba(59, 130, 246, 0.35);
-  border-color: rgba(59, 130, 246, 0.3);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.06);
+  border-color: rgba(0, 0, 0, 0.08);
 }
 
 .card-elevated--emerald {
-  background: var(--surface);
-  border: 1px solid var(--border-color);
+  background: var(--color-bg-pure);
+  border: 1px solid rgba(0, 0, 0, 0.06);
   border-radius: 24px;
-  box-shadow: 0 20px 60px -20px rgba(16, 185, 129, 0.25);
-  transition: transform 0.2s ease-out, box-shadow 0.2s ease-out, border-color 0.2s ease-out;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.04);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .card-elevated--emerald:hover {
   transform: translateY(-4px);
-  box-shadow: 0 30px 80px -20px rgba(16, 185, 129, 0.35);
-  border-color: rgba(16, 185, 129, 0.3);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.06);
+  border-color: rgba(0, 0, 0, 0.08);
 }
 
 /* Stat card — used for metrics with color accent */
@@ -2715,23 +2756,22 @@ select:focus-visible {
 }
 
 .accent-border:hover::after {
-  background: linear-gradient(135deg, #8B5CF6, #3B82F6);
+  background: linear-gradient(135deg, var(--color-system-blue), var(--color-text-main));
 }
 
-/* Drop cap — first letter emphasis */
+/* Drop cap — neutralized for Apple-style minimalism (no float, no gradient) */
 .drop-cap::first-letter {
-  float: left;
-  font-size: 3.2em;
-  line-height: 0.85;
-  font-weight: 900;
-  margin-right: 8px;
-  margin-top: 4px;
-  background: linear-gradient(135deg, #6D28D9 0%, #2563EB 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
-  font-family: 'Galano', sans-serif;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  font-family: inherit;
+  color: inherit;
+  background: none;
+  -webkit-background-clip: initial;
+  background-clip: initial;
+  -webkit-text-fill-color: inherit;
+  float: none;
+  margin: 0;
 }
 
 /* Editorial number — giant rotated numeral for section decoration */
@@ -2759,6 +2799,51 @@ select:focus-visible {
 /* Hover lift for interactive elements */
 .hover-lift {
   transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+}
+
+/* ============================================
+   UNIFIED DESIGN TOKENS
+   Variables CSS para sombras y cards repetidos
+   ============================================ */
+:root {
+  --shadow-card: 0 8px 30px rgb(0, 0, 0, 0.04);
+  --shadow-card-hover: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Card bento — sustituye el patrón inline bg-white p-8 md:p-10 rounded-3xl (24px) border border-slate-200/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] */
+.card-bento {
+  background: var(--surface);
+  padding: 2rem 2.5rem;
+  border-radius: 24px;
+  border: 1px solid rgb(226 232 240 / 0.8);
+  box-shadow: var(--shadow-card);
+  transition: transform 0.2s ease-out, border-color 0.2s ease-out;
+}
+
+@media (min-width: 768px) {
+  .card-bento {
+    padding: 2.5rem;
+  }
+}
+
+.card-bento:hover {
+  transform: translateY(-2px);
+  border-color: #d1d5db;
+}
+
+.card-bento--compact {
+  padding: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .card-bento--compact {
+    padding: 1.25rem;
+  }
+}
+
+/* Shadow card utility — para tarjetas que no son card-bento completo */
+.shadow-card {
+  box-shadow: var(--shadow-card);
 }
 
 .hover-lift:hover {
@@ -2789,4 +2874,63 @@ select:focus-visible {
   .project-slide {
     flex: 0 0 calc(85% - 12px);
   }
+}
+
+/* ============================================
+   A11Y: contraste WCAG AA
+   text-slate-400 (#94a3b8) = 3.34:1 sobre blanco (FALLA en <18pt)
+   Subimos a #64748b (slate-500) = 5.74:1 (PASA AA)
+   ============================================ */
+/* Atributo selector: captura text-[10px], text-xs, text-sm con text-slate-400 */
+[class*="text-"].text-slate-400,
+[class*="text-slate-4"] {
+  color: #64748b;
+}
+
+.text-slate-400,
+[class*="text-slate-4"] {
+  color: #64748b !important;
+}
+
+/* Slates claros en labels/captions */
+.case-meta,
+.text-xs.font-bold.uppercase.tracking-widest,
+.text-sm.font-bold.uppercase.tracking-widest {
+  color: #64748b;
+}
+
+/* text-slate-300 sobre fondos claros */
+.text-slate-300 {
+  color: #475569;  /* slate-600 */
+}
+
+/* ============================================
+   PERFORMANCE: evitar CLS en imágenes lazy
+   Reservar aspect ratio a nivel de wrapper evita
+   layout shift cuando la imagen aún no ha cargado
+   ============================================ */
+img[loading="lazy"]:not([width]):not([height]):not([class*="aspect-"]) {
+  background: #f1f5f9;  /* slate-100 placeholder */
+  min-height: 200px;
+}
+
+/* Imágenes dentro de mockups/floating */
+img.ui-image,
+img.w-full.h-auto {
+  background: #f8fafc;
+}
+
+/* Reserva aspect ratio para imágenes full-width sin dimensiones
+   Esto evita CLS al cargar las imágenes lazy */
+.w-full.h-auto {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+/* Excepciones: aspect-ratio square en mockups y cards */
+img.ui-image,
+img.about-photo,
+img.case-image,
+img.hero-floating-img {
+  aspect-ratio: auto;
 }

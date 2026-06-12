@@ -3,13 +3,13 @@
     <AuroraBg variant="hero" class="contact-page section">
       <div class="container relative z-10">
         <div class="contact-header fade-in">
-          <span class="label text-blue-600">Contacto</span>
-          <h1 class="font-display text-5xl md:text-6xl font-extrabold tracking-tight leading-[1.1] text-slate-950 mb-6">
-            ¿
-            <span class="text-gradient-blue">Hablamos</span>?
+          <span class="label text-secondary">Contacto</span>
+          <h1 class="font-display text-5xl md:text-6xl font-extrabold tracking-tight leading-[1.1] text-midnight mb-6">
+            Cuéntame
+            <span class="text-gradient-secondary">de tu proyecto</span>
           </h1>
-          <p class="contact-subtitle drop-cap">
-            Proyectos donde el diseño genera resultados medibles. Conversemos sobre el tuyo.
+          <p class="contact-subtitle">
+            +4x conversión, -50% abandono, 2 apps en producción. ¿Cuál es tu métrica?
           </p>
         </div>
 
@@ -57,7 +57,7 @@
             <div class="contact-availability">
               <div class="availability-badge">
                 <span class="availability-dot"></span>
-                <span>Disponible para nuevos proyectos</span>
+                <span>Disponible desde abril 2026</span>
               </div>
             </div>
           </div>
@@ -157,7 +157,7 @@
                   {{ errors.message }}
                 </span>
               </div>
-              <button type="submit" class="btn btn-primary btn-full shadow-glow-blue" :disabled="isSubmitting || isSent" :aria-busy="isSubmitting">
+              <button type="submit" class="inline-flex items-center justify-center gap-2 w-full px-8 py-4 bg-midnight text-white font-semibold rounded-full hover:bg-primary transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed" :disabled="isSubmitting || isSent" :aria-busy="isSubmitting">
                 <span v-if="isSubmitting" class="btn-spinner"></span>
                 <CheckCircle v-else-if="isSent" :size="18" />
                 <Send v-else :size="18" />

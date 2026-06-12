@@ -4,7 +4,7 @@
       <span
         v-if="label"
         class="text-[10px] font-bold uppercase tracking-widest"
-        :style="{ color: textColor }"
+        :class="labelClass"
       >
         {{ label }}
       </span>
@@ -13,17 +13,16 @@
         :is="icon"
         :size="20"
         :stroke-width="1.75"
-        :style="{ color: textColor }"
+        :class="iconClass"
       />
     </div>
     <div
       class="font-display tabular-nums leading-none"
-      :class="sizeClass"
-      :style="{ color: valueColor }"
+      :class="[sizeClass, valueClass]"
     >
       {{ value }}
     </div>
-    <p v-if="description" class="text-sm text-slate-500 mt-2 leading-relaxed">
+    <p v-if="description" class="text-sm text-body mt-2 leading-relaxed">
       {{ description }}
     </p>
   </div>
@@ -39,8 +38,8 @@ const props = defineProps({
   icon: { type: [Object, Function], default: null },
   accent: {
     type: String,
-    default: 'blue',
-    validator: (v) => ['blue', 'violet', 'emerald', 'slate', 'amber'].includes(v)
+    default: 'primary',
+    validator: (v) => ['primary', 'secondary', 'midnight', 'highlight'].includes(v)
   },
   size: {
     type: String,
@@ -49,17 +48,18 @@ const props = defineProps({
   }
 })
 
+// Apple-style palette — monochrome + single system blue accent
 const colorMap = {
-  blue: { var: '#3B82F6', text: '#2563EB' },
-  violet: { var: '#8B5CF6', text: '#7C3AED' },
-  emerald: { var: '#10B981', text: '#059669' },
-  slate: { var: '#1E293B', text: '#0F172A' },
-  amber: { var: '#F59E0B', text: '#D97706' }
+  primary: { var: '#0071e3', text: 'text-primary' },
+  secondary: { var: '#0071e3', text: 'text-secondary' },
+  midnight: { var: '#1D1D1F', text: 'text-midnight' },
+  highlight: { var: '#0071e3', text: 'text-highlight' }
 }
 
 const colorVar = computed(() => colorMap[props.accent].var)
-const textColor = computed(() => colorMap[props.accent].text)
-const valueColor = computed(() => colorMap[props.accent].text)
+const labelClass = computed(() => colorMap[props.accent].text)
+const iconClass = computed(() => colorMap[props.accent].text)
+const valueClass = computed(() => colorMap[props.accent].text)
 
 const sizeClass = computed(() => {
   return {

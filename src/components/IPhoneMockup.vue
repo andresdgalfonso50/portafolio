@@ -2,14 +2,14 @@
   <div class="relative mx-auto w-full max-w-[280px] md:max-w-[320px]">
     <!-- Marco del iPhone -->
     <div 
-      class="relative rounded-[2.5rem] border-[8px] border-slate-900 bg-slate-900 shadow-2xl overflow-hidden aspect-[9/19.5]"
+      class="relative rounded-[2.5rem] border-[8px] border-midnight bg-midnight shadow-2xl overflow-hidden aspect-[9/19.5]"
       :class="[
         ringClass,
-        'ring-1 ring-slate-900/5'
+        'ring-1 ring-midnight/5'
       ]"
     >
       <!-- Dynamic Island / Notch -->
-      <div class="absolute top-0 inset-x-0 h-6 bg-slate-900 rounded-b-3xl w-1/2 mx-auto z-20"></div>
+      <div class="absolute top-0 inset-x-0 h-6 bg-midnight rounded-b-3xl w-1/2 mx-auto z-20"></div>
       
       <!-- Pantalla -->
       <img 

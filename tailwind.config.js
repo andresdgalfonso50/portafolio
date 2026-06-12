@@ -7,45 +7,16 @@ export default {
   theme: {
     extend: {
       colors: {
-        'brand': {
-          50: '#EFF6FF',
-          100: '#DBEAFE',
-          200: '#BFDBFE',
-          300: '#93C5FD',
-          400: '#60A5FA',
-          500: '#3B82F6',
-          600: '#2563EB',
-          700: '#1D4ED8',
-          800: '#1E40AF',
-          900: '#1E3A8A',
-          950: '#172554'
-        },
-        'violet': {
-          50: '#F5F3FF',
-          100: '#EDE9FE',
-          200: '#DDD6FE',
-          300: '#C4B5FD',
-          400: '#A78BFA',
-          500: '#8B5CF6',
-          600: '#7C3AED',
-          700: '#6D28D9',
-          800: '#5B21B6',
-          900: '#4C1D95',
-          950: '#2E1065'
-        },
-        'emerald': {
-          50: '#ECFDF5',
-          100: '#D1FAE5',
-          200: '#A7F3D0',
-          300: '#6EE7B7',
-          400: '#34D399',
-          500: '#10B981',
-          600: '#059669',
-          700: '#047857',
-          800: '#065F46',
-          900: '#064E3B',
-          950: '#022C22'
-        },
+        // Midnight Electric palette — ONLY system. Generic scales removed to prevent regression.
+        'midnight': '#0A1022',
+        'body': '#52607A',
+        'surface': '#F8FAFC',
+        'borderline': '#E8EDF5',
+        'primary': '#0071e3',
+        'secondary': '#0071e3',
+        'highlight': '#0071e3',
+        'chip': '#F3F5F8',
+        // Legacy Apple-style neutrals (kept for backwards-compat only)
         'bg-primary': '#FFFFFF',
         'bg-secondary': '#F5F5F5',
         'bg-tertiary': '#FAFAFA',
@@ -56,7 +27,6 @@ export default {
         'accent-hover': '#0077ed',
         'accent-light': '#EFF6FF',
         'border': '#e5e5e5',
-        'surface': '#FFFFFF',
         'surface-elevated': '#f8fafc',
         'success': '#10B981',
         'warning': '#F59E0B',
@@ -96,27 +66,26 @@ export default {
         'overlay': '0 16px 32px -8px rgba(0, 0, 0, 0.15)',
         'premium': '0 8px 30px rgb(0,0,0,0.04)',
         'premium-lg': '0 20px 60px -12px rgba(0,0,0,0.08)',
-        // Color glows — used for accent buttons & elevated cards
-        'glow-blue': '0 20px 60px -20px rgba(59, 130, 246, 0.35)',
-        'glow-blue-lg': '0 30px 80px -20px rgba(59, 130, 246, 0.5)',
-        'glow-violet': '0 20px 60px -20px rgba(124, 58, 237, 0.35)',
-        'glow-violet-lg': '0 30px 80px -20px rgba(124, 58, 237, 0.5)',
-        'glow-emerald': '0 20px 60px -20px rgba(16, 185, 129, 0.35)',
-        'glow-emerald-lg': '0 30px 80px -20px rgba(16, 185, 129, 0.5)',
+        // Color glows — Apple-style system blue only
+        'glow-primary': '0 20px 60px -20px rgba(0, 113, 227, 0.20)',
+        'glow-primary-lg': '0 30px 80px -20px rgba(0, 113, 227, 0.30)',
+        'glow-secondary': '0 20px 60px -20px rgba(0, 113, 227, 0.20)',
+        'glow-secondary-lg': '0 30px 80px -20px rgba(0, 113, 227, 0.30)',
         'inner-soft': 'inset 0 1px 2px 0 rgba(0, 0, 0, 0.04)'
       },
       backgroundImage: {
-        // Aurora gradients — used for hero/CTAs/fondo oscuro
-        'aurora-violet': 'radial-gradient(ellipse 80% 50% at 20% 0%, rgba(139, 92, 246, 0.25), transparent 60%)',
-        'aurora-blue': 'radial-gradient(ellipse 70% 50% at 80% 100%, rgba(59, 130, 246, 0.25), transparent 60%)',
-        'aurora-emerald': 'radial-gradient(ellipse 60% 50% at 50% 100%, rgba(16, 185, 129, 0.15), transparent 60%)',
-        'aurora-mixed': 'radial-gradient(ellipse 80% 50% at 20% 0%, rgba(139, 92, 246, 0.2), transparent 50%), radial-gradient(ellipse 70% 50% at 80% 100%, rgba(59, 130, 246, 0.2), transparent 50%)',
-        'aurora-dark': 'radial-gradient(ellipse 80% 60% at 30% 0%, rgba(124, 58, 237, 0.4), transparent 60%), radial-gradient(ellipse 60% 50% at 90% 100%, rgba(59, 130, 246, 0.3), transparent 60%)',
-        'gradient-text-blue': 'linear-gradient(135deg, #3B82F6 0%, #8B5CF6 100%)',
-        'gradient-text-violet': 'linear-gradient(135deg, #8B5CF6 0%, #6D28D9 100%)',
-        'gradient-text-mixed': 'linear-gradient(135deg, #6D28D9 0%, #3B82F6 50%, #10B981 100%)',
+        // Apple-style: ultra-subtle system blue atmospheric gradients
+        'aurora-primary': 'radial-gradient(ellipse 80% 50% at 20% 0%, rgba(0, 113, 227, 0.06), transparent 60%)',
+        'aurora-secondary': 'radial-gradient(ellipse 70% 50% at 80% 100%, rgba(0, 113, 227, 0.05), transparent 60%)',
+        'aurora-mixed': 'radial-gradient(ellipse 80% 50% at 20% 0%, rgba(0, 113, 227, 0.05), transparent 50%), radial-gradient(ellipse 70% 50% at 80% 100%, rgba(0, 113, 227, 0.05), transparent 50%)',
+        'aurora-dark': 'radial-gradient(ellipse 80% 60% at 30% 0%, rgba(0, 113, 227, 0.08), transparent 60%), radial-gradient(ellipse 60% 50% at 90% 100%, rgba(0, 113, 227, 0.05), transparent 60%)',
+        'gradient-text-primary': 'linear-gradient(135deg, #0071e3 0%, #1D1D1F 100%)',
+        'gradient-text-secondary': 'linear-gradient(135deg, #0071e3 0%, #1D1D1F 100%)',
+        'gradient-text-mixed': 'linear-gradient(135deg, #1D1D1F 0%, #0071e3 50%, #1D1D1F 100%)',
         'grid-pattern': "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill='%23000' fill-opacity='0.04'%3E%3Cpath d='M0 0h1v40H0zM39 0h1v40h-1zM0 0h40v1H0zM0 39h40v1H0z'/%3E%3C/g%3E%3C/svg%3E\")",
-        'dot-pattern': "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Ccircle cx='2' cy='2' r='1' fill='%2394a3b8' fill-opacity='0.25'/%3E%3C/svg%3E\")"
+        'dot-pattern': "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Ccircle cx='2' cy='2' r='1' fill='%2394a3b8' fill-opacity='0.25'/%3E%3C/svg%3E\")",
+        'gradient-electric': 'linear-gradient(135deg, #0071e3 0%, #1D1D1F 50%, #0071e3 100%)',
+        'gradient-electric-br': 'linear-gradient(to bottom right, #0071e3, #1D1D1F, #0071e3)'
       },
       maxWidth: {
         'container': '1200px',

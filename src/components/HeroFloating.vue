@@ -3,7 +3,7 @@
     <img 
       :src="src" 
       :alt="alt" 
-      class="w-full rounded-[2.5rem] shadow-[0_20px_50px_-12px_rgba(0,0,0,0.15)] border border-slate-100/50 object-cover"
+      class="w-full rounded-[2.5rem] shadow-[0_20px_50px_-12px_rgba(0,0,0,0.15)] border border-borderline/50 object-cover"
       :class="imageClass"
       fetchpriority="high"
       loading="eager"
