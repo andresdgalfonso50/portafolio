@@ -14,12 +14,12 @@
 import { test, expect } from '@playwright/test';
 
 const PAGES = [
-  { path: '/',         name: 'Home'       , color: 'violet', h1Content: 'productos' },
-  { path: '/app',      name: 'App'        , color: 'violet', h1Content: 'Asistencia' },
-  { path: '/ecommerce',name: 'Ecommerce'  , color: 'blue'  , h1Content: 'Optimización' },
-  { path: '/app-web',  name: 'Xentral'    , color: 'emerald',h1Content: 'Telemedicina' },
-  { path: '/sobre-mi', name: 'About'      , color: 'violet', h1Content: 'productos' },
-  { path: '/contacto', name: 'Contacto'   , color: 'blue'  , h1Content: 'Cuéntame' },
+  { path: '/#/',         name: 'Home'       , color: 'violet', h1Content: 'escala' },
+  { path: '/#/app',      name: 'App'        , color: 'violet', h1Content: 'Continental' },
+  { path: '/#/ecommerce',name: 'Ecommerce'  , color: 'blue'  , h1Content: 'Continental' },
+  { path: '/#/app-web',  name: 'Xentral'    , color: 'emerald',h1Content: 'Xentral' },
+  { path: '/#/sobre-mi', name: 'About'      , color: 'violet', h1Content: 'productos' },
+  { path: '/#/contacto', name: 'Contacto'   , color: 'blue'  , h1Content: 'Diseñemos' },
 ];
 
 /* ─── Helpers ─── */
@@ -107,7 +107,7 @@ test.describe('Cross-page', () => {
       await page.goto(p.path, { waitUntil: 'networkidle' });
       await page.waitForTimeout(500);
       // Click first nav link that isn't current page
-      const links = page.locator('nav a, ul.nav-links a, [role="navigation"] a');
+      const links = page.locator('nav a:visible, ul.nav-links a:visible, [role="navigation"] a:visible');
       const count = await links.count();
       let clicked = false;
       for (let i = 0; i < count && !clicked; i++) {

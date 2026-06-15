@@ -1,8 +1,10 @@
+// Configuración de Vite para producción en GitHub Pages
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import { fileURLToPath, URL } from 'node:url'
 
 export default defineConfig({
+  base: '/portafolio/',
   plugins: [vue()],
   resolve: {
     alias: {
