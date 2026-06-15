@@ -3,6 +3,9 @@
     <!-- HERO SECTION -->
     <AuroraBg variant="hero" class="about-hero section">
       <div class="container relative z-10">
+        <div class="flex justify-center md:justify-start mb-8 fade-in">
+          <AvailabilityBadge text="Disponible para nuevos proyectos · Bogotá" variant="light" />
+        </div>
         <div class="about-hero-grid md:grid-cols-2 md:gap-12 items-center">
           <div class="about-hero-content fade-in">
             <span class="label text-primary">Product Designer · Bogotá</span>
@@ -13,7 +16,7 @@
               <span class="font-light italic text-primary">números</span>
             </h1>
             <p class="text-lg md:text-xl text-body mt-6 max-w-lg leading-relaxed">
-              +4x ingresos. 0.1% → 12% retención. Diseño que se mide, no que se ve.
+              +4x ingresos. 0.1% → 12% retención. Resultados que defiendo con datos.
             </p>
             <div class="about-meta">
               <span class="about-meta-item">
@@ -26,21 +29,14 @@
               </span>
             </div>
             <div class="about-actions">
-              <a
-                href="/assets/cv-yeison-alfonso.html"
-                target="_blank"
-                class="inline-flex items-center gap-2 px-7 py-3.5 bg-midnight text-white font-semibold text-sm rounded-full hover:bg-primary transition-colors duration-300"
-              >
-                <Download :size="18" />
-                Descargar CV
-              </a>
               <router-link
                 to="/contacto"
-                class="inline-flex items-center gap-2 px-7 py-3.5 bg-white text-midnight font-semibold text-sm rounded-full border border-borderline hover:border-slate-300 hover:scale-[1.02] transition-all duration-200"
+                class="inline-flex items-center gap-2 px-7 py-3.5 bg-midnight text-white font-semibold text-sm rounded-full hover:bg-primary transition-colors duration-300"
               >
                 <Mail :size="18" />
-                Contactar
+                Agendar llamada
               </router-link>
+              <CVButton variant="secondary" label="Descargar CV" />
             </div>
           </div>
           <div class="about-photo-wrapper fade-in stagger-2 md:ml-auto">
@@ -77,58 +73,15 @@
     </AuroraBg>
 
     <!-- EXPERIENCE SECTION -->
-    <section class="section section-alt">
+    <section id="experiencia" class="section section-alt">
       <div class="container">
         <div class="section-header fade-in">
           <span class="label">Trayectoria</span>
-          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-8">Experiencia Profesional</h2>
+          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-3">Experiencia Profesional</h2>
+          <p class="text-lg text-body max-w-2xl">De freelance a producto. Una evolución hacia diseño con mirada de sistema, decisiones documentadas y trabajo cercano con desarrollo.</p>
         </div>
 
-        <div class="grid grid-cols-1 gap-6">
-          <div class="card-elevated--violet p-8 md:p-10">
-            <div class="flex items-start justify-between mb-4">
-              <h3 class="text-lg font-bold text-midnight">Continental Assist</h3>
-              <span class="inline-block px-3 py-1 bg-midnight text-white text-[11px] font-bold uppercase tracking-widest rounded-full">Actual</span>
-            </div>
-            <p class="text-sm font-semibold text-primary mb-2">Product Designer</p>
-            <p class="text-sm text-body leading-relaxed mb-4">0.82% → 3.8% conversión. 2 apps en producción. Equipo de 3 (PM + 2 devs).</p>
-            <div class="flex flex-wrap gap-2">
-              <span class="inline-block px-3 py-1 bg-chip text-body font-semibold text-[11px] uppercase tracking-widest rounded-full">UX Research</span>
-              <span class="inline-block px-3 py-1 bg-chip text-body font-semibold text-[11px] uppercase tracking-widest rounded-full">UI Design</span>
-              <span class="inline-block px-3 py-1 bg-chip text-body font-semibold text-[11px] uppercase tracking-widest rounded-full">Prototyping</span>
-              <span class="inline-block px-3 py-1 bg-chip text-body font-semibold text-[11px] uppercase tracking-widest rounded-full">A/B Testing</span>
-            </div>
-          </div>
-
-          <div class="card-elevated--blue p-8 md:p-10">
-            <div class="flex items-start justify-between mb-4">
-              <h3 class="text-lg font-bold text-midnight">ASSA ABLOY (YALE)</h3>
-              <span class="text-xs font-medium text-slate-400">Feb 2024 – Jun 2024</span>
-            </div>
-            <p class="text-sm font-semibold text-secondary mb-2">Diseñador UX/UI</p>
-            <p class="text-sm text-body leading-relaxed mb-4">Cerraduras inteligentes IoT. App mobile validada con 12 usuarios reales en 5 meses.</p>
-            <div class="flex flex-wrap gap-2">
-              <span class="inline-block px-3 py-1 bg-chip text-body font-semibold text-[11px] uppercase tracking-widest rounded-full">IoT Design</span>
-              <span class="inline-block px-3 py-1 bg-chip text-body font-semibold text-[11px] uppercase tracking-widest rounded-full">Mobile App</span>
-              <span class="inline-block px-3 py-1 bg-chip text-body font-semibold text-[11px] uppercase tracking-widest rounded-full">Design System</span>
-            </div>
-          </div>
-
-          <div class="card-elevated--emerald p-8 md:p-10">
-            <div class="flex items-start justify-between mb-4">
-              <h3 class="text-lg font-bold text-midnight">Azzorti (Dupree)</h3>
-              <span class="text-xs font-medium text-slate-400">Feb 2021 – Ago 2025</span>
-            </div>
-            <p class="text-sm font-semibold text-secondary mb-2">Diseñador Gráfico</p>
-            <p class="text-sm text-body leading-relaxed mb-4">Identidad visual en 5 países. Branding, redes y material impreso.</p>
-            <div class="flex flex-wrap gap-2">
-              <span class="inline-block px-3 py-1 bg-chip text-body font-semibold text-[11px] uppercase tracking-widest rounded-full">Branding</span>
-              <span class="inline-block px-3 py-1 bg-chip text-body font-semibold text-[11px] uppercase tracking-widest rounded-full">Social Media</span>
-              <span class="inline-block px-3 py-1 bg-chip text-body font-semibold text-[11px] uppercase tracking-widest rounded-full">Print</span>
-              <span class="inline-block px-3 py-1 bg-chip text-body font-semibold text-[11px] uppercase tracking-widest rounded-full">Packaging</span>
-            </div>
-          </div>
-        </div>
+        <ExperienceTimeline :items="experienceItems" />
       </div>
     </section>
 
@@ -149,15 +102,29 @@
       </div>
     </section>
 
-    <!-- EDUCATION SECTION -->
+    <!-- PRINCIPLES SECTION -->
     <section class="section">
       <div class="container">
         <div class="section-header fade-in">
-          <span class="label">Formación</span>
-          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-8">Educación</h2>
+          <span class="label">Filosofía</span>
+          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-3">Cómo pienso el diseño.</h2>
+          <p class="text-lg text-body max-w-2xl">4 valores que guían cada decisión, del brief al handoff.</p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <PrinciplesSection :principles="principles" />
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="label">Formación</span>
+          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-3">Educación y Cursos</h2>
+          <p class="text-lg text-body max-w-2xl">De diseño gráfico a producto: una formación que siguió al foco, no al revés.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 fade-in">
           <div class="card-elevated--violet p-8 md:p-10 flex items-start gap-5">
             <div class="w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center shrink-0">
               <GraduationCap :size="22" class="text-primary" />
@@ -184,61 +151,71 @@
     </section>
 
     <!-- SKILLS SECTION -->
-    <section class="section section-alt">
+    <section class="section">
       <div class="container">
         <div class="section-header fade-in">
           <span class="label">Stack</span>
-          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-8">3 pilares, 14 herramientas</h2>
+          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-3">Cómo trabajo</h2>
+          <p class="text-lg text-body max-w-2xl">6 categorías de capacidades. Diseño productos con visión integral, del problema a la implementación.</p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 fade-in">
-          <!-- UX/UI Design Pillar (Opción Principal) -->
-          <div class="card-elevated--violet p-8 md:p-10">
-            <div class="w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center mb-5">
-              <PenTool :size="22" class="text-primary" />
-            </div>
-            <h4 class="font-bold text-midnight text-base mb-4">UX/UI Design</h4>
-            <div class="flex flex-wrap gap-2">
-              <span class="inline-block px-3 py-1 bg-chip text-body font-semibold text-[11px] uppercase tracking-widest rounded-full">Figma</span>
-              <span class="inline-block px-3 py-1 bg-chip text-body font-semibold text-[11px] uppercase tracking-widest rounded-full">Adobe XD</span>
-              <span class="inline-block px-3 py-1 bg-chip text-body font-semibold text-[11px] uppercase tracking-widest rounded-full">Research</span>
-              <span class="inline-block px-3 py-1 bg-chip text-body font-semibold text-[11px] uppercase tracking-widest rounded-full">Architecture</span>
-              <span class="inline-block px-3 py-1 bg-chip text-body font-semibold text-[11px] uppercase tracking-widest rounded-full">User flows</span>
-              <span class="inline-block px-3 py-1 bg-chip text-body font-semibold text-[11px] uppercase tracking-widest rounded-full">Wireframes</span>
-              <span class="inline-block px-3 py-1 bg-chip text-body font-semibold text-[11px] uppercase tracking-widest rounded-full">Testing</span>
-            </div>
-          </div>
-
-          <!-- Research Pillar (Opción Principal) -->
-          <div class="card-elevated--blue p-8 md:p-10">
-            <div class="w-12 h-12 bg-secondary/20 rounded-xl flex items-center justify-center mb-5">
-              <BarChart2 :size="22" class="text-secondary" />
-            </div>
-            <h4 class="font-bold text-midnight text-base mb-4">Research</h4>
-            <div class="flex flex-wrap gap-2">
-              <span class="inline-block px-3 py-1 bg-chip text-body font-semibold text-[11px] uppercase tracking-widest rounded-full">Analytics</span>
-              <span class="inline-block px-3 py-1 bg-chip text-body font-semibold text-[11px] uppercase tracking-widest rounded-full">A/B Testing</span>
-              <span class="inline-block px-3 py-1 bg-chip text-body font-semibold text-[11px] uppercase tracking-widest rounded-full">Clarity</span>
-              <span class="inline-block px-3 py-1 bg-chip text-body font-semibold text-[11px] uppercase tracking-widest rounded-full">User research</span>
-              <span class="inline-block px-3 py-1 bg-chip text-body font-semibold text-[11px] uppercase tracking-widest rounded-full">Hotjar</span>
-            </div>
-          </div>
-
-          <!-- Development Pillar (Opción Principal) -->
-          <div class="card-elevated--emerald p-8 md:p-10">
-            <div class="w-12 h-12 bg-secondary/20 rounded-xl flex items-center justify-center mb-5">
-              <Code2 :size="22" class="text-secondary" />
-            </div>
-            <h4 class="font-bold text-midnight text-base mb-4">Development</h4>
-            <div class="flex flex-wrap gap-2">
-              <span class="inline-block px-3 py-1 bg-chip text-body font-semibold text-[11px] uppercase tracking-widest rounded-full">HTML/CSS</span>
-              <span class="inline-block px-3 py-1 bg-chip text-body font-semibold text-[11px] uppercase tracking-widest rounded-full">Vue.js</span>
-              <span class="inline-block px-3 py-1 bg-chip text-body font-semibold text-[11px] uppercase tracking-widest rounded-full">Figma to code</span>
-              <span class="inline-block px-3 py-1 bg-chip text-body font-semibold text-[11px] uppercase tracking-widest rounded-full">Dev collab</span>
-              <span class="inline-block px-3 py-1 bg-chip text-body font-semibold text-[11px] uppercase tracking-widest rounded-full">Prototyping</span>
-            </div>
-          </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 fade-in">
+          <SkillPillar
+            title="UX/UI Design"
+            description="Interfaces que priorizan claridad y conversión."
+            :tags="['Figma', 'Adobe XD', 'User flows', 'Wireframes', 'Prototyping', 'Design System']"
+            :icon="PenTool"
+            color="violet"
+          />
+          <SkillPillar
+            title="Research & CRO"
+            description="Decisiones validadas con datos, no con opinión."
+            :tags="['Google Analytics', 'Microsoft Clarity', 'Hotjar', 'A/B Testing', 'User research', 'Heuristics']"
+            :icon="BarChart2"
+            color="blue"
+          />
+          <SkillPillar
+            title="Product"
+            description="Discovery, métricas, estrategia. Diseño el problema entero."
+            :tags="['Product Discovery', 'User Personas', 'Benchmarking', 'Priorización', 'Métricas', 'Roadmap']"
+            :icon="Compass"
+            color="emerald"
+          />
+          <SkillPillar
+            title="Metodologías"
+            description="Procesos iterativos y validados con el equipo."
+            :tags="['Design Thinking', 'Lean UX', 'Design Sprints', 'Agile/Scrum', 'DCU', 'Jobs To Be Done']"
+            :icon="Workflow"
+            color="amber"
+          />
+          <SkillPillar
+            title="Frontend Bridge"
+            description="Hablo el idioma de desarrollo. Figma → código sin fricción."
+            :tags="['HTML/CSS', 'Vue.js', 'Tailwind', 'Figma to code', 'Dev collaboration', 'QA review']"
+            :icon="Code2"
+            color="violet"
+          />
+          <SkillPillar
+            title="IA & Agentic"
+            description="Diseño y prototipado asistido con IA para iterar más rápido."
+            :tags="['Prompt Engineering', 'Claude', 'ChatGPT', 'Cursor', 'Figma AI', 'Validación asistida']"
+            :icon="Sparkles"
+            color="blue"
+          />
         </div>
+      </div>
+    </section>
+
+    <!-- STACK SECTION -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="label">Herramientas</span>
+          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-3">Stack del día a día</h2>
+          <p class="text-lg text-body max-w-2xl">Las que uso para diseñar, medir, prototipar y entregar.</p>
+        </div>
+
+        <StackWithLogos :tools="stackTools" />
       </div>
     </section>
 
@@ -246,28 +223,22 @@
     <AuroraBg variant="dark" class="py-32">
       <div class="max-w-4xl mx-auto text-center px-6 relative z-10">
         <h2 class="font-display text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-6 leading-[1.1]">
-          ¿Te
-          <span class="text-gradient-mixed">sumas</span>?
+          ¿
+          <span class="text-gradient-mixed">Trabajamos</span>
+          juntos?
         </h2>
         <p class="text-lg text-slate-300 mb-10 max-w-xl mx-auto leading-relaxed">
-          Disponible desde abril 2026. 30 min de discovery, respuesta en 24h.
+          Disponible para nuevos proyectos. 30 min de discovery, respuesta en 24h.
         </p>
         <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
           <router-link
             to="/contacto"
-            class="inline-flex items-center gap-2 px-8 py-4 bg-midnight text-white font-semibold rounded-full hover:bg-primary transition-colors duration-300"
+            class="inline-flex items-center gap-2 px-8 py-4 bg-primary text-white font-semibold rounded-full hover:bg-white hover:text-midnight transition-colors duration-300"
           >
             <Mail :size="18" />
-            Agendar discovery
+            Conversemos
           </router-link>
-          <a
-            href="/assets/cv-yeison-alfonso.html"
-            target="_blank"
-            class="inline-flex items-center gap-3 px-6 py-3.5 bg-white/10 backdrop-blur-sm text-white font-semibold rounded-full border border-white/20 hover:bg-white/20 hover:scale-[1.02] transition-all duration-200"
-          >
-            <Download :size="18" />
-            Descargar CV
-          </a>
+          <CVButton variant="ghost" label="Descargar CV" />
         </div>
       </div>
     </AuroraBg>
@@ -275,8 +246,93 @@
 </template>
 
 <script setup>
-import { MapPin, GraduationCap, Palette, BarChart2, Code2, PenTool, Mail, Download } from 'lucide-vue-next'
+import { MapPin, GraduationCap, Palette, BarChart2, Code2, PenTool, Mail, Compass, Workflow, Sparkles } from 'lucide-vue-next'
 import { useScrollAnimations } from '@/composables/useScrollAnimations'
 import AuroraBg from '@/components/primitives/AuroraBg.vue'
+import AvailabilityBadge from '@/components/AvailabilityBadge.vue'
+import CVButton from '@/components/CVButton.vue'
+import ExperienceTimeline from '@/components/ExperienceTimeline.vue'
+import PrinciplesSection from '@/components/PrinciplesSection.vue'
+import SkillPillar from '@/components/SkillPillar.vue'
+import StackWithLogos from '@/components/StackWithLogos.vue'
+
 useScrollAnimations()
+
+const experienceItems = [
+  {
+    period: 'Ago 2025 – Actualidad',
+    current: true,
+    role: 'Product Designer (UX/UI)',
+    company: 'Continental Assist',
+    description: 'Lidero el diseño end-to-end de e-commerce y apps nativas de asistencia en viaje. Métricas auditables, decisiones con datos.',
+    achievements: [
+      'E-commerce: 0.82% → 3.8% conversión en 3 meses (+4x ingresos, 2K → 9K USD/mes)',
+      'App nativa: 0 → producción. Telemedicina, vouchers y reembolsos centralizados',
+      'Definición de arquitectura, user flows y experiencia con research + analytics'
+    ],
+    skills: ['UX Research', 'UI Design', 'Prototyping', 'A/B Testing', 'Mobile-First']
+  },
+  {
+    period: 'Feb 2024 – Jun 2024',
+    role: 'Diseñador UX/UI',
+    company: 'ASSA ABLOY (YALE)',
+    description: 'Diseño de app mobile para cerraduras inteligentes IoT en 5 países.',
+    achievements: [
+      'Validación con 12 usuarios reales en 5 meses',
+      'Sistema de diseño escalable para línea de productos IoT'
+    ],
+    skills: ['IoT Design', 'Mobile App', 'Design System', 'User Testing']
+  },
+  {
+    period: 'Feb 2021 – Ago 2025',
+    role: 'Diseñador Gráfico',
+    company: 'Azzorti (Dupree)',
+    description: 'Identidad visual y campañas en 5 países. Branding, redes y material impreso.',
+    achievements: [
+      'Estandarización de marca en 5 mercados',
+      'Material impreso, packaging y campañas digitales'
+    ],
+    skills: ['Branding', 'Social Media', 'Print', 'Packaging']
+  }
+]
+
+const principles = [
+  {
+    label: 'Producto',
+    title: 'La pantalla es la punta; diseño el problema entero.',
+    description: 'Discovery, métricas, negocio. La UI es la consecuencia, no el punto de partida.',
+    color: 'violet'
+  },
+  {
+    label: 'Confianza',
+    title: 'Diseño donde el error cuesta dinero o reputación.',
+    description: 'Checkout, salud, finanzas. La fricción se mide, no se discute.',
+    color: 'blue'
+  },
+  {
+    label: 'Sistemas',
+    title: 'Diseño para escalar, no para una pantalla.',
+    description: 'Componentes reutilizables, tokens, documentación. Velocidad sin deuda.',
+    color: 'emerald'
+  },
+  {
+    label: 'Evidencia',
+    title: 'Decisiones que se defienden con datos.',
+    description: 'Analytics, heatmaps, A/B tests. Lo que no se mide, no se mejora.',
+    color: 'amber'
+  }
+]
+
+const stackTools = [
+  { name: 'Figma', icon: '/assets/logos/stack/figma.svg', bg: '#F24E1E' },
+  { name: 'Notion', icon: '/assets/logos/stack/notion.svg', bg: '#000000' },
+  { name: 'Vue 3', icon: '/assets/logos/stack/vue.svg', bg: '#4FC08D' },
+  { name: 'Tailwind', icon: '/assets/logos/stack/tailwind.svg', bg: '#06B6D4' },
+  { name: 'Analytics', icon: '/assets/logos/stack/google-analytics.svg', bg: '#E37400' },
+  { name: 'Hotjar', icon: '/assets/logos/stack/hotjar.svg', bg: '#FD3A5C' },
+  { name: 'Google Fonts', icon: '/assets/logos/stack/google-fonts.svg', bg: '#4285F4' },
+  { name: 'GitHub', icon: '/assets/logos/stack/github.svg', bg: '#181717' },
+  { name: 'Vercel', icon: '/assets/logos/stack/vercel.svg', bg: '#000000' },
+  { name: 'Netlify', icon: '/assets/logos/stack/netlify.svg', bg: '#00C7B7' }
+]
 </script>

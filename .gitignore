@@ -5,3 +5,12 @@ PSD/
 Thumbs.db
 desktop.ini
 $RECYCLE.BIN/
+
+# Local analysis files
+analyze_competitor.py
+competitor_*.png
+competitor_*.json
+competitor_*.txt
+scripts/verify_deploy*.py
+scripts/analyze_competitor*.py
+snapshots/pre-deploy/

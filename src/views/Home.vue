@@ -3,17 +3,19 @@
     <!-- HERO SECTION -->
 <AuroraBg variant="hero" class="home-hero section">
   <div class="w-full max-w-6xl mx-auto px-6 pt-20 pb-12 relative z-10">
+    <div class="flex justify-center mb-8 fade-in">
+      <AvailabilityBadge text="Disponible para nuevos proyectos · Bogotá" variant="light" />
+    </div>
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
       <div class="lg:col-span-7 flex flex-col items-start fade-in">
-        <span class="label">Product Designer</span>
+        <span class="label">Product Design Director</span>
         <h1 class="font-display text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.05] text-midnight mb-6">
-          Diseño
-          <span class="font-light italic text-primary">productos</span>
-          que generan
-          <span class="text-gradient-secondary">ingresos</span>
+          Diseño de producto que
+          <span class="font-light italic text-primary">escala</span>
+          <span class="text-gradient-secondary">el negocio</span>
         </h1>
-        <p class="text-lg text-body mb-10 max-w-lg leading-relaxed drop-cap">
-          +4x conversión en e-commerce. -50% abandono en apps de viaje. Métricas auditables, no pitches.
+        <p class="text-lg text-body mb-10 max-w-lg leading-relaxed">
+          Estrategia UX y sistemas de diseño de alto rendimiento enfocados en maximizar la conversión, retención y la eficiencia de producto. Métricas auditables en producción.
         </p>
         <div class="flex flex-wrap gap-4 items-center">
           <a
@@ -23,6 +25,7 @@
             Ver 3 casos
             <ArrowRight :size="18" />
           </a>
+          <CVButton variant="secondary" label="Descargar CV" />
           <a
             href="https://wa.me/573125673243?text=Hola%20Yeison,%20vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20contactarte."
             target="_blank"
@@ -30,7 +33,7 @@
                 class="inline-flex items-center gap-2 px-7 py-3.5 bg-white text-midnight font-semibold text-sm rounded-full border border-borderline hover:border-midnight transition-colors duration-300"
           >
             <MessageCircle :size="18" />
-            Contactar
+            WhatsApp
           </a>
         </div>
       </div>
@@ -64,11 +67,11 @@
 
     <!-- METRICS -->
     <div class="w-full max-w-6xl mx-auto px-6 mt-12 pt-8 pb-16">
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-        <StatCard value="+4x" label="Ingresos generados" accent="highlight" :icon="TrendingUp" />
-        <StatCard value="4+" label="Años de experiencia" accent="highlight" :icon="Briefcase" />
-        <StatCard value="10+" label="Proyectos end-to-end" accent="highlight" :icon="Layers" />
-        <StatCard value="2" label="Apps en producción" accent="highlight" :icon="Globe" />
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <StatCard value="+4x" label="Incremento en conversión" :icon="TrendingUp" />
+        <StatCard value="4+" label="Años de experiencia líder" :icon="Briefcase" />
+        <StatCard value="10+" label="Proyectos desplegados" :icon="Layers" />
+        <StatCard value="2" label="Apps nativas en producción" :icon="Globe" />
       </div>
     </div>
 
@@ -108,110 +111,55 @@
 
       <div id="proyectos" class="container">
         <div class="mb-12 text-center">
-          <h2 class="font-display text-4xl md:text-5xl font-extrabold tracking-tight text-midnight">+12,000% de retención. +4x ingresos. -60% tiempo.</h2>
-          <p class="text-lg text-body mt-4">3 proyectos, cada uno con métrica de negocio verificable.</p>
+          <h2 class="font-display text-4xl md:text-5xl font-extrabold tracking-tight text-midnight">3 casos. 3 industrias. 1 método.</h2>
+          <p class="text-lg text-body mt-4">App de viaje. E-commerce. Telemedicina. Métricas auditables en cada uno.</p>
         </div>
 
-        <div class="projects-gallery">
-          <button class="gallery-arrow left hidden md:flex" @click="scrollGallery(-1)" aria-label="Anterior">
-            <ChevronLeft :size="24" />
-          </button>
-          
-          <div class="projects-slider" ref="gallerySlider">
-            <router-link to="/app" class="project-slide">
-              <div class="card-elevated--violet bg-white overflow-hidden">
-                <div class="card-image">
-                  <IPhoneMockup src="/assets/images/app/card-app.jpg" alt="App mobile - Interfaz moderna" />
-                  <span class="card-badge bg-primary text-white border-0">App Mobile</span>
-                  <div class="card-overlay">
-                    <span class="card-cta">Ver caso →</span>
-                  </div>
-                </div>
-                <div class="card-content">
-                  <div class="flex items-baseline gap-2 mb-2">
-                    <span class="font-display text-2xl font-black text-primary tabular-nums">+12,000%</span>
-                    <span class="text-xs font-bold uppercase tracking-widest text-slate-400">retención</span>
-                  </div>
-                  <h3>Asistencia en ruta</h3>
-                  <p>De 97% de abandono a 2 apps en producción. Retención día 7: 0.1% → 12%.</p>
-                  <div class="card-metric">
-                    <Rocket :size="14" />
-                    <span>2 apps en producción</span>
-                  </div>
-                </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Card 1: App Mobile -->
+          <router-link to="/app" class="block">
+            <article class="card-elevated--violet h-full flex flex-col">
+              <div class="card-image">
+                <img src="/assets/images/home/card-app.jpg" alt="App de asistencia al viajero - Continental Assist" loading="lazy" />
               </div>
-            </router-link>
-
-            <router-link to="/ecommerce" class="project-slide">
-              <div class="card-elevated--blue bg-white overflow-hidden">
-                <div class="card-image">
-                  <BrowserMockup src="/assets/images/ecommerce/card-ecommerce.jpg" alt="Rediseño de e-commerce - Dashboard analytics" />
-                  <span class="card-badge bg-secondary text-white border-0">E-commerce</span>
-                  <div class="card-overlay">
-                    <span class="card-cta">Ver caso →</span>
-                  </div>
-                </div>
-                <div class="card-content">
-                  <div class="flex items-baseline gap-2 mb-2">
-                    <span class="font-display text-2xl font-black text-secondary tabular-nums">+4x</span>
-                    <span class="text-xs font-bold uppercase tracking-widest text-slate-400">ingresos</span>
-                  </div>
-                  <h3>Checkout que convierte</h3>
-                  <p>De 0.82% a 3.8% de conversión en 3 meses. Resultado auditado y público.</p>
-                  <div class="card-metric">
-                    <TrendingUp :size="14" />
-                    <span>0.82% → 3.8% en 3 meses</span>
-                  </div>
-                </div>
+              <div class="card-content">
+                <span class="font-display text-3xl font-black text-primary tabular-nums">+11,900%</span>
+                <h3>+11,900% conversión en canal digital</h3>
+                <p>Rediseño del flujo transaccional y selector de planes reduciendo la tasa de abandono al 12% global.</p>
+                <span class="card-cta-arrow">Ver caso <span aria-hidden="true">→</span></span>
               </div>
-            </router-link>
+            </article>
+          </router-link>
 
-            <router-link to="/app-web" class="project-slide">
-              <div class="card-elevated--emerald bg-white overflow-hidden">
-                <div class="card-image">
-                  <BrowserMockup src="/assets/images/xentral-health/card-xentral.jpg" alt="Xentral Health" />
-                  <span class="card-badge bg-secondary text-white border-0">Health Tech</span>
-                  <div class="card-overlay">
-                    <span class="card-cta">Ver caso →</span>
-                  </div>
-                </div>
-                <div class="card-content">
-                  <div class="flex items-baseline gap-2 mb-2">
-                    <span class="font-display text-2xl font-black text-secondary tabular-nums">-60%</span>
-                    <span class="text-xs font-bold uppercase tracking-widest text-slate-400">tiempo</span>
-                  </div>
-                  <h3>Telemedicina de alta velocidad</h3>
-                  <p>De 5 minutos a 2. Atención médica para viajeros, 6 semanas de diseño.</p>
-                  <div class="card-metric">
-                    <HeartPulse :size="14" />
-                    <span>5 min → 2 min respuesta</span>
-                  </div>
-                </div>
+          <!-- Card 2: E-commerce -->
+          <router-link to="/ecommerce" class="block">
+            <article class="card-elevated--blue h-full flex flex-col">
+              <div class="card-image">
+                <img src="/assets/images/home/card-ecommerce.jpg" alt="Checkout de asistencia en viaje" loading="lazy" />
               </div>
-            </router-link>
-          </div>
+              <div class="card-content">
+                <span class="font-display text-3xl font-black text-primary tabular-nums">+4x</span>
+                <h3>+4x incremento en checkout</h3>
+                <p>Optimización de la arquitectura de información y consistencia UI implementando un sistema de diseño modular en 3 meses.</p>
+                <span class="card-cta-arrow">Ver caso <span aria-hidden="true">→</span></span>
+              </div>
+            </article>
+          </router-link>
 
-          <button class="gallery-arrow right hidden md:flex" @click="scrollGallery(1)" aria-label="Siguiente">
-            <ChevronRight :size="24" />
-          </button>
-
-          <!-- Scroll Hint -->
-          <div class="scroll-hint" :class="{ hidden: hasScrolled }">
-            <span>Desliza para ver los 3 casos</span>
-            <ChevronRight :size="20" class="scroll-hint-arrow" />
-          </div>
-
-          <!-- Gallery Dots -->
-          <div class="gallery-dots">
-            <button 
-              v-for="(project, index) in projects" 
-              :key="project.path"
-              class="gallery-dot"
-              :class="{ active: activeDot === index }"
-              @click="scrollToSlide(index)"
-              :aria-label="`Ir a ${project.label}`"
-            ></button>
-          </div>
+          <!-- Card 3: Web App -->
+          <router-link to="/app-web" class="block">
+            <article class="card-elevated--emerald h-full flex flex-col">
+              <div class="card-image">
+                <img src="/assets/images/home/card-xentral.jpg" alt="Telemedicina urgente para viajeros" loading="lazy" />
+              </div>
+              <div class="card-content">
+                <span class="font-display text-3xl font-black text-primary tabular-nums">-60%</span>
+                <h3>-60% tiempo de espera en telemedicina</h3>
+                <p>Simplificación del flujo crítico de conexión entre médico y paciente de 5 minutos a solo 2 minutos en entornos de crisis.</p>
+                <span class="card-cta-arrow">Ver caso <span aria-hidden="true">→</span></span>
+              </div>
+            </article>
+          </router-link>
         </div>
       </div>
     </section>
@@ -220,8 +168,8 @@
     <section class="section">
       <div class="container">
         <div class="mb-12 text-center">
-          <h2 class="font-display text-4xl md:text-5xl font-extrabold tracking-tight text-midnight">4 razones. 1 métrica: resultado.</h2>
-          <p class="text-lg text-body mt-4">Lo que traigo a cada proyecto, en una línea cada uno.</p>
+          <h2 class="font-display text-4xl md:text-5xl font-extrabold tracking-tight text-midnight">Cómo trabajo.</h2>
+          <p class="text-lg text-body mt-4">4 principios que aplican en cada proyecto.</p>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -237,7 +185,7 @@
             </div>
             <div class="mt-8 pt-6 border-t border-borderline">
               <p class="text-xs font-bold uppercase tracking-widest text-slate-400">Auditable</p>
-              <p class="text-sm text-slate-700 font-semibold mt-1">Sin promesas. Con números publicados.</p>
+              <p class="text-sm text-slate-700 font-semibold mt-1">Datos auditables. Resultados públicos.</p>
             </div>
           </div>
 
@@ -246,26 +194,65 @@
             <div class="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center text-primary mb-5">
               <Layers :size="20" />
             </div>
-            <h3 class="text-lg font-bold tracking-tight text-midnight mb-2">Decisiones con datos</h3>
-            <p class="text-sm text-body leading-relaxed mt-auto">Cada cambio se prueba con usuarios reales. Sin suposiciones.</p>
+            <h3 class="text-lg font-bold tracking-tight text-midnight mb-2">Research que desafía</h3>
+            <p class="text-sm text-body leading-relaxed mt-auto">Cada cambio se valida con usuarios reales. No diseño en el vacío.</p>
           </div>
 
           <div class="card-flat p-7 md:p-9 flex flex-col">
             <div class="w-12 h-12 rounded-xl bg-secondary/20 flex items-center justify-center text-secondary mb-5">
               <Code2 :size="20" />
             </div>
-            <h3 class="text-lg font-bold tracking-tight text-midnight mb-2">Del diseño al código</h3>
-            <p class="text-sm text-body leading-relaxed mt-auto">Trabajo directo con desarrollo. Entrego lo que se construye.</p>
+            <h3 class="text-lg font-bold tracking-tight text-midnight mb-2">Diseño que se construye</h3>
+            <p class="text-sm text-body leading-relaxed mt-auto">Trabajo integrado con devs. Entrego Figma + guías de código.</p>
           </div>
 
           <div class="card-flat p-7 md:p-9 flex flex-col">
             <div class="w-12 h-12 rounded-xl bg-secondary/20 flex items-center justify-center text-secondary mb-5">
               <Cpu :size="20" />
             </div>
-            <h3 class="text-lg font-bold tracking-tight text-midnight mb-2">Prototipado en horas</h3>
-            <p class="text-sm text-body leading-relaxed mt-auto">Itero y valido con usuarios desde el día 1. No en semanas.</p>
+            <h3 class="text-lg font-bold tracking-tight text-midnight mb-2">Itero en días, no semanas</h3>
+            <p class="text-sm text-body leading-relaxed mt-auto">Prototipos funcionales desde el día 1. Valido rápido, construyo seguro.</p>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- PROCESS SECTION -->
+    <section id="proceso" class="section section-alt">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="label">Proceso</span>
+          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-3">Del problema a la métrica.</h2>
+          <p class="text-lg text-body max-w-2xl">8 etapas. No es una receta rígida — es cómo convierto complejidad en decisiones que se sostienen.</p>
+        </div>
+
+        <ProcessSection :steps="processSteps" />
+      </div>
+    </section>
+
+    <!-- PRINCIPLES SECTION -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="label">Filosofía</span>
+          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-3">Cómo pienso el diseño.</h2>
+          <p class="text-lg text-body max-w-2xl">4 valores que guían cada decisión, del brief al handoff.</p>
+        </div>
+
+        <PrinciplesSection :principles="principles" />
+      </div>
+    </section>
+
+    <!-- STACK SECTION -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="label">Stack</span>
+          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-3">Herramientas del día a día.</h2>
+          <p class="text-lg text-body max-w-2xl">Las que uso para diseñar, medir, prototipar y entregar.</p>
+        </div>
+
+        <StackWithLogos :tools="stackTools" />
       </div>
     </section>
 
@@ -275,8 +262,9 @@
         <div class="fade-in">
           <p class="text-xs font-bold uppercase tracking-widest text-primary mb-6">Disponible desde abril 2026</p>
           <h2 class="font-display text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-white mb-6 leading-[1.05]">
-            ¿Listos para
-            <span class="text-gradient-mixed">+4x</span>?
+            ¿
+            <span class="text-gradient-mixed">Construimos</span>
+            algo juntos?
           </h2>
           <p class="text-lg md:text-xl text-slate-300 mb-10 max-w-xl mx-auto leading-relaxed">
             30 min de discovery. Cotización en 24h. Empezamos en 1 semana.
@@ -287,16 +275,9 @@
               class="inline-flex items-center gap-2 px-8 py-4 bg-primary text-white font-semibold rounded-full hover:bg-white hover:text-midnight transition-colors duration-300"
             >
               <Mail :size="18" />
-              Agendar discovery
+              Conversemos
             </router-link>
-            <a
-              href="/assets/cv-yeison-alfonso.html"
-              target="_blank"
-              class="inline-flex items-center gap-2 px-8 py-4 bg-transparent text-white font-semibold rounded-full border border-white/30 hover:bg-white hover:text-midnight transition-colors duration-300"
-            >
-              <Download :size="18" />
-              Descargar CV
-            </a>
+            <CVButton variant="ghost" label="Descargar CV" />
           </div>
         </div>
       </div>
@@ -305,69 +286,67 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue'
-import { ArrowRight, ChevronLeft, ChevronRight, TrendingUp, Rocket, HeartPulse, Layers, BarChart2, Code2, Cpu, MessageCircle, Mail, Download, Briefcase, Globe } from 'lucide-vue-next'
+import { ArrowRight, TrendingUp, Rocket, HeartPulse, Layers, BarChart2, Code2, Cpu, MessageCircle, Mail, Briefcase, Globe } from 'lucide-vue-next'
 import { useScrollAnimations } from '@/composables/useScrollAnimations'
-import HeroFloating from '@/components/HeroFloating.vue'
-import IPhoneMockup from '@/components/IPhoneMockup.vue'
-import BrowserMockup from '@/components/BrowserMockup.vue'
 import AuroraBg from '@/components/primitives/AuroraBg.vue'
 import StatCard from '@/components/primitives/StatCard.vue'
-import SectionLabel from '@/components/primitives/SectionLabel.vue'
 import Marquee from '@/components/primitives/Marquee.vue'
+import AvailabilityBadge from '@/components/AvailabilityBadge.vue'
+import CVButton from '@/components/CVButton.vue'
+import ProcessSection from '@/components/ProcessSection.vue'
+import PrinciplesSection from '@/components/PrinciplesSection.vue'
+import StackWithLogos from '@/components/StackWithLogos.vue'
 
 useScrollAnimations()
 
-const gallerySlider = ref(null)
-const hasScrolled = ref(false)
-const activeDot = ref(0)
-const projects = ref([
-  { path: '/app', label: 'App de Asistencia en Viajes' },
-  { path: '/ecommerce', label: 'E-commerce' },
-  { path: '/app-web', label: 'Xentral Health' }
-])
+const processSteps = [
+  { title: 'Discovery', description: 'Entiendo el negocio, el usuario y las restricciones antes de diseñar nada.' },
+  { title: 'Research', description: 'Hablo con usuarios reales y analizo datos para reemplazar suposiciones por evidencia.' },
+  { title: 'Define', description: 'Sintetizo lo aprendido en un problema claro, accionable y priorizado por impacto.' },
+  { title: 'Ideate', description: 'Genero varios caminos antes de comprometerme con uno. Divergir para luego converger.' },
+  { title: 'Prototype', description: 'Bajo las ideas a prototipos navegables para validar rápido y barato.' },
+  { title: 'Test', description: 'Pongo el diseño frente a usuarios reales y dejo que la evidencia decida.' },
+  { title: 'Ship', description: 'Entrego UI de alta fidelidad y un sistema listo para desarrollo.' },
+  { title: 'Measure', description: 'Mido el impacto real en producción y uso esos datos para la próxima iteración.' }
+]
 
-const scrollGallery = (direction) => {
-  if (gallerySlider.value) {
-    const scrollAmount = 400
-    gallerySlider.value.scrollBy({
-      left: direction * scrollAmount,
-      behavior: 'smooth'
-    })
+const principles = [
+  {
+    label: 'Producto',
+    title: 'La pantalla es la punta; diseño el problema entero.',
+    description: 'Discovery, métricas, negocio. La UI es la consecuencia, no el punto de partida.',
+    color: 'violet'
+  },
+  {
+    label: 'Confianza',
+    title: 'Diseño donde el error cuesta dinero o reputación.',
+    description: 'Checkout, salud, finanzas. La fricción se mide, no se discute.',
+    color: 'blue'
+  },
+  {
+    label: 'Sistemas',
+    title: 'Diseño para escalar, no para una pantalla.',
+    description: 'Componentes reutilizables, tokens, documentación. Velocidad sin deuda.',
+    color: 'emerald'
+  },
+  {
+    label: 'Evidencia',
+    title: 'Decisiones que se defienden con datos.',
+    description: 'Analytics, heatmaps, A/B tests. Lo que no se mide, no se mejora.',
+    color: 'amber'
   }
-}
+]
 
-const scrollToSlide = (index) => {
-  if (gallerySlider.value) {
-    const slideWidth = gallerySlider.value.offsetWidth
-    gallerySlider.value.scrollTo({
-      left: index * slideWidth,
-      behavior: 'smooth'
-    })
-    activeDot.value = index
-  }
-}
-
-const handleGalleryScroll = () => {
-  if (gallerySlider.value) {
-    if (gallerySlider.value.scrollLeft > 0) {
-      hasScrolled.value = true
-    }
-    const slideWidth = gallerySlider.value.offsetWidth
-    const newActiveDot = Math.round(gallerySlider.value.scrollLeft / slideWidth)
-    activeDot.value = Math.min(newActiveDot, projects.value.length - 1)
-  }
-}
-
-onMounted(() => {
-  if (gallerySlider.value) {
-    gallerySlider.value.addEventListener('scroll', handleGalleryScroll)
-  }
-})
-
-onUnmounted(() => {
-  if (gallerySlider.value) {
-    gallerySlider.value.removeEventListener('scroll', handleGalleryScroll)
-  }
-})
+const stackTools = [
+  { name: 'Figma', icon: '/assets/logos/stack/figma.svg', bg: '#F24E1E' },
+  { name: 'Notion', icon: '/assets/logos/stack/notion.svg', bg: '#000000' },
+  { name: 'Vue 3', icon: '/assets/logos/stack/vue.svg', bg: '#4FC08D' },
+  { name: 'Tailwind', icon: '/assets/logos/stack/tailwind.svg', bg: '#06B6D4' },
+  { name: 'Analytics', icon: '/assets/logos/stack/google-analytics.svg', bg: '#E37400' },
+  { name: 'Hotjar', icon: '/assets/logos/stack/hotjar.svg', bg: '#FD3A5C' },
+  { name: 'Google Fonts', icon: '/assets/logos/stack/google-fonts.svg', bg: '#4285F4' },
+  { name: 'GitHub', icon: '/assets/logos/stack/github.svg', bg: '#181717' },
+  { name: 'Vercel', icon: '/assets/logos/stack/vercel.svg', bg: '#000000' },
+  { name: 'Netlify', icon: '/assets/logos/stack/netlify.svg', bg: '#00C7B7' }
+]
 </script>

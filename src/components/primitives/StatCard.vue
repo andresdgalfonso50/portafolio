@@ -1,28 +1,36 @@
 <template>
-  <div class="stat-card" :style="{ '--stat-color': colorVar }">
-    <div class="flex items-start justify-between mb-2">
+  <div class="stat-card group">
+    <!-- Top row: label + icon -->
+    <div class="flex items-center justify-between mb-6">
       <span
         v-if="label"
-        class="text-[10px] font-bold uppercase tracking-widest"
-        :class="labelClass"
+        class="text-[10px] font-bold uppercase tracking-[0.15em] text-slate-400"
       >
         {{ label }}
       </span>
-      <component
+      <div
         v-if="icon"
-        :is="icon"
-        :size="20"
-        :stroke-width="1.75"
-        :class="iconClass"
-      />
+        class="flex items-center justify-center w-9 h-9 rounded-lg bg-slate-50 group-hover:bg-primary/10 transition-colors duration-300"
+      >
+        <component
+          :is="icon"
+          :size="16"
+          :stroke-width="2"
+          class="text-slate-400 group-hover:text-primary transition-colors duration-300"
+        />
+      </div>
     </div>
+
+    <!-- The metric — the protagonist -->
     <div
-      class="font-display tabular-nums leading-none"
-      :class="[sizeClass, valueClass]"
+      class="font-display tabular-nums leading-none tracking-tighter mb-3 text-midnight"
+      :class="sizeClass"
     >
       {{ value }}
     </div>
-    <p v-if="description" class="text-sm text-body mt-2 leading-relaxed">
+
+    <!-- Optional description -->
+    <p v-if="description" class="text-sm text-body leading-snug">
       {{ description }}
     </p>
   </div>
@@ -36,11 +44,6 @@ const props = defineProps({
   label: { type: String, default: '' },
   description: { type: String, default: '' },
   icon: { type: [Object, Function], default: null },
-  accent: {
-    type: String,
-    default: 'primary',
-    validator: (v) => ['primary', 'secondary', 'midnight', 'highlight'].includes(v)
-  },
   size: {
     type: String,
     default: 'lg',
@@ -48,24 +51,48 @@ const props = defineProps({
   }
 })
 
-// Apple-style palette — monochrome + single system blue accent
-const colorMap = {
-  primary: { var: '#0071e3', text: 'text-primary' },
-  secondary: { var: '#0071e3', text: 'text-secondary' },
-  midnight: { var: '#1D1D1F', text: 'text-midnight' },
-  highlight: { var: '#0071e3', text: 'text-highlight' }
-}
-
-const colorVar = computed(() => colorMap[props.accent].var)
-const labelClass = computed(() => colorMap[props.accent].text)
-const iconClass = computed(() => colorMap[props.accent].text)
-const valueClass = computed(() => colorMap[props.accent].text)
-
+// Always midnight (charcoal) for the number — neutral, premium, Apple-style.
+// Blue is reserved for the icon hover state to keep the visual hierarchy clean.
 const sizeClass = computed(() => {
   return {
-    'text-4xl md:text-5xl font-black tracking-tighter': props.size === 'lg',
-    'text-5xl md:text-7xl font-black tracking-tighter': props.size === 'xl',
-    'text-2xl md:text-3xl font-extrabold tracking-tight': props.size === 'md'
+    'text-5xl md:text-6xl font-black': props.size === 'lg',
+    'text-6xl md:text-7xl font-black': props.size === 'xl',
+    'text-3xl md:text-4xl font-extrabold': props.size === 'md'
   }
 })
 </script>
+
+<style scoped>
+.stat-card {
+  position: relative;
+  padding: 28px 24px;
+  background: var(--color-bg-pure);
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+}
+
+.stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: var(--color-system-blue);
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.stat-card:hover {
+  border-color: rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px -8px rgba(0, 0, 0, 0.06);
+}
+
+.stat-card:hover::before {
+  transform: scaleY(1);
+}
+</style>

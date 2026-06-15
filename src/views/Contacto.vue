@@ -5,11 +5,12 @@
         <div class="contact-header fade-in">
           <span class="label text-secondary">Contacto</span>
           <h1 class="font-display text-5xl md:text-6xl font-extrabold tracking-tight leading-[1.1] text-midnight mb-6">
-            Cuéntame
-            <span class="text-gradient-secondary">de tu proyecto</span>
+            Diseñemos el próximo
+            <span class="text-gradient-secondary">caso de éxito</span>
+            de tu negocio
           </h1>
           <p class="contact-subtitle">
-            +4x conversión, -50% abandono, 2 apps en producción. ¿Cuál es tu métrica?
+            +4x conversión, -50% abandono, soluciones en producción listas para escalar. ¿Cuál es el KPI que transformaremos?
           </p>
         </div>
 
@@ -57,7 +58,10 @@
             <div class="contact-availability">
               <div class="availability-badge">
                 <span class="availability-dot"></span>
-                <span>Disponible desde abril 2026</span>
+                <span>Disponible para nuevos proyectos</span>
+              </div>
+              <div class="mt-4">
+                <CVButton variant="primary" label="Descargar CV" block />
               </div>
             </div>
           </div>
@@ -119,12 +123,10 @@
                   @blur="validateField('project')"
                   aria-describedby="project-error"
                 >
-                  <option value="" disabled selected>Selecciona una opción</option>
-                  <option value="ecommerce">E-commerce / Plataforma de ventas</option>
-                  <option value="app">App mobile</option>
-                  <option value="saas">SaaS / Producto digital</option>
-                  <option value="rediseño">Rediseño de producto existente</option>
-                  <option value="otro">Otro</option>
+                  <option value="" disabled selected>Selecciona el tipo de proyecto</option>
+                  <option value="0a1">Diseño de producto desde cero (0 a 1)</option>
+                  <option value="optimizacion">Optimización de producto existente (Conversión/UX)</option>
+                  <option value="design-system">Creación/Evolución de Sistema de Diseño</option>
                 </select>
                 <span v-if="errors.project" id="project-error" class="error-message" role="alert">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -180,11 +182,9 @@ import { ref, reactive } from 'vue'
 import { Mail, Phone, Linkedin, MapPin, Send, CheckCircle } from 'lucide-vue-next'
 import { useScrollAnimations } from '@/composables/useScrollAnimations'
 import AuroraBg from '@/components/primitives/AuroraBg.vue'
-import emailjs from '@emailjs/browser'
+import CVButton from '@/components/CVButton.vue'
 
 useScrollAnimations()
-
-emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY || '')
 
 const form = reactive({
   name: '',
@@ -255,22 +255,38 @@ async function handleSubmit() {
   isSubmitting.value = true
   submitMessage.value = ''
 
-  const templateParams = {
-    from_name: form.name,
-    from_email: form.email,
-    project_type: form.project,
-    message: form.message,
-    to_email: 'andresdgalfonso@gmail.com'
-  }
-
   try {
-    const response = await emailjs.send(
-      import.meta.env.VITE_EMAILJS_SERVICE_ID,
-      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-      templateParams
-    )
+    const response = await fetch('/api/send-email', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        from: {
+          email: import.meta.env.VITE_MAILERSEND_FROM_EMAIL || 'noreply@trial-xxxxx.mlsend.com',
+          name: 'Portfolio Yeison'
+        },
+        to: [{
+          email: 'andresdgalfonso@gmail.com',
+          name: 'Yeison Alfonso'
+        }],
+        subject: `Nuevo mensaje de ${form.name} - Portafolio`,
+        text: `Nombre: ${form.name}\nEmail: ${form.email}\nTipo de proyecto: ${form.project}\n\nMensaje:\n${form.message}`,
+        html: `<p><strong>Nombre:</strong> ${form.name}</p>
+<p><strong>Email:</strong> <a href="mailto:${form.email}">${form.email}</a></p>
+<p><strong>Tipo de proyecto:</strong> ${form.project}</p>
+<p><strong>Mensaje:</strong></p>
+<p>${form.message.replace(/\n/g, '<br>')}</p>
+<hr>
+<p><small>Enviado desde el formulario de contacto del portafolio</small></p>`,
+        reply_to: {
+          email: form.email,
+          name: form.name
+        }
+      })
+    })
 
-    if (response.status === 200) {
+    if (response.ok) {
       isSent.value = true
       submitSuccess.value = true
       submitMessage.value = 'Mensaje enviado correctamente. Te responderé pronto.'
@@ -280,6 +296,10 @@ async function handleSubmit() {
       form.project = ''
       form.message = ''
       Object.keys(errors).forEach(key => errors[key] = '')
+    } else {
+      const errorData = await response.json().catch(() => ({}))
+      console.error('Email send error:', errorData)
+      throw new Error(`HTTP ${response.status}`)
     }
   } catch (error) {
     submitSuccess.value = false
