@@ -8,7 +8,7 @@
       highlight="telemedicina de alta velocidad"
       badge="Health Tech"
       subtitle="5 min → 2 min entre crisis y atención. Plataforma web para crisis reales."
-      hero-image="/assets/images/home/hero-xentral-full.jpg"
+      :hero-image="heroXentralImg"
       hero-image-alt="Telemedicina urgente"
       :hero-badge="{ value: '-60%', label: 'tiempo' }"
       :meta="[
@@ -258,54 +258,179 @@
           </div>
         </div>
 
-        <!-- 5 features visuales -->
-        <h3 class="text-sm font-bold uppercase tracking-widest text-body mb-6">Features implementadas</h3>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div class="bg-white rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] overflow-hidden">
-            <div class="overflow-hidden">
-              <img src="/assets/images/xentral-health/dashboard.png" alt="Acceso por link único" class="w-full h-auto object-cover" width="2816" height="1536">
-            </div>
-            <div class="p-5">
-              <h4 class="text-sm font-bold text-midnight mb-1">Acceso por Link Único</h4>
-              <p class="text-xs text-body">El paciente entra a videollamada con 1 clic. 0 contraseñas, 0 registros.</p>
-            </div>
+        <!-- 8 PANTALLAS: Journey Paciente + Médico con textos referenciados -->
+        <div class="mt-16">
+          <div class="flex items-center gap-3 mb-8">
+            <span class="w-1.5 h-8 bg-secondary rounded-full"></span>
+            <h3 class="text-2xl md:text-3xl font-display font-extrabold text-midnight tracking-tight">8 Pantallas, 1 Sistema</h3>
+            <span class="text-xs font-bold uppercase tracking-widest text-slate-400 ml-auto">Paciente → Médico</span>
           </div>
-          <div class="bg-white rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] overflow-hidden">
-            <div class="overflow-hidden">
-              <img src="/assets/images/xentral-health/xentral-comparacion-roles.jpg" alt="Validación de cobertura" class="w-full h-auto object-cover" width="2816" height="1536">
+
+          <!-- BENTO GRID: 8 imágenes con textos referenciados -->
+          <div class="grid grid-cols-1 md:grid-cols-6 gap-4 md:gap-6">
+
+            <!-- PANTALLA 1: Email confirmación - Span 3 -->
+            <div class="md:col-span-3 group relative bg-white rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] overflow-hidden hover:shadow-[0_20px_60px_-12px_rgba(0,0,0,0.12)] transition-all duration-500">
+              <div class="bg-gradient-to-br from-secondary/5 to-transparent p-2">
+                <img src="/assets/images/xentral-health/paciente/1-xentral-paciente-correo-confirmacion.png" alt="Email de confirmación con datos de cita y botón de acceso" class="w-full h-auto rounded-2xl" width="1396" height="1552">
+              </div>
+              <div class="p-6">
+                <div class="flex items-center gap-2 mb-3">
+                  <span class="px-2 py-0.5 bg-secondary text-white text-[10px] font-bold uppercase tracking-widest rounded-full">01 / Paciente</span>
+                  <span class="text-[10px] font-bold uppercase tracking-widest text-slate-400">Ingreso</span>
+                </div>
+                <h4 class="text-lg font-display font-extrabold text-midnight mb-2 tracking-tight">Cero fricción desde el primer email</h4>
+                <p class="text-sm text-body leading-relaxed">El paciente recibe los datos de la cita, paciente, fecha y hora, más un botón azul de "Ingresar a la consulta" que abre la videollamada sin descargar apps, sin crear cuentas, sin contraseñas. <span class="font-semibold text-secondary">Adiós al 70% de abandono en login.</span></p>
+                <div class="flex gap-2 mt-4">
+                  <span class="px-2.5 py-1 bg-secondary/10 text-secondary text-[11px] font-bold rounded-full">Sin fricción</span>
+                  <span class="px-2.5 py-1 bg-secondary/10 text-secondary text-[11px] font-bold rounded-full">0 contraseñas</span>
+                  <span class="px-2.5 py-1 bg-secondary/10 text-secondary text-[11px] font-bold rounded-full">1 clic</span>
+                </div>
+              </div>
             </div>
-            <div class="p-5">
-              <h4 class="text-sm font-bold text-midnight mb-1">Validación de Cobertura Visible</h4>
-              <p class="text-xs text-body">El usuario ve su plan y servicios disponibles desde el primer paso.</p>
+
+            <!-- PANTALLA 2: Selección cita - Span 3 -->
+            <div class="md:col-span-3 group relative bg-white rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] overflow-hidden hover:shadow-[0_20px_60px_-12px_rgba(0,0,0,0.12)] transition-all duration-500">
+              <div class="bg-gradient-to-br from-secondary/5 to-transparent p-2">
+                <img src="/assets/images/xentral-health/paciente/2-xentral-paciente-seleccion-cita.png" alt="Selector de fecha y hora con resumen antes de confirmar" class="w-full h-auto rounded-2xl" width="1680" height="1396">
+              </div>
+              <div class="p-6">
+                <div class="flex items-center gap-2 mb-3">
+                  <span class="px-2 py-0.5 bg-secondary text-white text-[10px] font-bold uppercase tracking-widest rounded-full">02 / Paciente</span>
+                  <span class="text-[10px] font-bold uppercase tracking-widest text-slate-400">Decisión</span>
+                </div>
+                <h4 class="text-lg font-display font-extrabold text-midnight mb-2 tracking-tight">Disponibilidad real, decisiones sin sorpresas</h4>
+                <p class="text-sm text-body leading-relaxed">Calendario con slots disponibles en azul sólido, ocupados desvanecidos. Resumen visible de día, hora y duración antes de confirmar. <span class="font-semibold text-secondary">Los huecos grises no generan ansiedad: el sistema ya filtró lo no disponible.</span></p>
+                <div class="flex gap-2 mt-4">
+                  <span class="px-2.5 py-1 bg-secondary/10 text-secondary text-[11px] font-bold rounded-full">Disponibilidad real</span>
+                  <span class="px-2.5 py-1 bg-secondary/10 text-secondary text-[11px] font-bold rounded-full">Resumen visible</span>
+                </div>
+              </div>
             </div>
+
+            <!-- PANTALLA 3: Conectando - Span 3 -->
+            <div class="md:col-span-3 group relative bg-white rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] overflow-hidden hover:shadow-[0_20px_60px_-12px_rgba(0,0,0,0.12)] transition-all duration-500">
+              <div class="bg-gradient-to-br from-secondary/5 to-transparent p-2">
+                <img src="/assets/images/xentral-health/paciente/3-xentral-paciente-conectando.png" alt="Pantalla de espera mientras se conecta con el médico" class="w-full h-auto rounded-2xl" width="1373" height="993">
+              </div>
+              <div class="p-6">
+                <div class="flex items-center gap-2 mb-3">
+                  <span class="px-2 py-0.5 bg-secondary text-white text-[10px] font-bold uppercase tracking-widest rounded-full">03 / Paciente</span>
+                  <span class="text-[10px] font-bold uppercase tracking-widest text-slate-400">Transición</span>
+                </div>
+                <h4 class="text-lg font-display font-extrabold text-midnight mb-2 tracking-tight">La espera como información, no como ansiedad</h4>
+                <p class="text-sm text-body leading-relaxed">Antes de que el médico entre, el paciente ve contexto clínico: nombre del doctor, especialidad, tiempo estimado. <span class="font-semibold text-secondary">"Conectando" con datos es mejor que un spinner ciego.</span> Diseñado para evitar la sensación de estar hablando con la nada.</p>
+                <div class="flex gap-2 mt-4">
+                  <span class="px-2.5 py-1 bg-secondary/10 text-secondary text-[11px] font-bold rounded-full">Contexto visible</span>
+                  <span class="px-2.5 py-1 bg-secondary/10 text-secondary text-[11px] font-bold rounded-full">Tiempo estimado</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- PANTALLA 4: Dashboard médico - Span 3 -->
+            <div class="md:col-span-3 group relative bg-white rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] overflow-hidden hover:shadow-[0_20px_60px_-12px_rgba(0,0,0,0.12)] transition-all duration-500">
+              <div class="bg-gradient-to-br from-midnight/5 to-transparent p-2">
+                <img src="/assets/images/xentral-health/medico/1-xentral-coordinador-dashboard.png" alt="Dashboard del coordinador médico: agenda, cola de espera y métricas" class="w-full h-auto rounded-2xl" width="1512" height="1024">
+              </div>
+              <div class="p-6">
+                <div class="flex items-center gap-2 mb-3">
+                  <span class="px-2 py-0.5 bg-midnight text-white text-[10px] font-bold uppercase tracking-widest rounded-full">04 / Médico</span>
+                  <span class="text-[10px] font-bold uppercase tracking-widest text-slate-400">Visión general</span>
+                </div>
+                <h4 class="text-lg font-display font-extrabold text-midnight mb-2 tracking-tight">El médico entra y ya sabe qué pasa hoy</h4>
+                <p class="text-sm text-body leading-relaxed">Dashboard con agenda del día, cola de espera ordenada por prioridad, alertas rojas en pacientes con síntomas urgentes. <span class="font-semibold text-secondary">-60% tiempo entre login y primer paciente</span> porque el sistema ya hizo el triage visual.</p>
+                <div class="flex gap-2 mt-4">
+                  <span class="px-2.5 py-1 bg-midnight/10 text-midnight text-[11px] font-bold rounded-full">Triage visual</span>
+                  <span class="px-2.5 py-1 bg-midnight/10 text-midnight text-[11px] font-bold rounded-full">Cola priorizada</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- PANTALLA 5: Validación contexto - Span 3 -->
+            <div class="md:col-span-3 group relative bg-white rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] overflow-hidden hover:shadow-[0_20px_60px_-12px_rgba(0,0,0,0.12)] transition-all duration-500">
+              <div class="bg-gradient-to-br from-midnight/5 to-transparent p-2">
+                <img src="/assets/images/xentral-health/medico/2-xentral-paciente-validacion-contexto.png" alt="Validación del contexto clínico del paciente antes de la consulta" class="w-full h-auto rounded-2xl" width="1512" height="1223">
+              </div>
+              <div class="p-6">
+                <div class="flex items-center gap-2 mb-3">
+                  <span class="px-2 py-0.5 bg-midnight text-white text-[10px] font-bold uppercase tracking-widest rounded-full">05 / Médico</span>
+                  <span class="text-[10px] font-bold uppercase tracking-widest text-slate-400">Contexto clínico</span>
+                </div>
+                <h4 class="text-lg font-display font-extrabold text-midnight mb-2 tracking-tight">Información accionable, no histórica</h4>
+                <p class="text-sm text-body leading-relaxed">Alergias en rojo, antecedentes en gris claro, motivo de consulta destacado. El médico lee lo crítico en 5 segundos, no en 5 minutos. <span class="font-semibold text-secondary">La diferencia entre atender y atender bien.</span></p>
+                <div class="flex gap-2 mt-4">
+                  <span class="px-2.5 py-1 bg-midnight/10 text-midnight text-[11px] font-bold rounded-full">Alertas críticas</span>
+                  <span class="px-2.5 py-1 bg-midnight/10 text-midnight text-[11px] font-bold rounded-full">5s lectura</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- PANTALLA 6: Videoconsulta activa - Span 3 -->
+            <div class="md:col-span-3 group relative bg-midnight rounded-3xl border border-midnight shadow-[0_8px_30px_rgb(0,0,0,0.04)] overflow-hidden hover:shadow-[0_20px_60px_-12px_rgba(0,0,0,0.25)] transition-all duration-500">
+              <div class="bg-gradient-to-br from-secondary/20 to-transparent p-2">
+                <img src="/assets/images/xentral-health/medico/3-xentral-medico-videoconsulta-activa.png" alt="Videollamada activa con contexto clínico integrado" class="w-full h-auto rounded-2xl" width="1549" height="944">
+              </div>
+              <div class="p-6">
+                <div class="flex items-center gap-2 mb-3">
+                  <span class="px-2 py-0.5 bg-secondary text-white text-[10px] font-bold uppercase tracking-widest rounded-full">06 / Médico</span>
+                  <span class="text-[10px] font-bold uppercase tracking-widest text-slate-400">En vivo</span>
+                </div>
+                <h4 class="text-lg font-display font-extrabold text-white mb-2 tracking-tight">Videollamada con contexto, no con pestañas</h4>
+                <p class="text-sm text-slate-300 leading-relaxed">Paciente a un lado, contexto clínico al otro. Sin alternar ventanas, sin perder el hilo. <span class="font-semibold text-secondary">El médico ve Y habla. El paciente se siente visto, no evaluado.</span></p>
+                <div class="flex gap-2 mt-4">
+                  <span class="px-2.5 py-1 bg-white/10 text-white text-[11px] font-bold rounded-full">Vista dual</span>
+                  <span class="px-2.5 py-1 bg-white/10 text-white text-[11px] font-bold rounded-full">Sin cambiar tabs</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- PANTALLA 7: Consulta finalizada - Span 3 -->
+            <div class="md:col-span-3 group relative bg-white rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] overflow-hidden hover:shadow-[0_20px_60px_-12px_rgba(0,0,0,0.12)] transition-all duration-500">
+              <div class="bg-gradient-to-br from-midnight/5 to-transparent p-2">
+                <img src="/assets/images/xentral-health/medico/4-xentral-medico-consulta-finalizada.png" alt="Pantalla de consulta finalizada con confirmación y NPS" class="w-full h-auto rounded-2xl" width="1512" height="1053">
+              </div>
+              <div class="p-6">
+                <div class="flex items-center gap-2 mb-3">
+                  <span class="px-2 py-0.5 bg-midnight text-white text-[10px] font-bold uppercase tracking-widest rounded-full">07 / Médico</span>
+                  <span class="text-[10px] font-bold uppercase tracking-widest text-slate-400">Cierre</span>
+                </div>
+                <h4 class="text-lg font-display font-extrabold text-midnight mb-2 tracking-tight">Cierre que alimenta la próxima consulta</h4>
+                <p class="text-sm text-body leading-relaxed">Notas estructuradas obligatorias antes de cerrar: diagnóstico, prescripción, seguimiento. <span class="font-semibold text-secondary">El médico no se va a casa con la nota en la cabeza.</span> El siguiente profesional que atienda al paciente lee el resumen en 30 segundos.</p>
+                <div class="flex gap-2 mt-4">
+                  <span class="px-2.5 py-1 bg-midnight/10 text-midnight text-[11px] font-bold rounded-full">Notas estructuradas</span>
+                  <span class="px-2.5 py-1 bg-midnight/10 text-midnight text-[11px] font-bold rounded-full">Continuidad</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- PANTALLA 8: Historial pacientes - Span 6 (destacada) -->
+            <div class="md:col-span-6 group relative bg-white rounded-3xl border-2 border-secondary/30 shadow-[0_8px_30px_rgb(0,0,0,0.04)] overflow-hidden hover:shadow-[0_20px_60px_-12px_rgba(0,0,0,0.15)] transition-all duration-500">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-0">
+                <div class="bg-gradient-to-br from-secondary/10 to-transparent p-3 flex items-center">
+                  <img src="/assets/images/xentral-health/medico/5-xentral-medico-historial-pacientes.png" alt="Historial de pacientes con filtros multi-país" class="w-full h-auto rounded-2xl" width="1512" height="1257">
+                </div>
+                <div class="p-8 flex flex-col justify-center">
+                  <div class="flex items-center gap-2 mb-3">
+                    <span class="px-2 py-0.5 bg-secondary text-white text-[10px] font-bold uppercase tracking-widest rounded-full">08 / Médico</span>
+                    <span class="px-2 py-0.5 bg-highlight/20 text-highlight text-[10px] font-bold uppercase tracking-widest rounded-full">★ Escalable</span>
+                  </div>
+                  <h4 class="text-2xl font-display font-extrabold text-midnight mb-3 tracking-tight leading-tight">10 pacientes, 6 países, una sola tabla</h4>
+                  <p class="text-base text-body leading-relaxed mb-4">Listado con país de origen, doctor asignado, fecha de última atención, acceso directo al diagnóstico completo. Filtros por país, doctor o período. <span class="font-semibold text-secondary">La consulta de seguimiento se vuelve trivial: histórico, comparación, decisión en un click.</span></p>
+                  <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1.5 bg-secondary/10 text-secondary text-xs font-bold rounded-full">Multi-país</span>
+                    <span class="px-3 py-1.5 bg-secondary/10 text-secondary text-xs font-bold rounded-full">Búsqueda rápida</span>
+                    <span class="px-3 py-1.5 bg-secondary/10 text-secondary text-xs font-bold rounded-full">Comparación histórica</span>
+                    <span class="px-3 py-1.5 bg-secondary/10 text-secondary text-xs font-bold rounded-full">CL · MX · CO · AR · PE</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
-          <div class="bg-white rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] overflow-hidden">
-            <div class="overflow-hidden">
-              <img src="/assets/images/xentral-health/dashboard.png" alt="Flujo guiado de síntomas" class="w-full h-auto object-cover" width="2816" height="1536">
-            </div>
-            <div class="p-5">
-              <h4 class="text-sm font-bold text-midnight mb-1">Flujo Guiado de Síntomas</h4>
-              <p class="text-xs text-body">Selección intuitiva con jerarquía que orienta al tipo de atención adecuado.</p>
-            </div>
-          </div>
-          <div class="bg-white rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] overflow-hidden">
-            <div class="overflow-hidden">
-              <img src="/assets/images/xentral-health/xentral-comparacion-roles.jpg" alt="Videollamada integrada" class="w-full h-auto object-cover" width="2816" height="1536">
-            </div>
-            <div class="p-5">
-              <h4 class="text-sm font-bold text-midnight mb-1">Videollamada Integrada</h4>
-              <p class="text-xs text-body">Conexión directa médico-paciente con notas y cierre estructurado.</p>
-            </div>
-          </div>
-          <div class="bg-white rounded-3xl border-2 border-secondary shadow-[0_8px_30px_rgb(0,0,0,0.04)] overflow-hidden md:col-span-2 relative">
-            <span class="absolute top-4 right-4 px-2 py-0.5 bg-secondary text-white text-[10px] font-bold uppercase tracking-widest rounded-full">Destacado</span>
-            <div class="overflow-hidden">
-              <img src="/assets/images/xentral-health/dashboard.png" alt="Encuesta NPS post-consulta" class="w-full h-auto object-cover" width="2816" height="1536">
-            </div>
-            <div class="p-5">
-              <h4 class="text-sm font-bold text-midnight mb-1">Encuesta NPS Post-consulta</h4>
-              <p class="text-xs text-body">NPS por médico, por consulta, en tiempo real. El negocio itera con datos, no con opiniones.</p>
-            </div>
+
+          <!-- Footer de la sección -->
+          <div class="mt-10 text-center">
+            <p class="text-xs font-bold uppercase tracking-widest text-slate-400">3 pantallas paciente · 5 pantallas médico · 0 pasos redundantes</p>
           </div>
         </div>
       </div>
@@ -515,6 +640,7 @@ import { useScrollAnimations } from '@/composables/useScrollAnimations'
 import AuroraBg from '@/components/primitives/AuroraBg.vue'
 import CaseStudyHero from '@/components/case-study/CaseStudyHero.vue'
 import CaseStudyMetricsDashboard from '@/components/case-study/CaseStudyMetricsDashboard.vue'
+import heroXentralImg from '/public/assets/images/home/hero-xentral-full.jpg'
 import {
   HeartPulse, Plane, Stethoscope, MapPin, ShieldOff, Languages, Clock, MessageSquare,
   Zap, Eye, ListFilter, Heart, ChevronRight, Lightbulb, XCircle, BarChart2, UserCheck, Layers,

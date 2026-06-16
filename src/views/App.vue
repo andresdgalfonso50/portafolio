@@ -8,7 +8,7 @@
       highlight="asistencia médica en ruta"
       badge="Continental Assist"
       subtitle="97% de abandono → 2 apps en producción. Retención día 7: 0.1% → 12%."
-      hero-image="/assets/images/home/hero-app-full.jpg"
+      :hero-image="heroAppImg"
       hero-image-alt="App de asistencia al viajero"
       :hero-badge="{ value: '+11,900%', label: 'retención' }"
       :meta="[
@@ -567,6 +567,7 @@
 import { useScrollAnimations } from '@/composables/useScrollAnimations'
 import AuroraBg from '@/components/primitives/AuroraBg.vue'
 import CaseStudyHero from '@/components/case-study/CaseStudyHero.vue'
+import heroAppImg from '/public/assets/images/home/hero-app-full.jpg'
 import {
   Layers, GitBranch, ClipboardList, ShieldOff, Smartphone, Package,
   CreditCard, ChevronRight, ArrowRight, ArrowLeft, CheckCircle, MapPin,

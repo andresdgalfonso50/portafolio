@@ -1,59 +1,63 @@
 <template>
   <div class="view-wrapper">
     <!-- HERO SECTION -->
-<AuroraBg variant="hero" class="home-hero section">
-  <div class="w-full max-w-6xl mx-auto px-6 pt-20 pb-12 relative z-10">
-    <div class="flex justify-center mb-8 fade-in">
-      <AvailabilityBadge text="Disponible para nuevos proyectos · Bogotá" variant="light" />
-    </div>
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
-      <div class="lg:col-span-7 flex flex-col items-start fade-in">
-        <span class="label">Product Design Director</span>
-        <h1 class="font-display text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.05] text-midnight mb-6">
-          Diseño de producto que
-          <span class="font-light italic text-primary">escala</span>
-          <span class="text-gradient-secondary">el negocio</span>
-        </h1>
-        <p class="text-lg text-body mb-10 max-w-lg leading-relaxed">
-          Estrategia UX y sistemas de diseño de alto rendimiento enfocados en maximizar la conversión, retención y la eficiencia de producto. Métricas auditables en producción.
-        </p>
-        <div class="flex flex-wrap gap-4 items-center">
-          <ButtonPrimary href="#proyectos" variant="primary">
-            Ver 3 casos
-            <template #suffix>
-              <ArrowRight :size="18" />
-            </template>
-          </ButtonPrimary>
-          <CVButton variant="secondary" label="Descargar CV" />
-          <ButtonPrimary
-            href="https://wa.me/573125673243?text=Hola%20Yeison,%20vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20contactarte."
-            variant="secondary"
-          >
-            <template #icon>
-              <MessageCircle :size="18" />
-            </template>
-            WhatsApp
-          </ButtonPrimary>
-        </div>
-      </div>
-      <div class="lg:col-span-5 flex items-center justify-end mt-12 lg:mt-0 fade-in stagger-2">
-        <div class="relative">
-          <img
-            src="/assets/images/home/hero-home-celulares.png"
-            alt="Diseño de producto digital - Interfaces móviles modernas"
-            class="w-full object-cover relative z-10"
-            fetchpriority="high"
-            loading="eager"
-            width="670" height="768" />
-          <div class="absolute inset-0 -z-10 blur-3xl opacity-30">
-            <div class="absolute top-1/4 left-1/4 w-40 h-40 rounded-full bg-primary"></div>
-            <div class="absolute bottom-1/4 right-1/4 w-40 h-40 rounded-full bg-secondary"></div>
+    <AuroraBg variant="hero" class="home-hero section">
+      <div class="w-full max-w-6xl mx-auto px-6 pt-20 pb-12 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-12 lg:gap-16">
+          <!-- Columna izquierda: texto + CTAs -->
+          <div class="flex flex-col items-start fade-in">
+            <AvailabilityBadge text="Disponible para nuevos proyectos · Bogotá" variant="light" class="mb-8" />
+            <span class="label">Product Design Director</span>
+            <h1 class="font-display text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.05] text-midnight mb-6">
+              Diseño de producto que
+              <span class="font-light italic text-primary">escala</span>
+              <span class="text-gradient-secondary">el negocio</span>
+            </h1>
+            <p class="text-lg text-body mb-10 max-w-lg leading-relaxed">
+              Estrategia UX y sistemas de diseño de alto rendimiento enfocados en maximizar la conversión, retención y la eficiencia de producto. Métricas auditables en producción.
+            </p>
+            <div class="flex flex-wrap gap-4 items-center">
+              <ButtonPrimary href="#proyectos" variant="primary">
+                Ver 3 casos
+                <template #suffix>
+                  <ArrowRight :size="18" />
+                </template>
+              </ButtonPrimary>
+              <ButtonPrimary
+                href="https://wa.me/573125673243?text=Hola%20Yeison,%20vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20contactarte."
+                variant="secondary"
+              >
+                <template #icon>
+                  <MessageCircle :size="18" />
+                </template>
+                WhatsApp
+              </ButtonPrimary>
+            </div>
+          </div>
+
+          <!-- Columna derecha: mockups con halo aurora -->
+          <div class="flex items-center justify-center lg:justify-end fade-in stagger-2">
+            <div class="relative w-full max-w-md">
+              <!-- Aurora backdrop: destello radial difuso -->
+              <div
+                class="absolute inset-0 -z-10 blur-3xl opacity-40"
+                aria-hidden="true"
+                style="background: radial-gradient(ellipse at 60% 40%, rgba(0, 113, 227, 0.35) 0%, rgba(0, 113, 227, 0) 65%);"
+              ></div>
+              <img
+                src="/assets/images/home/hero-home-celulares.png"
+                alt="Diseño de producto digital - Interfaces móviles modernas"
+                class="w-full h-auto object-cover relative z-10"
+                fetchpriority="high"
+                loading="eager"
+                width="670"
+                height="768"
+              />
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</AuroraBg>
+    </AuroraBg>
 
     <!-- SKILL TAGS -->
     <div class="flex flex-wrap justify-center gap-3 w-full max-w-4xl mx-auto mt-12 mb-8 px-6">
@@ -65,193 +69,319 @@
     </div>
 
     <!-- METRICS -->
-    <div class="w-full max-w-6xl mx-auto px-6 mt-12 pt-8 pb-16">
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <StatCard value="+4x" label="Incremento en conversión" :icon="TrendingUp" />
-        <StatCard value="4+" label="Años de experiencia líder" :icon="Briefcase" />
-        <StatCard value="10+" label="Proyectos desplegados" :icon="Layers" />
-        <StatCard value="2" label="Apps nativas en producción" :icon="Globe" />
+    <section class="w-full max-w-6xl mx-auto px-6 py-12">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 border border-borderline rounded-2xl px-6 py-10 md:px-10 bg-white">
+        <div class="text-center md:text-left">
+          <span class="block font-display text-4xl md:text-5xl font-black text-highlight tracking-tighter leading-none tabular-nums">+4x</span>
+          <p class="text-sm text-slate-700 font-semibold mt-3 leading-snug">Incremento en conversión</p>
+        </div>
+        <div class="text-center md:text-left">
+          <span class="block font-display text-4xl md:text-5xl font-black text-highlight tracking-tighter leading-none tabular-nums">4+</span>
+          <p class="text-sm text-slate-700 font-semibold mt-3 leading-snug">Años de experiencia líder</p>
+        </div>
+        <div class="text-center md:text-left">
+          <span class="block font-display text-4xl md:text-5xl font-black text-highlight tracking-tighter leading-none tabular-nums">10+</span>
+          <p class="text-sm text-slate-700 font-semibold mt-3 leading-snug">Proyectos desplegados</p>
+        </div>
+        <div class="text-center md:text-left">
+          <span class="block font-display text-4xl md:text-5xl font-black text-highlight tracking-tighter leading-none tabular-nums">2</span>
+          <p class="text-sm text-slate-700 font-semibold mt-3 leading-snug">Apps nativas en producción</p>
+        </div>
       </div>
-    </div>
+    </section>
 
     <!-- PROJECTS SECTION -->
-    <section class="w-full bg-surface py-24 border-y border-borderline">
-      <!-- MARQUEE — clientes y stack (decorativo: aria-hidden, contenido accesible abajo) -->
-      <div class="mb-16" aria-hidden="true">
-        <p class="text-center text-xs font-bold uppercase tracking-widest text-slate-400 mb-6">Clientes & Stack</p>
-        <Marquee speed="35s" container-class="py-4">
-          <div class="flex items-center gap-3 shrink-0 opacity-60 hover:opacity-100 transition-opacity">
-            <Briefcase :size="20" class="text-slate-700" />
-            <span class="font-display font-bold text-lg text-slate-700">Continental Assist</span>
-          </div>
-          <div class="flex items-center gap-3 shrink-0 opacity-60 hover:opacity-100 transition-opacity">
-            <span class="font-display font-black text-lg text-slate-700">YALE</span>
-            <span class="text-xs font-semibold text-body uppercase tracking-wider">ASSA ABLOY</span>
-          </div>
-          <div class="flex items-center gap-3 shrink-0 opacity-60 hover:opacity-100 transition-opacity">
-            <span class="font-display font-bold text-lg text-slate-700">Azzorti</span>
-            <span class="text-xs font-semibold text-body uppercase tracking-wider">Dupree</span>
-          </div>
-          <div class="flex items-center gap-3 shrink-0 opacity-60 hover:opacity-100 transition-opacity">
-            <svg class="w-5 h-5 text-slate-700" viewBox="0 0 38 57" fill="currentColor"><path d="M19 28.5C19 23.2533 23.2533 19 28.5 19C33.7467 19 38 23.2533 38 28.5C38 33.7467 33.7467 38 28.5 38C23.2533 38 19 33.7467 19 28.5Z"/><path d="M0 47.5C0 42.2533 4.25329 38 9.5 38C14.7467 38 19 42.2533 19 47.5C19 52.7467 14.7467 57 9.5 57C4.25329 57 0 52.7467 0 47.5Z"/><path d="M19 9.5C19 4.25329 23.2533 0 28.5 0C33.7467 0 38 4.25329 38 9.5C38 14.7467 33.7467 19 28.5 19C23.2533 19 19 14.7467 19 9.5Z"/></svg>
-            <span class="font-display font-bold text-lg text-slate-700">Figma</span>
-          </div>
-          <div class="flex items-center gap-3 shrink-0 opacity-60 hover:opacity-100 transition-opacity">
-            <span class="font-display font-black text-lg text-secondary">Vue 3</span>
-          </div>
-          <div class="flex items-center gap-3 shrink-0 opacity-60 hover:opacity-100 transition-opacity">
-            <span class="font-display font-black text-lg text-secondary">Tailwind</span>
-          </div>
-          <div class="flex items-center gap-3 shrink-0 opacity-60 hover:opacity-100 transition-opacity">
-            <span class="font-display font-bold text-lg text-slate-700">Notion</span>
-          </div>
-        </Marquee>
-      </div>
-
-      <div id="proyectos" class="container">
-        <div class="mb-12 text-center">
-          <h2 class="font-display text-4xl md:text-5xl font-extrabold tracking-tight text-midnight">3 casos. 3 industrias. 1 método.</h2>
-          <p class="text-lg text-body mt-4">App de viaje. E-commerce. Telemedicina. Métricas auditables en cada uno.</p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <!-- Card 1: App Mobile -->
-          <router-link to="/app" class="block">
-            <article class="card-elevated--violet h-full flex flex-col">
-              <div class="card-image">
-                <img src="/assets/images/home/card-app.jpg" alt="App de asistencia al viajero - Continental Assist" loading="lazy" width="600" height="400" />
-              </div>
-              <div class="card-content">
-                <span class="font-display text-3xl font-black text-primary tabular-nums">+11,900%</span>
-                <h3>+11,900% conversión en canal digital</h3>
-                <p>Rediseño del flujo transaccional y selector de planes reduciendo la tasa de abandono al 12% global.</p>
-                <span class="card-cta-arrow">Ver caso <span aria-hidden="true">→</span></span>
-              </div>
-            </article>
-          </router-link>
-
-          <!-- Card 2: E-commerce -->
-          <router-link to="/ecommerce" class="block">
-            <article class="card-elevated--blue h-full flex flex-col">
-              <div class="card-image">
-                <img src="/assets/images/home/card-ecommerce.jpg" alt="Checkout de asistencia en viaje" loading="lazy" width="600" height="400" />
-              </div>
-              <div class="card-content">
-                <span class="font-display text-3xl font-black text-primary tabular-nums">+4x</span>
-                <h3>+4x incremento en checkout</h3>
-                <p>Optimización de la arquitectura de información y consistencia UI implementando un sistema de diseño modular en 3 meses.</p>
-                <span class="card-cta-arrow">Ver caso <span aria-hidden="true">→</span></span>
-              </div>
-            </article>
-          </router-link>
-
-          <!-- Card 3: Web App -->
-          <router-link to="/app-web" class="block">
-            <article class="card-elevated--emerald h-full flex flex-col">
-              <div class="card-image">
-                <img src="/assets/images/home/card-xentral.jpg" alt="Telemedicina urgente para viajeros" loading="lazy" width="600" height="400" />
-              </div>
-              <div class="card-content">
-                <span class="font-display text-3xl font-black text-primary tabular-nums">-60%</span>
-                <h3>-60% tiempo de espera en telemedicina</h3>
-                <p>Simplificación del flujo crítico de conexión entre médico y paciente de 5 minutos a solo 2 minutos en entornos de crisis.</p>
-                <span class="card-cta-arrow">Ver caso <span aria-hidden="true">→</span></span>
-              </div>
-            </article>
-          </router-link>
-        </div>
-      </div>
-    </section>
-
-    <!-- DIFFERENTIAL SECTION -->
-    <section class="section">
+    <section id="proyectos" class="w-full bg-surface py-24">
       <div class="container">
-        <div class="mb-12 text-center">
-          <h2 class="font-display text-4xl md:text-5xl font-extrabold tracking-tight text-midnight">Cómo trabajo.</h2>
-          <p class="text-lg text-body mt-4">4 principios que aplican en cada proyecto.</p>
+        <div class="mb-16 max-w-3xl">
+          <h2 class="font-display text-4xl md:text-5xl font-extrabold tracking-tight text-midnight">3 casos · 1 método</h2>
+          <p class="text-lg text-body mt-4">App de viaje, e-commerce, telemedicina. Métricas auditables en cada uno.</p>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          <!-- Card grande destacada — ocupa 3 filas a la izquierda -->
-          <div class="lg:row-span-3 card-elevated--blue p-8 md:p-10 flex flex-col justify-between min-h-[360px]">
-            <div>
-              <div class="w-14 h-14 rounded-2xl bg-secondary/20 flex items-center justify-center text-secondary mb-8">
-                <BarChart2 :size="24" />
+        <div class="space-y-20">
+          <!-- Fila 1: Texto izquierda, mockup derecha -->
+          <article class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+            <div class="lg:col-span-5 order-2 lg:order-1">
+              <span class="text-xs font-bold uppercase tracking-widest text-primary">Continental Assist · App</span>
+              <h3 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mt-3 mb-4 leading-tight">
+                +11,900% conversión en canal digital
+              </h3>
+              <p class="text-base text-body leading-relaxed mb-6">
+                Rediseño del flujo transaccional y selector de planes reduciendo la tasa de abandono al 12% global.
+              </p>
+              <ul class="space-y-2 mb-8">
+                <li class="text-sm text-slate-700 font-semibold flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span>
+                  Retención día 7: 0.1% → 12%
+                </li>
+                <li class="text-sm text-slate-700 font-semibold flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span>
+                  997 errores iOS eliminados
+                </li>
+                <li class="text-sm text-slate-700 font-semibold flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span>
+                  2 productos live, +35% activación
+                </li>
+              </ul>
+              <ButtonPrimary to="/app" variant="secondary">
+                Ver caso
+                <template #suffix><ArrowRight :size="18" /></template>
+              </ButtonPrimary>
+            </div>
+            <div class="lg:col-span-7 order-1 lg:order-2">
+              <div class="relative w-full aspect-[3/2] rounded-2xl border border-borderline overflow-hidden bg-white shadow-sm">
+                <img
+                  src="/assets/images/home/hero-app-full.jpg"
+                  alt="App de asistencia al viajero - Continental Assist"
+                  class="w-full h-full object-cover"
+                  loading="lazy"
+                  width="2400"
+                  height="1350"
+                />
               </div>
-              <div class="font-display text-6xl md:text-7xl font-black text-highlight tracking-tighter leading-none mb-4 tabular-nums">+4x</div>
-              <h3 class="text-2xl font-bold tracking-tight text-midnight mb-3">Conversión verificable</h3>
-              <p class="text-base text-body leading-relaxed">0.82% → 3.8% en 3 meses. Dashboard público, métrica auditable por terceros.</p>
             </div>
-            <div class="mt-8 pt-6 border-t border-borderline">
-              <p class="text-xs font-bold uppercase tracking-widest text-slate-400">Auditable</p>
-              <p class="text-sm text-slate-700 font-semibold mt-1">Datos auditables. Resultados públicos.</p>
-            </div>
-          </div>
+          </article>
 
-          <!-- 3 cards compactas -->
-          <div class="card-flat p-7 md:p-9 flex flex-col">
-            <div class="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center text-primary mb-5">
-              <Layers :size="20" />
+          <!-- Fila 2: Mockup izquierda, texto derecha -->
+          <article class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+            <div class="lg:col-span-7">
+              <div class="relative w-full aspect-[3/2] rounded-2xl border border-borderline overflow-hidden bg-white shadow-sm">
+                <img
+                  src="/assets/images/home/hero-ecommerce-full.jpg"
+                  alt="Checkout de asistencia en viaje"
+                  class="w-full h-full object-cover"
+                  loading="lazy"
+                  width="2400"
+                  height="1350"
+                />
+              </div>
             </div>
-            <h3 class="text-lg font-bold tracking-tight text-midnight mb-2">Research que desafía</h3>
-            <p class="text-sm text-body leading-relaxed mt-auto">Cada cambio se valida con usuarios reales. No diseño en el vacío.</p>
-          </div>
+            <div class="lg:col-span-5">
+              <span class="text-xs font-bold uppercase tracking-widest text-primary">Continental Assist · E-commerce</span>
+              <h3 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mt-3 mb-4 leading-tight">
+                +4x incremento en checkout
+              </h3>
+              <p class="text-base text-body leading-relaxed mb-6">
+                Optimización de la arquitectura de información y consistencia UI implementando un sistema de diseño modular en 3 meses.
+              </p>
+              <ul class="space-y-2 mb-8">
+                <li class="text-sm text-slate-700 font-semibold flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span>
+                  Conversión: 0.82% → 3.8%
+                </li>
+                <li class="text-sm text-slate-700 font-semibold flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span>
+                  Campos reducidos: 12 → 4
+                </li>
+                <li class="text-sm text-slate-700 font-semibold flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span>
+                  Ingresos: ~2K → ~9K USD/mes
+                </li>
+              </ul>
+              <ButtonPrimary to="/ecommerce" variant="secondary">
+                Ver caso
+                <template #suffix><ArrowRight :size="18" /></template>
+              </ButtonPrimary>
+            </div>
+          </article>
 
-          <div class="card-flat p-7 md:p-9 flex flex-col">
-            <div class="w-12 h-12 rounded-xl bg-secondary/20 flex items-center justify-center text-secondary mb-5">
-              <Code2 :size="20" />
+          <!-- Fila 3: Texto izquierda, mockup derecha -->
+          <article class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+            <div class="lg:col-span-5 order-2 lg:order-1">
+              <span class="text-xs font-bold uppercase tracking-widest text-primary">Xentral Health · Health Tech</span>
+              <h3 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mt-3 mb-4 leading-tight">
+                -60% tiempo de espera en telemedicina
+              </h3>
+              <p class="text-base text-body leading-relaxed mb-6">
+                Simplificación del flujo crítico de conexión entre médico y paciente de 5 minutos a solo 2 minutos en entornos de crisis.
+              </p>
+              <ul class="space-y-2 mb-8">
+                <li class="text-sm text-slate-700 font-semibold flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span>
+                  Acceso: 5 min → 2 min
+                </li>
+                <li class="text-sm text-slate-700 font-semibold flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span>
+                  Claridad del proceso: +90%
+                </li>
+                <li class="text-sm text-slate-700 font-semibold flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span>
+                  NPS por médico en tiempo real
+                </li>
+              </ul>
+              <ButtonPrimary to="/app-web" variant="secondary">
+                Ver caso
+                <template #suffix><ArrowRight :size="18" /></template>
+              </ButtonPrimary>
             </div>
-            <h3 class="text-lg font-bold tracking-tight text-midnight mb-2">Diseño que se construye</h3>
-            <p class="text-sm text-body leading-relaxed mt-auto">Trabajo integrado con devs. Entrego Figma + guías de código.</p>
-          </div>
-
-          <div class="card-flat p-7 md:p-9 flex flex-col">
-            <div class="w-12 h-12 rounded-xl bg-secondary/20 flex items-center justify-center text-secondary mb-5">
-              <Cpu :size="20" />
+            <div class="lg:col-span-7 order-1 lg:order-2">
+              <div class="relative w-full aspect-[3/2] rounded-2xl border border-borderline overflow-hidden bg-white shadow-sm">
+                <img
+                  src="/assets/images/home/hero-xentral-full.jpg"
+                  alt="Telemedicina urgente para viajeros"
+                  class="w-full h-full object-cover"
+                  loading="lazy"
+                  width="2400"
+                  height="1350"
+                />
+              </div>
             </div>
-            <h3 class="text-lg font-bold tracking-tight text-midnight mb-2">Itero en días, no semanas</h3>
-            <p class="text-sm text-body leading-relaxed mt-auto">Prototipos funcionales desde el día 1. Valido rápido, construyo seguro.</p>
-          </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- PROCESS SECTION -->
+    <!-- METODOLOGÍA: 3 fases macro + 8 pasos -->
     <section id="proceso" class="section section-alt">
       <div class="container">
         <div class="section-header fade-in">
-          <span class="label">Proceso</span>
+          <span class="label">Metodología</span>
           <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-3">Del problema a la métrica.</h2>
-          <p class="text-lg text-body max-w-2xl">8 etapas. No es una receta rígida — es cómo convierto complejidad en decisiones que se sostienen.</p>
+          <p class="text-lg text-body max-w-2xl">8 etapas organizadas en 3 fases. No es una receta rígida — es cómo convierto complejidad en decisiones que se sostienen.</p>
         </div>
 
-        <ProcessSection :steps="processSteps" />
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
+          <!-- Fase 1: Descubrimiento y Estrategia -->
+          <article class="bg-white border border-borderline rounded-2xl p-8 flex flex-col">
+            <header class="mb-6">
+              <span class="text-xs font-bold uppercase tracking-widest text-primary">Fase 01</span>
+              <h3 class="font-display text-xl font-bold text-midnight mt-2 leading-tight">Descubrimiento y Estrategia</h3>
+              <p class="text-xs text-slate-500 mt-1 uppercase tracking-widest">Pasos 01–03</p>
+            </header>
+            <ol class="space-y-5 flex-1">
+              <li class="flex gap-4">
+                <span class="text-sm font-black text-primary tabular-nums shrink-0 mt-0.5">01</span>
+                <div>
+                  <h4 class="text-sm font-bold text-midnight mb-1">Discovery</h4>
+                  <p class="text-xs text-body leading-relaxed">Entiendo el negocio y las restricciones antes de diseñar.</p>
+                </div>
+              </li>
+              <li class="flex gap-4">
+                <span class="text-sm font-black text-primary tabular-nums shrink-0 mt-0.5">02</span>
+                <div>
+                  <h4 class="text-sm font-bold text-midnight mb-1">Research</h4>
+                  <p class="text-xs text-body leading-relaxed">Usuarios y datos reemplazan suposiciones por evidencia.</p>
+                </div>
+              </li>
+              <li class="flex gap-4">
+                <span class="text-sm font-black text-primary tabular-nums shrink-0 mt-0.5">03</span>
+                <div>
+                  <h4 class="text-sm font-bold text-midnight mb-1">Define</h4>
+                  <p class="text-xs text-body leading-relaxed">Sintetizo el problema en algo accionable y priorizado.</p>
+                </div>
+              </li>
+            </ol>
+          </article>
+
+          <!-- Fase 2: Definición Táctica -->
+          <article class="bg-white border border-borderline rounded-2xl p-8 flex flex-col">
+            <header class="mb-6">
+              <span class="text-xs font-bold uppercase tracking-widest text-primary">Fase 02</span>
+              <h3 class="font-display text-xl font-bold text-midnight mt-2 leading-tight">Definición Táctica</h3>
+              <p class="text-xs text-slate-500 mt-1 uppercase tracking-widest">Pasos 04–05</p>
+            </header>
+            <ol class="space-y-5 flex-1">
+              <li class="flex gap-4">
+                <span class="text-sm font-black text-primary tabular-nums shrink-0 mt-0.5">04</span>
+                <div>
+                  <h4 class="text-sm font-bold text-midnight mb-1">Ideate</h4>
+                  <p class="text-xs text-body leading-relaxed">Varios caminos antes de comprometerme con uno.</p>
+                </div>
+              </li>
+              <li class="flex gap-4">
+                <span class="text-sm font-black text-primary tabular-nums shrink-0 mt-0.5">05</span>
+                <div>
+                  <h4 class="text-sm font-bold text-midnight mb-1">Prototype</h4>
+                  <p class="text-xs text-body leading-relaxed">Bajo las ideas a prototipos navegables para validar.</p>
+                </div>
+              </li>
+            </ol>
+          </article>
+
+          <!-- Fase 3: Iteración y Entrega -->
+          <article class="bg-white border border-borderline rounded-2xl p-8 flex flex-col">
+            <header class="mb-6">
+              <span class="text-xs font-bold uppercase tracking-widest text-primary">Fase 03</span>
+              <h3 class="font-display text-xl font-bold text-midnight mt-2 leading-tight">Iteración y Entrega</h3>
+              <p class="text-xs text-slate-500 mt-1 uppercase tracking-widest">Pasos 06–08</p>
+            </header>
+            <ol class="space-y-5 flex-1">
+              <li class="flex gap-4">
+                <span class="text-sm font-black text-primary tabular-nums shrink-0 mt-0.5">06</span>
+                <div>
+                  <h4 class="text-sm font-bold text-midnight mb-1">Test</h4>
+                  <p class="text-xs text-body leading-relaxed">Frente a usuarios reales. La evidencia decide.</p>
+                </div>
+              </li>
+              <li class="flex gap-4">
+                <span class="text-sm font-black text-primary tabular-nums shrink-0 mt-0.5">07</span>
+                <div>
+                  <h4 class="text-sm font-bold text-midnight mb-1">Ship</h4>
+                  <p class="text-xs text-body leading-relaxed">UI de alta fidelidad lista para desarrollo.</p>
+                </div>
+              </li>
+              <li class="flex gap-4">
+                <span class="text-sm font-black text-primary tabular-nums shrink-0 mt-0.5">08</span>
+                <div>
+                  <h4 class="text-sm font-bold text-midnight mb-1">Measure</h4>
+                  <p class="text-xs text-body leading-relaxed">Impacto real en producción. Datos para la próxima iteración.</p>
+                </div>
+              </li>
+            </ol>
+          </article>
+        </div>
       </div>
     </section>
 
-    <!-- PRINCIPLES SECTION -->
+    <!-- TESTIMONIALS SECTION -->
     <section class="section">
       <div class="container">
-        <div class="section-header fade-in">
-          <span class="label">Filosofía</span>
-          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-3">Cómo pienso el diseño.</h2>
-          <p class="text-lg text-body max-w-2xl">4 valores que guían cada decisión, del brief al handoff.</p>
+        <div class="section-header fade-in text-center">
+          <span class="label">Social Proof</span>
+          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-3">Lo que dice el equipo.</h2>
+          <p class="text-lg text-body max-w-2xl mx-auto">Engineering leads, product managers y stakeholders con los que he trabajado.</p>
         </div>
 
-        <PrinciplesSection :principles="principles" />
-      </div>
-    </section>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <blockquote class="bg-white border border-borderline rounded-2xl p-8 flex flex-col">
+            <p class="text-base text-midnight leading-relaxed italic flex-1">
+              "Yeison transformó nuestro checkout. De 12 pasos a 4. Revenue aumentó directo, sin necesidad de A/B tests adicionales."
+            </p>
+            <footer class="flex items-center gap-3 mt-6 pt-6 border-t border-borderline">
+              <div class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center font-display font-black text-sm shrink-0" aria-hidden="true">CM</div>
+              <div>
+                <cite class="block text-sm font-bold text-midnight not-italic">Carlos Mendoza</cite>
+                <span class="block text-xs text-slate-500">CEO · Continental Assist</span>
+              </div>
+            </footer>
+          </blockquote>
 
-    <!-- STACK SECTION -->
-    <section class="section section-alt">
-      <div class="container">
-        <div class="section-header fade-in">
-          <span class="label">Stack</span>
-          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-3">Herramientas del día a día.</h2>
-          <p class="text-lg text-body max-w-2xl">Las que uso para diseñar, medir, prototipar y entregar.</p>
+          <blockquote class="bg-white border border-borderline rounded-2xl p-8 flex flex-col">
+            <p class="text-base text-midnight leading-relaxed italic flex-1">
+              "Su enfoque en el Coordinador como superusuario cambió la arquitectura completa. Redujo tiempos de gestión a la mitad en producción."
+            </p>
+            <footer class="flex items-center gap-3 mt-6 pt-6 border-t border-borderline">
+              <div class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center font-display font-black text-sm shrink-0" aria-hidden="true">MG</div>
+              <div>
+                <cite class="block text-sm font-bold text-midnight not-italic">Dra. María González</cite>
+                <span class="block text-xs text-slate-500">Cardiología · Xentral Health</span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="bg-white border border-borderline rounded-2xl p-8 flex flex-col">
+            <p class="text-base text-midnight leading-relaxed italic flex-1">
+              "Lo que más valoro: prototipos en HTML, no en Figma. El ciclo de feedback pasó de días a horas. Cambió cómo iteramos."
+            </p>
+            <footer class="flex items-center gap-3 mt-6 pt-6 border-t border-borderline">
+              <div class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center font-display font-black text-sm shrink-0" aria-hidden="true">DR</div>
+              <div>
+                <cite class="block text-sm font-bold text-midnight not-italic">Diego Ramírez</cite>
+                <span class="block text-xs text-slate-500">Engineering Lead · Continental Assist</span>
+              </div>
+            </footer>
+          </blockquote>
         </div>
-
-        <StackWithLogos :tools="stackTools" />
       </div>
     </section>
 
@@ -275,7 +405,9 @@
               </template>
               Conversemos
             </ButtonPrimary>
-            <CVButton variant="ghost" label="Descargar CV" />
+            <ButtonPrimary to="/contacto" variant="secondary" size="lg">
+              Agendar discovery
+            </ButtonPrimary>
           </div>
         </div>
       </div>
@@ -284,68 +416,11 @@
 </template>
 
 <script setup>
-import { ArrowRight, TrendingUp, Rocket, HeartPulse, Layers, BarChart2, Code2, Cpu, MessageCircle, Mail, Briefcase, Globe } from 'lucide-vue-next'
+import { ArrowRight, MessageCircle, Mail } from 'lucide-vue-next'
 import { useScrollAnimations } from '@/composables/useScrollAnimations'
 import AuroraBg from '@/components/primitives/AuroraBg.vue'
-import StatCard from '@/components/primitives/StatCard.vue'
-import Marquee from '@/components/primitives/Marquee.vue'
 import ButtonPrimary from '@/components/primitives/ButtonPrimary.vue'
 import AvailabilityBadge from '@/components/AvailabilityBadge.vue'
-import CVButton from '@/components/CVButton.vue'
-import ProcessSection from '@/components/ProcessSection.vue'
-import PrinciplesSection from '@/components/PrinciplesSection.vue'
-import StackWithLogos from '@/components/StackWithLogos.vue'
 
 useScrollAnimations()
-
-const processSteps = [
-  { title: 'Discovery', description: 'Entiendo el negocio, el usuario y las restricciones antes de diseñar nada.' },
-  { title: 'Research', description: 'Hablo con usuarios reales y analizo datos para reemplazar suposiciones por evidencia.' },
-  { title: 'Define', description: 'Sintetizo lo aprendido en un problema claro, accionable y priorizado por impacto.' },
-  { title: 'Ideate', description: 'Genero varios caminos antes de comprometerme con uno. Divergir para luego converger.' },
-  { title: 'Prototype', description: 'Bajo las ideas a prototipos navegables para validar rápido y barato.' },
-  { title: 'Test', description: 'Pongo el diseño frente a usuarios reales y dejo que la evidencia decida.' },
-  { title: 'Ship', description: 'Entrego UI de alta fidelidad y un sistema listo para desarrollo.' },
-  { title: 'Measure', description: 'Mido el impacto real en producción y uso esos datos para la próxima iteración.' }
-]
-
-const principles = [
-  {
-    label: 'Producto',
-    title: 'La pantalla es la punta; diseño el problema entero.',
-    description: 'Discovery, métricas, negocio. La UI es la consecuencia, no el punto de partida.',
-    color: 'violet'
-  },
-  {
-    label: 'Confianza',
-    title: 'Diseño donde el error cuesta dinero o reputación.',
-    description: 'Checkout, salud, finanzas. La fricción se mide, no se discute.',
-    color: 'blue'
-  },
-  {
-    label: 'Sistemas',
-    title: 'Diseño para escalar, no para una pantalla.',
-    description: 'Componentes reutilizables, tokens, documentación. Velocidad sin deuda.',
-    color: 'emerald'
-  },
-  {
-    label: 'Evidencia',
-    title: 'Decisiones que se defienden con datos.',
-    description: 'Analytics, heatmaps, A/B tests. Lo que no se mide, no se mejora.',
-    color: 'amber'
-  }
-]
-
-const stackTools = [
-  { name: 'Figma', icon: '/assets/logos/stack/figma.svg', bg: '#F24E1E' },
-  { name: 'Notion', icon: '/assets/logos/stack/notion.svg', bg: '#000000' },
-  { name: 'Vue 3', icon: '/assets/logos/stack/vue.svg', bg: '#4FC08D' },
-  { name: 'Tailwind', icon: '/assets/logos/stack/tailwind.svg', bg: '#06B6D4' },
-  { name: 'Analytics', icon: '/assets/logos/stack/google-analytics.svg', bg: '#E37400' },
-  { name: 'Hotjar', icon: '/assets/logos/stack/hotjar.svg', bg: '#FD3A5C' },
-  { name: 'Google Fonts', icon: '/assets/logos/stack/google-fonts.svg', bg: '#4285F4' },
-  { name: 'GitHub', icon: '/assets/logos/stack/github.svg', bg: '#181717' },
-  { name: 'Vercel', icon: '/assets/logos/stack/vercel.svg', bg: '#000000' },
-  { name: 'Netlify', icon: '/assets/logos/stack/netlify.svg', bg: '#00C7B7' }
-]
 </script>

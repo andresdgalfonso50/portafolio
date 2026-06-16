@@ -8,7 +8,7 @@
       highlight="optimización basada en conversión"
       badge="E-commerce"
       subtitle="0.82% → 3.8% en 3 meses. CRO medible, dashboard público."
-      hero-image="/assets/images/home/hero-ecommerce-full.jpg"
+      :hero-image="heroEcomImg"
       hero-image-alt="Checkout de asistencia en viaje"
       :hero-badge="{ value: '+4x', label: 'conversión' }"
       :meta="[
@@ -530,6 +530,7 @@ import { RouterLink } from 'vue-router'
 import { useScrollAnimations } from '@/composables/useScrollAnimations'
 import AuroraBg from '@/components/primitives/AuroraBg.vue'
 import CaseStudyHero from '@/components/case-study/CaseStudyHero.vue'
+import heroEcomImg from '/public/assets/images/home/hero-ecommerce-full.jpg'
 import {
   Layers, GitBranch, ClipboardList, ShieldOff, Smartphone, Package,
   CreditCard, ChevronRight, ArrowRight, ArrowLeft, CheckCircle, MapPin,

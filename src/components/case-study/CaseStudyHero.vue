@@ -50,7 +50,7 @@
 <script setup>
 import AuroraBg from '@/components/primitives/AuroraBg.vue'
 
-defineProps({
+const props = defineProps({
   caseSlug: { type: String, default: 'default' },
   icon: { type: [Object, Function], default: null },
   title: { type: String, required: true },
