@@ -1,42 +1,23 @@
 <template>
   <div class="view-wrapper">
     <!-- 1. HERO -->
-    <AuroraBg variant="hero" class="case-hero section app-hero">
-      <div class="w-full max-w-6xl mx-auto px-6 pt-20 pb-12 relative z-10">
-        <div class="text-center max-w-4xl mx-auto mb-12 fade-in">
-          <div class="flex items-center justify-center gap-2 mb-6">
-            <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"></path></svg>
-            <span class="text-xs font-bold text-primary uppercase tracking-widest">Diseño de Producto</span>
-          </div>
-          <h1 class="font-display text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.05] text-midnight mb-6">
-            Continental Assist
-            <span class="font-light italic text-primary">: asistencia médica en ruta</span>
-          </h1>
-          <span class="inline-block px-4 py-1.5 bg-primary text-white font-bold text-xs uppercase tracking-widest rounded-full shadow-glow-primary mb-8">
-            Continental Assist
-          </span>
-          <p class="text-lg md:text-xl text-body leading-relaxed max-w-2xl mx-auto">
-            97% de abandono → 2 apps en producción. Retención día 7: 0.1% → 12%.
-          </p>
-        </div>
-
-        <div class="case-hero-image fade-in stagger-1">
-          <img src="/assets/images/home/hero-app-full.jpg" alt="App de asistencia al viajero" loading="eager" fetchpriority="high" width="2400" height="1350" />
-          <div class="case-hero-badge top-right">
-            <span>+11,900%</span>
-            <span class="text-xs font-bold text-body uppercase tracking-widest">retención</span>
-          </div>
-        </div>
-      </div>
-      <div class="w-full max-w-6xl mx-auto px-6 pt-16 pb-12 relative z-10">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 py-10 border-y border-borderline">
-          <div class="flex flex-col"><span class="block text-2xl md:text-3xl font-bold text-midnight">Product Designer</span><span class="text-xs font-bold text-body uppercase tracking-widest mt-1">Mi Rol</span></div>
-          <div class="flex flex-col"><span class="block text-2xl md:text-3xl font-bold text-midnight">5 Meses</span><span class="text-xs font-bold text-body uppercase tracking-widest mt-1">Duración</span></div>
-          <div class="flex flex-col"><span class="block text-2xl md:text-3xl font-bold text-midnight">PM + 2 Devs</span><span class="text-xs font-bold text-body uppercase tracking-widest mt-1">Equipo</span></div>
-          <div class="flex flex-col"><span class="block text-2xl md:text-3xl font-black text-primary">+35% Activación</span><span class="text-xs font-bold text-body uppercase tracking-widest mt-1">Impacto</span></div>
-        </div>
-      </div>
-    </AuroraBg>
+    <CaseStudyHero
+      case-slug="app"
+      :icon="Layers"
+      title="Continental Assist"
+      highlight="asistencia médica en ruta"
+      badge="Continental Assist"
+      subtitle="97% de abandono → 2 apps en producción. Retención día 7: 0.1% → 12%."
+      hero-image="/assets/images/home/hero-app-full.jpg"
+      hero-image-alt="App de asistencia al viajero"
+      :hero-badge="{ value: '+11,900%', label: 'retención' }"
+      :meta="[
+        { value: 'Product Designer', label: 'Mi Rol' },
+        { value: '5 Meses', label: 'Duración' },
+        { value: 'PM + 2 Devs', label: 'Equipo' },
+        { value: '+35% Activación', label: 'Impacto', emphasis: true }
+      ]"
+    />
 
     <!-- 2. CONTEXTO & DISCOVERY: el problema, la investigación, qué aprendimos -->
     <section class="case-section section-alt">
@@ -585,6 +566,7 @@
 <script setup>
 import { useScrollAnimations } from '@/composables/useScrollAnimations'
 import AuroraBg from '@/components/primitives/AuroraBg.vue'
+import CaseStudyHero from '@/components/case-study/CaseStudyHero.vue'
 import {
   Layers, GitBranch, ClipboardList, ShieldOff, Smartphone, Package,
   CreditCard, ChevronRight, ArrowRight, ArrowLeft, CheckCircle, MapPin,

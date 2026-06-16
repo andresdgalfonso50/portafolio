@@ -1,42 +1,23 @@
 <template>
   <div class="view-wrapper">
     <!-- 1. HERO -->
-    <AuroraBg variant="hero" class="case-hero section">
-      <div class="max-w-6xl mx-auto px-6 pt-20 pb-12 relative z-10">
-        <div class="text-center max-w-4xl mx-auto mb-12 fade-in">
-          <div class="flex items-center justify-center gap-2 mb-6">
-            <Layers class="w-5 h-5 text-primary" :size="20" />
-            <span class="text-xs font-bold text-primary uppercase tracking-widest">Rediseño de producto</span>
-          </div>
-          <h1 class="font-display text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.05] text-midnight mb-6">
-            Continental Assist
-            <span class="font-light italic text-primary">: optimización basada en conversión</span>
-          </h1>
-          <span class="inline-block px-4 py-1.5 bg-primary text-white font-bold text-xs uppercase tracking-widest rounded-full shadow-glow-primary mb-8">
-            E-commerce
-          </span>
-          <p class="text-lg md:text-xl text-body leading-relaxed max-w-2xl mx-auto">
-            0.82% → 3.8% en 3 meses. CRO medible, dashboard público.
-          </p>
-        </div>
-
-        <div class="case-hero-image fade-in stagger-1">
-          <img src="/assets/images/home/hero-ecommerce-full.jpg" alt="Checkout de asistencia en viaje" loading="eager" fetchpriority="high" width="2400" height="1350" />
-          <div class="case-hero-badge top-right">
-            <span>+4x</span>
-            <span class="text-xs font-bold text-body uppercase tracking-widest">conversión</span>
-          </div>
-        </div>
-      </div>
-      <div class="max-w-6xl mx-auto px-6 pt-16 pb-12 relative z-10">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 py-10 border-y border-borderline">
-          <div class="flex flex-col"><span class="block text-2xl md:text-3xl font-bold text-midnight">Product Designer</span><span class="text-xs font-bold text-body uppercase tracking-widest mt-1">Mi Rol</span></div>
-          <div class="flex flex-col"><span class="block text-2xl md:text-3xl font-bold text-midnight">3 Meses</span><span class="text-xs font-bold text-body uppercase tracking-widest mt-1">Duración</span></div>
-          <div class="flex flex-col"><span class="block text-2xl md:text-3xl font-bold text-midnight">PM + 3 Devs</span><span class="text-xs font-bold text-body uppercase tracking-widest mt-1">Equipo</span></div>
-          <div class="flex flex-col"><span class="block text-2xl md:text-3xl font-black text-primary">+4x Ingresos</span><span class="text-xs font-bold text-body uppercase tracking-widest mt-1">Impacto</span></div>
-        </div>
-      </div>
-    </AuroraBg>
+    <CaseStudyHero
+      case-slug="ecommerce"
+      :icon="Layers"
+      title="Continental Assist"
+      highlight="optimización basada en conversión"
+      badge="E-commerce"
+      subtitle="0.82% → 3.8% en 3 meses. CRO medible, dashboard público."
+      hero-image="/assets/images/home/hero-ecommerce-full.jpg"
+      hero-image-alt="Checkout de asistencia en viaje"
+      :hero-badge="{ value: '+4x', label: 'conversión' }"
+      :meta="[
+        { value: 'Product Designer', label: 'Mi Rol' },
+        { value: '3 Meses', label: 'Duración' },
+        { value: 'PM + 3 Devs', label: 'Equipo' },
+        { value: '+4x Ingresos', label: 'Impacto', emphasis: true }
+      ]"
+    />
 
     <!-- 2. CONTEXTO & PROBLEMA: el juego estaba en peligro + 5 fricciones + UI antes -->
     <section class="case-section">
@@ -548,6 +529,7 @@
 import { RouterLink } from 'vue-router'
 import { useScrollAnimations } from '@/composables/useScrollAnimations'
 import AuroraBg from '@/components/primitives/AuroraBg.vue'
+import CaseStudyHero from '@/components/case-study/CaseStudyHero.vue'
 import {
   Layers, GitBranch, ClipboardList, ShieldOff, Smartphone, Package,
   CreditCard, ChevronRight, ArrowRight, ArrowLeft, CheckCircle, MapPin,

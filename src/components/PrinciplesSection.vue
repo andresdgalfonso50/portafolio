@@ -63,7 +63,7 @@ defineProps({
 
 .principle-card:hover::before { transform: scaleX(1); }
 
-.principle-card--violet { --accent: #8b5cf6; }
+.principle-card--violet { --accent: #0A1022; }
 .principle-card--blue { --accent: #0071e3; }
 .principle-card--emerald { --accent: #10b981; }
 .principle-card--amber { --accent: #f59e0b; }

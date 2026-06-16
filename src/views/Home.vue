@@ -18,23 +18,22 @@
           Estrategia UX y sistemas de diseño de alto rendimiento enfocados en maximizar la conversión, retención y la eficiencia de producto. Métricas auditables en producción.
         </p>
         <div class="flex flex-wrap gap-4 items-center">
-          <a
-            href="#proyectos"
-                class="inline-flex items-center gap-2 px-7 py-3.5 bg-midnight text-white font-semibold text-sm rounded-full hover:bg-primary transition-colors duration-300"
-          >
+          <ButtonPrimary href="#proyectos" variant="primary">
             Ver 3 casos
-            <ArrowRight :size="18" />
-          </a>
+            <template #suffix>
+              <ArrowRight :size="18" />
+            </template>
+          </ButtonPrimary>
           <CVButton variant="secondary" label="Descargar CV" />
-          <a
+          <ButtonPrimary
             href="https://wa.me/573125673243?text=Hola%20Yeison,%20vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20contactarte."
-            target="_blank"
-            rel="noopener noreferrer"
-                class="inline-flex items-center gap-2 px-7 py-3.5 bg-white text-midnight font-semibold text-sm rounded-full border border-borderline hover:border-midnight transition-colors duration-300"
+            variant="secondary"
           >
-            <MessageCircle :size="18" />
+            <template #icon>
+              <MessageCircle :size="18" />
+            </template>
             WhatsApp
-          </a>
+          </ButtonPrimary>
         </div>
       </div>
       <div class="lg:col-span-5 flex items-center justify-end mt-12 lg:mt-0 fade-in stagger-2">
@@ -120,7 +119,7 @@
           <router-link to="/app" class="block">
             <article class="card-elevated--violet h-full flex flex-col">
               <div class="card-image">
-                <img src="/assets/images/home/card-app.jpg" alt="App de asistencia al viajero - Continental Assist" loading="lazy" />
+                <img src="/assets/images/home/card-app.jpg" alt="App de asistencia al viajero - Continental Assist" loading="lazy" width="600" height="400" />
               </div>
               <div class="card-content">
                 <span class="font-display text-3xl font-black text-primary tabular-nums">+11,900%</span>
@@ -135,7 +134,7 @@
           <router-link to="/ecommerce" class="block">
             <article class="card-elevated--blue h-full flex flex-col">
               <div class="card-image">
-                <img src="/assets/images/home/card-ecommerce.jpg" alt="Checkout de asistencia en viaje" loading="lazy" />
+                <img src="/assets/images/home/card-ecommerce.jpg" alt="Checkout de asistencia en viaje" loading="lazy" width="600" height="400" />
               </div>
               <div class="card-content">
                 <span class="font-display text-3xl font-black text-primary tabular-nums">+4x</span>
@@ -150,7 +149,7 @@
           <router-link to="/app-web" class="block">
             <article class="card-elevated--emerald h-full flex flex-col">
               <div class="card-image">
-                <img src="/assets/images/home/card-xentral.jpg" alt="Telemedicina urgente para viajeros" loading="lazy" />
+                <img src="/assets/images/home/card-xentral.jpg" alt="Telemedicina urgente para viajeros" loading="lazy" width="600" height="400" />
               </div>
               <div class="card-content">
                 <span class="font-display text-3xl font-black text-primary tabular-nums">-60%</span>
@@ -270,13 +269,12 @@
             30 min de discovery. Cotización en 24h. Empezamos en 1 semana.
           </p>
           <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-            <router-link
-              to="/contacto"
-              class="inline-flex items-center gap-2 px-8 py-4 bg-primary text-white font-semibold rounded-full hover:bg-white hover:text-midnight transition-colors duration-300"
-            >
-              <Mail :size="18" />
+            <ButtonPrimary to="/contacto" variant="accent" size="lg">
+              <template #icon>
+                <Mail :size="18" />
+              </template>
               Conversemos
-            </router-link>
+            </ButtonPrimary>
             <CVButton variant="ghost" label="Descargar CV" />
           </div>
         </div>
@@ -291,6 +289,7 @@ import { useScrollAnimations } from '@/composables/useScrollAnimations'
 import AuroraBg from '@/components/primitives/AuroraBg.vue'
 import StatCard from '@/components/primitives/StatCard.vue'
 import Marquee from '@/components/primitives/Marquee.vue'
+import ButtonPrimary from '@/components/primitives/ButtonPrimary.vue'
 import AvailabilityBadge from '@/components/AvailabilityBadge.vue'
 import CVButton from '@/components/CVButton.vue'
 import ProcessSection from '@/components/ProcessSection.vue'

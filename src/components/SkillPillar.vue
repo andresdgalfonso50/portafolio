@@ -59,12 +59,12 @@ defineProps({
 
 .skill-pillar:hover::after { opacity: 1; }
 
-.skill-pillar--violet { --pillar-color: rgba(139, 92, 246, 0.08); }
+.skill-pillar--violet { --pillar-color: rgba(10, 16, 34, 0.06); }
 .skill-pillar--blue { --pillar-color: rgba(0, 113, 227, 0.08); }
 .skill-pillar--emerald { --pillar-color: rgba(16, 185, 129, 0.08); }
 .skill-pillar--amber { --pillar-color: rgba(245, 158, 11, 0.08); }
 
-.skill-pillar--violet .skill-pillar-icon { background: rgba(139, 92, 246, 0.12); color: #8b5cf6; }
+.skill-pillar--violet .skill-pillar-icon { background: rgba(10, 16, 34, 0.08); color: #0A1022; }
 .skill-pillar--blue .skill-pillar-icon { background: rgba(0, 113, 227, 0.12); color: #0071e3; }
 .skill-pillar--emerald .skill-pillar-icon { background: rgba(16, 185, 129, 0.12); color: #10b981; }
 .skill-pillar--amber .skill-pillar-icon { background: rgba(245, 158, 11, 0.12); color: #f59e0b; }

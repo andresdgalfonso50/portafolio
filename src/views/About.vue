@@ -29,13 +29,12 @@
               </span>
             </div>
             <div class="about-actions">
-              <router-link
-                to="/contacto"
-                class="inline-flex items-center gap-2 px-7 py-3.5 bg-midnight text-white font-semibold text-sm rounded-full hover:bg-primary transition-colors duration-300"
-              >
-                <Mail :size="18" />
+              <ButtonPrimary to="/contacto" variant="primary">
+                <template #icon>
+                  <Mail :size="18" />
+                </template>
                 Agendar llamada
-              </router-link>
+              </ButtonPrimary>
               <CVButton variant="secondary" label="Descargar CV" />
             </div>
           </div>
@@ -231,13 +230,12 @@
           Disponible para nuevos proyectos. 30 min de discovery, respuesta en 24h.
         </p>
         <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-          <router-link
-            to="/contacto"
-            class="inline-flex items-center gap-2 px-8 py-4 bg-primary text-white font-semibold rounded-full hover:bg-white hover:text-midnight transition-colors duration-300"
-          >
-            <Mail :size="18" />
+          <ButtonPrimary to="/contacto" variant="accent" size="lg">
+            <template #icon>
+              <Mail :size="18" />
+            </template>
             Conversemos
-          </router-link>
+          </ButtonPrimary>
           <CVButton variant="ghost" label="Descargar CV" />
         </div>
       </div>
@@ -249,6 +247,7 @@
 import { MapPin, GraduationCap, Palette, BarChart2, Code2, PenTool, Mail, Compass, Workflow, Sparkles } from 'lucide-vue-next'
 import { useScrollAnimations } from '@/composables/useScrollAnimations'
 import AuroraBg from '@/components/primitives/AuroraBg.vue'
+import ButtonPrimary from '@/components/primitives/ButtonPrimary.vue'
 import AvailabilityBadge from '@/components/AvailabilityBadge.vue'
 import CVButton from '@/components/CVButton.vue'
 import ExperienceTimeline from '@/components/ExperienceTimeline.vue'

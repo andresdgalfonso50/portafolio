@@ -159,12 +159,12 @@
                   {{ errors.message }}
                 </span>
               </div>
-              <button type="submit" class="inline-flex items-center justify-center gap-2 w-full px-8 py-4 bg-midnight text-white font-semibold rounded-full hover:bg-primary transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed" :disabled="isSubmitting || isSent" :aria-busy="isSubmitting">
+              <ButtonPrimary type="submit" variant="primary" size="lg" block :disabled="isSubmitting || isSent">
                 <span v-if="isSubmitting" class="btn-spinner"></span>
                 <CheckCircle v-else-if="isSent" :size="18" />
                 <Send v-else :size="18" />
                 <span aria-live="polite">{{ isSubmitting ? 'Enviando...' : isSent ? 'Enviado' : 'Enviar mensaje' }}</span>
-              </button>
+              </ButtonPrimary>
             </form>
             <div v-if="submitMessage" class="submit-message" :class="{ success: submitSuccess, error: !submitSuccess }" role="status">
               <CheckCircle v-if="submitSuccess" :size="16" class="inline mr-1" />
@@ -182,6 +182,7 @@ import { ref, reactive } from 'vue'
 import { Mail, Phone, Linkedin, MapPin, Send, CheckCircle } from 'lucide-vue-next'
 import { useScrollAnimations } from '@/composables/useScrollAnimations'
 import AuroraBg from '@/components/primitives/AuroraBg.vue'
+import ButtonPrimary from '@/components/primitives/ButtonPrimary.vue'
 import CVButton from '@/components/CVButton.vue'
 
 useScrollAnimations()

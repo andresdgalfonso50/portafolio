@@ -1,42 +1,23 @@
 <template>
   <div class="view-wrapper">
     <!-- 1. HERO -->
-    <AuroraBg variant="hero" class="case-hero section xentral-hero">
-      <div class="max-w-6xl mx-auto px-6 pt-20 pb-12 relative z-10">
-        <div class="text-center max-w-4xl mx-auto mb-12 fade-in">
-          <div class="flex items-center justify-center gap-2 mb-6">
-            <HeartPulse class="w-5 h-5 text-primary" :size="20" />
-            <span class="text-xs font-bold text-primary uppercase tracking-widest">Caso de estudio</span>
-          </div>
-          <h1 class="font-display text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.05] text-midnight mb-6">
-            Xentral Health
-            <span class="font-light italic text-primary">: telemedicina de alta velocidad</span>
-          </h1>
-          <span class="inline-block px-4 py-1.5 bg-primary text-white font-bold text-xs uppercase tracking-widest rounded-full shadow-glow-primary mb-8">
-            Health Tech
-          </span>
-          <p class="text-lg md:text-xl text-body leading-relaxed max-w-2xl mx-auto">
-            5 min → 2 min entre crisis y atención. Plataforma web para crisis reales.
-          </p>
-        </div>
-
-        <div class="case-hero-image fade-in stagger-1">
-          <img src="/assets/images/home/hero-xentral-full.jpg" alt="Telemedicina urgente" loading="eager" fetchpriority="high" width="2400" height="1350" />
-          <div class="case-hero-badge top-right">
-            <span>-60%</span>
-            <span class="text-xs font-bold text-body uppercase tracking-widest">tiempo</span>
-          </div>
-        </div>
-      </div>
-      <div class="max-w-6xl mx-auto px-6 pt-16 pb-12 relative z-10">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 py-10 border-y border-borderline">
-          <div class="flex flex-col"><span class="block text-2xl md:text-3xl font-bold text-midnight">Product Designer</span><span class="text-xs font-bold text-body uppercase tracking-widest mt-1">Mi Rol</span></div>
-          <div class="flex flex-col"><span class="block text-2xl md:text-3xl font-bold text-midnight">6 Semanas</span><span class="text-xs font-bold text-body uppercase tracking-widest mt-1">Duración</span></div>
-          <div class="flex flex-col"><span class="block text-2xl md:text-3xl font-bold text-midnight">3 Devs + 1 PM</span><span class="text-xs font-bold text-body uppercase tracking-widest mt-1">Equipo</span></div>
-          <div class="flex flex-col"><span class="block text-2xl md:text-3xl font-black text-primary">-60% Tiempo</span><span class="text-xs font-bold text-body uppercase tracking-widest mt-1">Impacto</span></div>
-        </div>
-      </div>
-    </AuroraBg>
+    <CaseStudyHero
+      case-slug="xentral"
+      :icon="HeartPulse"
+      title="Xentral Health"
+      highlight="telemedicina de alta velocidad"
+      badge="Health Tech"
+      subtitle="5 min → 2 min entre crisis y atención. Plataforma web para crisis reales."
+      hero-image="/assets/images/home/hero-xentral-full.jpg"
+      hero-image-alt="Telemedicina urgente"
+      :hero-badge="{ value: '-60%', label: 'tiempo' }"
+      :meta="[
+        { value: 'Product Designer', label: 'Mi Rol' },
+        { value: '6 Semanas', label: 'Duración' },
+        { value: '3 Devs + 1 PM', label: 'Equipo' },
+        { value: '-60% Tiempo', label: 'Impacto', emphasis: true }
+      ]"
+    />
 
     <!-- 2. CONTEXTO & PROBLEMA: situación crítica + 4 barreras + pregunta diseño -->
     <section class="case-section">
@@ -282,7 +263,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div class="bg-white rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] overflow-hidden">
             <div class="overflow-hidden">
-              <img src="/assets/images/xentral-health/xentral-dashboard-lifestyle.jpg" alt="Acceso por link único" class="w-full h-auto object-cover" width="2816" height="1536">
+              <img src="/assets/images/xentral-health/dashboard.png" alt="Acceso por link único" class="w-full h-auto object-cover" width="2816" height="1536">
             </div>
             <div class="p-5">
               <h4 class="text-sm font-bold text-midnight mb-1">Acceso por Link Único</h4>
@@ -291,7 +272,7 @@
           </div>
           <div class="bg-white rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] overflow-hidden">
             <div class="overflow-hidden">
-              <img src="/assets/images/xentral-health/mockup-xentral-comparacion.jpg" alt="Validación de cobertura" class="w-full h-auto object-cover" width="2816" height="1536">
+              <img src="/assets/images/xentral-health/xentral-comparacion-roles.jpg" alt="Validación de cobertura" class="w-full h-auto object-cover" width="2816" height="1536">
             </div>
             <div class="p-5">
               <h4 class="text-sm font-bold text-midnight mb-1">Validación de Cobertura Visible</h4>
@@ -300,7 +281,7 @@
           </div>
           <div class="bg-white rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] overflow-hidden">
             <div class="overflow-hidden">
-              <img src="/assets/images/xentral-health/xentral-dashboard-lifestyle.jpg" alt="Flujo guiado de síntomas" class="w-full h-auto object-cover" width="2816" height="1536">
+              <img src="/assets/images/xentral-health/dashboard.png" alt="Flujo guiado de síntomas" class="w-full h-auto object-cover" width="2816" height="1536">
             </div>
             <div class="p-5">
               <h4 class="text-sm font-bold text-midnight mb-1">Flujo Guiado de Síntomas</h4>
@@ -309,7 +290,7 @@
           </div>
           <div class="bg-white rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] overflow-hidden">
             <div class="overflow-hidden">
-              <img src="/assets/images/xentral-health/mockup-xentral-comparacion.jpg" alt="Videollamada integrada" class="w-full h-auto object-cover" width="2816" height="1536">
+              <img src="/assets/images/xentral-health/xentral-comparacion-roles.jpg" alt="Videollamada integrada" class="w-full h-auto object-cover" width="2816" height="1536">
             </div>
             <div class="p-5">
               <h4 class="text-sm font-bold text-midnight mb-1">Videollamada Integrada</h4>
@@ -319,7 +300,7 @@
           <div class="bg-white rounded-3xl border-2 border-secondary shadow-[0_8px_30px_rgb(0,0,0,0.04)] overflow-hidden md:col-span-2 relative">
             <span class="absolute top-4 right-4 px-2 py-0.5 bg-secondary text-white text-[10px] font-bold uppercase tracking-widest rounded-full">Destacado</span>
             <div class="overflow-hidden">
-              <img src="/assets/images/xentral-health/xentral-dashboard-lifestyle.jpg" alt="Encuesta NPS post-consulta" class="w-full h-auto object-cover" width="2816" height="1536">
+              <img src="/assets/images/xentral-health/dashboard.png" alt="Encuesta NPS post-consulta" class="w-full h-auto object-cover" width="2816" height="1536">
             </div>
             <div class="p-5">
               <h4 class="text-sm font-bold text-midnight mb-1">Encuesta NPS Post-consulta</h4>
@@ -532,6 +513,8 @@
 <script setup>
 import { useScrollAnimations } from '@/composables/useScrollAnimations'
 import AuroraBg from '@/components/primitives/AuroraBg.vue'
+import CaseStudyHero from '@/components/case-study/CaseStudyHero.vue'
+import CaseStudyMetricsDashboard from '@/components/case-study/CaseStudyMetricsDashboard.vue'
 import {
   HeartPulse, Plane, Stethoscope, MapPin, ShieldOff, Languages, Clock, MessageSquare,
   Zap, Eye, ListFilter, Heart, ChevronRight, Lightbulb, XCircle, BarChart2, UserCheck, Layers,
@@ -540,3 +523,4 @@ import {
 
 useScrollAnimations()
 </script>
+

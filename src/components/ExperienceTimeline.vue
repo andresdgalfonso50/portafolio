@@ -194,7 +194,7 @@ defineProps({
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: var(--color-secondary, #8b5cf6);
+  background: var(--color-primary, #0071e3);
 }
 
 .timeline-skills {
