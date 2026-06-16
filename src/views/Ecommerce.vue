@@ -4,10 +4,10 @@
     <CaseStudyHero
       case-slug="ecommerce"
       :icon="Layers"
-      title="Continental Assist"
-      highlight="optimización basada en conversión"
+      title="El cotizador web que multiplicó el checkout 4x."
+      highlight=""
       badge="E-commerce"
-      subtitle="0.82% → 3.8% en 3 meses. CRO medible, dashboard público."
+      subtitle="Rediseño integral de la plataforma de cotización responsive para los canales B2B y B2C."
       :hero-image="heroEcomImg"
       hero-image-alt="Checkout de asistencia en viaje"
       :hero-badge="{ value: '+4x', label: 'conversión' }"
@@ -22,22 +22,6 @@
     <!-- 2. CONTEXTO & PROBLEMA: el juego estaba en peligro + 5 fricciones + UI antes -->
     <section class="case-section">
       <div class="max-w-6xl mx-auto px-6">
-        <!-- El juego estaba en peligro (compactado como callout) -->
-        <div class="stakes-box fade-in p-8 md:p-10 bg-white rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] mb-12">
-          <div class="flex items-start gap-5">
-            <div class="w-12 h-12 bg-rose-100 rounded-xl flex items-center justify-center shrink-0">
-              <svg class="w-6 h-6 text-rose-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
-              </svg>
-            </div>
-            <div>
-              <span class="text-xs font-bold uppercase tracking-widest text-rose-600 mb-2 block">La situación era crítica</span>
-              <h3 class="text-xl md:text-2xl font-bold text-midnight mb-3">0.82% de conversión. 3 meses para salvar el canal digital.</h3>
-              <p class="text-base text-body leading-relaxed">Perdíamos más adquiriendo clientes de lo que generaban. El equipo tenía <strong class="text-midnight">3 meses</strong> para revertirlo.</p>
-            </div>
-          </div>
-        </div>
-
         <div class="section-header fade-in mb-12">
           <span class="section-number">01</span>
           <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-8">64.5% abandonaba. 12 campos. 0 confianza.</h2>
@@ -140,7 +124,7 @@
       <div class="max-w-6xl mx-auto px-6">
         <div class="section-header fade-in mb-12">
           <span class="section-number">02</span>
-          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-8">El problema no era el diseño, era el flujo</h2>
+          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-8">Decisiones de diseño clave</h2>
           <p class="section-intro">73% abandonaba en el primer paso. Mostrábamos el formulario antes del resumen. Usuario quería ver, luego pagar.</p>
         </div>
 
@@ -245,15 +229,15 @@
       <div class="max-w-6xl mx-auto px-6">
         <div class="section-header fade-in mb-12">
           <span class="section-number">03</span>
-          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-8">12 campos → 4. 8 pantallas → 5. +4x ingresos.</h2>
+          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-8">Ecosistema e integraciones comerciales</h2>
           <p class="section-intro">Rediseño paso a paso: cada fricción eliminada con un test.</p>
         </div>
 
         <div class="steps-container">
-          <div class="step-item flex flex-col md:flex-row items-center gap-8 md:gap-16 mb-16 md:mb-24 fade-in">
+          <div class="step-item flex flex-col md:flex-row items-center gap-8 md:gap-16 mb-12 md:mb-16 fade-in">
             <div class="step-visual w-full md:w-1/2 order-2 md:order-1">
-              <div class="step-image-wrapper rounded-2xl overflow-hidden border border-borderline shadow-xl">
-                <img src="/assets/images/ecommerce/Cotizador-paso-1.jpg" alt="Paso 1" class="w-full h-auto object-cover" width="1280" height="1066">
+              <div class="step-image-wrapper rounded-2xl overflow-hidden border border-borderline bg-surface p-4">
+                <img src="/assets/images/ecommerce/Cotizador-paso-1.jpg" alt="Paso 1" class="w-full h-auto object-contain" width="1280" height="1066">
               </div>
             </div>
             <div class="step-content w-full md:w-1/2 order-1 md:order-2">
@@ -262,10 +246,10 @@
               <p class="text-sm text-body leading-relaxed">Jerarquía visual inmediata para comparar beneficios y precios de un vistazo.</p>
             </div>
           </div>
-          <div class="step-item flex flex-col md:flex-row items-center gap-8 md:gap-16 mb-16 md:mb-24 fade-in">
+          <div class="step-item flex flex-col md:flex-row items-center gap-8 md:gap-16 mb-12 md:mb-16 fade-in">
             <div class="step-visual w-full md:w-1/2 order-2 md:order-2">
-              <div class="step-image-wrapper rounded-2xl overflow-hidden border border-borderline shadow-xl">
-                <img src="/assets/images/ecommerce/Cotizador-paso-2.jpg" alt="Paso 2" class="w-full h-auto object-cover" width="1280" height="1066">
+              <div class="step-image-wrapper rounded-2xl overflow-hidden border border-borderline bg-surface p-4">
+                <img src="/assets/images/ecommerce/Cotizador-paso-2.jpg" alt="Paso 2" class="w-full h-auto object-contain" width="1280" height="1066">
               </div>
             </div>
             <div class="step-content w-full md:w-1/2 order-1 md:order-1">
@@ -274,10 +258,10 @@
               <p class="text-sm text-body leading-relaxed">Validación en tiempo real para prevenir errores y mantener al usuario en el flujo.</p>
             </div>
           </div>
-          <div class="step-item flex flex-col md:flex-row items-center gap-8 md:gap-16 mb-16 md:mb-24 fade-in">
+          <div class="step-item flex flex-col md:flex-row items-center gap-8 md:gap-16 mb-12 md:mb-16 fade-in">
             <div class="step-visual w-full md:w-1/2 order-2 md:order-1">
-              <div class="step-image-wrapper rounded-2xl overflow-hidden border border-borderline shadow-xl">
-                <img src="/assets/images/ecommerce/Cotizador-paso-3.jpg" alt="Paso 3" class="w-full h-auto object-cover" width="1280" height="1066">
+              <div class="step-image-wrapper rounded-2xl overflow-hidden border border-borderline bg-surface p-4">
+                <img src="/assets/images/ecommerce/Cotizador-paso-3.jpg" alt="Paso 3" class="w-full h-auto object-contain" width="1280" height="1066">
               </div>
             </div>
             <div class="step-content w-full md:w-1/2 order-1 md:order-2">
@@ -286,10 +270,10 @@
               <p class="text-sm text-body leading-relaxed">Resumen detallado antes del pago para eliminar ansiedad y aumentar confianza.</p>
             </div>
           </div>
-          <div class="step-item flex flex-col md:flex-row items-center gap-8 md:gap-16 mb-16 md:mb-24 fade-in">
+          <div class="step-item flex flex-col md:flex-row items-center gap-8 md:gap-16 mb-12 md:mb-16 fade-in">
             <div class="step-visual w-full md:w-1/2 order-2 md:order-2">
-              <div class="step-image-wrapper rounded-2xl overflow-hidden border border-borderline shadow-xl">
-                <img src="/assets/images/ecommerce/Cotizador-paso-4.jpg" alt="Paso 4" class="w-full h-auto object-cover" width="1280" height="1066">
+              <div class="step-image-wrapper rounded-2xl overflow-hidden border border-borderline bg-surface p-4">
+                <img src="/assets/images/ecommerce/Cotizador-paso-4.jpg" alt="Paso 4" class="w-full h-auto object-contain" width="1280" height="1066">
               </div>
             </div>
             <div class="step-content w-full md:w-1/2 order-1 md:order-1">
@@ -300,8 +284,8 @@
           </div>
           <div class="step-item flex flex-col md:flex-row items-center gap-8 md:gap-16 fade-in">
             <div class="step-visual w-full md:w-1/2 order-2 md:order-1">
-              <div class="step-image-wrapper rounded-2xl overflow-hidden border border-borderline shadow-xl">
-                <img src="/assets/images/ecommerce/Cotizador-paso-5.jpg" alt="Paso 5" class="w-full h-auto object-cover" width="1600" height="1333">
+              <div class="step-image-wrapper rounded-2xl overflow-hidden border border-borderline bg-surface p-4">
+                <img src="/assets/images/ecommerce/Cotizador-paso-5.jpg" alt="Paso 5" class="w-full h-auto object-contain" width="1600" height="1333">
               </div>
             </div>
             <div class="step-content w-full md:w-1/2 order-1 md:order-2">
@@ -319,7 +303,7 @@
       <div class="max-w-6xl mx-auto px-6">
         <div class="section-header fade-in mb-12 text-center">
           <span class="section-number">04</span>
-          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-4">Impacto: 0.82% → 3.8%, +4x ingresos</h2>
+          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-4">El flujo de cotización optimizado</h2>
           <p class="text-lg text-body">8 usuarios validaron el nuevo flujo en testing. Métricas auditables 3 meses después.</p>
         </div>
 
@@ -386,7 +370,7 @@
       <div class="max-w-6xl mx-auto px-6">
         <div class="section-header fade-in mb-12">
           <span class="section-number">05</span>
-          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-8">4 lecciones, 3 iteraciones, 5% conversión target</h2>
+          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-8">Lecciones aprendidas</h2>
           <p class="section-intro">Lo que aprendí sobre CRO y los próximos pasos para llegar a 5% de conversión.</p>
         </div>
 
@@ -410,25 +394,25 @@
           </div>
         </div>
 
-        <!-- Lo que no funcionó -->
-        <div class="failures-section fade-in w-full max-w-5xl mx-auto bg-rose-50/50 border border-rose-100 rounded-3xl p-8 md:p-10 mb-12">
+        <!-- Lo que no funcionó — diseño premium Apple-style con border-l-4 -->
+        <div class="failures-section fade-in w-full max-w-5xl mx-auto bg-zinc-50 border-l-4 border-primary p-6 md:p-8 mb-10">
           <div class="flex items-start gap-6">
-            <div class="w-14 h-14 bg-rose-100 rounded-xl flex items-center justify-center shrink-0">
-              <XCircle :size="24" class="text-rose-600" />
+            <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center shrink-0">
+              <Lightbulb :size="24" class="text-primary" />
             </div>
             <div>
               <h4 class="text-xl font-bold text-midnight mb-3">Lo que intentamos primero y no funcionó</h4>
-              <ul class="space-y-2 text-lg text-slate-800">
+              <ul class="space-y-2 text-lg text-slate-700">
                 <li class="flex items-start gap-2">
-                  <span class="text-rose-500 mt-0.5">✗</span>
+                  <span class="text-primary mt-0.5">✗</span>
                   <span><strong>Más onboarding:</strong> Más educación = más fricción. Lo eliminamos.</span>
                 </li>
                 <li class="flex items-start gap-2">
-                  <span class="text-rose-500 mt-0.5">✗</span>
+                  <span class="text-primary mt-0.5">✗</span>
                   <span><strong>Modal de confirmación:</strong> Fricción sin valor. Lo eliminamos.</span>
                 </li>
                 <li class="flex items-start gap-2">
-                  <span class="text-rose-500 mt-0.5">✗</span>
+                  <span class="text-primary mt-0.5">✗</span>
                   <span><strong>Carousel en checkout:</strong> 12% cancelaban al verlo. Lo quitamos.</span>
                 </li>
               </ul>
@@ -476,8 +460,8 @@
     <AuroraBg variant="dark" class="py-32">
       <div class="max-w-4xl mx-auto text-center px-6 relative z-10">
         <h2 class="font-display text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-6 leading-[1.1]">
-          Tu próximo
-          <span class="text-gradient-mixed">+4x</span>?
+          ¿Diseñamos tu próximo
+          <span class="bg-gradient-to-r from-[#0071e3] to-white bg-clip-text text-transparent">producto</span>?
         </h2>
         <p class="text-lg text-slate-300 mb-10 max-w-xl mx-auto leading-relaxed">
           CRO verificable con datos, no conjeturas. Conversemos sobre tu caso.
@@ -535,7 +519,7 @@ import {
   Layers, GitBranch, ClipboardList, ShieldOff, Smartphone, Package,
   CreditCard, ChevronRight, ArrowRight, ArrowLeft, CheckCircle, MapPin,
   MessageSquare, Mail, Lightbulb, Eye, ListOrdered, Plane, Globe,
-  Split, UserCheck, XCircle, Code2
+  Split, UserCheck, Code2
 } from 'lucide-vue-next'
 
 useScrollAnimations()

@@ -17,8 +17,25 @@ export function useScrollAnimations() {
     })
 
     document.querySelectorAll('.fade-in').forEach((el) => {
-      observer.observe(el)
+      // Si el elemento ya está en el viewport al cargar, hacerlo visible inmediatamente
+      const rect = el.getBoundingClientRect()
+      const isInViewport = rect.top < window.innerHeight && rect.bottom > 0
+      if (isInViewport) {
+        el.classList.add('visible')
+      } else {
+        observer.observe(el)
+      }
     })
+
+    // Fallback: si después de 2s algo sigue invisible, forzarlo visible
+    setTimeout(() => {
+      document.querySelectorAll('.fade-in:not(.visible)').forEach((el) => {
+        const rect = el.getBoundingClientRect()
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+          el.classList.add('visible')
+        }
+      })
+    }, 2000)
   })
 
   onUnmounted(() => {

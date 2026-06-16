@@ -81,8 +81,8 @@
       <div class="max-w-6xl mx-auto px-6">
         <div class="section-header fade-in mb-12">
           <span class="section-number">02</span>
-          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-8">Optimización de Arquitectura: 3 Roles unificados bajo una sola infraestructura cognitiva</h2>
-          <p class="section-intro">Rediseño de la interfaz del Coordinador médico para centralizar decisiones críticas y eliminar cuellos de botella operativos.</p>
+          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-8">Decisiones de diseño clave</h2>
+          <p class="section-intro">3 roles unificados bajo una sola arquitectura cognitiva, con el Coordinador médico como motor operativo.</p>
         </div>
 
         <!-- 3 roles -->

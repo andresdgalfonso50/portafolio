@@ -188,7 +188,7 @@ select:focus-visible {
 
 .section-header {
   text-align: left;
-  margin-bottom: 80px;
+  margin-bottom: 48px;
 }
 
 .section-header .label {
@@ -221,7 +221,7 @@ select:focus-visible {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  margin-bottom: 8px;
+  margin-bottom: 20px;
 }
 
   @media (max-width: 768px) {
@@ -660,7 +660,7 @@ select:focus-visible {
 .case-hero-image {
   position: relative;
   width: 100%;
-  aspect-ratio: 16/9;
+  aspect-ratio: 4/3;
   overflow: hidden;
   border-radius: 24px;
   border: 1px solid rgba(0, 0, 0, 0.06);
@@ -1051,12 +1051,12 @@ article:hover .card-cta-arrow {
 }
 
 .case-section {
-  padding: 64px 0;
+  padding: 48px 0;
 }
 
 @media (min-width: 768px) {
   .case-section {
-    padding: 96px 0;
+    padding: 72px 0;
   }
 }
 
@@ -2365,9 +2365,10 @@ article:hover .card-cta-arrow {
 .failures-section {
   margin-top: 48px;
   padding: 32px;
-  background: #fef2f2;
-  border-radius: 16px;
-  border: 1px solid #fecaca;
+  background: transparent;
+  border-radius: 0;
+  border: none;
+  border-left: 4px solid #0071e3;
 }
 
 .failures-section h4 {

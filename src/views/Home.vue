@@ -227,7 +227,7 @@
         <div class="section-header fade-in">
           <span class="label">Metodología</span>
           <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-3">Del problema a la métrica.</h2>
-          <p class="text-lg text-body max-w-2xl">8 etapas organizadas en 3 fases. No es una receta rígida — es cómo convierto complejidad en decisiones que se sostienen.</p>
+          <p class="text-lg text-body max-w-2xl">3 fases. No es una receta rígida — es cómo convierto complejidad en decisiones que se sostienen.</p>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
@@ -329,7 +329,7 @@
         <div class="section-header fade-in">
           <span class="label">Social Proof</span>
           <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-3">Lo que dice el equipo.</h2>
-          <p class="text-lg text-body max-w-2xl">Engineering leads, product managers y stakeholders con los que he trabajado.</p>
+          <p class="text-lg text-body max-w-2xl">Resultados validables por quienes lideran producto, ingeniería y operaciones.</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
