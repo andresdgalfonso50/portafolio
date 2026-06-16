@@ -67,12 +67,25 @@
           </div>
 
           <div class="contact-form-wrapper fade-in stagger-2">
-            <form class="contact-form" @submit.prevent="handleSubmit" novalidate>
+            <form
+              class="contact-form"
+              :action="`https://formsubmit.co/${contactEmail}`"
+              method="POST"
+              novalidate
+              @submit="onSubmit"
+            >
+              <input type="hidden" name="_subject" :value="`Nuevo mensaje de ${form.name || 'Visitante'} - Portafolio`">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_template" value="table">
+              <input type="hidden" name="_next" :value="successUrl">
+              <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
               <div class="form-group">
                 <label for="name">Nombre <span class="text-red-500">*</span></label>
                 <input
                   type="text"
                   id="name"
+                  name="name"
                   v-model="form.name"
                   placeholder="Tu nombre completo"
                   required
@@ -95,6 +108,7 @@
                 <input
                   type="email"
                   id="email"
+                  name="email"
                   v-model="form.email"
                   placeholder="tu@email.com"
                   required
@@ -116,6 +130,7 @@
                 <label for="project">Tipo de proyecto <span class="text-red-500">*</span></label>
                 <select
                   id="project"
+                  name="project"
                   v-model="form.project"
                   required
                   aria-required="true"
@@ -141,6 +156,7 @@
                 <label for="message">Mensaje <span class="text-red-500">*</span></label>
                 <textarea
                   id="message"
+                  name="message"
                   v-model="form.message"
                   placeholder="Cuéntame de tu proyecto..."
                   rows="5"
@@ -178,7 +194,7 @@
 </template>
 
 <script setup>
-import { ref, reactive } from 'vue'
+import { ref, reactive, computed } from 'vue'
 import { Mail, Phone, Linkedin, MapPin, Send, CheckCircle } from 'lucide-vue-next'
 import { useScrollAnimations } from '@/composables/useScrollAnimations'
 import AuroraBg from '@/components/primitives/AuroraBg.vue'
@@ -186,6 +202,13 @@ import ButtonPrimary from '@/components/primitives/ButtonPrimary.vue'
 import CVButton from '@/components/CVButton.vue'
 
 useScrollAnimations()
+
+const contactEmail = 'andresdgalfonso@gmail.com'
+
+const successUrl = computed(() => {
+  if (typeof window === 'undefined') return ''
+  return `${window.location.origin}${window.location.pathname}?sent=true#contacto`
+})
 
 const form = reactive({
   name: '',
@@ -205,6 +228,15 @@ const isSubmitting = ref(false)
 const submitMessage = ref('')
 const submitSuccess = ref(false)
 const isSent = ref(false)
+
+if (typeof window !== 'undefined') {
+  const params = new URLSearchParams(window.location.search)
+  if (params.get('sent') === 'true') {
+    isSent.value = true
+    submitSuccess.value = true
+    submitMessage.value = 'Mensaje enviado correctamente. Te responderé pronto.'
+  }
+}
 
 function validateField(field) {
   errors[field] = ''
@@ -248,65 +280,12 @@ function validateForm() {
   return !errors.name && !errors.email && !errors.project && !errors.message
 }
 
-async function handleSubmit() {
+function onSubmit(e) {
   if (!validateForm()) {
+    e.preventDefault()
     return
   }
-
   isSubmitting.value = true
   submitMessage.value = ''
-
-  try {
-    const response = await fetch('/api/send-email', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        from: {
-          email: import.meta.env.VITE_MAILERSEND_FROM_EMAIL || 'noreply@trial-xxxxx.mlsend.com',
-          name: 'Portfolio Yeison'
-        },
-        to: [{
-          email: 'andresdgalfonso@gmail.com',
-          name: 'Yeison Alfonso'
-        }],
-        subject: `Nuevo mensaje de ${form.name} - Portafolio`,
-        text: `Nombre: ${form.name}\nEmail: ${form.email}\nTipo de proyecto: ${form.project}\n\nMensaje:\n${form.message}`,
-        html: `<p><strong>Nombre:</strong> ${form.name}</p>
-<p><strong>Email:</strong> <a href="mailto:${form.email}">${form.email}</a></p>
-<p><strong>Tipo de proyecto:</strong> ${form.project}</p>
-<p><strong>Mensaje:</strong></p>
-<p>${form.message.replace(/\n/g, '<br>')}</p>
-<hr>
-<p><small>Enviado desde el formulario de contacto del portafolio</small></p>`,
-        reply_to: {
-          email: form.email,
-          name: form.name
-        }
-      })
-    })
-
-    if (response.ok) {
-      isSent.value = true
-      submitSuccess.value = true
-      submitMessage.value = 'Mensaje enviado correctamente. Te responderé pronto.'
-
-      form.name = ''
-      form.email = ''
-      form.project = ''
-      form.message = ''
-      Object.keys(errors).forEach(key => errors[key] = '')
-    } else {
-      const errorData = await response.json().catch(() => ({}))
-      console.error('Email send error:', errorData)
-      throw new Error(`HTTP ${response.status}`)
-    }
-  } catch (error) {
-    submitSuccess.value = false
-    submitMessage.value = 'Hubo un error al enviar el mensaje. Escríbeme directamente a andresdgalfonso@gmail.com'
-  } finally {
-    isSubmitting.value = false
-  }
 }
 </script>
