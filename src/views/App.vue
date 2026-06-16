@@ -4,10 +4,10 @@
     <CaseStudyHero
       case-slug="app"
       :icon="Layers"
-      title="Continental Assist"
-      highlight="asistencia médica en ruta"
+      title="Diseño de la aplicación móvil (iOS & Android) en producción que multiplicó por 4x el checkout de asistencia en viaje."
+      highlight=""
       badge="Continental Assist"
-      subtitle="97% de abandono → 2 apps en producción. Retención día 7: 0.1% → 12%."
+      subtitle="De 97% de abandono a 2 apps nativas en producción. Retención día 7: 0.1% → 12%. Checkout: 0.82% → 3.8%."
       :hero-image="heroAppImg"
       hero-image-alt="App de asistencia al viajero"
       :hero-badge="{ value: '+11,900%', label: 'retención' }"
@@ -18,6 +18,37 @@
         { value: '+35% Activación', label: 'Impacto', emphasis: true }
       ]"
     />
+
+    <!-- 1.1 PRODUCTION BADGES: contexto inmediato de producto vivo -->
+    <section class="bg-surface py-10">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="flex flex-wrap items-center justify-center gap-3">
+          <span class="inline-flex items-center gap-2 px-4 py-2 bg-emerald-50 text-emerald-700 text-xs font-bold uppercase tracking-widest rounded-full border border-emerald-200">
+            <span class="relative flex h-2 w-2">
+              <span class="animate-pulse-soft absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+            </span>
+            En Producción
+          </span>
+          <span class="inline-flex items-center gap-2 px-4 py-2 bg-white text-midnight text-xs font-bold uppercase tracking-widest rounded-full border border-borderline">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
+            </svg>
+            App Store
+          </span>
+          <span class="inline-flex items-center gap-2 px-4 py-2 bg-white text-midnight text-xs font-bold uppercase tracking-widest rounded-full border border-borderline">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.807 1.626a1 1 0 010 1.73l-2.808 1.626L15.206 12l2.492-2.492zM5.864 2.658L16.802 8.99l-2.303 2.303L5.864 2.658z"/>
+            </svg>
+            Google Play
+          </span>
+          <span class="inline-flex items-center gap-2 px-4 py-2 bg-white text-midnight text-xs font-bold uppercase tracking-widest rounded-full border border-borderline">
+            <Smartphone :size="14" />
+            App Nativa
+          </span>
+        </div>
+      </div>
+    </section>
 
     <!-- 2. CONTEXTO & DISCOVERY: el problema, la investigación, qué aprendimos -->
     <section class="case-section section-alt">
@@ -362,83 +393,110 @@
       </div>
     </section>
 
-    <!-- 5. IMPACTO & VALIDACIÓN: métricas + testimonials -->
+    <!-- 5. FLUJO DE LA APP: 4 pantallas con micro-etiquetas paso a paso -->
     <section class="case-section">
       <div class="max-w-6xl mx-auto px-6">
-        <div class="section-header fade-in mb-12 text-center">
+        <div class="section-header fade-in mb-12">
           <span class="section-number">04</span>
-          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-4">Impacto: 16x más retención, 0 crashes</h2>
-          <p class="text-lg text-body">Los resultados validaron la estrategia de diseño.</p>
+          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-4">Un reto, una oportunidad: el flujo optimizado de compra</h2>
+          <p class="section-intro">4 pasos que redujeron el tiempo de cotización a 3 minutos. Cada pantalla pensada para eliminar fricción.</p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 max-w-6xl mx-auto mb-16">
-          <div class="metric-card group">
-            <div class="flex items-center gap-4 mb-6">
-              <div class="flex flex-col">
-                <span class="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-1">Antes</span>
-                <span class="font-display text-xl font-medium text-slate-300 tracking-tight tabular-nums leading-none">1.5%</span>
-              </div>
-              <svg class="w-6 h-6 text-slate-300 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
-              <div class="flex flex-col">
-                <span class="text-[10px] font-bold uppercase tracking-widest text-secondary mb-1">Después</span>
-                <span class="font-display text-4xl md:text-5xl font-black text-highlight tracking-tighter tabular-nums leading-none">25%</span>
-              </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 fade-in stagger-2">
+          <!-- Paso 01 -->
+          <figure class="flex flex-col">
+            <figcaption class="mb-4">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-primary mb-1 block">Paso 01</span>
+              <h3 class="text-base font-bold text-midnight leading-tight">Cotización fluida</h3>
+            </figcaption>
+            <div class="rounded-2xl overflow-hidden bg-white border border-borderline shadow-sm aspect-[9/19]">
+              <img src="/assets/images/app/Gestión-de-Viajes-Premium.png" alt="Pantalla de cotización inicial" class="w-full h-full object-cover" loading="lazy" decoding="async" width="1025" height="954" />
             </div>
+          </figure>
+
+          <!-- Paso 02 -->
+          <figure class="flex flex-col">
+            <figcaption class="mb-4">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-primary mb-1 block">Paso 02</span>
+              <h3 class="text-base font-bold text-midnight leading-tight">Selección de Cobertura</h3>
+            </figcaption>
+            <div class="rounded-2xl overflow-hidden bg-white border border-borderline shadow-sm aspect-[9/19]">
+              <img src="/assets/images/app/Flujo-de-Cotización-Optimizado.png" alt="Selección de plan y cobertura" class="w-full h-full object-cover" loading="lazy" decoding="async" width="1025" height="954" />
+            </div>
+          </figure>
+
+          <!-- Paso 03 -->
+          <figure class="flex flex-col">
+            <figcaption class="mb-4">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-primary mb-1 block">Paso 03</span>
+              <h3 class="text-base font-bold text-midnight leading-tight">Datos en un tap</h3>
+            </figcaption>
+            <div class="rounded-2xl overflow-hidden bg-white border border-borderline shadow-sm aspect-[9/19]">
+              <img src="/assets/images/app/Ecosistema-de-Beneficios-Premium.png" alt="Autocompletado de datos del viajero" class="w-full h-full object-cover" loading="lazy" decoding="async" width="1025" height="954" />
+            </div>
+          </figure>
+
+          <!-- Paso 04 -->
+          <figure class="flex flex-col">
+            <figcaption class="mb-4">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-primary mb-1 block">Paso 04</span>
+              <h3 class="text-base font-bold text-midnight leading-tight">Checkout optimizado en 3 min</h3>
+            </figcaption>
+            <div class="rounded-2xl overflow-hidden bg-white border border-borderline shadow-sm aspect-[9/19]">
+              <img src="/assets/images/app/Soporte-con-IA-Generativa.png" alt="Checkout optimizado" class="w-full h-full object-cover" loading="lazy" decoding="async" width="1025" height="954" />
+            </div>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. IMPACTO COMERCIAL: 3 métricas enfocadas -->
+    <section class="case-section section-alt">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="section-header fade-in mb-12">
+          <span class="section-number">05</span>
+          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-4">Impacto Comercial: Métricas Reales</h2>
+          <p class="section-intro">3 contadores que validan la estrategia: checkout, tiempo de emisión y alcance multiplataforma.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto mb-16">
+          <!-- Card 1: +4x Checkout -->
+          <div class="metric-card group bg-white p-8 md:p-10 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
             <div class="flex items-center gap-2 mb-4">
-              <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary/20 text-secondary text-xs font-bold tracking-wide">
+              <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 text-xs font-bold tracking-wide border border-emerald-200">
                 <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" /></svg>
-                +23.5pp
+                En producción
               </span>
-              <span class="text-xs font-medium text-slate-400">16x más</span>
             </div>
-            <h3 class="text-base font-semibold text-midnight mb-1">Retención Día 1</h3>
-            <p class="text-sm text-body leading-relaxed">Crecimiento exponencial en adopción inicial.</p>
+            <span class="font-display text-6xl md:text-7xl font-black text-highlight tracking-tighter leading-none tabular-nums block mb-4">+4x</span>
+            <h3 class="text-base font-bold text-midnight mb-2">Incremento en Checkout</h3>
+            <p class="text-sm text-body leading-relaxed">Conversión 0.82% → 3.8%. Mismo canal, nueva arquitectura de información.</p>
           </div>
 
-          <div class="metric-card group md:border-l md:border-borderline md:pl-8">
-            <div class="flex items-center gap-4 mb-6">
-              <div class="flex flex-col">
-                <span class="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-1">Antes</span>
-                <span class="font-display text-xl font-medium text-slate-300 tracking-tight tabular-nums leading-none">0.1%</span>
-              </div>
-              <svg class="w-6 h-6 text-slate-300 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
-              <div class="flex flex-col">
-                <span class="text-[10px] font-bold uppercase tracking-widest text-secondary mb-1">Después</span>
-                <span class="font-display text-4xl md:text-5xl font-black text-highlight tracking-tighter tabular-nums leading-none">12%</span>
-              </div>
-            </div>
+          <!-- Card 2: 3 Minutos -->
+          <div class="metric-card group bg-white p-8 md:p-10 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
             <div class="flex items-center gap-2 mb-4">
-              <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary/20 text-secondary text-xs font-bold tracking-wide">
-                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" /></svg>
-                +11.9pp
+              <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold tracking-wide">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                Tiempo real
               </span>
-              <span class="text-xs font-medium text-slate-400">120x más</span>
             </div>
-            <h3 class="text-base font-semibold text-midnight mb-1">Retención Día 7</h3>
-            <p class="text-sm text-body leading-relaxed">Mejora drástica en engagement sostenido.</p>
+            <span class="font-display text-6xl md:text-7xl font-black text-highlight tracking-tighter leading-none tabular-nums block mb-4">3<span class="text-2xl md:text-3xl font-bold text-body ml-1">min</span></span>
+            <h3 class="text-base font-bold text-midnight mb-2">Tiempo de Emisión</h3>
+            <p class="text-sm text-body leading-relaxed">Promedio desde la app: cotización → voucher activo. Antes: 12+ minutos con fricción.</p>
           </div>
 
-          <div class="metric-card group md:border-l md:border-borderline md:pl-8">
-            <div class="flex items-center gap-4 mb-6">
-              <div class="flex flex-col">
-                <span class="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-1">Antes</span>
-                <span class="font-display text-xl font-medium text-slate-300 tracking-tight tabular-nums leading-none">997</span>
-              </div>
-              <svg class="w-6 h-6 text-slate-300 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
-              <div class="flex flex-col">
-                <span class="text-[10px] font-bold uppercase tracking-widest text-secondary mb-1">Después</span>
-                <span class="font-display text-4xl md:text-5xl font-black text-highlight tracking-tighter tabular-nums leading-none">0</span>
-              </div>
-            </div>
+          <!-- Card 3: iOS & Android -->
+          <div class="metric-card group bg-white p-8 md:p-10 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
             <div class="flex items-center gap-2 mb-4">
-              <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary/20 text-secondary text-xs font-bold tracking-wide">
-                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
-                -100%
+              <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-midnight text-white text-xs font-bold tracking-wide">
+                <Smartphone :size="12" />
+                Multiplataforma
               </span>
-              <span class="text-xs font-medium text-slate-400">estable</span>
             </div>
-            <h3 class="text-base font-semibold text-midnight mb-1">Errores iOS</h3>
-            <p class="text-sm text-body leading-relaxed">Crashes críticos eliminados por completo.</p>
+            <span class="font-display text-5xl md:text-6xl font-black text-highlight tracking-tighter leading-none block mb-4">iOS<br/>& Android</span>
+            <h3 class="text-base font-bold text-midnight mb-2">Disponibilidad en Tiendas</h3>
+            <p class="text-sm text-body leading-relaxed">2 apps nativas con consistencia visual y de patrones. Misma experiencia, ambos sistemas.</p>
           </div>
         </div>
 
@@ -464,7 +522,7 @@
     <section class="case-section section-alt">
       <div class="max-w-6xl mx-auto px-6">
         <div class="section-header fade-in mb-12">
-          <span class="section-number">05</span>
+          <span class="section-number">06</span>
           <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-8">4 lecciones, 3 sprints, +35% activación</h2>
           <p class="section-intro">Lo que aprendí y los próximos 3 sprints para llevar la activación a +35%.</p>
         </div>
@@ -489,25 +547,25 @@
           </div>
         </div>
 
-        <!-- Lo que no funcionó -->
-        <div class="failures-section fade-in w-full max-w-5xl mx-auto bg-rose-50/50 border border-rose-100 rounded-3xl p-8 md:p-10 mb-16">
+        <!-- Lo que no funcionó — diseño premium con border-l-4 -->
+        <div class="failures-section fade-in w-full max-w-5xl mx-auto bg-white border-l-4 border-primary border border-borderline rounded-2xl p-8 md:p-10 mb-16 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
           <div class="flex items-start gap-4">
-            <div class="w-10 h-10 bg-rose-100 rounded-xl flex items-center justify-center shrink-0">
-              <XCircle :size="18" class="text-rose-600" />
+            <div class="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center shrink-0">
+              <Lightbulb :size="18" class="text-primary" />
             </div>
             <div>
               <h4 class="text-sm font-bold text-midnight mb-3">Lo que intentamos y no funcionó</h4>
-              <ul class="space-y-2 text-base text-slate-800">
+              <ul class="space-y-2 text-base text-slate-700">
                 <li class="flex items-start gap-2">
-                  <span class="text-rose-500 mt-0.5">✗</span>
+                  <span class="text-primary mt-0.5">✗</span>
                   <span><strong>Más onboarding:</strong> Más educación = más fricción. Lo eliminamos.</span>
                 </li>
                 <li class="flex items-start gap-2">
-                  <span class="text-rose-500 mt-0.5">✗</span>
+                  <span class="text-primary mt-0.5">✗</span>
                   <span><strong>Modal de confirmación:</strong> Agregaba fricción sin valor. Lo eliminamos.</span>
                 </li>
                 <li class="flex items-start gap-2">
-                  <span class="text-rose-500 mt-0.5">✗</span>
+                  <span class="text-primary mt-0.5">✗</span>
                   <span><strong>Productos relacionados:</strong> Cancelaban compras al ver el carousel. Lo quitamos.</span>
                 </li>
               </ul>
@@ -572,7 +630,7 @@ import {
   Layers, GitBranch, ClipboardList, ShieldOff, Smartphone, Package,
   CreditCard, ChevronRight, ArrowRight, ArrowLeft, CheckCircle, MapPin,
   MessageSquare, Mail, Lightbulb, Eye, ListOrdered, Plane, Globe,
-  Split, UserCheck, XCircle, Bug, TrendingDown, UserX, Calendar,
+  Split, UserCheck, Bug, TrendingDown, UserX, Calendar,
   Wallet, Crown, Stethoscope, MessageCircle, Bell, Home, HeartPulse,
   Gift, User, Rocket, FileText, Receipt, Siren, Zap, ShieldCheck, BarChart2
 } from 'lucide-vue-next'

@@ -4,33 +4,41 @@ YEISON ANDRES ALFONSO C. - PERFIL DE LINKEDIN COMPLETO
 
 TITULAR (Headline) - Max 220 caracteres
 ================================================================================
-UX/UI Product Designer | E-commerce & App Design | +4x ingresos | Figma · Google Analytics · Microsoft Clarity | Bogotá, Colombia
+Product Design Director | E-commerce & App Design | +4x ingresos | Figma · Vue · IA Prototyping | Bogotá, Colombia
 
 ---
 
 ACERCA DE (About) - Max 2600 caracteres
 ================================================================================
-UX/UI Product Designer con Maestría en Diseño UX/UI y experiencia comprobada en productos digitales que generan resultados de negocio reales.
+Product Design Director con Maestría en Diseño UX/UI y experiencia comprobada en productos digitales que generan resultados de negocio reales.
 
 Mi enfoque combina investigación, diseño y datos para construir productos que funcionan:
 
 RESULTADOS CLAVE:
-• Incrementé ingresos mensuales de ~2K a 9K USD (crecimiento 4x) mediante el rediseño UX de un e-commerce de asistencia en viajes, optimizando el flujo de compra y reduciendo fricción en el checkout.
-• Diseñé una app de asistencia en viajes desde cero (0 a producción), centralizando telemedicina, vouchers y reembolsos en una sola plataforma.
+• Rediseño UX de e-commerce: conversión 0.82% → 3.8% (+4x ingresos, ~2K → ~9K USD/mes), campos 12 → 4, pasos checkout 8 → 5.
+• App de asistencia en viajes desde cero (0 a producción): retención día 7 0.1% → 12%, 997 errores iOS eliminados, centralizando telemedicina, vouchers y reembolsos.
 • Lideré proyectos end-to-end: investigación, arquitectura de información, wireframes, prototipos y validación con equipos de desarrollo.
 
-CÓMO TRABAJO:
-1. Investigación: Entiendo al usuario, su contexto y sus necesidades reales.
-2. Definición: Traduzco hallazgos en decisiones de producto claras.
-3. Diseño: Creo experiencias funcionales, intuitivas y centradas en conversión (CRO).
-4. Validación: Trabajo con desarrollo para asegurar que el diseño funcione en producción.
-5. Medición: Uso datos (Google Analytics, Microsoft Clarity) para iterar y mejorar.
+CÓMO TRABAJO - Metodología de 8 pasos en 3 fases:
+FASE 1 - DESCUBRIMIENTO Y ESTRATEGIA:
+1. Discovery: Entiendo el negocio y las restricciones antes de diseñar.
+2. Research: Usuarios y datos reemplazan suposiciones por evidencia.
+3. Define: Sintetizo el problema en algo accionable y priorizado.
 
-HERRAMIENTAS:
-Figma, Adobe XD, Illustrator, Photoshop, InDesign, Google Analytics, Microsoft Clarity
+FASE 2 - DEFINICIÓN TÁCTICA:
+4. Ideate: Varios caminos antes de comprometerme con uno.
+5. Prototype: Desarrollo prototipos funcionales en código (Vue + Tailwind + IA) para validar con datos reales.
+
+FASE 3 - ITERACIÓN Y ENTREGA:
+6. Test: Frente a usuarios reales. La evidencia decide.
+7. Ship: UI de alta fidelidad lista para desarrollo.
+8. Measure: Impacto real en producción. Datos para la próxima iteración.
 
 MI DIFERENCIAL:
-No solo diseño pantallas bonitas. Diseño productos que resuelven problemas reales y generan impacto medible en el negocio. Mi transición del diseño gráfico al diseño de producto me da una perspectiva única: entiendo tanto la experiencia visual como la lógica de producto.
+No solo diseño pantallas bonitas. Diseño productos que resuelven problemas reales y generan impacto medible en el negocio. Mi transición del diseño gráfico al diseño de producto me da una perspectiva única: entiendo tanto la experiencia visual como la lógica de producto. Además, uso prototipado en código (Vue + Tailwind + IA) para validar más rápido: el ciclo de feedback pasa de días a horas, y paso productos a desarrollo con menos fricción.
+
+HERRAMIENTAS:
+Figma, Adobe XD, Illustrator, Photoshop, InDesign, Notion, Google Analytics, Microsoft Clarity, Hotjar, Vue.js, Tailwind CSS, HTML/CSS, GitHub, Vercel, Netlify, Claude, ChatGPT, Cursor, Figma AI
 
 Estoy abierto a nuevas oportunidades donde pueda aportar valor con mi enfoque de producto.
 
@@ -52,13 +60,14 @@ Descripción:
 Lidero el diseño de productos digitales enfocados en conversión y experiencia de usuario.
 
 Resultados clave:
-- Rediseño del e-commerce: incremento de ingresos de ~2K a ~9K USD mensuales (crecimiento 4x) mediante optimización del flujo de compra y reducción de fricción en el checkout
-- Diseño de app de asistencia en viajes desde cero (0 a producción): telemedicina, vouchers, reembolsos en una sola plataforma
+- Rediseño del e-commerce: conversión 0.82% → 3.8% (+4x ingresos, ~2K → ~9K USD/mes), campos 12 → 4, pasos checkout 8 → 5
+- App de asistencia en viajes desde cero (0 a producción): retención día 7 0.1% → 12%, 997 errores iOS eliminados, telemedicina, vouchers, reembolsos centralizados
 - Definí arquitectura de información, user flows y experiencia completa del producto
 - Investigación de usuarios, benchmark competitivo y análisis de comportamiento con Google Analytics y Microsoft Clarity
+- Prototipado funcional en código (Vue + Tailwind) para validar con usuarios reales antes de desarrollo
 - Trabajo directo con equipo de desarrollo, participando en QA y validación en producción
 
-Habilidades: Product Design, UX Design, UI Design, User Research, Conversion Optimization (CRO), Figma, Google Analytics, Microsoft Clarity
+Habilidades: Product Design, UX Design, UI Design, User Research, Conversion Optimization (CRO), Figma, Google Analytics, Microsoft Clarity, Hotjar, Vue.js, Tailwind CSS, Prototyping in Code
 
 ---
 
@@ -145,19 +154,37 @@ HABILIDADES (Skills para agregar a LinkedIn - ordenadas por prioridad ATS)
 - User Research
 - Wireframing
 - Prototyping
-- Figma
-- Adobe XD
 - Information Architecture
 - Conversion Rate Optimization (CRO)
-- Google Analytics
-- Microsoft Clarity
-- Heuristic Evaluation
-- Journey Mapping
-- User Flows
+- Design Thinking
+- Lean UX
+- Design Sprints
+- Agile/Scrum
+- Figma
+- Adobe XD
 - Adobe Illustrator
 - Adobe Photoshop
 - Graphic Design
 - Branding
+- Notion
+- Google Analytics
+- Microsoft Clarity
+- Hotjar
+- HTML/CSS
+- Vue.js
+- Tailwind CSS
+- GitHub
+- Vercel
+- Netlify
+- Claude
+- ChatGPT
+- Cursor
+- Figma AI
+- Prompt Engineering
+- Heuristic Evaluation
+- Journey Mapping
+- User Flows
+- End-to-end Product Design
 
 ---
 
@@ -182,7 +209,7 @@ BANNER DE LINKEDIN
 ================================================================================
 - Usa un banner que refleje tu trabajo como Product Designer
 - Puede ser un mockup de tus proyectos o un diseño minimalista con tu nombre y título
-- Incluir keywords: "UX/UI Product Designer · E-commerce · CRO"
+- Incluir keywords: "Product Design Director · E-commerce · CRO · Frontend Bridge"
 - Tamaño recomendado: 1584 x 396 px
 
 ---
@@ -191,11 +218,11 @@ CONFIGURACIÓN DE BÚSQUEDA DE EMPLEO
 ================================================================================
 1. Activa el marco #OpenToWork (visible solo para reclutadores)
 2. Configura alertas de empleo para:
+   - Product Design Director
    - Product Designer
    - UX Designer
    - UI Designer
    - UX/UI Designer
-   - Product Design Lead
 3. Ubicación: Bogotá, Colombia + Remoto
 4. Tipo: Tiempo completo, Contrato
 

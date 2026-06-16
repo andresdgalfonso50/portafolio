@@ -189,7 +189,7 @@
           />
           <SkillPillar
             title="Frontend Bridge"
-            description="Hablo el idioma de desarrollo. Figma → código sin fricción."
+            description="Prototipos funcionales en código. El ciclo de feedback pasa de días a horas. Paso producto a desarrollo con menos fricción."
             :tags="['HTML/CSS', 'Vue.js', 'Tailwind', 'Figma to code', 'Dev collaboration', 'QA review']"
             :icon="Code2"
             color="violet"

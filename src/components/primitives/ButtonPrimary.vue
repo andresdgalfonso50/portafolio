@@ -91,8 +91,8 @@ const tag = computed(() => {
   border-color: var(--color-midnight, #0A1022);
 }
 .btn-primary--primary:hover:not(:disabled) {
-  background: var(--color-primary, #0071e3);
-  border-color: var(--color-primary, #0071e3);
+  background: #0071e3;
+  border-color: #0071e3;
   transform: translateY(-1px);
 }
 

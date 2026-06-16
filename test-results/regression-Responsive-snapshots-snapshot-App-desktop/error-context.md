@@ -26,7 +26,7 @@ Call log:
     - disabled all CSS animations
   - waiting for fonts to load...
   - fonts loaded
-  - 480780 pixels (ratio 0.04 of all image pixels) are different.
+  - 482820 pixels (ratio 0.04 of all image pixels) are different.
   - waiting 100ms before taking screenshot
   - Timeout 5000ms exceeded.
 
@@ -509,12 +509,9 @@ Call log:
               - img [ref=e538]
     - button "Volver arriba" [ref=e540] [cursor=pointer]:
       - img [ref=e541]
-    - link "Contactar por WhatsApp" [ref=e543] [cursor=pointer]:
-      - /url: https://wa.me/573125673243?text=Hola%20Yeison,%20vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20contactarte.
-      - img [ref=e544]
-  - navigation [ref=e546]:
-    - button [ref=e547] [cursor=pointer]:
-      - img [ref=e548]
+  - navigation [ref=e543]:
+    - button [ref=e544] [cursor=pointer]:
+      - img [ref=e545]
 ```
 
 # Test source

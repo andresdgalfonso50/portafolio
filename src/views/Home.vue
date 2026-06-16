@@ -2,19 +2,18 @@
   <div class="view-wrapper">
     <!-- HERO SECTION -->
     <AuroraBg variant="hero" class="home-hero section">
-      <div class="w-full max-w-6xl mx-auto px-6 pt-20 pb-12 relative z-10">
-        <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-12 lg:gap-16">
+      <div class="w-full max-w-6xl mx-auto px-6 pt-10 pb-12 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 lg:gap-12">
           <!-- Columna izquierda: texto + CTAs -->
           <div class="flex flex-col items-start fade-in">
-            <AvailabilityBadge text="Disponible para nuevos proyectos · Bogotá" variant="light" class="mb-8" />
-            <span class="label">Product Design Director</span>
-            <h1 class="font-display text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.05] text-midnight mb-6">
+            <span class="label block mb-5">Product Design Director</span>
+            <h1 class="font-display text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.08] text-midnight mb-6">
               Diseño de producto que
               <span class="font-light italic text-primary">escala</span>
-              <span class="text-gradient-secondary">el negocio</span>
+              el negocio.
             </h1>
-            <p class="text-lg text-body mb-10 max-w-lg leading-relaxed">
-              Estrategia UX y sistemas de diseño de alto rendimiento enfocados en maximizar la conversión, retención y la eficiencia de producto. Métricas auditables en producción.
+            <p class="text-lg text-body mb-8 max-w-lg leading-relaxed">
+              Estrategia UX y sistemas de diseño de alto rendimiento enfocados en maximizar la conversión, retención y la eficiencia de producto. Prototipado funcional en código (Vue + Tailwind + IA) para validar más rápido. El ciclo de feedback pasa de días a horas.
             </p>
             <div class="flex flex-wrap gap-4 items-center">
               <ButtonPrimary href="#proyectos" variant="primary">
@@ -23,21 +22,12 @@
                   <ArrowRight :size="18" />
                 </template>
               </ButtonPrimary>
-              <ButtonPrimary
-                href="https://wa.me/573125673243?text=Hola%20Yeison,%20vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20contactarte."
-                variant="secondary"
-              >
-                <template #icon>
-                  <MessageCircle :size="18" />
-                </template>
-                WhatsApp
-              </ButtonPrimary>
             </div>
           </div>
 
           <!-- Columna derecha: mockups con halo aurora -->
           <div class="flex items-center justify-center lg:justify-end fade-in stagger-2">
-            <div class="relative w-full max-w-md">
+            <div class="relative w-full max-w-[380px] aspect-[670/768] max-h-[520px]">
               <!-- Aurora backdrop: destello radial difuso -->
               <div
                 class="absolute inset-0 -z-10 blur-3xl opacity-40"
@@ -47,7 +37,7 @@
               <img
                 src="/assets/images/home/hero-home-celulares.png"
                 alt="Diseño de producto digital - Interfaces móviles modernas"
-                class="w-full h-auto object-cover relative z-10"
+                class="absolute inset-0 w-full h-full object-contain relative z-10"
                 fetchpriority="high"
                 loading="eager"
                 width="670"
@@ -243,31 +233,31 @@
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
           <!-- Fase 1: Descubrimiento y Estrategia -->
           <article class="bg-white border border-borderline rounded-2xl p-8 flex flex-col">
-            <header class="mb-6">
+            <header class="mb-8">
               <span class="text-xs font-bold uppercase tracking-widest text-primary">Fase 01</span>
               <h3 class="font-display text-xl font-bold text-midnight mt-2 leading-tight">Descubrimiento y Estrategia</h3>
-              <p class="text-xs text-slate-500 mt-1 uppercase tracking-widest">Pasos 01–03</p>
+              <p class="text-xs text-slate-600 mt-1 uppercase tracking-widest">Pasos 01–03</p>
             </header>
             <ol class="space-y-5 flex-1">
               <li class="flex gap-4">
                 <span class="text-sm font-black text-primary tabular-nums shrink-0 mt-0.5">01</span>
                 <div>
                   <h4 class="text-sm font-bold text-midnight mb-1">Discovery</h4>
-                  <p class="text-xs text-body leading-relaxed">Entiendo el negocio y las restricciones antes de diseñar.</p>
+                  <p class="text-xs text-slate-700 leading-relaxed">Entiendo el negocio y las restricciones antes de diseñar.</p>
                 </div>
               </li>
               <li class="flex gap-4">
                 <span class="text-sm font-black text-primary tabular-nums shrink-0 mt-0.5">02</span>
                 <div>
                   <h4 class="text-sm font-bold text-midnight mb-1">Research</h4>
-                  <p class="text-xs text-body leading-relaxed">Usuarios y datos reemplazan suposiciones por evidencia.</p>
+                  <p class="text-xs text-slate-700 leading-relaxed">Usuarios y datos reemplazan suposiciones por evidencia.</p>
                 </div>
               </li>
               <li class="flex gap-4">
                 <span class="text-sm font-black text-primary tabular-nums shrink-0 mt-0.5">03</span>
                 <div>
                   <h4 class="text-sm font-bold text-midnight mb-1">Define</h4>
-                  <p class="text-xs text-body leading-relaxed">Sintetizo el problema en algo accionable y priorizado.</p>
+                  <p class="text-xs text-slate-700 leading-relaxed">Sintetizo el problema en algo accionable y priorizado.</p>
                 </div>
               </li>
             </ol>
@@ -275,24 +265,24 @@
 
           <!-- Fase 2: Definición Táctica -->
           <article class="bg-white border border-borderline rounded-2xl p-8 flex flex-col">
-            <header class="mb-6">
+            <header class="mb-8">
               <span class="text-xs font-bold uppercase tracking-widest text-primary">Fase 02</span>
               <h3 class="font-display text-xl font-bold text-midnight mt-2 leading-tight">Definición Táctica</h3>
-              <p class="text-xs text-slate-500 mt-1 uppercase tracking-widest">Pasos 04–05</p>
+              <p class="text-xs text-slate-600 mt-1 uppercase tracking-widest">Pasos 04–05</p>
             </header>
             <ol class="space-y-5 flex-1">
               <li class="flex gap-4">
                 <span class="text-sm font-black text-primary tabular-nums shrink-0 mt-0.5">04</span>
                 <div>
                   <h4 class="text-sm font-bold text-midnight mb-1">Ideate</h4>
-                  <p class="text-xs text-body leading-relaxed">Varios caminos antes de comprometerme con uno.</p>
+                  <p class="text-xs text-slate-700 leading-relaxed">Varios caminos antes de comprometerme con uno.</p>
                 </div>
               </li>
               <li class="flex gap-4">
                 <span class="text-sm font-black text-primary tabular-nums shrink-0 mt-0.5">05</span>
                 <div>
                   <h4 class="text-sm font-bold text-midnight mb-1">Prototype</h4>
-                  <p class="text-xs text-body leading-relaxed">Bajo las ideas a prototipos navegables para validar.</p>
+                  <p class="text-xs text-slate-700 leading-relaxed">Bajo las ideas a prototipos navegables para validar.</p>
                 </div>
               </li>
             </ol>
@@ -300,31 +290,31 @@
 
           <!-- Fase 3: Iteración y Entrega -->
           <article class="bg-white border border-borderline rounded-2xl p-8 flex flex-col">
-            <header class="mb-6">
+            <header class="mb-8">
               <span class="text-xs font-bold uppercase tracking-widest text-primary">Fase 03</span>
               <h3 class="font-display text-xl font-bold text-midnight mt-2 leading-tight">Iteración y Entrega</h3>
-              <p class="text-xs text-slate-500 mt-1 uppercase tracking-widest">Pasos 06–08</p>
+              <p class="text-xs text-slate-600 mt-1 uppercase tracking-widest">Pasos 06–08</p>
             </header>
             <ol class="space-y-5 flex-1">
               <li class="flex gap-4">
                 <span class="text-sm font-black text-primary tabular-nums shrink-0 mt-0.5">06</span>
                 <div>
                   <h4 class="text-sm font-bold text-midnight mb-1">Test</h4>
-                  <p class="text-xs text-body leading-relaxed">Frente a usuarios reales. La evidencia decide.</p>
+                  <p class="text-xs text-slate-700 leading-relaxed">Frente a usuarios reales. La evidencia decide.</p>
                 </div>
               </li>
               <li class="flex gap-4">
                 <span class="text-sm font-black text-primary tabular-nums shrink-0 mt-0.5">07</span>
                 <div>
                   <h4 class="text-sm font-bold text-midnight mb-1">Ship</h4>
-                  <p class="text-xs text-body leading-relaxed">UI de alta fidelidad lista para desarrollo.</p>
+                  <p class="text-xs text-slate-700 leading-relaxed">UI de alta fidelidad lista para desarrollo.</p>
                 </div>
               </li>
               <li class="flex gap-4">
                 <span class="text-sm font-black text-primary tabular-nums shrink-0 mt-0.5">08</span>
                 <div>
                   <h4 class="text-sm font-bold text-midnight mb-1">Measure</h4>
-                  <p class="text-xs text-body leading-relaxed">Impacto real en producción. Datos para la próxima iteración.</p>
+                  <p class="text-xs text-slate-700 leading-relaxed">Impacto real en producción. Datos para la próxima iteración.</p>
                 </div>
               </li>
             </ol>
@@ -336,14 +326,14 @@
     <!-- TESTIMONIALS SECTION -->
     <section class="section">
       <div class="container">
-        <div class="section-header fade-in text-center">
+        <div class="section-header fade-in">
           <span class="label">Social Proof</span>
           <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-3">Lo que dice el equipo.</h2>
-          <p class="text-lg text-body max-w-2xl mx-auto">Engineering leads, product managers y stakeholders con los que he trabajado.</p>
+          <p class="text-lg text-body max-w-2xl">Engineering leads, product managers y stakeholders con los que he trabajado.</p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <blockquote class="bg-white border border-borderline rounded-2xl p-8 flex flex-col">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+          <blockquote class="bg-white border border-borderline rounded-2xl p-8 flex flex-col h-full">
             <p class="text-base text-midnight leading-relaxed italic flex-1">
               "Yeison transformó nuestro checkout. De 12 pasos a 4. Revenue aumentó directo, sin necesidad de A/B tests adicionales."
             </p>
@@ -351,12 +341,12 @@
               <div class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center font-display font-black text-sm shrink-0" aria-hidden="true">CM</div>
               <div>
                 <cite class="block text-sm font-bold text-midnight not-italic">Carlos Mendoza</cite>
-                <span class="block text-xs text-slate-500">CEO · Continental Assist</span>
+                <span class="block text-xs text-slate-700">CEO · Continental Assist</span>
               </div>
             </footer>
           </blockquote>
 
-          <blockquote class="bg-white border border-borderline rounded-2xl p-8 flex flex-col">
+          <blockquote class="bg-white border border-borderline rounded-2xl p-8 flex flex-col h-full">
             <p class="text-base text-midnight leading-relaxed italic flex-1">
               "Su enfoque en el Coordinador como superusuario cambió la arquitectura completa. Redujo tiempos de gestión a la mitad en producción."
             </p>
@@ -364,12 +354,12 @@
               <div class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center font-display font-black text-sm shrink-0" aria-hidden="true">MG</div>
               <div>
                 <cite class="block text-sm font-bold text-midnight not-italic">Dra. María González</cite>
-                <span class="block text-xs text-slate-500">Cardiología · Xentral Health</span>
+                <span class="block text-xs text-slate-700">Cardiología · Xentral Health</span>
               </div>
             </footer>
           </blockquote>
 
-          <blockquote class="bg-white border border-borderline rounded-2xl p-8 flex flex-col">
+          <blockquote class="bg-white border border-borderline rounded-2xl p-8 flex flex-col h-full">
             <p class="text-base text-midnight leading-relaxed italic flex-1">
               "Lo que más valoro: prototipos en HTML, no en Figma. El ciclo de feedback pasó de días a horas. Cambió cómo iteramos."
             </p>
@@ -377,7 +367,7 @@
               <div class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center font-display font-black text-sm shrink-0" aria-hidden="true">DR</div>
               <div>
                 <cite class="block text-sm font-bold text-midnight not-italic">Diego Ramírez</cite>
-                <span class="block text-xs text-slate-500">Engineering Lead · Continental Assist</span>
+                <span class="block text-xs text-slate-700">Engineering Lead · Continental Assist</span>
               </div>
             </footer>
           </blockquote>
@@ -392,7 +382,7 @@
           <p class="text-xs font-bold uppercase tracking-widest text-primary mb-6">Disponible desde abril 2026</p>
           <h2 class="font-display text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-white mb-6 leading-[1.05]">
             ¿
-            <span class="text-gradient-mixed">Construimos</span>
+            <span class="bg-gradient-to-r from-[#0071e3] to-white bg-clip-text text-transparent">Construimos</span>
             algo juntos?
           </h2>
           <p class="text-lg md:text-xl text-slate-300 mb-10 max-w-xl mx-auto leading-relaxed">
@@ -416,11 +406,10 @@
 </template>
 
 <script setup>
-import { ArrowRight, MessageCircle, Mail } from 'lucide-vue-next'
+import { ArrowRight, Mail } from 'lucide-vue-next'
 import { useScrollAnimations } from '@/composables/useScrollAnimations'
 import AuroraBg from '@/components/primitives/AuroraBg.vue'
 import ButtonPrimary from '@/components/primitives/ButtonPrimary.vue'
-import AvailabilityBadge from '@/components/AvailabilityBadge.vue'
 
 useScrollAnimations()
 </script>

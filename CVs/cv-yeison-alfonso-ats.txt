@@ -1,21 +1,26 @@
 YEISON ANDRES ALFONSO C.
-UX/UI Product Designer
+Product Design Director
 Bogotá, Colombia | 312 567 3243 | andresdgalfonso@gmail.com
 Portafolio: https://yeisonalfonso.com | LinkedIn: linkedin.com/in/yeison-alfonso-product-designer
 
 RESUMEN PROFESIONAL
 
-UX/UI Product Designer con Maestria en Diseno UX/UI y experiencia en diseno de productos digitales para e-commerce y apps mobile. Especialista en conversion (CRO), experiencia de usuario y proyectos end-to-end. He incrementado ingresos 4x mediante rediseno UX y analisis de comportamiento con Google Analytics y Microsoft Clarity. Lidero proyectos desde la investigacion hasta la validacion en produccion, trabajando de la mano con equipos de desarrollo. Enfocado en construir productos funcionales, intuitivos y alineados a objetivos de negocio.
+Product Design Director con Maestria en Diseno UX/UI y experiencia en diseno de productos digitales para e-commerce y apps mobile. Especialista en conversion (CRO), experiencia de usuario y proyectos end-to-end. He incrementado ingresos 4x mediante rediseno UX y analisis de comportamiento con Google Analytics, Microsoft Clarity y Hotjar. Lidero proyectos desde la investigacion hasta la validacion en produccion, trabajando de la mano con equipos de desarrollo. Desarrollo prototipos funcionales en codigo (Vue + Tailwind + IA) para validar mas rapido. El ciclo de feedback pasa de dias a horas, y paso productos a desarrollo con menos friccion. Enfocado en construir productos funcionales, intuitivos y alineados a objetivos de negocio.
 
-Skills: Product Design, UX Design, UI Design, User Research, Information Architecture, Wireframing, Prototyping, Conversion Optimization (CRO), Figma, Adobe XD, Google Analytics, Microsoft Clarity
+Skills: Product Design, UX Design, UI Design, User Research, Information Architecture, Wireframing, Prototyping, Conversion Optimization (CRO), Design Thinking, Lean UX, Design Sprints, Agile/Scrum, Figma, Adobe XD, Illustrator, Photoshop, InDesign, Google Analytics, Microsoft Clarity, Hotjar, Notion, Vue.js, Tailwind CSS, HTML/CSS, GitHub, Vercel, Netlify, Claude, ChatGPT, Cursor, Figma AI, Prompt Engineering
+
+METODOLOGIA (8 pasos en 3 fases)
+Fase 1 - Descubrimiento y Estrategia: 01 Discovery > 02 Research > 03 Define
+Fase 2 - Definicion Táctica: 04 Ideate > 05 Prototype
+Fase 3 - Iteracion y Entrega: 06 Test > 07 Ship > 08 Measure
 
 EXPERIENCIA PROFESIONAL
 
 Continental Assist | Product Designer (UX/UI)
 Agosto 2025 - Actualidad
 
-- Redisene el e-commerce de asistencia en viajes, incrementando ingresos mensuales de ~2K a 9K USD (crecimiento 4x) mediante optimizacion del flujo de compra y reduccion de friccion en el checkout.
-- Disene app de asistencia en viajes desde cero (0 a produccion), centralizando telemedicina, vouchers y reembolsos en una sola plataforma para viajeros.
+- Redisene el e-commerce de asistencia en viajes: conversion 0.82% → 3.8%, ingresos ~2K a ~9K USD/mes (+4x), campos reducidos de 12 a 4, pasos de checkout de 8 a 5.
+- Disene app de asistencia en viajes desde cero (0 a produccion): retencion dia 7 de 0.1% a 12%, 997 errores iOS eliminados, centralizando telemedicina, vouchers y reembolsos.
 - Defini arquitectura de informacion, user flows y experiencia completa del producto utilizando investigacion de usuarios, benchmark competitivo y analisis de comportamiento (Google Analytics, Microsoft Clarity).
 - Colabore directamente con el equipo de desarrollo, participando en QA y validando implementacion en produccion para asegurar calidad del producto final.
 
@@ -55,8 +60,12 @@ FORMACION COMPLEMENTARIA
 
 HABILIDADES
 
-UX / Product Design: User Research, Information Architecture, User Flows, Wireframing, High-fidelity Prototyping, Heuristic Evaluation, Journey Mapping, Benchmark, Product Thinking, End-to-end Product Design
+UX / Product Design: User Research, Information Architecture, User Flows, Wireframing, High-fidelity Prototyping, Heuristic Evaluation, Journey Mapping, Benchmark, Product Thinking, End-to-end Product Design, Design Thinking, Lean UX, Design Sprints, Agile/Scrum, DCU, Jobs To Be Done
 
-UI / Tools: Figma, Adobe XD, Illustrator, Photoshop, InDesign
+UI / Tools: Figma, Adobe XD, Illustrator, Photoshop, InDesign, Notion
 
-Data / Conversion Optimization: Google Analytics, Microsoft Clarity, Behavioral Analysis, CRO, Data-driven Decision Making
+Data / Conversion Optimization: Google Analytics, Microsoft Clarity, Hotjar, Behavioral Analysis, CRO, Data-driven Decision Making
+
+Frontend Bridge: HTML/CSS, Vue.js, Tailwind CSS, Figma to Code, Dev Collaboration, QA Review
+
+IA / Prototyping: Claude, ChatGPT, Cursor, Figma AI, Prompt Engineering
