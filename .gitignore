@@ -1,16 +1,32 @@
+# Dependencies
 node_modules/
+
+# Build output
 dist/
+
+# Environment
 .env
+.env.local
+.env.*.local
+
+# Large design files (kept locally for reference, not tracked)
 PSD/
+
+# Test artifacts
+test-results/
+playwright-report/
+playwright/.cache/
+
+# Local snapshots
+snapshots/
+
+# OS
 Thumbs.db
 desktop.ini
 $RECYCLE.BIN/
 
-# Local analysis files
-analyze_competitor.py
-competitor_*.png
-competitor_*.json
-competitor_*.txt
-scripts/verify_deploy*.py
-scripts/analyze_competitor*.py
-snapshots/pre-deploy/
+# Editor
+.vscode/
+.idea/
+*.swp
+.DS_Store

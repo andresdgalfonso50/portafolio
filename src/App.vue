@@ -2,7 +2,6 @@
   <div id="app" class="app-shell">
     <a href="#main-content" class="skip-to-content">Saltar al contenido</a>
     <header>
-      <ProgressBar />
       <NavBar />
       <MobileMenu />
     </header>
@@ -16,7 +15,6 @@
 </template>
 
 <script setup>
-import ProgressBar from './components/ProgressBar.vue'
 import NavBar from './components/NavBar.vue'
 import MobileMenu from './components/MobileMenu.vue'
 import Footer from './components/Footer.vue'

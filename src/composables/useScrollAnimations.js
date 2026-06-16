@@ -17,7 +17,6 @@ export function useScrollAnimations() {
     })
 
     document.querySelectorAll('.fade-in').forEach((el) => {
-      // Si el elemento ya está en el viewport al cargar, hacerlo visible inmediatamente
       const rect = el.getBoundingClientRect()
       const isInViewport = rect.top < window.innerHeight && rect.bottom > 0
       if (isInViewport) {
@@ -27,7 +26,6 @@ export function useScrollAnimations() {
       }
     })
 
-    // Fallback: si después de 2s algo sigue invisible, forzarlo visible
     setTimeout(() => {
       document.querySelectorAll('.fade-in:not(.visible)').forEach((el) => {
         const rect = el.getBoundingClientRect()
@@ -43,12 +41,4 @@ export function useScrollAnimations() {
       observer.disconnect()
     }
   })
-
-  return {
-    initScrollAnimations: () => {
-      document.querySelectorAll('.fade-in').forEach((el) => {
-        el.classList.add('visible')
-      })
-    }
-  }
 }
