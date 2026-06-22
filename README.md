@@ -1,6 +1,6 @@
 # Yeison Alfonso · Portfolio
 
-Portfolio de Product Designer construido con Vue 3 + Vite + Tailwind CSS. Diseño editorial con identidad de color por sección, sistema de aurora backgrounds, y primitivos reutilizables.
+Portfolio de Product Designer 
 
 ---
 
