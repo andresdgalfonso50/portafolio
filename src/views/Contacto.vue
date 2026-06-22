@@ -13,7 +13,8 @@
           </p>
         </div>
 
-        <div class="contact-info fade-in stagger-1 max-w-2xl mx-auto mt-12">
+        <section class="contact-info fade-in stagger-1 max-w-2xl mx-auto mt-12" aria-labelledby="contact-channels">
+          <h2 id="contact-channels" class="sr-only">Canales de contacto directo</h2>
           <div class="contact-links">
             <a href="mailto:andresdgalfonso@gmail.com" class="contact-link">
               <div class="contact-icon">
@@ -53,7 +54,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </section>
       </div>
     </AuroraBg>
   </div>

@@ -20,9 +20,13 @@ export default defineConfig({
     assetsDir: 'assets',
     rollupOptions: {
       output: {
-        manualChunks: {
-          'vue-vendor': ['vue', 'vue-router'],
-          'icons-vendor': ['lucide-vue-next']
+        manualChunks(id) {
+          if (id.includes('node_modules/vue') || id.includes('node_modules/@vue')) {
+            return 'vue-vendor'
+          }
+          if (id.includes('node_modules/lucide-vue-next')) {
+            return 'icons-vendor'
+          }
         }
       }
     }

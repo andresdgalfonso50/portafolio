@@ -1,5 +1,5 @@
 YEISON ANDRES ALFONSO C.
-Senior Product Designer | CRO & Mobile Apps | Vue + IA Prototyping
+Product Designer | CRO & Mobile Apps | Vue + IA Prototyping
 Bogotá, Colombia | 312 567 3243 | andresdgalfonso@gmail.com
 Portafolio: https://yeisonalfonso.com | LinkedIn: linkedin.com/in/yeison-alfonso-product-designer
 
@@ -19,7 +19,7 @@ Discovery > Research > Define > Ideate > Prototype > Test > Ship > Measure
 
 EXPERIENCIA PROFESIONAL
 
-Continental Assist | Senior Product Designer
+Continental Assist | Product Designer
 Ago 2025 - Actualidad
 
 E-commerce (0 → $9K USD/mes):
@@ -41,11 +41,11 @@ ASSA ABLOY (YALE) | Product Designer
 Feb 2024 - Jun 2024
 
 - Redisenie e-commerce de cerraduras inteligentes IoT para 5 paises.
-- Valide con 12 usuarios reales: improve navegacion, reduje pasos checkout.
+- Valide con 12 usuarios reales: mejoré navegación, reduje pasos checkout.
 - Implemente design system escalable para linea de productos IoT.
 - Tecnicas: journey maps, evaluaciones heuristicas, wireframes, prototipos alta fidelidad.
 
-Azzorti (Dupree) | Product Designer (Grafico)
+Azzorti (Dupree) | Product & Brand Designer
 Feb 2021 - Ago 2025
 
 - Lidere diseno de identidad visual y campañas multiregion (CO, PE, EC, BO, GT).

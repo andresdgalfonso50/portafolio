@@ -7,7 +7,7 @@
       title="El cotizador web que multiplicó el checkout 4x."
       highlight=""
       badge="E-commerce"
-      subtitle="Rediseño integral de la plataforma de cotización responsive para los canales B2B y B2C."
+      subtitle="Cómo transformamos un flujo de 12 campos a 4 para multiplicar los ingresos por 4."
       :hero-image="heroEcomImg"
       hero-image-alt="Checkout de asistencia en viaje"
       :hero-badge="{ value: '+4x', label: 'conversión' }"
@@ -445,62 +445,34 @@
           </div>
         </div>
 
-        <!-- Testimonial -->
-        <blockquote class="bg-midnight p-8 md:p-10 rounded-3xl">
-          <p class="text-xl md:text-2xl text-white leading-relaxed italic mb-4">"El rediseño redujo el abandono en checkout a la mitad en 3 semanas. El dashboard de métricas nos permitió iterar cada lunes sin esperar al equipo de desarrollo."</p>
-          <footer>
-            <span class="block text-base font-bold text-white">Diego Ramírez</span>
-            <span class="block text-sm text-slate-400">Engineering Lead · Continental Assist</span>
-          </footer>
-        </blockquote>
       </div>
     </section>
 
-    <!-- CTA -->
-    <AuroraBg variant="dark" class="py-20 md:py-24">
-      <div class="max-w-4xl mx-auto text-center px-6 relative z-10">
-        <h2 class="font-display text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-6 leading-[1.1]">
-          ¿Diseñamos tu próximo
-          <span class="bg-gradient-to-r from-[#0071e3] to-white bg-clip-text text-transparent">producto</span>?
-        </h2>
-        <p class="text-lg text-slate-300 mb-10 max-w-xl mx-auto leading-relaxed">
-          CRO verificable con datos, no conjeturas. Conversemos sobre tu caso.
-        </p>
-        <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-          <router-link to="/contacto" class="inline-flex items-center gap-2 px-8 py-4 bg-midnight text-white font-semibold rounded-full hover:bg-primary transition-colors duration-300">
-            Iniciar conversación
-          </router-link>
-          <router-link to="/app-web" class="inline-flex items-center gap-3 px-6 py-3.5 bg-white/10 backdrop-blur-sm text-white font-semibold rounded-full border border-white/20 hover:bg-white/20 transition-colors duration-300">
-            <div class="flex flex-col text-left">
-              <span class="text-[10px] font-bold text-slate-300 uppercase tracking-widest">Siguiente Caso</span>
-              <span class="text-sm font-bold text-white">Xentral Health</span>
-            </div>
-            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-          </router-link>
-        </div>
-      </div>
-    </AuroraBg>
-
     <!-- Case Navigation -->
-    <nav class="py-24 border-t border-borderline">
+    <nav class="py-20 md:py-24 border-t border-borderline">
       <div class="max-w-6xl mx-auto px-6">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <RouterLink to="/app" class="group flex items-center justify-between p-8 md:p-10 bg-white rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-300 hover:border-secondary hover:shadow-xl hover:-translate-y-1">
+        <div class="section-header mb-10">
+          <span class="section-number">Continúa explorando</span>
+          <h2 class="font-display text-2xl md:text-3xl font-bold tracking-tight text-midnight mb-3">Más casos de estudio</h2>
+          <p class="section-intro">Cada proyecto documenta el problema, las decisiones de diseño y el impacto medible.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <RouterLink to="/contacto" class="group flex items-center justify-between bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-300 hover:border-secondary hover:shadow-xl hover:-translate-y-1">
             <div class="flex flex-col">
-              <span class="text-sm font-bold text-slate-400 uppercase tracking-widest mb-2">Caso anterior</span>
-              <h4 class="text-2xl font-bold text-midnight group-hover:text-secondary transition-colors">App de Asistencia en Viajes</h4>
+              <span class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Conversemos</span>
+              <h4 class="text-lg font-bold text-midnight group-hover:text-secondary transition-colors">Contacto</h4>
             </div>
-            <div class="w-12 h-12 rounded-full bg-surface flex items-center justify-center group-hover:bg-secondary group-hover:text-white transition-all duration-300">
-              <ArrowLeft :size="24" />
+            <div class="w-10 h-10 rounded-full bg-surface flex items-center justify-center group-hover:bg-secondary group-hover:text-white transition-all duration-300">
+              <ArrowRight :size="20" />
             </div>
           </RouterLink>
-          <RouterLink to="/app-web" class="group flex items-center justify-between p-8 md:p-10 bg-white rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-300 hover:border-secondary hover:shadow-xl hover:-translate-y-1">
+          <RouterLink to="/app-web" class="group flex items-center justify-between bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-300 hover:border-secondary hover:shadow-xl hover:-translate-y-1">
             <div class="flex flex-col">
-              <span class="text-sm font-bold text-slate-400 uppercase tracking-widest mb-2">Siguiente caso</span>
-              <h4 class="text-2xl font-bold text-midnight group-hover:text-secondary transition-colors">Xentral Health</h4>
+              <span class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Siguiente caso</span>
+              <h4 class="text-lg font-bold text-midnight group-hover:text-secondary transition-colors">Xentral Health</h4>
             </div>
-            <div class="w-12 h-12 rounded-full bg-surface flex items-center justify-center group-hover:bg-secondary group-hover:text-white transition-all duration-300">
-              <ArrowRight :size="24" />
+            <div class="w-10 h-10 rounded-full bg-surface flex items-center justify-center group-hover:bg-secondary group-hover:text-white transition-all duration-300">
+              <ArrowRight :size="20" />
             </div>
           </RouterLink>
         </div>
@@ -512,7 +484,6 @@
 <script setup>
 import { RouterLink } from 'vue-router'
 import { useScrollAnimations } from '@/composables/useScrollAnimations'
-import AuroraBg from '@/components/primitives/AuroraBg.vue'
 import CaseStudyHero from '@/components/case-study/CaseStudyHero.vue'
 import heroEcomImg from '/public/assets/images/home/hero-ecommerce-full.jpg'
 import {

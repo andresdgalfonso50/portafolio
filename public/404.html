@@ -3,24 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yeison Alfonso | UX/UI Product Designer</title>
-  <script>
-    // SPA fallback para GitHub Pages
-    // Redirige todas las rutas no encontradas a index.html
-    const segmentCount = window.location.pathname.split('/').length - 1;
-    let redirect = '';
-    if (segmentCount === 0) {
-      redirect = '.';
-    } else {
-      redirect = '.';
-      for (let i = 0; i < segmentCount - 1; i++) {
-        redirect += '/..';
-      }
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+  <title>Pagina no encontrada | Yeison Alfonso</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      background: #fafafa;
+      color: #1d1d1f;
     }
-    window.location.replace(redirect + '/');
-  </script>
+    a {
+      color: #0071e3;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    a:hover { text-decoration: underline; }
+    .box { text-align: center; padding: 2rem; }
+    h1 { font-size: 2rem; margin: 0 0 1rem; }
+    p { margin: 0.5rem 0; color: #52607A; }
+  </style>
 </head>
 <body>
-  <p>Redirigiendo…</p>
+  <div class="box">
+    <h1>404</h1>
+    <p>Página no encontrada</p>
+    <p><a href="/portafolio/">Volver al inicio</a></p>
+  </div>
 </body>
 </html>

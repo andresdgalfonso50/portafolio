@@ -7,7 +7,7 @@
       title="Retención día 7: de 0.1% a 12% en 5 meses"
       highlight=""
       badge="Continental Assist"
-      subtitle="Diseño y desarrollo de la aplicación móvil (iOS & Android) para asistencia al viajero. De 97% de abandono a 2 apps nativas en producción."
+      subtitle="De 0.1% a 12% de retención: Rediseño completo y eliminación de 997 errores críticos de la aplicación."
       :hero-image="heroAppImg"
       hero-image-alt="App de asistencia al viajero"
       :hero-badge="{ value: '0.1% → 12%', label: 'retención día 7' }"
@@ -378,7 +378,7 @@
             </div>
             <div class="flex-1 flex items-center justify-center bg-midnight p-6">
               <div class="text-center">
-                <span class="block font-display text-6xl font-black text-highlight tracking-tighter tabular-nums">40</span>
+                <span class="block font-display text-6xl font-extrabold text-highlight tracking-tight tabular-nums">40</span>
                 <span class="block text-xs text-slate-400 mt-2 font-semibold uppercase tracking-widest">componentes</span>
               </div>
             </div>
@@ -388,59 +388,101 @@
       </div>
     </section>
 
-    <!-- 5. FLUJO DE COMPRA OPTIMIZADO: 4 pasos numerados -->
+    <!-- 5. PRODUCTO EN PRODUCCIÓN: Capturas reales de la App Store -->
     <section class="case-section section-alt">
       <div class="max-w-6xl mx-auto px-6">
         <div class="section-header fade-in mb-8">
           <span class="section-number">05</span>
-          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-4">El flujo de compra optimizado</h2>
-          <p class="section-intro">4 pasos que redujeron el tiempo de cotización a 3 minutos. Cada pantalla pensada para eliminar fricción.</p>
+          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-4">El producto en producción</h2>
+          <p class="section-intro">4 capturas reales de la App Store. Cada pantalla valida una decisión de diseño que sobrevivió al contacto con usuarios reales.</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 fade-in stagger-2">
-          <!-- Paso 01 -->
-          <article class="bg-white border border-borderline rounded-2xl p-6 flex flex-col">
-            <div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-4">
-              <Smartphone :size="22" />
+          <!-- Pantalla 01 — Onboarding -->
+          <article class="bg-white border border-borderline rounded-2xl overflow-hidden flex flex-col">
+            <div class="bg-midnight/5 p-4 aspect-[9/16] flex items-center justify-center">
+              <img
+                src="/assets/images/app/1.jpg"
+                srcset="/assets/images/app/1.jpg 1x, /assets/images/app/1.jpg 2x"
+                alt="Pantalla de inicio de Continental Assist con saludo personalizado y accesos rápidos"
+                class="h-full w-auto rounded-xl shadow-[0_8px_24px_rgba(0,0,0,0.08)] border border-borderline"
+                loading="lazy"
+                width="360"
+                height="640"
+              />
             </div>
-            <span class="text-[10px] font-bold uppercase tracking-widest text-primary mb-2">Paso 01 · 0:00</span>
-            <h3 class="text-base font-bold text-midnight mb-2 leading-tight">Email mágico</h3>
-            <p class="text-xs text-body leading-relaxed flex-1">El viajero recibe un link directo al servicio. Cero descargas, cero registros, cero contraseñas.</p>
-            <span class="text-[10px] text-slate-500 mt-3">Fricción eliminada: instalación de app</span>
+            <div class="p-5 flex-1 flex flex-col">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-primary mb-2">Pantalla 01 · Onboarding</span>
+              <h3 class="text-sm font-bold text-midnight mb-2 leading-tight">"Viaja seguro en todo el mundo"</h3>
+              <p class="text-xs text-body leading-relaxed flex-1">Saludo personalizado con nombre del viajero. Accesos directos a las funciones más usadas (salas VIP, renta de vehículo).</p>
+            </div>
           </article>
 
-          <!-- Paso 02 -->
-          <article class="bg-white border border-borderline rounded-2xl p-6 flex flex-col">
-            <div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-4">
-              <ShieldCheck :size="22" />
+          <!-- Pantalla 02 — Soporte IA -->
+          <article class="bg-white border border-borderline rounded-2xl overflow-hidden flex flex-col">
+            <div class="bg-midnight/5 p-4 aspect-[9/16] flex items-center justify-center">
+              <img
+                src="/assets/images/app/2.jpg"
+                srcset="/assets/images/app/2.jpg 1x, /assets/images/app/2.jpg 2x"
+                alt="Chat con agente de IA respondiendo preguntas sobre equipaje perdido con pasos numerados"
+                class="h-full w-auto rounded-xl shadow-[0_8px_24px_rgba(0,0,0,0.08)] border border-borderline"
+                loading="lazy"
+                width="360"
+                height="640"
+              />
             </div>
-            <span class="text-[10px] font-bold uppercase tracking-widest text-primary mb-2">Paso 02 · 0:30</span>
-            <h3 class="text-base font-bold text-midnight mb-2 leading-tight">Cobertura verificada</h3>
-            <p class="text-xs text-body leading-relaxed flex-1">El sistema valida automáticamente el plan del viajero. Indicador visual claro de qué está cubierto.</p>
-            <span class="text-[10px] text-slate-500 mt-3">Fricción eliminada: llamadas a soporte</span>
+            <div class="p-5 flex-1 flex flex-col">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-primary mb-2">Pantalla 02 · Soporte</span>
+              <h3 class="text-sm font-bold text-midnight mb-2 leading-tight">"Chatea con nuestro agente de IA"</h3>
+              <p class="text-xs text-body leading-relaxed flex-1">Conversación con respuestas estructuradas en pasos numerados. Reduce tickets al call center en un solo flujo.</p>
+            </div>
           </article>
 
-          <!-- Paso 03 -->
-          <article class="bg-white border border-borderline rounded-2xl p-6 flex flex-col">
-            <div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-4">
-              <Zap :size="22" />
+          <!-- Pantalla 03 — Gestión -->
+          <article class="bg-white border border-borderline rounded-2xl overflow-hidden flex flex-col">
+            <div class="bg-midnight/5 p-4 aspect-[9/16] flex items-center justify-center">
+              <img
+                src="/assets/images/app/3.jpg"
+                srcset="/assets/images/app/3.jpg 1x, /assets/images/app/3.jpg 2x"
+                alt="Pantalla de beneficios con tabs activos, próximos e historial mostrando tarjetas de viajes"
+                class="h-full w-auto rounded-xl shadow-[0_8px_24px_rgba(0,0,0,0.08)] border border-borderline"
+                loading="lazy"
+                width="360"
+                height="640"
+              />
             </div>
-            <span class="text-[10px] font-bold uppercase tracking-widest text-primary mb-2">Paso 03 · 1:30</span>
-            <h3 class="text-base font-bold text-midnight mb-2 leading-tight">Activación 1-tap</h3>
-            <p class="text-xs text-body leading-relaxed flex-1">Un solo botón para activar todos los beneficios. Sin formularios, sin confirmar email, sin pasos extras.</p>
-            <span class="text-[10px] text-slate-500 mt-3">Fricción eliminada: onboarding</span>
+            <div class="p-5 flex-1 flex flex-col">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-primary mb-2">Pantalla 03 · Gestión</span>
+              <h3 class="text-sm font-bold text-midnight mb-2 leading-tight">"Tus viajes, siempre contigo"</h3>
+              <p class="text-xs text-body leading-relaxed flex-1">Tabs Activos / Próximos / Historial. Cada viaje muestra país, fechas y acción rápida. Cero scroll innecesario.</p>
+            </div>
           </article>
 
-          <!-- Paso 04 -->
-          <article class="bg-white border border-borderline rounded-2xl p-6 flex flex-col">
-            <div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-4">
-              <Rocket :size="22" />
+          <!-- Pantalla 04 — Conversión -->
+          <article class="bg-white border border-borderline rounded-2xl overflow-hidden flex flex-col">
+            <div class="bg-midnight/5 p-4 aspect-[9/16] flex items-center justify-center">
+              <img
+                src="/assets/images/app/4.jpg"
+                srcset="/assets/images/app/4.jpg 1x, /assets/images/app/4.jpg 2x"
+                alt="Landing final con mujer viajera sonriendo y botón amarillo de descarga"
+                class="h-full w-auto rounded-xl shadow-[0_8px_24px_rgba(0,0,0,0.08)] border border-borderline"
+                loading="lazy"
+                width="360"
+                height="640"
+              />
             </div>
-            <span class="text-[10px] font-bold uppercase tracking-widest text-primary mb-2">Paso 04 · 3:00</span>
-            <h3 class="text-base font-bold text-midnight mb-2 leading-tight">Beneficios activos</h3>
-            <p class="text-xs text-body leading-relaxed flex-1">El viajero ve sus vouchers, coberturas y contacto de emergencia. Listo para usar desde el primer minuto.</p>
-            <span class="text-[10px] text-slate-500 mt-3">Fricción eliminada: tiempo de espera</span>
+            <div class="p-5 flex-1 flex flex-col">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-primary mb-2">Pantalla 04 · Conversión</span>
+              <h3 class="text-sm font-bold text-midnight mb-2 leading-tight">"Contigo a donde vayas"</h3>
+              <p class="text-xs text-body leading-relaxed flex-1">Fotografía real + CTA amarillo único. Sin distracciones, sin scroll. El botón es el protagonista visual.</p>
+            </div>
           </article>
+        </div>
+
+        <div class="text-center mt-10 fade-in">
+          <p class="text-xs text-slate-500 italic">
+            Disponible en App Store y Google Play. Más de 12,000 viajeros activos en LATAM.
+          </p>
         </div>
       </div>
     </section>
@@ -463,7 +505,7 @@
                 En producción
               </span>
             </div>
-            <span class="font-display text-5xl md:text-7xl font-black text-highlight tracking-tighter leading-none tabular-nums block mb-4">0.1% → 12%</span>
+            <span class="font-display text-5xl md:text-7xl font-extrabold text-highlight tracking-tight leading-none tabular-nums block mb-4">0.1% → 12%</span>
             <h3 class="text-base font-bold text-midnight mb-2">Retención día 7</h3>
             <p class="text-sm text-body leading-relaxed">De 0.1% (97% de abandono) a 12%. Métrica auditable en producción.</p>
           </div>
@@ -476,7 +518,7 @@
                 Tiempo real
               </span>
             </div>
-            <span class="font-display text-6xl md:text-7xl font-black text-highlight tracking-tighter leading-none tabular-nums block mb-4">3<span class="text-2xl md:text-3xl font-bold text-body ml-1">min</span></span>
+            <span class="font-display text-6xl md:text-7xl font-extrabold text-highlight tracking-tight leading-none tabular-nums block mb-4">3<span class="text-2xl md:text-3xl font-bold text-body ml-1">min</span></span>
             <h3 class="text-base font-bold text-midnight mb-2">Tiempo de activación</h3>
             <p class="text-sm text-body leading-relaxed">Promedio desde el primer uso hasta la activación de beneficios. Antes: 12+ minutos con fricción.</p>
           </div>
@@ -489,7 +531,7 @@
                 Multiplataforma
               </span>
             </div>
-            <span class="font-display text-6xl md:text-7xl font-black text-highlight tracking-tighter leading-none tabular-nums block mb-4">iOS<br/>& Android</span>
+            <span class="font-display text-6xl md:text-7xl font-extrabold text-highlight tracking-tight leading-none tabular-nums block mb-4">iOS<br/>& Android</span>
             <h3 class="text-base font-bold text-midnight mb-2">Disponibilidad en Tiendas</h3>
             <p class="text-sm text-body leading-relaxed">2 apps nativas con consistencia visual y de patrones. Misma experiencia, ambos sistemas.</p>
           </div>
@@ -498,17 +540,17 @@
         <!-- Validación: eliminado - testimonios genéricos reemplazados por métricas de testing -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
-            <span class="block font-display text-4xl font-black text-highlight tracking-tighter tabular-nums mb-2">12</span>
+            <span class="block font-display text-4xl font-extrabold text-highlight tracking-tight tabular-nums mb-2">12</span>
             <p class="text-sm font-bold text-midnight mb-1">Usuarios en crisis simuladas</p>
             <p class="text-xs text-body leading-relaxed">Validación con viajeros reales en escenarios de emergencia.</p>
           </div>
           <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
-            <span class="block font-display text-4xl font-black text-highlight tracking-tighter tabular-nums mb-2">4.5<span class="text-lg font-bold text-body">/6</span></span>
+            <span class="block font-display text-4xl font-extrabold text-highlight tracking-tight tabular-nums mb-2">4.5<span class="text-lg font-bold text-body">/6</span></span>
             <p class="text-sm font-bold text-midnight mb-1">Pasos recordados sin ayuda</p>
             <p class="text-xs text-body leading-relaxed">De 1.2 a 4.5 de 6 pasos memorizados.</p>
           </div>
           <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
-            <span class="block font-display text-4xl font-black text-highlight tracking-tighter tabular-nums mb-2">+90%</span>
+            <span class="block font-display text-4xl font-extrabold text-highlight tracking-tight tabular-nums mb-2">+90%</span>
             <p class="text-sm font-bold text-midnight mb-1">Claridad del proceso</p>
             <p class="text-xs text-body leading-relaxed">Usuarios saben qué pasa después al abrir la app.</p>
           </div>
@@ -570,58 +612,44 @@
             </div>
           </div>
         </div>
-
-        <!-- Next steps — específicos del proyecto -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
-            <Stethoscope :size="20" class="text-body mb-3" />
-            <h4 class="text-sm font-bold text-midnight mb-1">Telemedicina integrada</h4>
-            <p class="text-xs text-body">Conectar el flujo de asistencia con consulta médica sin salir de la app.</p>
-          </div>
-          <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
-            <Gift :size="20" class="text-body mb-3" />
-            <h4 class="text-sm font-bold text-midnight mb-1">Programa de referidos</h4>
-            <p class="text-xs text-body">Incentivar recomendación entre viajeros frecuentes con beneficios premium.</p>
-          </div>
-          <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
-            <BarChart2 :size="20" class="text-body mb-3" />
-            <h4 class="text-sm font-bold text-midnight mb-1">Dashboard del Coordinador</h4>
-            <p class="text-xs text-body">Métricas en tiempo real para el equipo de soporte operacional.</p>
-          </div>
-        </div>
       </div>
     </section>
 
-    <!-- CTA -->
-    <AuroraBg variant="dark" class="py-20 md:py-24">
-      <div class="max-w-4xl mx-auto text-center px-6 relative z-10">
-        <h2 class="font-display text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-6 leading-[1.1]">
-          ¿Tu próxima
-          <span class="bg-gradient-to-r from-[#0071e3] to-white bg-clip-text text-transparent">app</span>?
-        </h2>
-        <p class="text-lg text-slate-300 mb-10 max-w-xl mx-auto leading-relaxed">
-          Si tienes un producto mobile o web que necesita escalar conversión y retención, hablemos.
-        </p>
-        <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-          <router-link to="/contacto" class="inline-flex items-center gap-2 px-8 py-4 bg-midnight text-white font-semibold rounded-full hover:bg-primary transition-colors duration-300">
-            Iniciar conversación
-          </router-link>
-          <router-link to="/ecommerce" class="inline-flex items-center gap-3 px-6 py-3.5 bg-white/10 backdrop-blur-sm text-white font-semibold rounded-full border border-white/20 hover:bg-white/20 transition-colors duration-300">
-            <div class="flex flex-col text-left">
-              <span class="text-[10px] font-bold text-slate-300 uppercase tracking-widest">Siguiente Caso</span>
-              <span class="text-sm font-bold text-white">Checkout +4x</span>
+    <!-- Case Navigation -->
+    <nav class="py-20 md:py-24 border-t border-borderline">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="section-header mb-10">
+          <span class="section-number">Continúa explorando</span>
+          <h2 class="font-display text-2xl md:text-3xl font-bold tracking-tight text-midnight mb-3">Más casos de estudio</h2>
+          <p class="section-intro">Cada proyecto documenta el problema, las decisiones de diseño y el impacto medible.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <RouterLink to="/contacto" class="group flex items-center justify-between bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-300 hover:border-secondary hover:shadow-xl hover:-translate-y-1">
+            <div class="flex flex-col">
+              <span class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Conversemos</span>
+              <h4 class="text-lg font-bold text-midnight group-hover:text-secondary transition-colors">Contacto</h4>
             </div>
-            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-          </router-link>
+            <div class="w-10 h-10 rounded-full bg-surface flex items-center justify-center group-hover:bg-secondary group-hover:text-white transition-all duration-300">
+              <ArrowRight :size="20" />
+            </div>
+          </RouterLink>
+          <RouterLink to="/ecommerce" class="group flex items-center justify-between bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-300 hover:border-secondary hover:shadow-xl hover:-translate-y-1">
+            <div class="flex flex-col">
+              <span class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Siguiente caso</span>
+              <h4 class="text-lg font-bold text-midnight group-hover:text-secondary transition-colors">Checkout +4x</h4>
+            </div>
+            <div class="w-10 h-10 rounded-full bg-surface flex items-center justify-center group-hover:bg-secondary group-hover:text-white transition-all duration-300">
+              <ArrowRight :size="20" />
+            </div>
+          </RouterLink>
         </div>
       </div>
-    </AuroraBg>
+    </nav>
   </div>
 </template>
 
 <script setup>
 import { useScrollAnimations } from '@/composables/useScrollAnimations'
-import AuroraBg from '@/components/primitives/AuroraBg.vue'
 import CaseStudyHero from '@/components/case-study/CaseStudyHero.vue'
 import ButtonPrimary from '@/components/primitives/ButtonPrimary.vue'
 import heroAppImg from '/public/assets/images/home/hero-app-full.jpg'
@@ -630,8 +658,8 @@ import {
   CreditCard, ChevronRight, ArrowRight, ArrowLeft, CheckCircle, MapPin,
   MessageSquare, Mail, Lightbulb, Eye, ListOrdered, Plane, Globe,
   Split, Bug, TrendingDown, UserX, Calendar,
-  Wallet, Crown, Stethoscope, MessageCircle, Bell, Home, HeartPulse,
-  Gift, User, Rocket, FileText, Receipt, Siren, Zap, ShieldCheck, BarChart2
+  Wallet, Crown, MessageCircle, Bell, Home, HeartPulse,
+  Gift, User, Rocket, FileText, Receipt, Siren, Zap, ShieldCheck
 } from 'lucide-vue-next'
 
 useScrollAnimations()

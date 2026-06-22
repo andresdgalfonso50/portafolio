@@ -4,13 +4,13 @@ YEISON ANDRES ALFONSO C. - PERFIL DE LINKEDIN COMPLETO
 
 TITULAR (Headline) - Max 220 caracteres
 ================================================================================
-Senior Product Designer | CRO & Mobile Apps | +4x ingresos | Vue + IA Prototyping | Bogotá
+Product Designer | CRO & Mobile Apps | +4x ingresos | Vue + IA Prototyping | Bogotá
 
 ---
 
 ACERCA DE (About) - Max 2600 caracteres
 ================================================================================
-Senior Product Designer con Maestría UX/UI y 4+ años diseñando productos digitales que generan impacto de negocio medible.
+Product Designer con Maestría UX/UI y 4+ años diseñando productos digitales que generan impacto de negocio medible.
 
 ENFOQUE:
 Diseño productos que resuelven problemas reales y generan resultados concretos.
@@ -39,7 +39,7 @@ EXPERIENCIA - Cada posición
 
 POSICIÓN 1:
 Empresa: Continental Assist
-Cargo: Senior Product Designer
+Cargo: Product Designer
 Periodo: Agosto 2025 - Actualidad
 Tipo: Tiempo completo
 
@@ -85,7 +85,7 @@ Habilidades: UX Design, UI Design, Wireframing, Prototyping, User Research, Heur
 
 POSICIÓN 3:
 Empresa: Azzorti (Dupree)
-Cargo: Product Designer (Gráfico)
+Cargo: Product & Brand Designer
 Periodo: Febrero 2021 - Agosto 2025
 Tipo: Tiempo completo
 
@@ -202,7 +202,7 @@ FOTO DE PERFIL
 
 BANNER DE LINKEDIN
 ================================================================================
-- Banner que refleje tu trabajo como Senior Product Designer
+- Banner que refleje tu trabajo como Product Designer
 - Mockup de proyectos o diseño minimalista con nombre y título
 - Keywords: "Senior Product Designer · CRO · Mobile Apps · Design Systems"
 - Tamaño: 1584 x 396 px
@@ -213,7 +213,6 @@ CONFIGURACIÓN DE BÚSQUEDA DE EMPLEO
 ================================================================================
 1. Activa #OpenToWork (visible solo para reclutadores)
 2. Alertas para:
-   - Senior Product Designer
    - Product Designer
    - UX Designer
    - UI Designer

@@ -6,7 +6,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 lg:gap-12">
           <!-- Columna izquierda: texto + CTAs -->
           <div class="flex flex-col items-start fade-in">
-            <span class="label block mb-5">Senior Product Designer · Disponible abril 2026</span>
+            <span class="label block mb-5">Product Designer · Disponible abril 2026</span>
             <h1 class="font-display text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.05] text-midnight mb-6">
               Diseño productos que convierten usuarios en
               <span class="font-light italic text-primary">ingresos</span>.

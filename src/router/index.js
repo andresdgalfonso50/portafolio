@@ -74,7 +74,6 @@ const router = createRouter({
     if (savedPosition) {
       return savedPosition
     }
-    // Instant scroll to top to avoid CLS from smooth animation
     return { top: 0, behavior: 'instant' }
   }
 })

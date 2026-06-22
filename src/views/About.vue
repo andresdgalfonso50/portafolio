@@ -8,7 +8,7 @@
         </div>
         <div class="about-hero-grid md:grid-cols-2 md:gap-12 items-center">
           <div class="about-hero-content fade-in">
-            <span class="label text-primary">Senior Product Designer · Bogotá</span>
+            <span class="label text-primary">Product Designer · Bogotá</span>
             <h1 class="font-display text-5xl md:text-6xl font-extrabold tracking-tight leading-[1.1] text-midnight mb-6">
               Diseño
               <span class="text-gradient-primary">productos</span>
@@ -80,23 +80,6 @@
         </div>
 
         <ExperienceTimeline :items="experienceItems" />
-      </div>
-    </section>
-
-    <!-- ABOUT IMAGE SECTION -->
-    <section class="section about-visual-section">
-      <div class="container">
-        <div class="about-visual-grid fade-in">
-          <div class="about-visual-item">
-            <img src="/assets/images/about/about-collaboration.jpg" alt="Trabajo colaborativo en diseño" loading="lazy" width="600" height="400">
-          </div>
-          <div class="about-visual-item">
-            <img src="/assets/images/about/about-design.jpg" alt="Diseño de interfaces moderno" loading="lazy" width="600" height="400">
-          </div>
-          <div class="about-visual-item">
-            <img src="/assets/images/about/about-process.jpg" alt="Proceso de diseño UX" loading="lazy" width="600" height="400">
-          </div>
-        </div>
       </div>
     </section>
 
@@ -192,6 +175,7 @@
             :tags="['HTML/CSS', 'Vue.js', 'Tailwind', 'Figma to code', 'Dev collaboration', 'QA review']"
             :icon="Code2"
             color="violet"
+            featured
           />
           <SkillPillar
             title="IA & Agentic"
@@ -199,21 +183,9 @@
             :tags="['Prompt Engineering', 'Claude', 'ChatGPT', 'Cursor', 'Figma AI', 'Validación asistida']"
             :icon="Sparkles"
             color="blue"
+            featured
           />
         </div>
-      </div>
-    </section>
-
-    <!-- STACK SECTION -->
-    <section class="section section-alt">
-      <div class="container">
-        <div class="section-header fade-in">
-          <span class="label">Herramientas</span>
-          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-3">Stack del día a día</h2>
-          <p class="text-lg text-body max-w-2xl">Las que uso para diseñar, medir, prototipar y entregar.</p>
-        </div>
-
-        <StackWithLogos :tools="stackTools" />
       </div>
     </section>
 
@@ -252,7 +224,6 @@ import CVButton from '@/components/CVButton.vue'
 import ExperienceTimeline from '@/components/ExperienceTimeline.vue'
 import PrinciplesSection from '@/components/PrinciplesSection.vue'
 import SkillPillar from '@/components/SkillPillar.vue'
-import StackWithLogos from '@/components/StackWithLogos.vue'
 
 useScrollAnimations()
 
@@ -319,18 +290,5 @@ const principles = [
     description: 'Analytics, heatmaps, A/B tests. Lo que no se mide, no se mejora.',
     color: 'amber'
   }
-]
-
-const stackTools = [
-  { name: 'Figma',       icon: '/assets/logos/stack/figma.svg',            bg: '#FFE5DC' },
-  { name: 'Notion',      icon: '/assets/logos/stack/notion.svg',           bg: '#F0F0F0' },
-  { name: 'Vue 3',       icon: '/assets/logos/stack/vue.svg',              bg: '#DDF4E5' },
-  { name: 'Tailwind',    icon: '/assets/logos/stack/tailwind.svg',         bg: '#D5F5F6' },
-  { name: 'Analytics',   icon: '/assets/logos/stack/google-analytics.svg', bg: '#FCE4D2' },
-  { name: 'Hotjar',      icon: '/assets/logos/stack/hotjar.svg',           bg: '#FFE0E5' },
-  { name: 'Google Fonts',icon: '/assets/logos/stack/google-fonts.svg',     bg: '#E0EBFF' },
-  { name: 'GitHub',      icon: '/assets/logos/stack/github.svg',           bg: '#E8E8E8' },
-  { name: 'Vercel',      icon: '/assets/logos/stack/vercel.svg',           bg: '#E8E8E8' },
-  { name: 'Netlify',     icon: '/assets/logos/stack/netlify.svg',          bg: '#CDF3F0' }
 ]
 </script>

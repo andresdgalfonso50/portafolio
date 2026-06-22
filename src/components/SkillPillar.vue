@@ -1,5 +1,5 @@
 <template>
-  <article class="skill-pillar" :class="`skill-pillar--${color}`">
+  <article class="skill-pillar" :class="[`skill-pillar--${color}`, { 'skill-pillar--featured': featured }]">
     <div class="skill-pillar-header">
       <div class="skill-pillar-icon">
         <component :is="icon" :size="22" :stroke-width="2" />
@@ -23,7 +23,8 @@ defineProps({
     type: String,
     default: 'violet',
     validator: (v) => ['violet', 'blue', 'emerald', 'amber'].includes(v)
-  }
+  },
+  featured: { type: Boolean, default: false }
 })
 </script>
 
@@ -69,6 +70,20 @@ defineProps({
 .skill-pillar--emerald .skill-pillar-icon { background: rgba(16, 185, 129, 0.12); color: #10b981; }
 .skill-pillar--amber .skill-pillar-icon { background: rgba(245, 158, 11, 0.12); color: #f59e0b; }
 
+/* Featured pillar: subtle gradient border + accent icon */
+.skill-pillar--featured {
+  background:
+    linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(135deg, rgba(0, 113, 227, 0.35) 0%, rgba(109, 40, 217, 0.35) 100%) border-box;
+  border: 1px solid transparent;
+}
+
+.skill-pillar--featured .skill-pillar-icon {
+  background: rgba(0, 113, 227, 0.14);
+  color: #0071e3;
+  box-shadow: inset 0 0 0 1px rgba(0, 113, 227, 0.18);
+}
+
 .skill-pillar-header {
   display: flex;
   align-items: center;
@@ -86,6 +101,7 @@ defineProps({
   height: 44px;
   border-radius: 12px;
   flex-shrink: 0;
+  transition: all 0.3s ease;
 }
 
 .skill-pillar-title {
@@ -117,8 +133,9 @@ defineProps({
 
 .skill-pillar-tag {
   display: inline-block;
-  padding: 0.3125rem 0.75rem;
-  background: var(--color-chip, #f5f5f7);
+  padding: 0.28125rem 0.6875rem;
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.08);
   color: var(--color-body, #475569);
   font-family: var(--font-display, 'Inter', system-ui, sans-serif);
   font-size: 0.75rem;
@@ -129,6 +146,16 @@ defineProps({
 
 .skill-pillar-tag:hover {
   background: var(--pillar-color, rgba(0, 113, 227, 0.08));
+  border-color: transparent;
   color: var(--color-midnight, #1d1d1f);
+}
+
+/* Featured pillar: tags adopt a slightly stronger accent border */
+.skill-pillar--featured .skill-pillar-tag {
+  border-color: rgba(0, 113, 227, 0.18);
+}
+
+.skill-pillar--featured .skill-pillar-tag:hover {
+  border-color: transparent;
 }
 </style>
