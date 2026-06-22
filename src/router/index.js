@@ -1,5 +1,6 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from '@/views/Home.vue'
+import { trackPageview } from '@/plugins/hotjar'
 
 const routes = [
   {
@@ -85,6 +86,10 @@ router.beforeEach((to, from, next) => {
     metaDesc.setAttribute('content', to.meta.description)
   }
   next()
+})
+
+router.afterEach((to) => {
+  trackPageview(to.fullPath)
 })
 
 export default router
