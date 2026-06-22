@@ -234,4 +234,4 @@ Suite valida 6 páginas × 2 viewports sin errores, captura screenshots de refer
 
 ## Licencia
 
-© 2025 Yeison Alfonso. Todos los derechos reservados.
+© 2026 Yeison Alfonso. Todos los derechos reservados.
