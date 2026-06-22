@@ -162,6 +162,11 @@ Funnel Analysis
 Mobile-First
 Responsive Design
 Design Patterns
+WCAG AA
+Contrast
+Keyboard Navigation
+Semantic HTML
+Screen Reader Optimization
 Prompt Engineering
 Vue.js
 Tailwind CSS

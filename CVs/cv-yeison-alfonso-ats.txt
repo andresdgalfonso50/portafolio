@@ -74,6 +74,8 @@ CRO & Analytics: Conversion Rate Optimization (CRO), A/B Testing, Google Analyti
 
 Mobile Design: Mobile-First, iOS/Android UX, Responsive Design, Design Patterns
 
+Accessibility: WCAG AA, Contrast, Keyboard Navigation, Semantic HTML, Screen Reader Optimization
+
 AI-Assisted Design: Prompt Engineering, Vue.js, Tailwind CSS, HTML/CSS, Figma to Code, Prototyping in Code
 
 Tools (secundario): Figma, Adobe XD, Illustrator, Photoshop, InDesign, Notion, GitHub, Vercel, Netlify

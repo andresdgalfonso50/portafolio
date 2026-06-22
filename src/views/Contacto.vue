@@ -53,16 +53,6 @@
               </div>
             </div>
           </div>
-
-          <div class="contact-availability">
-            <div class="availability-badge">
-              <span class="availability-dot"></span>
-              <span>Disponible para nuevos proyectos</span>
-            </div>
-            <div class="mt-4">
-              <CVButton variant="primary" label="Descargar CV" block />
-            </div>
-          </div>
         </div>
       </div>
     </AuroraBg>
@@ -73,7 +63,6 @@
 import { Mail, Phone, Linkedin, MapPin } from 'lucide-vue-next'
 import { useScrollAnimations } from '@/composables/useScrollAnimations'
 import AuroraBg from '@/components/primitives/AuroraBg.vue'
-import CVButton from '@/components/CVButton.vue'
 
 useScrollAnimations()
 </script>

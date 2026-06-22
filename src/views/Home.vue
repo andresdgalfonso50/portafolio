@@ -15,7 +15,7 @@
               Estrategias UX y sistemas de diseño que eliminan fricción, aumentan conversión y escalan el negocio. Diseño basado en datos, validación rápida y prototipos funcionales en código.
             </p>
             <div class="flex flex-wrap gap-4 items-center mb-8">
-              <ButtonPrimary href="#proyectos" variant="primary">
+              <ButtonPrimary variant="primary" @click="scrollToProyectos">
                 Ver 3 casos de impacto
                 <template #suffix>
                   <ArrowRight :size="18" />
@@ -98,7 +98,7 @@
     <!-- PROJECTS SECTION -->
     <section id="proyectos" class="w-full bg-surface py-24">
       <div class="container">
-        <div class="mb-16 max-w-3xl">
+        <div class="mb-16 max-w-3xl mx-auto text-center">
           <h2 class="font-display text-4xl md:text-5xl font-extrabold tracking-tight text-midnight">3 casos · 1 método</h2>
           <p class="text-lg text-body mt-4">App de viaje, e-commerce, telemedicina. Métricas auditables en cada uno.</p>
         </div>
@@ -239,10 +239,10 @@
     <!-- METODOLOGÍA: 3 fases macro + 8 pasos -->
     <section id="proceso" class="section section-alt">
       <div class="container">
-        <div class="section-header fade-in">
+        <div class="section-header fade-in text-center">
           <span class="label">Metodología</span>
-          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-3">Del problema a la métrica.</h2>
-          <p class="text-lg text-body max-w-2xl">Un proceso iterativo para generar impacto medible. No es una receta rígida — es cómo convierto complejidad en decisiones que se sostienen.</p>
+          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-3 mx-auto">Del problema a la métrica.</h2>
+          <p class="text-lg text-body max-w-2xl mx-auto">Un proceso iterativo para generar impacto medible. No es una receta rígida — es cómo convierto complejidad en decisiones que se sostienen.</p>
         </div>
 
         <!-- Flujo horizontal de 4 fases con conectores -->
@@ -365,7 +365,7 @@
               </template>
               Conversemos
             </ButtonPrimary>
-            <ButtonPrimary href="#proyectos" variant="secondary" size="lg">
+            <ButtonPrimary variant="secondary" size="lg" @click="scrollToProyectos">
               Ver 3 casos
               <template #suffix>
                 <ArrowRight :size="18" />
@@ -385,4 +385,11 @@ import AuroraBg from '@/components/primitives/AuroraBg.vue'
 import ButtonPrimary from '@/components/primitives/ButtonPrimary.vue'
 
 useScrollAnimations()
+
+const scrollToProyectos = () => {
+  const target = document.getElementById('proyectos')
+  if (target) {
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
+}
 </script>
