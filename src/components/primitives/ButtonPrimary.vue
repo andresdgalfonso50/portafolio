@@ -97,12 +97,13 @@ const tag = computed(() => {
 }
 
 .btn-primary--secondary {
-  background: #fff;
-  color: var(--color-midnight, #0A1022);
-  border-color: var(--color-borderline, #E8EDF5);
+  background: #0071e3;
+  color: #ffffff;
+  border-color: #0071e3;
 }
 .btn-primary--secondary:hover:not(:disabled) {
-  border-color: var(--color-midnight, #0A1022);
+  background: #0058b8;
+  border-color: #0058b8;
   transform: translateY(-1px);
 }
 
