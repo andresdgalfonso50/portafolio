@@ -8,7 +8,7 @@
         <li><router-link to="/" :class="{ active: $route.path === '/' }">Home</router-link></li>
         <li><router-link to="/app" :class="{ active: $route.path.startsWith('/app') && $route.path !== '/app-web' }">App</router-link></li>
         <li><router-link to="/ecommerce" :class="{ active: $route.path === '/ecommerce' }">E-commerce</router-link></li>
-        <li><router-link to="/app-web" :class="{ active: $route.path === '/app-web' }">App Web</router-link></li>
+        <li><router-link to="/app-web" :class="{ active: $route.path === '/app-web' }">Telemedicina</router-link></li>
         <li><router-link to="/sobre-mi" :class="{ active: $route.path === '/sobre-mi' }">Sobre mí</router-link></li>
         <li><router-link to="/contacto" :class="{ active: $route.path === '/contacto' }">Contacto</router-link></li>
       </ul>

@@ -6,22 +6,34 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 lg:gap-12">
           <!-- Columna izquierda: texto + CTAs -->
           <div class="flex flex-col items-start fade-in">
-            <span class="label block mb-5">Product Design Director</span>
-            <h1 class="font-display text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.08] text-midnight mb-6">
-              Diseño de producto que
-              <span class="font-light italic text-primary">escala</span>
-              el negocio.
+            <span class="label block mb-5">Senior Product Designer · Disponible abril 2026</span>
+            <h1 class="font-display text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.05] text-midnight mb-6">
+              Diseño productos que convierten usuarios en
+              <span class="font-light italic text-primary">ingresos</span>.
             </h1>
             <p class="text-lg text-body mb-8 max-w-lg leading-relaxed">
-              Estrategia UX y sistemas de diseño de alto rendimiento enfocados en maximizar la conversión, retención y la eficiencia de producto. Prototipado funcional en código (Vue + Tailwind + IA) para validar más rápido. El ciclo de feedback pasa de días a horas.
+              Estrategias UX y sistemas de diseño que eliminan fricción, aumentan conversión y escalan el negocio. Diseño basado en datos, validación rápida y prototipos funcionales en código.
             </p>
-            <div class="flex flex-wrap gap-4 items-center">
+            <div class="flex flex-wrap gap-4 items-center mb-8">
               <ButtonPrimary href="#proyectos" variant="primary">
-                Ver 3 casos
+                Ver 3 casos de impacto
                 <template #suffix>
                   <ArrowRight :size="18" />
                 </template>
               </ButtonPrimary>
+              <ButtonPrimary href="/contacto" variant="secondary">
+                Hablemos de tu producto
+              </ButtonPrimary>
+            </div>
+            <!-- Especialidades como chips de alto valor -->
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-slate-400 mr-1">Especialidades</span>
+              <span class="px-3 py-1.5 bg-chip text-body text-xs font-bold rounded-full">CRO & Analytics</span>
+              <span class="px-3 py-1.5 bg-chip text-body text-xs font-bold rounded-full">E-commerce</span>
+              <span class="px-3 py-1.5 bg-primary text-white text-xs font-bold rounded-full">Mobile Apps</span>
+              <span class="px-3 py-1.5 bg-chip text-body text-xs font-bold rounded-full">Design Systems</span>
+              <span class="px-3 py-1.5 bg-chip text-body text-xs font-bold rounded-full">IA aplicada a UX</span>
+              <span class="px-3 py-1.5 bg-chip text-body text-xs font-bold rounded-full">Prototipos en Código</span>
             </div>
           </div>
 
@@ -49,33 +61,36 @@
       </div>
     </AuroraBg>
 
-    <!-- SKILL TAGS -->
-    <div class="flex flex-wrap justify-center gap-3 w-full max-w-4xl mx-auto mt-12 mb-8 px-6">
-      <span class="px-4 py-2 bg-chip text-body font-semibold text-sm rounded-full">UX/UI Design</span>
-      <span class="px-4 py-2 bg-chip text-body font-semibold text-sm rounded-full">CRO & Analytics</span>
-      <span class="px-4 py-2 bg-midnight text-white font-semibold text-sm rounded-full">Mobile-First</span>
-      <span class="px-4 py-2 bg-chip text-body font-semibold text-sm rounded-full">Figma</span>
-      <span class="px-4 py-2 bg-chip text-body font-semibold text-sm rounded-full">Prototipado</span>
-    </div>
-
-    <!-- METRICS -->
+    <!-- MÉTRICAS DESTACADAS — Con contexto antes → después -->
     <section class="w-full max-w-6xl mx-auto px-6 py-12">
       <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 border border-borderline rounded-2xl px-6 py-10 md:px-10 bg-white">
-        <div class="text-center md:text-left">
-          <span class="block font-display text-4xl md:text-5xl font-black text-highlight tracking-tighter leading-none tabular-nums">+4x</span>
-          <p class="text-sm text-slate-700 font-semibold mt-3 leading-snug">Incremento en conversión</p>
+        <div class="text-center">
+          <div class="w-10 h-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center mx-auto mb-4">
+            <TrendingUp :size="20" />
+          </div>
+          <span class="block font-display text-3xl md:text-4xl font-black text-highlight tracking-tighter leading-none tabular-nums">0.1% → 12%</span>
+          <p class="text-sm text-slate-700 font-semibold mt-3 leading-snug">Retención día 7 en 5 meses</p>
         </div>
-        <div class="text-center md:text-left">
-          <span class="block font-display text-4xl md:text-5xl font-black text-highlight tracking-tighter leading-none tabular-nums">4+</span>
-          <p class="text-sm text-slate-700 font-semibold mt-3 leading-snug">Años de experiencia líder</p>
+        <div class="text-center">
+          <div class="w-10 h-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center mx-auto mb-4">
+            <ShoppingCart :size="20" />
+          </div>
+          <span class="block font-display text-3xl md:text-4xl font-black text-highlight tracking-tighter leading-none tabular-nums">+4x</span>
+          <p class="text-sm text-slate-700 font-semibold mt-3 leading-snug">Conversión en checkout web</p>
         </div>
-        <div class="text-center md:text-left">
-          <span class="block font-display text-4xl md:text-5xl font-black text-highlight tracking-tighter leading-none tabular-nums">10+</span>
-          <p class="text-sm text-slate-700 font-semibold mt-3 leading-snug">Proyectos desplegados</p>
+        <div class="text-center">
+          <div class="w-10 h-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center mx-auto mb-4">
+            <Smartphone :size="20" />
+          </div>
+          <span class="block font-display text-3xl md:text-4xl font-black text-highlight tracking-tighter leading-none tabular-nums">2</span>
+          <p class="text-sm text-slate-700 font-semibold mt-3 leading-snug">Apps móviles en producción</p>
         </div>
-        <div class="text-center md:text-left">
-          <span class="block font-display text-4xl md:text-5xl font-black text-highlight tracking-tighter leading-none tabular-nums">2</span>
-          <p class="text-sm text-slate-700 font-semibold mt-3 leading-snug">Apps nativas en producción</p>
+        <div class="text-center">
+          <div class="w-10 h-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center mx-auto mb-4">
+            <Users :size="20" />
+          </div>
+          <span class="block font-display text-3xl md:text-4xl font-black text-highlight tracking-tighter leading-none tabular-nums">+6K</span>
+          <p class="text-sm text-slate-700 font-semibold mt-3 leading-snug">Usuarios impactados en 5 países</p>
         </div>
       </div>
     </section>
@@ -94,7 +109,7 @@
             <div class="lg:col-span-5 order-2 lg:order-1">
               <span class="text-xs font-bold uppercase tracking-widest text-primary">Continental Assist · App</span>
               <h3 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mt-3 mb-4 leading-tight">
-                +11,900% conversión en canal digital
+                Retención día 7: de 0.1% a 12% en 5 meses
               </h3>
               <p class="text-base text-body leading-relaxed mb-6">
                 Rediseño del flujo transaccional y selector de planes reduciendo la tasa de abandono al 12% global.
@@ -227,166 +242,121 @@
         <div class="section-header fade-in">
           <span class="label">Metodología</span>
           <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-3">Del problema a la métrica.</h2>
-          <p class="text-lg text-body max-w-2xl">3 fases. No es una receta rígida — es cómo convierto complejidad en decisiones que se sostienen.</p>
+          <p class="text-lg text-body max-w-2xl">Un proceso iterativo para generar impacto medible. No es una receta rígida — es cómo convierto complejidad en decisiones que se sostienen.</p>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
-          <!-- Fase 1: Descubrimiento y Estrategia -->
-          <article class="bg-white border border-borderline rounded-2xl p-8 flex flex-col">
-            <header class="mb-8">
-              <span class="text-xs font-bold uppercase tracking-widest text-primary">Fase 01</span>
-              <h3 class="font-display text-xl font-bold text-midnight mt-2 leading-tight">Descubrimiento y Estrategia</h3>
-              <p class="text-xs text-slate-600 mt-1 uppercase tracking-widest">Pasos 01–03</p>
-            </header>
-            <ol class="space-y-5 flex-1">
-              <li class="flex gap-4">
-                <span class="text-sm font-black text-primary tabular-nums shrink-0 mt-0.5">01</span>
-                <div>
-                  <h4 class="text-sm font-bold text-midnight mb-1">Discovery</h4>
-                  <p class="text-xs text-slate-700 leading-relaxed">Entiendo el negocio y las restricciones antes de diseñar.</p>
-                </div>
-              </li>
-              <li class="flex gap-4">
-                <span class="text-sm font-black text-primary tabular-nums shrink-0 mt-0.5">02</span>
-                <div>
-                  <h4 class="text-sm font-bold text-midnight mb-1">Research</h4>
-                  <p class="text-xs text-slate-700 leading-relaxed">Usuarios y datos reemplazan suposiciones por evidencia.</p>
-                </div>
-              </li>
-              <li class="flex gap-4">
-                <span class="text-sm font-black text-primary tabular-nums shrink-0 mt-0.5">03</span>
-                <div>
-                  <h4 class="text-sm font-bold text-midnight mb-1">Define</h4>
-                  <p class="text-xs text-slate-700 leading-relaxed">Sintetizo el problema en algo accionable y priorizado.</p>
-                </div>
-              </li>
-            </ol>
+        <!-- Flujo horizontal de 4 fases con conectores -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-4 relative">
+          <!-- Conector horizontal (solo desktop) -->
+          <div class="hidden lg:block absolute top-8 left-[12.5%] right-[12.5%] h-px bg-gradient-to-r from-transparent via-borderline to-transparent" aria-hidden="true"></div>
+
+          <!-- Fase 1 -->
+          <article class="bg-white border border-borderline rounded-2xl p-7 flex flex-col items-start text-left relative">
+            <div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-5">
+              <Search :size="22" />
+            </div>
+            <span class="text-[10px] font-bold uppercase tracking-widest text-primary mb-1">01</span>
+            <h3 class="font-display text-lg font-bold text-midnight mb-2 leading-tight">Descubro</h3>
+            <p class="text-xs text-slate-700 leading-relaxed">Identifico el cuello de botella que limita el crecimiento.</p>
           </article>
 
-          <!-- Fase 2: Definición Táctica -->
-          <article class="bg-white border border-borderline rounded-2xl p-8 flex flex-col">
-            <header class="mb-8">
-              <span class="text-xs font-bold uppercase tracking-widest text-primary">Fase 02</span>
-              <h3 class="font-display text-xl font-bold text-midnight mt-2 leading-tight">Definición Táctica</h3>
-              <p class="text-xs text-slate-600 mt-1 uppercase tracking-widest">Pasos 04–05</p>
-            </header>
-            <ol class="space-y-5 flex-1">
-              <li class="flex gap-4">
-                <span class="text-sm font-black text-primary tabular-nums shrink-0 mt-0.5">04</span>
-                <div>
-                  <h4 class="text-sm font-bold text-midnight mb-1">Ideate</h4>
-                  <p class="text-xs text-slate-700 leading-relaxed">Varios caminos antes de comprometerme con uno.</p>
-                </div>
-              </li>
-              <li class="flex gap-4">
-                <span class="text-sm font-black text-primary tabular-nums shrink-0 mt-0.5">05</span>
-                <div>
-                  <h4 class="text-sm font-bold text-midnight mb-1">Prototype</h4>
-                  <p class="text-xs text-slate-700 leading-relaxed">Bajo las ideas a prototipos navegables para validar.</p>
-                </div>
-              </li>
-            </ol>
+          <!-- Fase 2 -->
+          <article class="bg-white border border-borderline rounded-2xl p-7 flex flex-col items-start text-left relative">
+            <div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-5">
+              <ShoppingCart :size="22" />
+            </div>
+            <span class="text-[10px] font-bold uppercase tracking-widest text-primary mb-1">02</span>
+            <h3 class="font-display text-lg font-bold text-midnight mb-2 leading-tight">Decido</h3>
+            <p class="text-xs text-slate-700 leading-relaxed">Priorizo hipótesis de mayor impacto para construir.</p>
           </article>
 
-          <!-- Fase 3: Iteración y Entrega -->
-          <article class="bg-white border border-borderline rounded-2xl p-8 flex flex-col">
-            <header class="mb-8">
-              <span class="text-xs font-bold uppercase tracking-widest text-primary">Fase 03</span>
-              <h3 class="font-display text-xl font-bold text-midnight mt-2 leading-tight">Iteración y Entrega</h3>
-              <p class="text-xs text-slate-600 mt-1 uppercase tracking-widest">Pasos 06–08</p>
-            </header>
-            <ol class="space-y-5 flex-1">
-              <li class="flex gap-4">
-                <span class="text-sm font-black text-primary tabular-nums shrink-0 mt-0.5">06</span>
-                <div>
-                  <h4 class="text-sm font-bold text-midnight mb-1">Test</h4>
-                  <p class="text-xs text-slate-700 leading-relaxed">Frente a usuarios reales. La evidencia decide.</p>
-                </div>
-              </li>
-              <li class="flex gap-4">
-                <span class="text-sm font-black text-primary tabular-nums shrink-0 mt-0.5">07</span>
-                <div>
-                  <h4 class="text-sm font-bold text-midnight mb-1">Ship</h4>
-                  <p class="text-xs text-slate-700 leading-relaxed">UI de alta fidelidad lista para desarrollo.</p>
-                </div>
-              </li>
-              <li class="flex gap-4">
-                <span class="text-sm font-black text-primary tabular-nums shrink-0 mt-0.5">08</span>
-                <div>
-                  <h4 class="text-sm font-bold text-midnight mb-1">Measure</h4>
-                  <p class="text-xs text-slate-700 leading-relaxed">Impacto real en producción. Datos para la próxima iteración.</p>
-                </div>
-              </li>
-            </ol>
+          <!-- Fase 3 -->
+          <article class="bg-white border border-borderline rounded-2xl p-7 flex flex-col items-start text-left relative">
+            <div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-5">
+              <ShieldCheck :size="22" />
+            </div>
+            <span class="text-[10px] font-bold uppercase tracking-widest text-primary mb-1">03</span>
+            <h3 class="font-display text-lg font-bold text-midnight mb-2 leading-tight">Valido</h3>
+            <p class="text-xs text-slate-700 leading-relaxed">Pruebo soluciones rápidas antes de invertir en construir.</p>
+          </article>
+
+          <!-- Fase 4 -->
+          <article class="bg-white border border-borderline rounded-2xl p-7 flex flex-col items-start text-left relative">
+            <div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-5">
+              <TrendingUp :size="22" />
+            </div>
+            <span class="text-[10px] font-bold uppercase tracking-widest text-primary mb-1">04</span>
+            <h3 class="font-display text-lg font-bold text-midnight mb-2 leading-tight">Escalo</h3>
+            <p class="text-xs text-slate-700 leading-relaxed">Mido resultados, aprendo y optimizo de forma continua.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- TESTIMONIALS SECTION -->
-    <section class="section">
+    <!-- TESTIMONIALS — Diseño Apple minimalista con detalles de cuidado -->
+    <section class="py-16 md:py-20 bg-gradient-to-b from-white via-neutral-50/30 to-white">
       <div class="container">
-        <div class="section-header fade-in">
-          <span class="label">Social Proof</span>
-          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-3">Lo que dice el equipo.</h2>
-          <p class="text-lg text-body max-w-2xl">Resultados validables por quienes lideran producto, ingeniería y operaciones.</p>
+        <div class="max-w-2xl fade-in">
+          <h2 class="text-2xl md:text-3xl font-bold text-neutral-900 tracking-tight">Qué dicen de trabajar conmigo</h2>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
-          <blockquote class="bg-white border border-borderline rounded-2xl p-8 flex flex-col h-full">
-            <p class="text-base text-midnight leading-relaxed italic flex-1">
-              "Yeison transformó nuestro checkout. De 12 pasos a 4. Revenue aumentó directo, sin necesidad de A/B tests adicionales."
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+          <!-- Testimonio 1: Juan Aldana -->
+          <article class="relative bg-white border border-neutral-100 rounded-2xl p-7 shadow-[0_1px_3px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] transition-shadow duration-300">
+            <svg class="absolute top-6 right-6 w-7 h-7 text-neutral-100" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/>
+            </svg>
+            <p class="text-base text-neutral-700 leading-relaxed relative z-10">
+              Yeison no solo diseña interfaces excepcionales, sino que entiende la arquitectura del frontend. Su capacidad para estructurar componentes limpios en Vue y anticipar la viabilidad técnica acelera drásticamente el desarrollo en producción.
             </p>
-            <footer class="flex items-center gap-3 mt-6 pt-6 border-t border-borderline">
-              <div class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center font-display font-black text-sm shrink-0" aria-hidden="true">CM</div>
-              <div>
-                <cite class="block text-sm font-bold text-midnight not-italic">Carlos Mendoza</cite>
-                <span class="block text-xs text-slate-700">CEO · Continental Assist</span>
-              </div>
+            <footer class="mt-6 pt-5 border-t border-neutral-100">
+              <cite class="block text-sm font-semibold text-neutral-900 not-italic">Juan Aldana</cite>
+              <span class="block text-xs text-neutral-500 mt-0.5">Senior Dev</span>
             </footer>
-          </blockquote>
+          </article>
 
-          <blockquote class="bg-white border border-borderline rounded-2xl p-8 flex flex-col h-full">
-            <p class="text-base text-midnight leading-relaxed italic flex-1">
-              "Su enfoque en el Coordinador como superusuario cambió la arquitectura completa. Redujo tiempos de gestión a la mitad en producción."
+          <!-- Testimonio 2: Javier Prieto -->
+          <article class="relative bg-white border border-neutral-100 rounded-2xl p-7 shadow-[0_1px_3px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] transition-shadow duration-300">
+            <svg class="absolute top-6 right-6 w-7 h-7 text-neutral-100" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/>
+            </svg>
+            <p class="text-base text-neutral-700 leading-relaxed relative z-10">
+              Trabajar con Yeison es asegurar un flujo de trabajo sin fricciones. Su rigurosidad de sus sistemas de diseño hacen que la transición de Figma a código sea exacta y eficiente.
             </p>
-            <footer class="flex items-center gap-3 mt-6 pt-6 border-t border-borderline">
-              <div class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center font-display font-black text-sm shrink-0" aria-hidden="true">MG</div>
-              <div>
-                <cite class="block text-sm font-bold text-midnight not-italic">Dra. María González</cite>
-                <span class="block text-xs text-slate-700">Cardiología · Xentral Health</span>
-              </div>
+            <footer class="mt-6 pt-5 border-t border-neutral-100">
+              <cite class="block text-sm font-semibold text-neutral-900 not-italic">Javier Prieto</cite>
+              <span class="block text-xs text-neutral-500 mt-0.5">Senior Dev</span>
             </footer>
-          </blockquote>
+          </article>
 
-          <blockquote class="bg-white border border-borderline rounded-2xl p-8 flex flex-col h-full">
-            <p class="text-base text-midnight leading-relaxed italic flex-1">
-              "Lo que más valoro: prototipos en HTML, no en Figma. El ciclo de feedback pasó de días a horas. Cambió cómo iteramos."
+          <!-- Testimonio 3: Nasly Walteros -->
+          <article class="relative bg-white border border-neutral-100 rounded-2xl p-7 shadow-[0_1px_3px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] transition-shadow duration-300">
+            <svg class="absolute top-6 right-6 w-7 h-7 text-neutral-100" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/>
+            </svg>
+            <p class="text-base text-neutral-700 leading-relaxed relative z-10">
+              La obsesión de Yeison por el detalle y la cobertura de casos de borde en UX reduce significativamente el volumen de bugs en las etapas de prueba. Su enfoque nativo en accesibilidad eleva el estándar de cualquier producto.
             </p>
-            <footer class="flex items-center gap-3 mt-6 pt-6 border-t border-borderline">
-              <div class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center font-display font-black text-sm shrink-0" aria-hidden="true">DR</div>
-              <div>
-                <cite class="block text-sm font-bold text-midnight not-italic">Diego Ramírez</cite>
-                <span class="block text-xs text-slate-700">Engineering Lead · Continental Assist</span>
-              </div>
+            <footer class="mt-6 pt-5 border-t border-neutral-100">
+              <cite class="block text-sm font-semibold text-neutral-900 not-italic">Nasly Walteros</cite>
+              <span class="block text-xs text-neutral-500 mt-0.5">QA (Quality Assurance)</span>
             </footer>
-          </blockquote>
+          </article>
         </div>
       </div>
     </section>
 
     <!-- CTA SECTION -->
-    <AuroraBg variant="dark" class="py-32">
+    <AuroraBg variant="dark" class="py-20 md:py-24">
       <div class="max-w-4xl mx-auto text-center px-6 relative z-10">
         <div class="fade-in">
           <p class="text-xs font-bold uppercase tracking-widest text-primary mb-6">Disponible desde abril 2026</p>
-          <h2 class="font-display text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-white mb-6 leading-[1.05]">
-            ¿
-            <span class="bg-gradient-to-r from-[#0071e3] to-white bg-clip-text text-transparent">Construimos</span>
-            algo juntos?
+          <h2 class="font-display text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-6 leading-[1.1]">
+            ¿Tu producto pierde conversión
+            <span class="bg-gradient-to-r from-[#0071e3] to-white bg-clip-text text-transparent">en cada paso</span>?
           </h2>
           <p class="text-lg md:text-xl text-slate-300 mb-10 max-w-xl mx-auto leading-relaxed">
-            30 min de discovery. Cotización en 24h. Empezamos en 1 semana.
+            30 min de discovery. Diagnóstico del funnel en 24h. Empezamos en 1 semana.
           </p>
           <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
             <ButtonPrimary to="/contacto" variant="accent" size="lg">
@@ -395,8 +365,11 @@
               </template>
               Conversemos
             </ButtonPrimary>
-            <ButtonPrimary to="/contacto" variant="secondary" size="lg">
-              Agendar discovery
+            <ButtonPrimary href="#proyectos" variant="secondary" size="lg">
+              Ver 3 casos
+              <template #suffix>
+                <ArrowRight :size="18" />
+              </template>
             </ButtonPrimary>
           </div>
         </div>
@@ -406,7 +379,7 @@
 </template>
 
 <script setup>
-import { ArrowRight, Mail } from 'lucide-vue-next'
+import { ArrowRight, Mail, TrendingUp, ShoppingCart, Smartphone, Users, Search, ShieldCheck } from 'lucide-vue-next'
 import { useScrollAnimations } from '@/composables/useScrollAnimations'
 import AuroraBg from '@/components/primitives/AuroraBg.vue'
 import ButtonPrimary from '@/components/primitives/ButtonPrimary.vue'

@@ -4,13 +4,13 @@
     <CaseStudyHero
       case-slug="app"
       :icon="Layers"
-      title="La app que multiplicó el checkout 4x"
+      title="Retención día 7: de 0.1% a 12% en 5 meses"
       highlight=""
       badge="Continental Assist"
-      subtitle="Diseño y desarrollo de la aplicación móvil (iOS & Android) para asistencia al viajero. De 97% de abandono a 2 apps en producción. Retención día 7: 0.1% → 12%."
+      subtitle="Diseño y desarrollo de la aplicación móvil (iOS & Android) para asistencia al viajero. De 97% de abandono a 2 apps nativas en producción."
       :hero-image="heroAppImg"
       hero-image-alt="App de asistencia al viajero"
-      :hero-badge="{ value: '+11,900%', label: 'retención' }"
+      :hero-badge="{ value: '0.1% → 12%', label: 'retención día 7' }"
       :meta="[
         { value: 'Product Designer', label: 'Mi Rol' },
         { value: '5 Meses', label: 'Duración' },
@@ -235,7 +235,7 @@
         <!-- Flujos críticos: 4 cards con badges numerados -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
           <div class="group relative bg-white p-5 md:p-6 pl-16 md:pl-20 rounded-2xl border border-borderline hover:border-primary/40 transition-colors">
-            <span class="absolute left-5 top-5 w-8 h-8 rounded-full bg-primary text-white text-xs font-bold flex items-center justify-center">01</span>
+            <span class="absolute left-5 top-5 w-8 h-8 rounded-full bg-primary text-white text-sm font-extrabold flex items-center justify-center">01</span>
             <div class="flex items-center gap-2 mb-1.5">
               <Rocket :size="15" class="text-primary" />
               <h4 class="text-sm font-bold text-midnight">Onboarding → Activación</h4>
@@ -243,7 +243,7 @@
             <p class="text-xs text-body leading-relaxed">Login → Ver beneficios activos → Activar automáticamente. Sin fricción desde el primer uso.</p>
           </div>
           <div class="group relative bg-white p-5 md:p-6 pl-16 md:pl-20 rounded-2xl border border-borderline hover:border-primary/40 transition-colors">
-            <span class="absolute left-5 top-5 w-8 h-8 rounded-full bg-primary text-white text-xs font-bold flex items-center justify-center">02</span>
+            <span class="absolute left-5 top-5 w-8 h-8 rounded-full bg-primary text-white text-sm font-extrabold flex items-center justify-center">02</span>
             <div class="flex items-center gap-2 mb-1.5">
               <FileText :size="15" class="text-primary" />
               <h4 class="text-sm font-bold text-midnight">Consulta de Vouchers</h4>
@@ -251,7 +251,7 @@
             <p class="text-xs text-body leading-relaxed">Wallet → Plan → Vouchers y coberturas vigentes. Todo en 3 taps.</p>
           </div>
           <div class="group relative bg-white p-5 md:p-6 pl-16 md:pl-20 rounded-2xl border border-borderline hover:border-primary/40 transition-colors">
-            <span class="absolute left-5 top-5 w-8 h-8 rounded-full bg-primary text-white text-xs font-bold flex items-center justify-center">03</span>
+            <span class="absolute left-5 top-5 w-8 h-8 rounded-full bg-primary text-white text-sm font-extrabold flex items-center justify-center">03</span>
             <div class="flex items-center gap-2 mb-1.5">
               <Receipt :size="15" class="text-primary" />
               <h4 class="text-sm font-bold text-midnight">Reembolso</h4>
@@ -259,7 +259,7 @@
             <p class="text-xs text-body leading-relaxed">Perfil → Reembolsos → Solicitud → Documentación → Estado. Proceso transparente.</p>
           </div>
           <div class="group relative bg-white p-5 md:p-6 pl-16 md:pl-20 rounded-2xl border border-borderline hover:border-primary/40 transition-colors">
-            <span class="absolute left-5 top-5 w-8 h-8 rounded-full bg-primary text-white text-xs font-bold flex items-center justify-center">04</span>
+            <span class="absolute left-5 top-5 w-8 h-8 rounded-full bg-primary text-white text-sm font-extrabold flex items-center justify-center">04</span>
             <div class="flex items-center gap-2 mb-1.5">
               <Siren :size="15" class="text-primary" />
               <h4 class="text-sm font-bold text-midnight">Emergencias</h4>
@@ -374,7 +374,7 @@
             <div class="p-6">
               <span class="text-[10px] font-bold uppercase tracking-widest text-primary">Sistema</span>
               <h3 class="font-display text-xl font-bold text-midnight mt-2 mb-2 leading-tight">Diseño modular</h3>
-              <p class="text-xs text-body leading-relaxed">40 componentes reutilizables, 30% más rápido.</p>
+              <p class="text-xs text-body leading-relaxed">Sistema de diseño modular con tokens y componentes reutilizables.</p>
             </div>
             <div class="flex-1 flex items-center justify-center bg-midnight p-6">
               <div class="text-center">
@@ -399,48 +399,48 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 fade-in stagger-2">
           <!-- Paso 01 -->
-          <figure class="flex flex-col">
-            <figcaption class="mb-4">
-              <span class="text-[10px] font-bold uppercase tracking-widest text-primary mb-1 block">Paso 01</span>
-              <h3 class="text-base font-bold text-midnight leading-tight">Cotización fluida</h3>
-            </figcaption>
-            <div class="rounded-2xl bg-white border border-borderline shadow-sm overflow-hidden">
-              <img src="/assets/images/app/Gestión-de-Viajes-Premium.png" alt="Pantalla de cotización inicial" class="w-full h-auto object-contain" loading="lazy" decoding="async" width="1025" height="954" />
+          <article class="bg-white border border-borderline rounded-2xl p-6 flex flex-col">
+            <div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-4">
+              <Smartphone :size="22" />
             </div>
-          </figure>
+            <span class="text-[10px] font-bold uppercase tracking-widest text-primary mb-2">Paso 01 · 0:00</span>
+            <h3 class="text-base font-bold text-midnight mb-2 leading-tight">Email mágico</h3>
+            <p class="text-xs text-body leading-relaxed flex-1">El viajero recibe un link directo al servicio. Cero descargas, cero registros, cero contraseñas.</p>
+            <span class="text-[10px] text-slate-500 mt-3">Fricción eliminada: instalación de app</span>
+          </article>
 
           <!-- Paso 02 -->
-          <figure class="flex flex-col">
-            <figcaption class="mb-4">
-              <span class="text-[10px] font-bold uppercase tracking-widest text-primary mb-1 block">Paso 02</span>
-              <h3 class="text-base font-bold text-midnight leading-tight">Selección de Cobertura</h3>
-            </figcaption>
-            <div class="rounded-2xl bg-white border border-borderline shadow-sm overflow-hidden">
-              <img src="/assets/images/app/Flujo-de-Cotización-Optimizado.png" alt="Selección de plan y cobertura" class="w-full h-auto object-contain" loading="lazy" decoding="async" width="1025" height="954" />
+          <article class="bg-white border border-borderline rounded-2xl p-6 flex flex-col">
+            <div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-4">
+              <ShieldCheck :size="22" />
             </div>
-          </figure>
+            <span class="text-[10px] font-bold uppercase tracking-widest text-primary mb-2">Paso 02 · 0:30</span>
+            <h3 class="text-base font-bold text-midnight mb-2 leading-tight">Cobertura verificada</h3>
+            <p class="text-xs text-body leading-relaxed flex-1">El sistema valida automáticamente el plan del viajero. Indicador visual claro de qué está cubierto.</p>
+            <span class="text-[10px] text-slate-500 mt-3">Fricción eliminada: llamadas a soporte</span>
+          </article>
 
           <!-- Paso 03 -->
-          <figure class="flex flex-col">
-            <figcaption class="mb-4">
-              <span class="text-[10px] font-bold uppercase tracking-widest text-primary mb-1 block">Paso 03</span>
-              <h3 class="text-base font-bold text-midnight leading-tight">Datos en un tap</h3>
-            </figcaption>
-            <div class="rounded-2xl bg-white border border-borderline shadow-sm overflow-hidden">
-              <img src="/assets/images/app/Ecosistema-de-Beneficios-Premium.png" alt="Autocompletado de datos del viajero" class="w-full h-auto object-contain" loading="lazy" decoding="async" width="1025" height="954" />
+          <article class="bg-white border border-borderline rounded-2xl p-6 flex flex-col">
+            <div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-4">
+              <Zap :size="22" />
             </div>
-          </figure>
+            <span class="text-[10px] font-bold uppercase tracking-widest text-primary mb-2">Paso 03 · 1:30</span>
+            <h3 class="text-base font-bold text-midnight mb-2 leading-tight">Activación 1-tap</h3>
+            <p class="text-xs text-body leading-relaxed flex-1">Un solo botón para activar todos los beneficios. Sin formularios, sin confirmar email, sin pasos extras.</p>
+            <span class="text-[10px] text-slate-500 mt-3">Fricción eliminada: onboarding</span>
+          </article>
 
           <!-- Paso 04 -->
-          <figure class="flex flex-col">
-            <figcaption class="mb-4">
-              <span class="text-[10px] font-bold uppercase tracking-widest text-primary mb-1 block">Paso 04</span>
-              <h3 class="text-base font-bold text-midnight leading-tight">Checkout optimizado en 3 min</h3>
-            </figcaption>
-            <div class="rounded-2xl bg-white border border-borderline shadow-sm overflow-hidden">
-              <img src="/assets/images/app/Soporte-con-IA-Generativa.png" alt="Checkout optimizado" class="w-full h-auto object-contain" loading="lazy" decoding="async" width="1025" height="954" />
+          <article class="bg-white border border-borderline rounded-2xl p-6 flex flex-col">
+            <div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-4">
+              <Rocket :size="22" />
             </div>
-          </figure>
+            <span class="text-[10px] font-bold uppercase tracking-widest text-primary mb-2">Paso 04 · 3:00</span>
+            <h3 class="text-base font-bold text-midnight mb-2 leading-tight">Beneficios activos</h3>
+            <p class="text-xs text-body leading-relaxed flex-1">El viajero ve sus vouchers, coberturas y contacto de emergencia. Listo para usar desde el primer minuto.</p>
+            <span class="text-[10px] text-slate-500 mt-3">Fricción eliminada: tiempo de espera</span>
+          </article>
         </div>
       </div>
     </section>
@@ -455,7 +455,7 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto mb-10">
-          <!-- Card 1: +4x Checkout -->
+          <!-- Card 1: Retención día 7 -->
           <div class="metric-card group bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
             <div class="flex items-center gap-2 mb-4">
               <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 text-xs font-bold tracking-wide border border-emerald-200">
@@ -463,9 +463,9 @@
                 En producción
               </span>
             </div>
-            <span class="font-display text-6xl md:text-7xl font-black text-highlight tracking-tighter leading-none tabular-nums block mb-4">+4x</span>
-            <h3 class="text-base font-bold text-midnight mb-2">Incremento en Checkout</h3>
-            <p class="text-sm text-body leading-relaxed">Conversión 0.82% → 3.8%. Mismo canal, nueva arquitectura de información.</p>
+            <span class="font-display text-5xl md:text-7xl font-black text-highlight tracking-tighter leading-none tabular-nums block mb-4">0.1% → 12%</span>
+            <h3 class="text-base font-bold text-midnight mb-2">Retención día 7</h3>
+            <p class="text-sm text-body leading-relaxed">De 0.1% (97% de abandono) a 12%. Métrica auditable en producción.</p>
           </div>
 
           <!-- Card 2: 3 Minutos -->
@@ -477,8 +477,8 @@
               </span>
             </div>
             <span class="font-display text-6xl md:text-7xl font-black text-highlight tracking-tighter leading-none tabular-nums block mb-4">3<span class="text-2xl md:text-3xl font-bold text-body ml-1">min</span></span>
-            <h3 class="text-base font-bold text-midnight mb-2">Tiempo de Emisión</h3>
-            <p class="text-sm text-body leading-relaxed">Promedio desde la app: cotización → voucher activo. Antes: 12+ minutos con fricción.</p>
+            <h3 class="text-base font-bold text-midnight mb-2">Tiempo de activación</h3>
+            <p class="text-sm text-body leading-relaxed">Promedio desde el primer uso hasta la activación de beneficios. Antes: 12+ minutos con fricción.</p>
           </div>
 
           <!-- Card 3: iOS & Android -->
@@ -495,19 +495,22 @@
           </div>
         </div>
 
-        <!-- Validación: testimonials -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Validación: eliminado - testimonios genéricos reemplazados por métricas de testing -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
-            <blockquote>
-              <p class="text-sm text-slate-700 leading-relaxed italic mb-3">"Por fin puedo ver todos mis beneficios en un solo lugar. Antes tenía que entrar a 3 páginas diferentes."</p>
-              <cite class="text-xs font-semibold text-body">— Laura M., Viajera Frecuente</cite>
-            </blockquote>
+            <span class="block font-display text-4xl font-black text-highlight tracking-tighter tabular-nums mb-2">12</span>
+            <p class="text-sm font-bold text-midnight mb-1">Usuarios en crisis simuladas</p>
+            <p class="text-xs text-body leading-relaxed">Validación con viajeros reales en escenarios de emergencia.</p>
           </div>
           <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
-            <blockquote>
-              <p class="text-sm text-slate-700 leading-relaxed italic mb-3">"El botón de emergencia es lo que más valoro. Sé que si algo pasa, tengo ayuda inmediata."</p>
-              <cite class="text-xs font-semibold text-body">— Ricardo T., Ejecutivo Corporativo</cite>
-            </blockquote>
+            <span class="block font-display text-4xl font-black text-highlight tracking-tighter tabular-nums mb-2">4.5<span class="text-lg font-bold text-body">/6</span></span>
+            <p class="text-sm font-bold text-midnight mb-1">Pasos recordados sin ayuda</p>
+            <p class="text-xs text-body leading-relaxed">De 1.2 a 4.5 de 6 pasos memorizados.</p>
+          </div>
+          <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+            <span class="block font-display text-4xl font-black text-highlight tracking-tighter tabular-nums mb-2">+90%</span>
+            <p class="text-sm font-bold text-midnight mb-1">Claridad del proceso</p>
+            <p class="text-xs text-body leading-relaxed">Usuarios saben qué pasa después al abrir la app.</p>
           </div>
         </div>
       </div>
@@ -590,7 +593,7 @@
     </section>
 
     <!-- CTA -->
-    <AuroraBg variant="dark" class="py-20">
+    <AuroraBg variant="dark" class="py-20 md:py-24">
       <div class="max-w-4xl mx-auto text-center px-6 relative z-10">
         <h2 class="font-display text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-6 leading-[1.1]">
           ¿Tu próxima

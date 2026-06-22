@@ -30,19 +30,19 @@
 
         <!-- Métricas clave -->
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10 fade-in stagger-1">
-          <div class="bg-white p-8 md:p-10 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+          <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
             <span class="font-display text-4xl font-black text-midnight tracking-tight block">64.5%</span>
             <span class="text-xs font-bold text-body uppercase tracking-widest">Tráfico Mobile</span>
           </div>
-          <div class="bg-white p-8 md:p-10 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+          <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
             <span class="font-display text-4xl font-black text-midnight tracking-tight block">0.82%</span>
             <span class="text-xs font-bold text-body uppercase tracking-widest">Conversión Inicial</span>
           </div>
-          <div class="bg-white p-8 md:p-10 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+          <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
             <span class="font-display text-4xl font-black text-midnight tracking-tight block">53s</span>
             <span class="text-xs font-bold text-body uppercase tracking-widest">Interacción Media</span>
           </div>
-          <div class="bg-white p-8 md:p-10 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+          <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
             <span class="font-display text-4xl font-black text-midnight tracking-tight block">&lt;20%</span>
             <span class="text-xs font-bold text-body uppercase tracking-widest">Retención</span>
           </div>
@@ -50,27 +50,27 @@
 
         <!-- 5 fricciones -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 fade-in stagger-2 mb-12">
-          <div class="bg-white p-8 md:p-10 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+          <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
             <GitBranch :size="22" class="text-slate-700 mb-4" />
             <h3 class="text-base font-bold text-midnight mb-2">Flujo de compra confuso</h3>
             <p class="text-sm text-body leading-relaxed">El proceso rompía el modelo mental: pedíamos el pago antes del resumen.</p>
           </div>
-          <div class="bg-white p-8 md:p-10 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+          <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
             <ClipboardList :size="22" class="text-slate-700 mb-4" />
             <h3 class="text-base font-bold text-midnight mb-2">12+ campos en el checkout</h3>
             <p class="text-sm text-body leading-relaxed">Sobrecarga cognitiva. Reduje a 4 campos esenciales.</p>
           </div>
-          <div class="bg-white p-8 md:p-10 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+          <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
             <ShieldOff :size="22" class="text-slate-700 mb-4" />
             <h3 class="text-base font-bold text-midnight mb-2">Sin indicadores de confianza</h3>
             <p class="text-sm text-body leading-relaxed">Sin badges SSL visibles. Abandonaban por incertidumbre.</p>
           </div>
-          <div class="bg-white p-8 md:p-10 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+          <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
             <Smartphone :size="22" class="text-slate-700 mb-4" />
             <h3 class="text-base font-bold text-midnight mb-2">Desktop-first obsoleto</h3>
             <p class="text-sm text-body leading-relaxed">64.5% del tráfico era mobile, pero la UX era desktop.</p>
           </div>
-          <div class="bg-white p-8 md:p-10 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+          <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
             <Package :size="22" class="text-slate-700 mb-4" />
             <h3 class="text-base font-bold text-midnight mb-2">Alta tasa de abandono</h3>
             <p class="text-sm text-body leading-relaxed">Menos del 20% completaban la compra. Patrón identificado.</p>
@@ -130,7 +130,7 @@
 
         <!-- Aha Moment + Insights -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 fade-in stagger-1 mb-12">
-          <div class="md:col-span-2 bg-white p-8 md:p-10 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+          <div class="md:col-span-2 bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
             <div class="flex items-start gap-4">
               <div class="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center shrink-0">
                 <Lightbulb :size="22" class="text-white" />
@@ -143,15 +143,15 @@
             </div>
           </div>
           <div class="flex flex-col gap-4">
-            <div class="bg-white p-8 md:p-10 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] flex-1">
+            <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] flex-1">
               <span class="inline-block px-3 py-1 bg-chip text-body font-semibold text-[11px] uppercase tracking-widest rounded-full mb-4">User Pain</span>
               <p class="text-sm text-slate-700 leading-relaxed">El usuario pierde motivación si hay más pasos después de iniciar checkout.</p>
             </div>
-            <div class="bg-white p-8 md:p-10 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] flex-1">
+            <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] flex-1">
               <span class="inline-block px-3 py-1 bg-chip text-body font-semibold text-[11px] uppercase tracking-widest rounded-full mb-4">Business</span>
               <p class="text-sm text-slate-700 leading-relaxed">Cada paso adicional aumentaba el abandono en 15% promedio.</p>
             </div>
-            <div class="bg-white p-8 md:p-10 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] flex-1">
+            <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] flex-1">
               <span class="inline-block px-3 py-1 bg-chip text-body font-semibold text-[11px] uppercase tracking-widest rounded-full mb-4">UX</span>
               <p class="text-sm text-slate-700 leading-relaxed">El flujo rompía el modelo mental: pago antes que resumen.</p>
             </div>
@@ -161,31 +161,31 @@
         <!-- Benchmark -->
         <h3 class="text-sm font-bold uppercase tracking-widest text-body mb-6">Benchmark: 4 checkouts, 6 patrones ganadores</h3>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 fade-in stagger-1 mb-8">
-          <div class="bg-white p-8 md:p-10 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+          <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
             <Plane :size="28" class="text-body mb-4" />
             <h3 class="text-base font-bold text-midnight mb-1">Avianca</h3>
             <p class="text-sm text-body mb-3">Flujo lineal con progreso visible.</p>
             <p class="text-xs text-body"><strong>Aprendizaje:</strong> El usuario necesita saber dónde está y cuánto falta.</p>
           </div>
-          <div class="bg-white p-8 md:p-10 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+          <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
             <Globe :size="28" class="text-body mb-4" />
             <h3 class="text-base font-bold text-midnight mb-1">Despegar</h3>
             <p class="text-sm text-body mb-3">Personalización según comportamiento.</p>
             <p class="text-xs text-body"><strong>Aprendizaje:</strong> Reducir decisiones, mostrar solo lo relevante.</p>
           </div>
-          <div class="bg-white p-8 md:p-10 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+          <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
             <CreditCard :size="28" class="text-body mb-4" />
             <h3 class="text-base font-bold text-midnight mb-1">Assist Card</h3>
             <p class="text-sm text-body mb-3">Funcional pero faltaba emoción.</p>
             <p class="text-xs text-body"><strong>Aprendizaje:</strong> La confianza no solo es técnica, también es visual.</p>
           </div>
         </div>
-        <div class="conclusion-box fade-in p-5 rounded-xl mb-12">
+        <div class="conclusion-box fade-in p-6 md:p-7 rounded-xl mb-12">
           <p class="text-sm"><strong>Conclusión:</strong> Necesitábamos flujo simple + contexto claro + señales de confianza.</p>
         </div>
 
-        <!-- Estrategia: 5 principios -->
-        <h3 class="text-sm font-bold uppercase tracking-widest text-body mb-6">Estrategia: 5 principios, 1 objetivo (-64% abandono)</h3>
+        <!-- Estrategia: 4 principios -->
+        <h3 class="text-sm font-bold uppercase tracking-widest text-body mb-6">Estrategia: 4 principios, 1 objetivo (-64% abandono)</h3>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 fade-in stagger-1">
           <div class="md:col-span-2 bg-midnight rounded-2xl p-8 flex flex-col justify-center">
             <span class="text-xs font-bold uppercase tracking-widest text-secondary mb-4">Objetivo</span>
@@ -229,8 +229,8 @@
       <div class="max-w-6xl mx-auto px-6">
         <div class="section-header fade-in mb-12">
           <span class="section-number">03</span>
-          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-8">Ecosistema e integraciones comerciales</h2>
-          <p class="section-intro">Rediseño paso a paso: cada fricción eliminada con un test.</p>
+          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-8">El flujo optimizado paso a paso</h2>
+          <p class="section-intro">5 pasos rediseñados. Cada fricción eliminada con un test A/B y validación con usuarios.</p>
         </div>
 
         <div class="steps-container">
@@ -329,10 +329,10 @@
             </div>
           </div>
           <div class="text-center px-8">
-            <span class="font-display text-7xl md:text-9xl font-black text-highlight tracking-tight block leading-[0.85]">+23</span>
+            <span class="font-display text-7xl md:text-9xl font-black text-highlight tracking-tight block leading-[0.85]">73</span>
             <div class="mt-4">
-              <h3 class="text-sm font-bold text-body uppercase tracking-widest">Puntos NPS</h3>
-              <p class="text-sm text-slate-400 mt-2">Net Promoter Score mejorado</p>
+              <h3 class="text-sm font-bold text-body uppercase tracking-widest">NPS final</h3>
+              <p class="text-sm text-slate-400 mt-2">Net Promoter Score post-rediseño</p>
             </div>
           </div>
         </div>
@@ -340,23 +340,23 @@
         <!-- Validación: 3 cards + testimonial -->
         <h3 class="text-sm font-bold uppercase tracking-widest text-body mb-6 text-center">Validación: 8 usuarios, 0 abandonos</h3>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 fade-in stagger-1 mb-8">
-          <div class="bg-white p-8 md:p-10 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+          <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
             <CheckCircle :size="28" class="text-secondary mb-4" />
             <h4 class="text-base font-bold text-midnight mb-2">Completan el flujo sin ayuda</h4>
             <p class="text-sm text-body leading-relaxed">No se requerían instrucciones adicionales para completar la compra.</p>
           </div>
-          <div class="bg-white p-8 md:p-10 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+          <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
             <MapPin :size="28" class="text-secondary mb-4" />
             <h4 class="text-base font-bold text-midnight mb-2">Entendían los pasos</h4>
             <p class="text-sm text-body leading-relaxed">El indicador de progreso fue claro para el 100% de los usuarios testeados.</p>
           </div>
-          <div class="bg-white p-8 md:p-10 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+          <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
             <CreditCard :size="28" class="text-secondary mb-4" />
             <h4 class="text-base font-bold text-midnight mb-2">Finalizan compra correctamente</h4>
             <p class="text-sm text-body leading-relaxed">Los errores de formulario se redujeron significativamente.</p>
           </div>
         </div>
-        <div class="validation-quote fade-in mt-8 bg-white p-8 md:p-10 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+        <div class="validation-quote fade-in mt-8 bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
           <blockquote>
             <p class="text-xl text-slate-700 leading-relaxed italic">"Por fin sé exactamente cuánto voy a pagar y en cuántos pasos. Es mucho más claro que antes."</p>
             <cite class="text-base font-semibold text-body mt-4 block">— Usuario durante testing</cite>
@@ -376,19 +376,19 @@
 
         <!-- 4 lecciones -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 fade-in stagger-1 mb-12">
-          <div class="bg-white p-8 md:p-10 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+          <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
             <span class="text-2xl font-bold text-slate-300 mb-4 block">01</span>
             <p class="text-sm text-slate-700 leading-relaxed"><strong>Decidir qué NO diseñar.</strong> Redujimos 12 campos a 4. Menos fue más: cada campo eliminado redujo la fricción percibida.</p>
           </div>
-          <div class="bg-white p-8 md:p-10 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+          <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
             <span class="text-2xl font-bold text-slate-300 mb-4 block">02</span>
             <p class="text-sm text-slate-700 leading-relaxed"><strong>Modelo mental del usuario, no proceso interno.</strong> Los usuarios querían ver el resumen antes de pagar. Resumen antes del pago = menos abandono.</p>
           </div>
-          <div class="bg-white p-8 md:p-10 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+          <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
             <span class="text-2xl font-bold text-slate-300 mb-4 block">03</span>
             <p class="text-sm text-slate-700 leading-relaxed"><strong>La confianza se diseña, no se asume.</strong> Se iban por incertidumbre: no sabían cuánto iban a pagar ni qué iban a obtener.</p>
           </div>
-          <div class="bg-white p-8 md:p-10 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+          <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
             <span class="text-2xl font-bold text-slate-300 mb-4 block">04</span>
             <p class="text-sm text-slate-700 leading-relaxed"><strong>Mobile-first = rediseñar desde cero.</strong> 64.5% tráfico mobile exigía jerarquía táctil, gestos nativos e IA diferente a desktop.</p>
           </div>
@@ -422,21 +422,21 @@
 
         <!-- Next steps -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
-          <div class="bg-white p-8 md:p-10 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+          <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
             <div class="w-10 h-10 bg-secondary/20 rounded-xl flex items-center justify-center mb-3">
               <Split :size="20" class="text-secondary" />
             </div>
             <h4 class="text-base font-bold text-midnight mb-1">Testeo A/B</h4>
             <p class="text-sm text-body">Variaciones del flujo para optimizar conversión.</p>
           </div>
-          <div class="bg-white p-8 md:p-10 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+          <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
             <div class="w-10 h-10 bg-secondary/20 rounded-xl flex items-center justify-center mb-3">
               <UserCheck :size="20" class="text-secondary" />
             </div>
             <h4 class="text-base font-bold text-midnight mb-1">Personalización</h4>
             <p class="text-sm text-body">Experiencia adaptada al historial del usuario.</p>
           </div>
-          <div class="bg-white p-8 md:p-10 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+          <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
             <div class="w-10 h-10 bg-secondary/20 rounded-xl flex items-center justify-center mb-3">
               <CreditCard :size="20" class="text-secondary" />
             </div>
@@ -447,17 +447,17 @@
 
         <!-- Testimonial -->
         <blockquote class="bg-midnight p-8 md:p-10 rounded-3xl">
-          <p class="text-xl md:text-2xl text-white leading-relaxed italic mb-4">"Yeison transformó nuestro checkout. De 12 pasos a 4. Revenue aumentó directo."</p>
+          <p class="text-xl md:text-2xl text-white leading-relaxed italic mb-4">"El rediseño redujo el abandono en checkout a la mitad en 3 semanas. El dashboard de métricas nos permitió iterar cada lunes sin esperar al equipo de desarrollo."</p>
           <footer>
-            <span class="block text-base font-bold text-white">Carlos Mendoza</span>
-            <span class="block text-sm text-slate-400">CEO, Continental Assist</span>
+            <span class="block text-base font-bold text-white">Diego Ramírez</span>
+            <span class="block text-sm text-slate-400">Engineering Lead · Continental Assist</span>
           </footer>
         </blockquote>
       </div>
     </section>
 
     <!-- CTA -->
-    <AuroraBg variant="dark" class="py-32">
+    <AuroraBg variant="dark" class="py-20 md:py-24">
       <div class="max-w-4xl mx-auto text-center px-6 relative z-10">
         <h2 class="font-display text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-6 leading-[1.1]">
           ¿Diseñamos tu próximo

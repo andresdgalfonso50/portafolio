@@ -10,7 +10,7 @@
             de tu negocio
           </h1>
           <p class="contact-subtitle">
-            +4x conversión, -50% abandono, soluciones en producción listas para escalar. ¿Cuál es el KPI que transformaremos?
+            +4x conversión, 12% retención global, soluciones en producción listas para escalar. ¿Cuál es el KPI que transformaremos?
           </p>
         </div>
 
@@ -24,6 +24,7 @@
                 <div class="contact-details">
                   <span class="contact-label">Email</span>
                   <span class="contact-value">andresdgalfonso@gmail.com</span>
+                  <span class="inline-block mt-1 px-2 py-0.5 bg-chip text-body text-[10px] font-bold uppercase tracking-widest rounded-full">Email personal</span>
                 </div>
               </a>
               <a href="tel:+573125673243" class="contact-link">
@@ -158,7 +159,7 @@
                   id="message"
                   name="message"
                   v-model="form.message"
-                  placeholder="Cuéntame de tu proyecto..."
+                  placeholder="Cuéntame sobre tu producto y qué métrica o KPI deseas transformar..."
                   rows="5"
                   required
                   aria-required="true"

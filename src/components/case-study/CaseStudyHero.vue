@@ -8,11 +8,11 @@
             <component v-if="icon" :is="icon" class="w-5 h-5 text-primary" :size="20" />
             <span class="text-xs font-bold text-primary uppercase tracking-widest">Caso de estudio</span>
           </div>
-          <h1 class="font-display text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.08] text-midnight mb-4 text-balance">
+          <h1 class="font-display text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.05] text-midnight mb-4 text-balance">
             <span>{{ title }}</span>
             <span v-if="highlight" class="font-light italic text-primary">: {{ highlight }}</span>
           </h1>
-          <span v-if="badge" class="inline-block px-4 py-1.5 bg-primary text-white font-bold text-xs uppercase tracking-widest rounded-full shadow-glow-primary mb-4">
+          <span v-if="badge" class="inline-block px-4 py-1.5 bg-primary text-white font-extrabold text-xs uppercase rounded-full shadow-glow-primary mb-4">
             {{ badge }}
           </span>
           <p v-if="subtitle" class="text-base md:text-lg text-body leading-relaxed max-w-2xl mb-6">

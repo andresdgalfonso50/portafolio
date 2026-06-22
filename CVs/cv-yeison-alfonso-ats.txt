@@ -1,71 +1,79 @@
 YEISON ANDRES ALFONSO C.
-Product Design Director
+Senior Product Designer | CRO & Mobile Apps | Vue + IA Prototyping
 Bogotá, Colombia | 312 567 3243 | andresdgalfonso@gmail.com
 Portafolio: https://yeisonalfonso.com | LinkedIn: linkedin.com/in/yeison-alfonso-product-designer
 
-RESUMEN PROFESIONAL
+IMPACTO DESTACADO
++4x ingresos en e-commerce (~$2K → ~$9K USD/mes)
+Conversion optimizada: 0.82% → 3.8%
+Retencion dia 7: 0.1% → 12% en app movil
+997 errores criticos iOS eliminados
+Checkout: 12 campos → 4 campos | 8 pasos → 5 pasos
+Tiempo de espera medico: -60% en telemedicina
 
-Product Design Director con Maestria en Diseno UX/UI y experiencia en diseno de productos digitales para e-commerce y apps mobile. Especialista en conversion (CRO), experiencia de usuario y proyectos end-to-end. He incrementado ingresos 4x mediante rediseno UX y analisis de comportamiento con Google Analytics, Microsoft Clarity y Hotjar. Lidero proyectos desde la investigacion hasta la validacion en produccion, trabajando de la mano con equipos de desarrollo. Desarrollo prototipos funcionales en codigo (Vue + Tailwind + IA) para validar mas rapido. El ciclo de feedback pasa de dias a horas, y paso productos a desarrollo con menos friccion. Enfocado en construir productos funcionales, intuitivos y alineados a objetivos de negocio.
+RESUMEN
+Product Designer con Maestria UX/UI y 4+ años disenando productos digitales. Especializado en CRO, mobile apps y design systems. Incremente ingresos 4x mediante data-driven redesign. Desarrollo prototipos funcionales en codigo (Vue + Tailwind + IA) para validar mas rapido: ciclo de feedback de dias a horas.
 
-Skills: Product Design, UX Design, UI Design, User Research, Information Architecture, Wireframing, Prototyping, Conversion Optimization (CRO), Design Thinking, Lean UX, Design Sprints, Agile/Scrum, Figma, Adobe XD, Illustrator, Photoshop, InDesign, Google Analytics, Microsoft Clarity, Hotjar, Notion, Vue.js, Tailwind CSS, HTML/CSS, GitHub, Vercel, Netlify, Claude, ChatGPT, Cursor, Figma AI, Prompt Engineering
-
-METODOLOGIA (8 pasos en 3 fases)
-Fase 1 - Descubrimiento y Estrategia: 01 Discovery > 02 Research > 03 Define
-Fase 2 - Definicion Táctica: 04 Ideate > 05 Prototype
-Fase 3 - Iteracion y Entrega: 06 Test > 07 Ship > 08 Measure
+METODOLOGIA
+Discovery > Research > Define > Ideate > Prototype > Test > Ship > Measure
 
 EXPERIENCIA PROFESIONAL
 
-Continental Assist | Product Designer (UX/UI)
-Agosto 2025 - Actualidad
+Continental Assist | Senior Product Designer
+Ago 2025 - Actualidad
 
-- Redisene el e-commerce de asistencia en viajes: conversion 0.82% → 3.8%, ingresos ~2K a ~9K USD/mes (+4x), campos reducidos de 12 a 4, pasos de checkout de 8 a 5.
-- Disene app de asistencia en viajes desde cero (0 a produccion): retencion dia 7 de 0.1% a 12%, 997 errores iOS eliminados, centralizando telemedicina, vouchers y reembolsos.
-- Defini arquitectura de informacion, user flows y experiencia completa del producto utilizando investigacion de usuarios, benchmark competitivo y analisis de comportamiento (Google Analytics, Microsoft Clarity).
-- Colabore directamente con el equipo de desarrollo, participando en QA y validando implementacion en produccion para asegurar calidad del producto final.
+E-commerce (0 → $9K USD/mes):
+- Problema: 0.82% conversion, 64.5% abandono en mobile.
+- Rediseno UX end-to-end: optimice flujo de compra, elimine friccion en checkout.
+- Resultado: conversion 0.82% → 3.8%, ingresos +4x, campos 12 → 4, pasos 8 → 5.
 
-ASSA ABLOY (YALE) | Disenador UX/UI
-Febrero 2024 - Junio 2024
+App Mobile (0 → produccion):
+- Problema: 0.1% retencion dia 7, 997 errores iOS, plataforma fragmentada.
+- Disene app desde cero: telemedicina, vouchers, reembolsos centralizados.
+- Resultado: retencion 0.1% → 12%, errores iOS eliminados, 2 productos live.
 
-- Participe en el rediseno del e-commerce de Yale, mejorando la experiencia de usuario y alineando la interfaz con estandares de la marca global.
-- Disene wireframes y prototipos de alta fidelidad para flujos de compra, optimizando la navegacion y reduciendo pasos en el checkout.
-- Apoye procesos de investigacion con journey maps y evaluaciones heuristicas para identificar puntos de friccion.
+Product Thinking & Analytics:
+- Defini arquitectura de informacion, user flows y experiencia con research + Google Analytics + Microsoft Clarity + Hotjar.
+- Desarrolle prototipos funcionales en Vue + Tailwind + IA para validar con datos reales antes de desarrollo.
+- Colabore con equipo de desarrollo: QA y validacion en produccion para calidad end-to-end.
 
-Azzorti (Dupree) | Disenador Grafico
-Febrero 2021 - Agosto 2025
+ASSA ABLOY (YALE) | Product Designer
+Feb 2024 - Jun 2024
 
-- Disene y optimice recursos visuales para la linea hogar, adaptando piezas a mercados de Colombia, Peru, Ecuador, Bolivia y Guatemala.
-- Desarrolle empaques y material grafico manteniendo consistencia de marca regional en 5 paises.
-- Coordine con equipos internacionales en procesos de innovacion y conceptualizacion de productos.
+- Redisenie e-commerce de cerraduras inteligentes IoT para 5 paises.
+- Valide con 12 usuarios reales: improve navegacion, reduje pasos checkout.
+- Implemente design system escalable para linea de productos IoT.
+- Tecnicas: journey maps, evaluaciones heuristicas, wireframes, prototipos alta fidelidad.
 
-Experiencia previa en Diseno Grafico | 2018 - 2020
-Disenador Grafico | Univ. de los Andes | Doodles | Univ. Central
+Azzorti (Dupree) | Product Designer (Grafico)
+Feb 2021 - Ago 2025
 
-- Diseno de material grafico institucional, piezas digitales para web y redes sociales, y produccion de material publicitario para diversas organizaciones.
+- Lidere diseno de identidad visual y campañas multiregion (CO, PE, EC, BO, GT).
+- Estandarice brand system para 5 mercados: empaques, redes, material impreso.
+- Coordine equipos internacionales en innovacion y conceptualizacion de productos.
 
-FORMACION ACADEMICA
+Experiencia Previa | 2018 - 2020
+Univ. de los Andes · Doodles · Univ. Central
+Diseno grafico institucional, web, redes sociales y material publicitario.
 
-Maestria en Diseno de Experiencia de Usuario (UX/UI)
-Universidad Internacional de La Rioja, Espana | 2023 - 2024
+FORMACION
+Maestria en Diseno UX/UI | Universidad Internacional de La Rioja, Espana | 2023-2024
+Diseno Grafico Profesional | Escuela de Artes y Letras, Bogota | 2018
 
-Diseno Grafico Profesional
-Escuela de Artes y Letras, Bogota | 2018
+CERTIFICACIONES
+Certificate in Leadership | MIU City University Miami
+AI-Assisted Design | Prompt Engineering, Figma AI, Claude, ChatGPT, Cursor
 
-FORMACION COMPLEMENTARIA
+HABILIDADES (prioridad estrategica)
 
-- Certificate in Leadership | MIU City University Miami
-- Adobe XD | Platzi
-- Ilustracion para productos digitales | Platzi
-- Premiere Pro | Platzi
+Product Strategy: Product Thinking, UX Strategy, Design Systems, Component Libraries, Scalable Design, End-to-end Product Design, Stakeholder Collaboration
 
-HABILIDADES
+UX Research: User Research, Journey Mapping, Heuristic Evaluation, Information Architecture, User Flows, Wireframing, Prototyping
 
-UX / Product Design: User Research, Information Architecture, User Flows, Wireframing, High-fidelity Prototyping, Heuristic Evaluation, Journey Mapping, Benchmark, Product Thinking, End-to-end Product Design, Design Thinking, Lean UX, Design Sprints, Agile/Scrum, DCU, Jobs To Be Done
+CRO & Analytics: Conversion Rate Optimization (CRO), A/B Testing, Google Analytics, Microsoft Clarity, Hotjar, Behavioral Analysis, Data-driven Decision Making, Funnel Analysis
 
-UI / Tools: Figma, Adobe XD, Illustrator, Photoshop, InDesign, Notion
+Mobile Design: Mobile-First, iOS/Android UX, Responsive Design, Design Patterns
 
-Data / Conversion Optimization: Google Analytics, Microsoft Clarity, Hotjar, Behavioral Analysis, CRO, Data-driven Decision Making
+AI-Assisted Design: Prompt Engineering, Vue.js, Tailwind CSS, HTML/CSS, Figma to Code, Prototyping in Code
 
-Frontend Bridge: HTML/CSS, Vue.js, Tailwind CSS, Figma to Code, Dev Collaboration, QA Review
-
-IA / Prototyping: Claude, ChatGPT, Cursor, Figma AI, Prompt Engineering
+Tools (secundario): Figma, Adobe XD, Illustrator, Photoshop, InDesign, Notion, GitHub, Vercel, Netlify

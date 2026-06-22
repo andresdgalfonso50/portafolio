@@ -16,21 +16,6 @@ export default {
         'secondary': '#0071e3',
         'highlight': '#0071e3',
         'chip': '#F3F5F8',
-        // Legacy Apple-style neutrals (kept for backwards-compat only)
-        'bg-primary': '#FFFFFF',
-        'bg-secondary': '#F5F5F5',
-        'bg-tertiary': '#FAFAFA',
-        'text-primary': '#1d1d1f',
-        'text-secondary': '#86868b',
-        'text-muted': '#9CA3AF',
-        'accent': '#0071e3',
-        'accent-hover': '#0077ed',
-        'accent-light': '#EFF6FF',
-        'border': '#e5e5e5',
-        'surface-elevated': '#f8fafc',
-        'success': '#10B981',
-        'warning': '#F59E0B',
-        'error': '#EF4444'
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],

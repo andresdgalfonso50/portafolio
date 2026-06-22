@@ -23,7 +23,7 @@
     <section class="case-section">
       <div class="max-w-6xl mx-auto px-6">
         <!-- Situación crítica (compactado como callout) -->
-        <div class="stakes-box fade-in p-8 md:p-10 bg-white rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] mb-12">
+        <div class="stakes-box fade-in p-6 md:p-7 bg-white rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] mb-12">
           <div class="flex items-start gap-5">
             <div class="w-12 h-12 bg-rose-100 rounded-xl flex items-center justify-center shrink-0">
               <svg class="w-6 h-6 text-rose-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -45,29 +45,29 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-4 gap-6 fade-in stagger-1 mb-8">
-          <div class="bg-white p-8 md:p-10 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+          <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
             <MapPin :size="22" class="text-slate-700 mb-4" />
             <h3 class="text-base font-bold text-midnight mb-2">No sabe a dónde acudir</h3>
             <p class="text-sm text-body leading-relaxed">Desconoce opciones médicas locales y no tiene referencias confiables.</p>
           </div>
-          <div class="bg-white p-8 md:p-10 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+          <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
             <ShieldOff :size="22" class="text-slate-700 mb-4" />
             <h3 class="text-base font-bold text-midnight mb-2">Desconoce su cobertura</h3>
             <p class="text-sm text-body leading-relaxed">No sabe qué servicios tiene disponibles ni cómo acceder a ellos.</p>
           </div>
-          <div class="bg-white p-8 md:p-10 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+          <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
             <Languages :size="22" class="text-slate-700 mb-4" />
             <h3 class="text-base font-bold text-midnight mb-2">Barreras de idioma</h3>
             <p class="text-sm text-body leading-relaxed">Dificultad para comunicarse con personal médico en otro país.</p>
           </div>
-          <div class="bg-white p-8 md:p-10 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+          <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
             <Clock :size="22" class="text-slate-700 mb-4" />
             <h3 class="text-base font-bold text-midnight mb-2">Pierde tiempo valioso</h3>
             <p class="text-sm text-body leading-relaxed">Buscando soluciones sin guía clara mientras los síntomas progresan.</p>
           </div>
         </div>
 
-        <div class="insight-box fade-in bg-white p-8 md:p-10 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+        <div class="insight-box fade-in bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
           <div class="flex items-start gap-3">
             <MessageSquare :size="18" class="text-secondary mt-0.5 shrink-0" />
             <p class="text-sm text-slate-700"><strong>Pregunta de diseño:</strong> ¿Cómo podríamos facilitar el acceso rápido y confiable a atención médica remota en momentos de incertidumbre?</p>
@@ -87,7 +87,7 @@
 
         <!-- 3 roles -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
-          <div class="bg-white p-8 md:p-10 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] flex gap-4 items-start">
+          <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] flex gap-4 items-start">
             <div class="w-11 h-11 rounded-full bg-secondary/20 text-secondary flex items-center justify-center font-bold flex-shrink-0"><Plane :size="16" /></div>
             <div>
               <h4 class="font-bold text-midnight text-sm">Paciente — Viajero</h4>
@@ -95,7 +95,7 @@
               <p class="text-xs text-body mt-1">Vulnerable, sin acceso, necesita atención médica inmediata sin fricción de login.</p>
             </div>
           </div>
-          <div class="bg-white p-8 md:p-10 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] flex gap-4 items-start">
+          <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] flex gap-4 items-start">
             <div class="w-11 h-11 rounded-full bg-secondary/20 text-secondary flex items-center justify-center font-bold flex-shrink-0"><Stethoscope :size="16" /></div>
             <div>
               <h4 class="font-bold text-midnight text-sm">Médico — Doctor</h4>
@@ -115,7 +115,7 @@
         </div>
 
         <!-- Aha moment -->
-        <div class="aha-moment fade-in bg-midnight text-white p-8 md:p-10 rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] mb-10">
+        <div class="aha-moment fade-in bg-midnight text-white p-6 md:p-7 rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] mb-10">
           <div class="flex items-start gap-4">
             <div class="w-10 h-10 bg-secondary/20 rounded-lg flex items-center justify-center shrink-0">
               <Lightbulb :size="18" class="text-white" />
@@ -130,15 +130,15 @@
 
         <!-- Insights compactados -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 fade-in stagger-2 mb-12">
-          <div class="bg-white p-8 md:p-10 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+          <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
             <span class="inline-block px-3 py-1 bg-chip text-body font-semibold text-[11px] uppercase tracking-widest rounded-full mb-4">User Pain</span>
             <p class="text-sm text-slate-700 leading-relaxed">En crisis, cada segundo cuenta. -60% tiempo de respuesta.</p>
           </div>
-          <div class="bg-white p-8 md:p-10 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+          <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
             <span class="inline-block px-3 py-1 bg-chip text-body font-semibold text-[11px] uppercase tracking-widest rounded-full mb-4">Business</span>
             <p class="text-sm text-slate-700 leading-relaxed">El Coordinador Médico es el cuello de botella operativo del servicio.</p>
           </div>
-          <div class="bg-white p-8 md:p-10 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+          <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
             <span class="inline-block px-3 py-1 bg-chip text-body font-semibold text-[11px] uppercase tracking-widest rounded-full mb-4">UX</span>
             <p class="text-sm text-slate-700 leading-relaxed">Claridad reduce ansiedad más que velocidad en momentos críticos.</p>
           </div>
@@ -146,7 +146,7 @@
 
         <!-- Sitemap -->
         <h3 class="text-sm font-bold uppercase tracking-widest text-body mb-6">Arquitectura: Sitemap + User Flows por Rol</h3>
-        <div class="flex flex-wrap justify-center gap-6 md:gap-10 bg-white p-8 md:p-10 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] w-full mb-8">
+        <div class="flex flex-wrap justify-center gap-6 md:gap-10 bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] w-full mb-8">
           <div class="flex flex-col items-center gap-2">
             <div class="w-12 h-12 bg-white rounded-[2.5rem] flex items-center justify-center text-slate-700 shadow-[0_8px_30px_rgb(0,0,0,0.04)]"><Home :size="18" /></div>
             <span class="text-xs font-medium text-body">Inicio</span>
@@ -174,11 +174,11 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div class="bg-white p-5 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+          <div class="bg-white p-4 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
             <h4 class="text-sm font-bold text-midnight mb-2"><Plane :size="16" class="inline mr-2 text-secondary" />Paciente</h4>
             <p class="text-xs text-body leading-relaxed">Link email → Verificar cobertura → Síntomas → Videollamada → NPS.</p>
           </div>
-          <div class="bg-white p-5 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+          <div class="bg-white p-4 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
             <h4 class="text-sm font-bold text-midnight mb-2"><Stethoscope :size="16" class="inline mr-2 text-secondary" />Médico</h4>
             <p class="text-xs text-body leading-relaxed">Login → Cola de pacientes → Atender → Notas → Cerrar consulta.</p>
           </div>
@@ -202,27 +202,27 @@
         <!-- Flujo principal: 6 pasos -->
         <h3 class="text-sm font-bold uppercase tracking-widest text-body mb-6">Flujo principal: del síntoma a la atención</h3>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
-          <div class="bg-white p-5 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+          <div class="bg-white p-4 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
             <h4 class="text-sm font-bold text-midnight mb-2"><span class="inline-flex w-6 h-6 bg-chip text-body font-semibold rounded-md items-center justify-center text-xs font-bold mr-2">1</span>Acceso a la plataforma</h4>
             <p class="text-xs text-body">Entrada simple y directa al servicio con credenciales del plan.</p>
           </div>
-          <div class="bg-white p-5 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+          <div class="bg-white p-4 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
             <h4 class="text-sm font-bold text-midnight mb-2"><span class="inline-flex w-6 h-6 bg-chip text-body font-semibold rounded-md items-center justify-center text-xs font-bold mr-2">2</span>Validación de beneficio</h4>
             <p class="text-xs text-body">Verificación rápida de cobertura médica con indicador claro.</p>
           </div>
-          <div class="bg-white p-5 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+          <div class="bg-white p-4 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
             <h4 class="text-sm font-bold text-midnight mb-2"><span class="inline-flex w-6 h-6 bg-chip text-body font-semibold rounded-md items-center justify-center text-xs font-bold mr-2">3</span>Registro de síntomas</h4>
             <p class="text-xs text-body">Selección intuitiva de síntomas actuales con jerarquía clara.</p>
           </div>
-          <div class="bg-white p-5 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+          <div class="bg-white p-4 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
             <h4 class="text-sm font-bold text-midnight mb-2"><span class="inline-flex w-6 h-6 bg-chip text-body font-semibold rounded-md items-center justify-center text-xs font-bold mr-2">4</span>Tipo de atención</h4>
             <p class="text-xs text-body">Orientación basada en los síntomas registrados por el usuario.</p>
           </div>
-          <div class="bg-white p-5 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+          <div class="bg-white p-4 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
             <h4 class="text-sm font-bold text-midnight mb-2"><span class="inline-flex w-6 h-6 bg-chip text-body font-semibold rounded-md items-center justify-center text-xs font-bold mr-2">5</span>Conexión con médico</h4>
             <p class="text-xs text-body">Llamada o videollamada según preferencia y disponibilidad.</p>
           </div>
-          <div class="bg-white p-5 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+          <div class="bg-white p-4 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
             <h4 class="text-sm font-bold text-midnight mb-2"><span class="inline-flex w-6 h-6 bg-midnight text-white rounded-md items-center justify-center text-xs font-bold mr-2">6</span>Recomendaciones + NPS</h4>
             <p class="text-xs text-body">Indicaciones médicas claras y encuesta NPS al cierre.</p>
           </div>
@@ -236,17 +236,17 @@
             <h4 class="text-xl font-bold text-white mb-2">Acceso rápido a atención</h4>
             <p class="text-sm text-slate-400 max-w-lg">Flujo reducido a pasos esenciales para que un viajero enfermo no se pierda en momentos de estrés.</p>
           </div>
-          <div class="bg-white p-8 md:p-10 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+          <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
             <Eye :size="24" class="text-secondary mb-3" />
             <h4 class="text-sm font-bold text-midnight mb-2">Claridad del beneficio</h4>
             <p class="text-xs text-body">Indicador visible del estado de cobertura para decisiones inmediatas.</p>
           </div>
-          <div class="bg-white p-8 md:p-10 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+          <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
             <ListFilter :size="24" class="text-secondary mb-3" />
             <h4 class="text-sm font-bold text-midnight mb-2">Priorización por síntomas</h4>
             <p class="text-xs text-body">Sistema que orienta al tipo de atención más adecuada según gravedad.</p>
           </div>
-          <div class="bg-white p-8 md:p-10 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+          <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
             <Heart :size="24" class="text-rose-600 mb-3" />
             <h4 class="text-sm font-bold text-midnight mb-2">Contexto emocional</h4>
             <p class="text-xs text-slate-700">Botones grandes, lenguaje claro, decisiones guiadas para estados de ansiedad.</p>
@@ -280,7 +280,7 @@
                   <span class="text-[10px] font-bold uppercase tracking-widest text-slate-400">Ingreso</span>
                 </div>
                 <h4 class="text-lg font-display font-extrabold text-midnight mb-2 tracking-tight">Cero fricción desde el primer email</h4>
-                <p class="text-sm text-body leading-relaxed">El paciente recibe los datos de la cita, paciente, fecha y hora, más un botón azul de "Ingresar a la consulta" que abre la videollamada sin descargar apps, sin crear cuentas, sin contraseñas. <span class="font-semibold text-secondary">Adiós al 70% de abandono en login.</span></p>
+                <p class="text-sm text-body leading-relaxed">El paciente recibe los datos de la cita, paciente, fecha y hora, más un botón azul de "Ingresar a la consulta" que abre la videollamada sin descargar apps, sin crear cuentas, sin contraseñas. <span class="font-semibold text-secondary">Acceso 1-click sin fricción de autenticación.</span></p>
                 <div class="flex gap-2 mt-4">
                   <span class="px-2.5 py-1 bg-secondary/10 text-secondary text-[11px] font-bold rounded-full">Sin fricción</span>
                   <span class="px-2.5 py-1 bg-secondary/10 text-secondary text-[11px] font-bold rounded-full">0 contraseñas</span>
@@ -441,7 +441,7 @@
       <div class="max-w-6xl mx-auto px-6">
         <div class="section-header fade-in mb-12 text-center">
           <span class="section-number">04</span>
-          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-4">Impacto: -60% tiempo, +90% claridad, NPS +52</h2>
+          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-4">Impacto: -60% tiempo, +90% claridad</h2>
           <p class="text-lg text-body">12 usuarios validaron la experiencia en crisis simuladas.</p>
         </div>
 
@@ -470,21 +470,19 @@
           </div>
         </div>
 
-        <!-- Validación: 2 testimonials + NPS dark card -->
+        <!-- Validación: métricas de testing + NPS dark card -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div class="bg-white p-8 md:p-10 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
-            <blockquote>
-              <p class="text-sm text-slate-700 leading-relaxed italic mb-3">"Por fin sé exactamente qué va a pasar después. Ya no siento que estoy entrando a algo desconocido cuando me siento mal de viaje."</p>
-              <cite class="text-xs font-semibold text-body">— Carlos, 42, viajero frecuente</cite>
-            </blockquote>
+          <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+            <span class="block font-display text-4xl font-black text-highlight tracking-tighter tabular-nums mb-2">12</span>
+            <p class="text-sm font-bold text-midnight mb-1">Usuarios en crisis simuladas</p>
+            <p class="text-xs text-body leading-relaxed">Validación con pacientes y médicos en escenarios de urgencia.</p>
           </div>
-          <div class="bg-white p-8 md:p-10 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
-            <blockquote>
-              <p class="text-sm text-slate-700 leading-relaxed italic mb-3">"Saber que tengo telemedicina disponible si algo pasa me da tranquilidad. Antes no tenía idea de qué hacer."</p>
-              <cite class="text-xs font-semibold text-body">— Ana, 35, viajera crónica</cite>
-            </blockquote>
+          <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+            <span class="block font-display text-4xl font-black text-highlight tracking-tighter tabular-nums mb-2">+90%</span>
+            <p class="text-sm font-bold text-midnight mb-1">Claridad del proceso</p>
+            <p class="text-xs text-body leading-relaxed">Usuarios entienden qué pasa en cada paso del flujo.</p>
           </div>
-          <div class="bg-midnight p-8 md:p-10 rounded-3xl flex flex-col justify-center">
+          <div class="bg-midnight p-6 md:p-7 rounded-3xl flex flex-col justify-center">
             <BarChart2 :size="28" class="text-secondary mb-4" />
             <h4 class="text-lg font-bold text-white mb-2">Validación continua con NPS</h4>
             <p class="text-sm text-slate-300">Encuesta de satisfacción al cierre de cada videollamada. El negocio mide la calidad de atención médica en tiempo real.</p>
@@ -504,43 +502,43 @@
 
         <!-- 4 lecciones -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
-          <div class="bg-white p-8 md:p-10 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+          <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
             <span class="text-2xl font-black text-borderline mb-3 block">01</span>
             <p class="text-sm text-slate-700 leading-relaxed"><strong>En crisis cada segundo cuenta.</strong> Descubrimos que flujo corto no es mejor: en emergencias, los usuarios prefieren ver todas las opciones para sentirse en control.</p>
           </div>
-          <div class="bg-white p-8 md:p-10 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+          <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
             <span class="text-2xl font-black text-borderline mb-3 block">02</span>
             <p class="text-sm text-slate-700 leading-relaxed"><strong>Claridad mata ansiedad.</strong> Los usuarios necesitaban ver todos los pasos desde el inicio para sentirse en control. Eso cambió la arquitectura del flujo.</p>
           </div>
-          <div class="bg-white p-8 md:p-10 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+          <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
             <span class="text-2xl font-black text-borderline mb-3 block">03</span>
             <p class="text-sm text-slate-700 leading-relaxed"><strong>Stakeholders internos importan.</strong> Los médicos tenían objeciones distintas a los pacientes. Identificar ambos grupos desde el inicio previno retrabajo.</p>
           </div>
-          <div class="bg-white p-8 md:p-10 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+          <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
             <span class="text-2xl font-black text-borderline mb-3 block">04</span>
             <p class="text-sm text-slate-700 leading-relaxed"><strong>HTML acelera validación.</strong> Crear prototipos clickeables en código redujo el ciclo de feedback de días a horas. Stakeholders podían ver y tocar el flujo antes de construirlo.</p>
           </div>
         </div>
 
-        <!-- Lo que no funcionó -->
-        <div class="failures-section fade-in w-full max-w-5xl mx-auto bg-rose-50/50 border border-rose-100 rounded-3xl p-8 md:p-10 mb-12">
+        <!-- Lecciones aprendidas -->
+        <div class="failures-section fade-in w-full max-w-5xl mx-auto bg-zinc-50 border-l-4 border-primary border border-borderline rounded-2xl p-6 md:p-7 mb-10">
           <div class="flex items-start gap-4">
-            <div class="w-10 h-10 bg-rose-100 rounded-xl flex items-center justify-center shrink-0">
-              <XCircle :size="18" class="text-rose-600" />
+            <div class="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center shrink-0">
+              <Lightbulb :size="18" class="text-primary" />
             </div>
             <div>
               <h4 class="text-sm font-bold text-midnight mb-3">Lo que intentamos y no funcionó</h4>
-              <ul class="space-y-2 text-base text-slate-800">
+              <ul class="space-y-2 text-base text-slate-700">
                 <li class="flex items-start gap-2">
-                  <span class="text-rose-500 mt-0.5">✗</span>
+                  <span class="text-primary mt-0.5">✗</span>
                   <span><strong>Flujo ultracorto:</strong> En crisis, usuarios necesitan ver el mapa completo.</span>
                 </li>
                 <li class="flex items-start gap-2">
-                  <span class="text-rose-500 mt-0.5">✗</span>
+                  <span class="text-primary mt-0.5">✗</span>
                   <span><strong>Chatbot primero:</strong> En salud, quieren un humano ya.</span>
                 </li>
                 <li class="flex items-start gap-2">
-                  <span class="text-rose-500 mt-0.5">✗</span>
+                  <span class="text-primary mt-0.5">✗</span>
                   <span><strong>Minimalismo extremo:</strong> Botones pequeños no funcionan en estrés. Agrandamos todo +200%.</span>
                 </li>
               </ul>
@@ -550,28 +548,28 @@
 
         <!-- Next steps: 4 iteraciones -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-          <div class="bg-white p-8 md:p-10 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+          <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
             <div class="w-10 h-10 bg-secondary/20 rounded-xl flex items-center justify-center mb-3">
               <BarChart2 :size="20" class="text-secondary" />
             </div>
             <h4 class="text-sm font-bold text-midnight mb-1">Microsoft Clarity</h4>
             <p class="text-xs text-body">Mapas de calor y grabaciones de sesión para entender el comportamiento real.</p>
           </div>
-          <div class="bg-white p-8 md:p-10 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+          <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
             <div class="w-10 h-10 bg-secondary/20 rounded-xl flex items-center justify-center mb-3">
               <Activity :size="20" class="text-secondary" />
             </div>
             <h4 class="text-sm font-bold text-midnight mb-1">Iteración NPS</h4>
             <p class="text-xs text-body">Optimizar la experiencia del médico según datos de satisfacción recolectados.</p>
           </div>
-          <div class="bg-white p-8 md:p-10 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+          <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
             <div class="w-10 h-10 bg-secondary/20 rounded-xl flex items-center justify-center mb-3">
               <UserCheck :size="20" class="text-secondary" />
             </div>
             <h4 class="text-sm font-bold text-midnight mb-1">Testing en contexto real</h4>
             <p class="text-xs text-body">Validar flujos críticos con viajeros reales en el extranjero.</p>
           </div>
-          <div class="bg-white p-8 md:p-10 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+          <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
             <div class="w-10 h-10 bg-secondary/20 rounded-xl flex items-center justify-center mb-3">
               <Layers :size="20" class="text-secondary" />
             </div>
@@ -583,7 +581,7 @@
     </section>
 
     <!-- CTA -->
-    <AuroraBg variant="dark" class="py-32">
+    <AuroraBg variant="dark" class="py-20 md:py-24">
       <div class="max-w-4xl mx-auto text-center px-6 relative z-10">
         <h2 class="font-display text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-6 leading-[1.1]">
           Diseño para
@@ -611,7 +609,7 @@
     <nav class="py-16 border-t border-borderline">
       <div class="max-w-6xl mx-auto px-6">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <RouterLink to="/app" class="group flex items-center justify-between bg-white p-8 md:p-10 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-300 hover:border-secondary hover:shadow-xl hover:-translate-y-1">
+          <RouterLink to="/app" class="group flex items-center justify-between bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-300 hover:border-secondary hover:shadow-xl hover:-translate-y-1">
             <div class="flex flex-col">
               <span class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Caso anterior</span>
               <h4 class="text-lg font-bold text-midnight group-hover:text-secondary transition-colors">App de Asistencia</h4>
@@ -620,9 +618,9 @@
               <ArrowLeft :size="20" />
             </div>
           </RouterLink>
-          <RouterLink to="/contacto" class="group flex items-center justify-between bg-white p-8 md:p-10 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-300 hover:border-secondary hover:shadow-xl hover:-translate-y-1">
+          <RouterLink to="/contacto" class="group flex items-center justify-between bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-300 hover:border-secondary hover:shadow-xl hover:-translate-y-1">
             <div class="flex flex-col">
-              <span class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Siguiente caso</span>
+              <span class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Conversemos</span>
               <h4 class="text-lg font-bold text-midnight group-hover:text-secondary transition-colors">Contacto</h4>
             </div>
             <div class="w-10 h-10 rounded-full bg-surface flex items-center justify-center group-hover:bg-secondary group-hover:text-white transition-all duration-300">
@@ -639,7 +637,6 @@
 import { useScrollAnimations } from '@/composables/useScrollAnimations'
 import AuroraBg from '@/components/primitives/AuroraBg.vue'
 import CaseStudyHero from '@/components/case-study/CaseStudyHero.vue'
-import CaseStudyMetricsDashboard from '@/components/case-study/CaseStudyMetricsDashboard.vue'
 import heroXentralImg from '/public/assets/images/home/hero-xentral-full.jpg'
 import {
   HeartPulse, Plane, Stethoscope, MapPin, ShieldOff, Languages, Clock, MessageSquare,

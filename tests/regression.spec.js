@@ -126,6 +126,30 @@ test.describe('Cross-page', () => {
   });
 });
 
+/* ─── 404 / NotFound ─── */
+test.describe('NotFound', () => {
+  test('carga 404 y muestra CTA "Volver al inicio"', async ({ page }) => {
+    const consoleErrors = [];
+    page.on('console', (msg) => {
+      if (msg.type() === 'error') consoleErrors.push(msg.text());
+    });
+    page.on('pageerror', (err) => consoleErrors.push(err.message));
+
+    await page.goto('/#/ruta-inexistente-xyz', { waitUntil: 'networkidle' });
+    await page.waitForTimeout(500);
+
+    // H1 debe contener 404
+    await expect(page.locator('h1')).toContainText('404');
+
+    // CTA "Volver al inicio" debe existir
+    const homeLink = page.locator('a[href="/"]').first();
+    await expect(homeLink).toBeVisible();
+
+    // Sin errores de consola
+    expect(consoleErrors).toHaveLength(0);
+  });
+});
+
 test.describe('Responsive snapshots', () => {
   // Generate reference screenshots (run with --update-snapshots to create)
   PAGES.forEach((pageInfo) => {

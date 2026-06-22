@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV - Yeison Alfonso - UX/UI Product Designer</title>
+  <title>CV - Yeison Alfonso - Senior Product Designer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
@@ -91,6 +91,10 @@
     .exp-bullets li::before { content: ''; position: absolute; left: 0; top: 6px; width: 4px; height: 4px; background: var(--accent); border-radius: 50%; }
     .exp-bullets li strong { color: var(--text-primary); font-weight: 600; }
     .exp-bullets li .metric { color: var(--accent); font-weight: 600; }
+    .impact-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-bottom: 8px; }
+    .impact-item { background: var(--bg-secondary); border-radius: 8px; padding: 10px 8px; text-align: center; }
+    .impact-value { display: block; font-size: 11pt; font-weight: 800; color: var(--accent); line-height: 1.1; }
+    .impact-label { display: block; font-size: 6.5pt; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.05em; margin-top: 2px; }
     @media print { body { margin: 0; } .page { box-shadow: none; } }
     @media screen { body { background: #e5e5e5; } .page { box-shadow: 0 4px 24px rgba(0,0,0,0.12); margin: 40px auto; } }
   </style>
@@ -100,7 +104,7 @@
     <aside class="sidebar">
       <div class="sidebar-photo">YA</div>
       <div class="sidebar-name">Yeison Alfonso</div>
-      <div class="sidebar-title">Product Design Director</div>
+      <div class="sidebar-title">Senior Product Designer</div>
 
       <div class="sidebar-section">
         <div class="sidebar-heading">Contacto</div>
@@ -220,9 +224,19 @@
 
     <main class="main">
       <section class="main-section">
+        <h2 class="main-heading">Impacto Destacado</h2>
+        <div class="impact-grid">
+          <div class="impact-item"><span class="impact-value">+4x</span><span class="impact-label">ingresos e-commerce</span></div>
+          <div class="impact-item"><span class="impact-value">0.82%→3.8%</span><span class="impact-label">conversión</span></div>
+          <div class="impact-item"><span class="impact-value">0.1%→12%</span><span class="impact-label">retención día 7</span></div>
+          <div class="impact-item"><span class="impact-value">-60%</span><span class="impact-label">tiempo espera médico</span></div>
+        </div>
+      </section>
+
+      <section class="main-section">
         <h2 class="main-heading">Perfil Profesional</h2>
         <p class="profile-text">
-          <strong>Product Design Director con Maestría en Diseño UX/UI</strong> y experiencia en diseño de productos digitales para e-commerce y apps mobile. Especialista en conversión (CRO), experiencia de usuario y proyectos end-to-end. He incrementado ingresos <strong>4x</strong> mediante rediseño UX y análisis de comportamiento con <strong>Google Analytics</strong>, <strong>Microsoft Clarity</strong> y <strong>Hotjar</strong>. Desarrollo prototipos funcionales en código (<strong>Vue + Tailwind + IA</strong>) para validar más rápido. El ciclo de feedback pasa de días a horas, y paso productos a desarrollo con menos fricción. Mi metodología de 8 pasos en 3 fases (Discovery > Research > Define > Ideate > Prototype > Test > Ship > Measure) garantiza productos funcionales, intuitivos y alineados a objetivos de negocio.
+          <strong>Senior Product Designer con Maestría UX/UI</strong> y 4+ años diseñando productos digitales. Especializado en <strong>CRO</strong>, <strong>mobile apps</strong> y <strong>design systems</strong>. Incrementé ingresos 4x mediante data-driven redesign. Desarrollo prototipos funcionales en código (<strong>Vue + Tailwind + IA</strong>): ciclo de feedback de días a horas.
         </p>
       </section>
 
@@ -234,12 +248,11 @@
             <span class="exp-company">Continental Assist</span>
             <span class="exp-date">Ago 2025 - Actualidad</span>
           </div>
-          <div class="exp-role">Product Designer (UX/UI)</div>
+          <div class="exp-role">Senior Product Designer</div>
           <ul class="exp-bullets">
-            <li>Rediseño del e-commerce: <span class="metric">conversión 0.82% → 3.8%</span>, ingresos +4x (~2K → ~9K USD/mes), campos 12 → 4, pasos checkout 8 → 5.</li>
-            <li>App de asistencia en viajes <strong>desde cero (0 a producción)</strong>: retención día 7 de 0.1% a 12%, 997 errores iOS eliminados, centralizando telemedicina, vouchers y reembolsos.</li>
-            <li>Definí arquitectura de información, user flows y experiencia completa basada en investigación de usuarios, benchmark competitivo y análisis de comportamiento con <strong>Google Analytics</strong> y <strong>Microsoft Clarity</strong>.</li>
-            <li>Colaboré directamente con el equipo de desarrollo, participando en QA y validando implementación en producción para asegurar calidad del producto final.</li>
+            <li><strong>E-commerce:</strong> Problema: 0.82% conversión, 64.5% abandono mobile. Rediseño UX end-to-end: optimicé flujo, eliminé fricción. <span class="metric">Resultado: 0.82%→3.8%, +4x ingresos, 12→4 campos, 8→5 pasos.</span></li>
+            <li><strong>App Mobile:</strong> Problema: 0.1% retención, 997 errores iOS. App desde cero: telemedicina, vouchers, reembolsos centralizados. <span class="metric">Resultado: 0.1%→12% retención, errores eliminados, 2 productos live.</span></li>
+            <li>Prototipos funcionales en <strong>Vue + Tailwind + IA</strong> para validar antes de desarrollo. QA y validación en producción con equipo de ingeniería.</li>
           </ul>
         </div>
 
@@ -248,11 +261,11 @@
             <span class="exp-company">ASSA ABLOY (YALE)</span>
             <span class="exp-date">Feb 2024 - Jun 2024</span>
           </div>
-          <div class="exp-role">Diseñador UX/UI</div>
+          <div class="exp-role">Product Designer</div>
           <ul class="exp-bullets">
-            <li>Participé en el rediseño del e-commerce de Yale, mejorando la experiencia de usuario y alineando la interfaz con estándares de la marca global.</li>
-            <li>Diseñé wireframes y prototipos de alta fidelidad para flujos de compra, optimizando la navegación y reduciendo pasos en el checkout.</li>
-            <li>Apoyé procesos de investigación con journey maps y evaluaciones heurísticas para identificar puntos de fricción.</li>
+            <li>Rediseñé e-commerce de cerraduras inteligentes IoT para 5 países. Validé con 12 usuarios reales.</li>
+            <li>Implementé <strong>design system</strong> escalable para línea de productos IoT.</li>
+            <li>Técnicas: journey maps, evaluaciones heurísticas, wireframes, prototipos alta fidelidad.</li>
           </ul>
         </div>
 
@@ -261,22 +274,22 @@
             <span class="exp-company">Azzorti (Dupree)</span>
             <span class="exp-date">Feb 2021 - Ago 2025</span>
           </div>
-          <div class="exp-role">Diseñador Gráfico</div>
+          <div class="exp-role">Product Designer (Gráfico)</div>
           <ul class="exp-bullets">
-            <li>Diseñé y optimicé recursos visuales para la línea hogar, adaptando piezas a mercados de <strong>Colombia, Perú, Ecuador, Bolivia y Guatemala</strong>.</li>
-            <li>Desarrollé empaques y material gráfico manteniendo consistencia de marca regional en 5 países.</li>
-            <li>Coordiné con equipos internacionales en procesos de innovación y conceptualización de productos.</li>
+            <li>Lideré diseño de identidad visual y campañas multiregión (CO, PE, EC, BO, GT).</li>
+            <li>Estandaricé <strong>brand system</strong> para 5 mercados: empaques, redes, material impreso.</li>
+            <li>Coordiné equipos internacionales en innovación y conceptualización.</li>
           </ul>
         </div>
 
         <div class="exp-item">
           <div class="exp-header">
-            <span class="exp-company">Experiencia previa en Diseño Gráfico</span>
+            <span class="exp-company">Experiencia Previa</span>
             <span class="exp-date">2018 - 2020</span>
           </div>
-          <div class="exp-role">Diseñador Gráfico · Univ. de los Andes · Doodles · Univ. Central</div>
+          <div class="exp-role">Diseño Gráfico · Univ. de los Andes · Doodles · Univ. Central</div>
           <ul class="exp-bullets">
-            <li>Diseño de material gráfico institucional, piezas digitales para web y redes sociales, y producción de material publicitario para diversas organizaciones.</li>
+            <li>Diseño gráfico institucional, web, redes sociales y material publicitario.</li>
           </ul>
         </div>
       </section>

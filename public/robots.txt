@@ -3,4 +3,4 @@ Allow: /
 
 Disallow: /CVs/
 
-Sitemap: https://yeisonalfonso.com/sitemap.xml
+Sitemap: https://andresdgalfonso50.github.io/portafolio/sitemap.xml

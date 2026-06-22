@@ -8,7 +8,7 @@
         </div>
         <div class="about-hero-grid md:grid-cols-2 md:gap-12 items-center">
           <div class="about-hero-content fade-in">
-            <span class="label text-primary">Product Designer · Bogotá</span>
+            <span class="label text-primary">Senior Product Designer · Bogotá</span>
             <h1 class="font-display text-5xl md:text-6xl font-extrabold tracking-tight leading-[1.1] text-midnight mb-6">
               Diseño
               <span class="text-gradient-primary">productos</span>
@@ -35,12 +35,11 @@
                 </template>
                 Agendar llamada
               </ButtonPrimary>
-              <CVButton variant="secondary" label="Descargar CV" />
             </div>
           </div>
           <div class="about-photo-wrapper fade-in stagger-2 md:ml-auto">
             <div class="about-photo-frame rounded-2xl overflow-hidden shadow-glow-primary">
-              <img src="/assets/images/about/yeison-profile.png" alt="Yeison Alfonso - Product Designer UX/UI" class="about-photo" width="600" height="750" fetchpriority="high" decoding="async">
+              <img src="/assets/images/about/yeison-profile.jpg" alt="Yeison Alfonso - Product Designer UX/UI" class="about-photo" width="600" height="750" fetchpriority="high" decoding="async" loading="eager">
             </div>
           </div>
         </div>
@@ -76,7 +75,7 @@
       <div class="container">
         <div class="section-header fade-in">
           <span class="label">Trayectoria</span>
-          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-3">Experiencia Profesional</h2>
+          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-3">Experiencia profesional</h2>
           <p class="text-lg text-body max-w-2xl">De freelance a producto. Una evolución hacia diseño con mirada de sistema, decisiones documentadas y trabajo cercano con desarrollo.</p>
         </div>
 
@@ -119,7 +118,7 @@
       <div class="container">
         <div class="section-header fade-in">
           <span class="label">Formación</span>
-          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-3">Educación y Cursos</h2>
+          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-3">Educación y cursos</h2>
           <p class="text-lg text-body max-w-2xl">De diseño gráfico a producto: una formación que siguió al foco, no al revés.</p>
         </div>
 
@@ -323,15 +322,15 @@ const principles = [
 ]
 
 const stackTools = [
-  { name: 'Figma', icon: '/assets/logos/stack/figma.svg', bg: '#F24E1E' },
-  { name: 'Notion', icon: '/assets/logos/stack/notion.svg', bg: '#000000' },
-  { name: 'Vue 3', icon: '/assets/logos/stack/vue.svg', bg: '#4FC08D' },
-  { name: 'Tailwind', icon: '/assets/logos/stack/tailwind.svg', bg: '#06B6D4' },
-  { name: 'Analytics', icon: '/assets/logos/stack/google-analytics.svg', bg: '#E37400' },
-  { name: 'Hotjar', icon: '/assets/logos/stack/hotjar.svg', bg: '#FD3A5C' },
-  { name: 'Google Fonts', icon: '/assets/logos/stack/google-fonts.svg', bg: '#4285F4' },
-  { name: 'GitHub', icon: '/assets/logos/stack/github.svg', bg: '#181717' },
-  { name: 'Vercel', icon: '/assets/logos/stack/vercel.svg', bg: '#000000' },
-  { name: 'Netlify', icon: '/assets/logos/stack/netlify.svg', bg: '#00C7B7' }
+  { name: 'Figma',       icon: '/assets/logos/stack/figma.svg',            bg: '#FFE5DC' },
+  { name: 'Notion',      icon: '/assets/logos/stack/notion.svg',           bg: '#F0F0F0' },
+  { name: 'Vue 3',       icon: '/assets/logos/stack/vue.svg',              bg: '#DDF4E5' },
+  { name: 'Tailwind',    icon: '/assets/logos/stack/tailwind.svg',         bg: '#D5F5F6' },
+  { name: 'Analytics',   icon: '/assets/logos/stack/google-analytics.svg', bg: '#FCE4D2' },
+  { name: 'Hotjar',      icon: '/assets/logos/stack/hotjar.svg',           bg: '#FFE0E5' },
+  { name: 'Google Fonts',icon: '/assets/logos/stack/google-fonts.svg',     bg: '#E0EBFF' },
+  { name: 'GitHub',      icon: '/assets/logos/stack/github.svg',           bg: '#E8E8E8' },
+  { name: 'Vercel',      icon: '/assets/logos/stack/vercel.svg',           bg: '#E8E8E8' },
+  { name: 'Netlify',     icon: '/assets/logos/stack/netlify.svg',          bg: '#CDF3F0' }
 ]
 </script>

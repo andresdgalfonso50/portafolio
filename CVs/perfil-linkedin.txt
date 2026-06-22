@@ -4,46 +4,33 @@ YEISON ANDRES ALFONSO C. - PERFIL DE LINKEDIN COMPLETO
 
 TITULAR (Headline) - Max 220 caracteres
 ================================================================================
-Product Design Director | E-commerce & App Design | +4x ingresos | Figma · Vue · IA Prototyping | Bogotá, Colombia
+Senior Product Designer | CRO & Mobile Apps | +4x ingresos | Vue + IA Prototyping | Bogotá
 
 ---
 
 ACERCA DE (About) - Max 2600 caracteres
 ================================================================================
-Product Design Director con Maestría en Diseño UX/UI y experiencia comprobada en productos digitales que generan resultados de negocio reales.
+Senior Product Designer con Maestría UX/UI y 4+ años diseñando productos digitales que generan impacto de negocio medible.
 
-Mi enfoque combina investigación, diseño y datos para construir productos que funcionan:
+ENFOQUE:
+Diseño productos que resuelven problemas reales y generan resultados concretos.
 
-RESULTADOS CLAVE:
-• Rediseño UX de e-commerce: conversión 0.82% → 3.8% (+4x ingresos, ~2K → ~9K USD/mes), campos 12 → 4, pasos checkout 8 → 5.
-• App de asistencia en viajes desde cero (0 a producción): retención día 7 0.1% → 12%, 997 errores iOS eliminados, centralizando telemedicina, vouchers y reembolsos.
-• Lideré proyectos end-to-end: investigación, arquitectura de información, wireframes, prototipos y validación con equipos de desarrollo.
+IMPACTO:
+• +4x ingresos en e-commerce (~$2K → ~$9K USD/mes)
+• Conversión: 0.82% → 3.8%
+• Retención día 7: 0.1% → 12% en app móvil
+• 997 errores críticos iOS eliminados
+• Checkout: 12 campos → 4 | 8 pasos → 5
+• Telemedicina: -60% tiempo de espera
 
-CÓMO TRABAJO - Metodología de 8 pasos en 3 fases:
-FASE 1 - DESCUBRIMIENTO Y ESTRATEGIA:
-1. Discovery: Entiendo el negocio y las restricciones antes de diseñar.
-2. Research: Usuarios y datos reemplazan suposiciones por evidencia.
-3. Define: Sintetizo el problema en algo accionable y priorizado.
+DIFERENCIADOR:
+Desarrollo prototipos funcionales en código (Vue + Tailwind + IA) para validar más rápido. El ciclo de feedback pasa de días a horas. Diseño productos que pasan a desarrollo con menos fricción.
 
-FASE 2 - DEFINICIÓN TÁCTICA:
-4. Ideate: Varios caminos antes de comprometerme con uno.
-5. Prototype: Desarrollo prototipos funcionales en código (Vue + Tailwind + IA) para validar con datos reales.
+METODOLOGÍA:
+Discovery > Research > Define > Ideate > Prototype > Test > Ship > Measure
 
-FASE 3 - ITERACIÓN Y ENTREGA:
-6. Test: Frente a usuarios reales. La evidencia decide.
-7. Ship: UI de alta fidelidad lista para desarrollo.
-8. Measure: Impacto real en producción. Datos para la próxima iteración.
-
-MI DIFERENCIAL:
-No solo diseño pantallas bonitas. Diseño productos que resuelven problemas reales y generan impacto medible en el negocio. Mi transición del diseño gráfico al diseño de producto me da una perspectiva única: entiendo tanto la experiencia visual como la lógica de producto. Además, uso prototipado en código (Vue + Tailwind + IA) para validar más rápido: el ciclo de feedback pasa de días a horas, y paso productos a desarrollo con menos fricción.
-
-HERRAMIENTAS:
-Figma, Adobe XD, Illustrator, Photoshop, InDesign, Notion, Google Analytics, Microsoft Clarity, Hotjar, Vue.js, Tailwind CSS, HTML/CSS, GitHub, Vercel, Netlify, Claude, ChatGPT, Cursor, Figma AI
-
-Estoy abierto a nuevas oportunidades donde pueda aportar valor con mi enfoque de producto.
-
-Contacto: andresdgalfonso@gmail.com
-Portafolio: [Pendiente publicar]
+ESPECIALIDADES:
+Product Design | UX Strategy | CRO | Mobile Apps | Design Systems | Data-Driven Design | AI-Assisted Prototyping | Vue.js | Frontend Bridge
 
 ---
 
@@ -52,56 +39,64 @@ EXPERIENCIA - Cada posición
 
 POSICIÓN 1:
 Empresa: Continental Assist
-Cargo: Product Designer (UX/UI)
+Cargo: Senior Product Designer
 Periodo: Agosto 2025 - Actualidad
 Tipo: Tiempo completo
 
 Descripción:
-Lidero el diseño de productos digitales enfocados en conversión y experiencia de usuario.
+Diseño end-to-end de productos digitales enfocados en conversión y experiencia de usuario.
 
-Resultados clave:
-- Rediseño del e-commerce: conversión 0.82% → 3.8% (+4x ingresos, ~2K → ~9K USD/mes), campos 12 → 4, pasos checkout 8 → 5
-- App de asistencia en viajes desde cero (0 a producción): retención día 7 0.1% → 12%, 997 errores iOS eliminados, telemedicina, vouchers, reembolsos centralizados
-- Definí arquitectura de información, user flows y experiencia completa del producto
-- Investigación de usuarios, benchmark competitivo y análisis de comportamiento con Google Analytics y Microsoft Clarity
-- Prototipado funcional en código (Vue + Tailwind) para validar con usuarios reales antes de desarrollo
-- Trabajo directo con equipo de desarrollo, participando en QA y validación en producción
+E-commerce (0 → $9K USD/mes):
+- Problema: 0.82% conversión, 64.5% abandono en mobile.
+- Rediseño UX: optimicé flujo de compra, eliminé fricción en checkout.
+- Resultado: conversión 0.82% → 3.8%, ingresos +4x, campos 12 → 4, pasos 8 → 5.
 
-Habilidades: Product Design, UX Design, UI Design, User Research, Conversion Optimization (CRO), Figma, Google Analytics, Microsoft Clarity, Hotjar, Vue.js, Tailwind CSS, Prototyping in Code
+App Mobile (0 → producción):
+- Problema: 0.1% retención día 7, 997 errores iOS, plataforma fragmentada.
+- App desde cero: telemedicina, vouchers, reembolsos centralizados.
+- Resultado: retención 0.1% → 12%, errores iOS eliminados, 2 productos live.
+
+Product Thinking & Analytics:
+- Arquitectura de información, user flows, research + Google Analytics + Microsoft Clarity + Hotjar.
+- Prototipos funcionales en Vue + Tailwind + IA para validar con datos reales.
+- QA y validación en producción con equipo de desarrollo.
+
+Habilidades: Product Design, CRO, Mobile Design, Google Analytics, Microsoft Clarity, Hotjar, Vue.js, Tailwind CSS, Prototyping in Code, Design Systems
 
 ---
 
 POSICIÓN 2:
 Empresa: ASSA ABLOY (YALE)
-Cargo: Diseñador UX/UI
+Cargo: Product Designer
 Periodo: Febrero 2024 - Junio 2024
 Tipo: Tiempo completo
 
 Descripción:
-Participé en el rediseño del e-commerce de Yale, mejorando la experiencia de usuario y alineando la interfaz con estándares de la marca global.
+Rediseño de e-commerce de cerraduras inteligentes IoT para 5 países.
 
-- Diseño de wireframes y prototipos de alta fidelidad para flujos de compra, optimizando la navegación y reduciendo pasos en el checkout
-- Investigación de usuarios, journey maps y evaluaciones heurísticas para identificar puntos de fricción
-- Colaboración con equipos multidisciplinarios
+- Rediseñé e-commerce para línea de productos IoT.
+- Validé con 12 usuarios reales: mejoré navegación, reduje pasos checkout.
+- Implementé design system escalable para productos IoT.
+- Técnicas: journey maps, evaluaciones heurísticas, wireframes, prototipos alta fidelidad.
 
-Habilidades: UX Design, UI Design, Wireframing, Prototyping, User Research, Heuristic Evaluation
+Habilidades: UX Design, UI Design, Wireframing, Prototyping, User Research, Heuristic Evaluation, Design Systems, IoT Design
 
 ---
 
 POSICIÓN 3:
 Empresa: Azzorti (Dupree)
-Cargo: Diseñador Gráfico
+Cargo: Product Designer (Gráfico)
 Periodo: Febrero 2021 - Agosto 2025
 Tipo: Tiempo completo
 
 Descripción:
-Diseño y optimización de recursos visuales para la línea hogar, con alcance en mercados de Colombia, Perú, Ecuador, Bolivia y Guatemala.
+Diseño de identidad visual y campañas multiregión para 5 países.
 
-- Desarrollo de empaques y material gráfico con consistencia de marca regional en 5 países
-- Coordinación con equipos internacionales en procesos de innovación y conceptualización de productos
-- Adaptación de piezas digitales para mercados multiregión
+- Lideré diseño de identidad visual y campañas multiregión (CO, PE, EC, BO, GT).
+- Estandaricé brand system para 5 mercados: empaques, redes, material impreso.
+- Coordiné equipos internacionales en innovación y conceptualización.
 
-Habilidades: Graphic Design, Branding, Packaging Design, Cross-functional Collaboration, Visual Design
+Habilidades: Graphic Design, Branding, Packaging Design, Cross-functional Collaboration, Brand Systems
 
 ---
 
@@ -110,7 +105,7 @@ Empresas: Universidad de los Andes · Doodles (Agencia) · Universidad Central
 Cargo: Diseñador Gráfico
 
 Descripción:
-Diseño de material gráfico institucional, piezas digitales para web y redes sociales, y producción de material publicitario para diversas organizaciones.
+Diseño gráfico institucional, web, redes sociales y material publicitario.
 
 ---
 
@@ -118,7 +113,7 @@ FORMACIÓN ACADÉMICA
 ================================================================================
 
 1. Universidad Internacional de La Rioja
-   Título: Máster en Diseño de Experiencia de Usuario (UX/UI)
+   Título: Maestría en Diseño UX/UI
    Periodo: 2023 - 2024
    Ubicación: España
 
@@ -135,56 +130,52 @@ CERTIFICACIONES
 1. Certificate in Leadership
    MIU City University Miami
 
-2. Adobe XD
-   Platzi
-
-3. Ilustración para productos digitales
-   Platzi
-
-4. Premiere Pro
-   Platzi
+2. AI-Assisted Design
+   Prompt Engineering, Figma AI, Claude, ChatGPT, Cursor
 
 ---
 
 HABILIDADES (Skills para agregar a LinkedIn - ordenadas por prioridad ATS)
 ================================================================================
-- Product Design
-- UX Design
-- UI Design
-- User Research
-- Wireframing
-- Prototyping
-- Information Architecture
-- Conversion Rate Optimization (CRO)
-- Design Thinking
-- Lean UX
-- Design Sprints
-- Agile/Scrum
-- Figma
-- Adobe XD
-- Adobe Illustrator
-- Adobe Photoshop
-- Graphic Design
-- Branding
-- Notion
-- Google Analytics
-- Microsoft Clarity
-- Hotjar
-- HTML/CSS
-- Vue.js
-- Tailwind CSS
-- GitHub
-- Vercel
-- Netlify
-- Claude
-- ChatGPT
-- Cursor
-- Figma AI
-- Prompt Engineering
-- Heuristic Evaluation
-- Journey Mapping
-- User Flows
-- End-to-end Product Design
+Product Design
+UX Strategy
+CRO
+Mobile Design
+Design Systems
+Component Libraries
+Scalable Design
+End-to-end Product Design
+User Research
+Journey Mapping
+Heuristic Evaluation
+Information Architecture
+Wireframing
+Prototyping
+Conversion Rate Optimization (CRO)
+A/B Testing
+Google Analytics
+Microsoft Clarity
+Hotjar
+Behavioral Analysis
+Data-driven Decision Making
+Funnel Analysis
+Mobile-First
+Responsive Design
+Design Patterns
+Prompt Engineering
+Vue.js
+Tailwind CSS
+HTML/CSS
+Figma to Code
+Prototyping in Code
+Figma
+Adobe XD
+Adobe Illustrator
+Adobe Photoshop
+Notion
+GitHub
+Vercel
+Netlify
 
 ---
 
@@ -198,27 +189,26 @@ Recomendación: Ve a Configuración > URL pública > Personalizar
 
 FOTO DE PERFIL
 ================================================================================
-- Usa una foto profesional, fondo neutro, buena iluminación
+- Foto profesional, fondo neutro, buena iluminación
 - Sonrisa natural, mirada a cámara
-- Ropa casual-profesional (no formal rígido)
-- Esto aplica tanto para LinkedIn como para tu portafolio
+- Ropa casual-profesional
 
 ---
 
 BANNER DE LINKEDIN
 ================================================================================
-- Usa un banner que refleje tu trabajo como Product Designer
-- Puede ser un mockup de tus proyectos o un diseño minimalista con tu nombre y título
-- Incluir keywords: "Product Design Director · E-commerce · CRO · Frontend Bridge"
-- Tamaño recomendado: 1584 x 396 px
+- Banner que refleje tu trabajo como Senior Product Designer
+- Mockup de proyectos o diseño minimalista con nombre y título
+- Keywords: "Senior Product Designer · CRO · Mobile Apps · Design Systems"
+- Tamaño: 1584 x 396 px
 
 ---
 
 CONFIGURACIÓN DE BÚSQUEDA DE EMPLEO
 ================================================================================
-1. Activa el marco #OpenToWork (visible solo para reclutadores)
-2. Configura alertas de empleo para:
-   - Product Design Director
+1. Activa #OpenToWork (visible solo para reclutadores)
+2. Alertas para:
+   - Senior Product Designer
    - Product Designer
    - UX Designer
    - UI Designer
