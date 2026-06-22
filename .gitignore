@@ -9,6 +9,9 @@ dist/
 .env.local
 .env.*.local
 
+# Personal CVs (kept locally, not tracked - contains PII)
+CVs/
+
 # Large design files (kept locally for reference, not tracked)
 PSD/
 
@@ -30,3 +33,16 @@ $RECYCLE.BIN/
 .idea/
 *.swp
 .DS_Store
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Local analysis
+analyze_competitor.py
+competitor_*.png
+competitor_*.json
+competitor_*.txt

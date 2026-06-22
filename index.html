@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Security headers via meta tags (GitHub Pages doesn't allow custom headers) -->
+    <!-- Security headers via meta tags (GitHub Pages doesn't allow custom HTTP headers) -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://formsubmit.co; frame-ancestors 'none'; base-uri 'self'; form-action 'self' https://formsubmit.co;">
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta http-equiv="X-Frame-Options" content="DENY">
     <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
     <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), interest-cohort=()">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
 
     <title>Yeison Alfonso | UX/UI Product Designer</title>
     <meta name="description" content="UX/UI Product Designer con Maestría en UX/UI. +4x ingresos en e-commerce, diseño de apps y telemedicina. End-to-end design con impacto medible.">

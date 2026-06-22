@@ -1,0 +1,5 @@
+Contact: https://github.com/andresdgalfonso50/portafolio/issues
+Contact: mailto:andresdgalfonso@gmail.com
+Expires: 2027-12-31T23:59:59z
+Preferred-Languages: es, en
+Canonical: https://andresdgalfonso50.github.io/portafolio/.well-known/security.txt
