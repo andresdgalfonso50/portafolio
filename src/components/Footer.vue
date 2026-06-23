@@ -16,7 +16,7 @@
 
         <!-- Navegación -->
         <div class="flex flex-col gap-4">
-          <h4 class="text-white font-bold text-xs uppercase tracking-widest">Navegación</h4>
+          <p class="text-white font-bold text-xs uppercase tracking-widest footer-label">Navegación</p>
           <div class="flex flex-col gap-2">
             <router-link to="/" class="text-sm hover:text-white transition-colors">Home</router-link>
             <router-link to="/sobre-mi" class="text-sm hover:text-white transition-colors">Sobre mí</router-link>
@@ -26,7 +26,7 @@
 
         <!-- Contacto -->
         <div class="flex flex-col gap-4">
-          <h4 class="text-white font-bold text-xs uppercase tracking-widest">Contacto</h4>
+          <p class="text-white font-bold text-xs uppercase tracking-widest footer-label">Contacto</p>
           <div class="flex flex-col gap-3">
             <a href="mailto:andresdgalfonso@gmail.com" class="flex items-center gap-3 group hover:text-white transition-colors">
               <Mail :size="16" class="text-body group-hover:text-white transition-colors shrink-0" />
@@ -45,38 +45,36 @@
 
         <!-- Impacto + Stack (nuevo bloque con propuesta de valor) -->
         <div class="flex flex-col gap-4">
-          <h4 class="text-white font-bold text-xs uppercase tracking-widest">Impacto</h4>
-          <ul class="flex flex-col gap-2 text-sm">
+          <p class="text-white font-bold text-xs uppercase tracking-widest footer-label">Impacto</p>
+          <ul class="flex flex-col gap-2 text-sm" aria-label="Métricas de impacto">
             <li class="flex items-center gap-2">
-              <span class="text-primary">›</span>
+              <span class="text-primary" aria-hidden="true">›</span>
               <span><strong class="text-white">+4x</strong> ingresos generados</span>
             </li>
             <li class="flex items-center gap-2">
-              <span class="text-primary">›</span>
+              <span class="text-primary" aria-hidden="true">›</span>
               <span><strong class="text-white">0.1% → 12%</strong> retención</span>
             </li>
             <li class="flex items-center gap-2">
-              <span class="text-primary">›</span>
+              <span class="text-primary" aria-hidden="true">›</span>
               <span><strong class="text-white">2 apps</strong> en producción</span>
             </li>
             <li class="flex items-center gap-2">
-              <span class="text-primary">›</span>
+              <span class="text-primary" aria-hidden="true">›</span>
               <span><strong class="text-white">+6K</strong> usuarios impactados</span>
             </li>
           </ul>
-          <h4 class="text-white font-bold text-xs uppercase tracking-widest mt-2">Stack</h4>
+          <p class="text-white font-bold text-xs uppercase tracking-widest mt-2 footer-label">Stack</p>
           <p class="text-xs leading-relaxed">E-commerce · Mobile Apps · UX Strategy · CRO · Design Systems</p>
         </div>
       </div>
 
       <!-- Bottom bar -->
       <div class="border-t border-slate-800/50 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-        <p class="text-xs text-body">© {{ new Date().getFullYear() }} Yeison Alfonso. Disponible desde abril 2026.</p>
+        <p class="text-xs text-body">© {{ new Date().getFullYear() }} Yeison Alfonso.</p>
         <div class="flex items-center gap-6 text-xs text-body">
           <span class="hidden md:inline">Diseñando productos que generan resultados.</span>
-          <button @click="scrollToTop" class="p-2 hover:text-white transition-colors" aria-label="Volver arriba">
-            <ChevronUp :size="20" />
-          </button>
+          <span>Disponible para nuevos proyectos desde abril 2026.</span>
         </div>
       </div>
     </div>
@@ -84,9 +82,5 @@
 </template>
 
 <script setup>
-import { Linkedin, Mail, Phone, MapPin, ChevronUp } from 'lucide-vue-next'
-
-const scrollToTop = () => {
-  window.scrollTo({ top: 0, behavior: 'smooth' })
-}
+import { Linkedin, Mail, Phone, MapPin } from 'lucide-vue-next'
 </script>

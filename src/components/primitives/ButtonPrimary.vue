@@ -86,13 +86,13 @@ const tag = computed(() => {
 
 /* Variants */
 .btn-primary--primary {
-  background: var(--color-midnight, #0A1022);
+  background: #0071e3;
   color: #fff;
-  border-color: var(--color-midnight, #0A1022);
+  border-color: #0071e3;
 }
 .btn-primary--primary:hover:not(:disabled) {
-  background: #0071e3;
-  border-color: #0071e3;
+  background: #005bb5;
+  border-color: #005bb5;
   transform: translateY(-1px);
 }
 
