@@ -5,17 +5,17 @@
       case-slug="xentral"
       :icon="HeartPulse"
       title="Xentral Health"
-      highlight="telemedicina de alta velocidad"
+      highlight="telemedicina sin esperas"
       badge="Health Tech"
-      subtitle="Diseño para momentos de alta presión: Simplificación de la plataforma de telemedicina reduciendo un 60% el tiempo de espera médico."
+      subtitle="Producto: plataforma web de telemedicina para viajeros en el extranjero. Mi rol: liderar el diseño de los flujos críticos de atención. Resultado: redujimos a la mitad el tiempo entre que un viajero solicita atención y un médico lo atiende."
       :hero-image="heroXentralImg"
       hero-image-alt="Telemedicina urgente"
-      :hero-badge="{ value: '-60%', label: 'tiempo' }"
+      :hero-badge="{ value: '60%', label: 'menos espera' }"
       :meta="[
         { value: 'Product Designer', label: 'Mi Rol' },
         { value: '6 Semanas', label: 'Duración' },
         { value: '3 Devs + 1 PM', label: 'Equipo' },
-        { value: '-60% Tiempo', label: 'Impacto', emphasis: true }
+        { value: '−60% Tiempo', label: 'Impacto', emphasis: true }
       ]"
     />
 
@@ -40,8 +40,8 @@
 
         <div class="section-header fade-in mb-12">
           <span class="section-number">01</span>
-          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-8">4 barreras. 5 min entre vida y muerte.</h2>
-          <p class="section-intro">Lo que enfrenta un viajero enfermo en el extranjero y la pregunta de diseño que guio todo.</p>
+          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-8">4 barreras. 5 minutos que importan.</h2>
+          <p class="section-intro">Lo que enfrenta un viajero enfermo en el extranjero y la pregunta de diseño que guio el proyecto.</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-4 gap-6 fade-in stagger-1 mb-8">
@@ -81,8 +81,8 @@
       <div class="max-w-6xl mx-auto px-6">
         <div class="section-header fade-in mb-12">
           <span class="section-number">02</span>
-          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-8">Decisiones de diseño clave</h2>
-          <p class="section-intro">3 roles unificados bajo una sola arquitectura cognitiva, con el Coordinador médico como motor operativo.</p>
+          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-8">Lo que descubrimos en la investigación</h2>
+          <p class="section-intro">3 tipos de usuarios usan la plataforma. Uno de ellos —el Coordinador médico— se convirtió en el motor de todo el servicio.</p>
         </div>
 
         <!-- 3 roles -->
@@ -123,7 +123,7 @@
             <div>
               <span class="text-xs font-bold uppercase tracking-widest text-secondary mb-1 block">El momento "aha"</span>
               <h4 class="text-lg font-bold text-white mb-2">El verdadero motor era el Coordinador Médico</h4>
-              <p class="text-sm text-slate-300 leading-relaxed">"Pensábamos que el diseño se centraría casi exclusivamente en el paciente, pero la investigación reveló que el verdadero motor y cuello de botella del servicio era el Coordinador Médico. Si su interfaz no era hiper-eficiente para gestionar datos masivos, agendas y reportes, el servicio colapsaba."</p>
+              <p class="text-sm text-slate-300 leading-relaxed">"Pensábamos que diseñaríamos casi todo para el paciente. Pero la investigación reveló que el Coordinador Médico era el verdadero motor del servicio. Si su interfaz no era eficiente para gestionar agendas, datos y reportes, todo el sistema colapsaba."</p>
             </div>
           </div>
         </div>
@@ -195,36 +195,36 @@
       <div class="max-w-6xl mx-auto px-6">
         <div class="section-header fade-in mb-12">
           <span class="section-number">03</span>
-          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-8">Simplificación de Flujo Crítico: 6 Decisiones clave reducidas a minutos</h2>
-          <p class="section-intro">Estructuración de pantallas de alta fidelidad optimizadas para reducir la carga cognitiva en momentos de alta presión médica.</p>
+          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-8">Cómo simplificamos el flujo crítico</h2>
+          <p class="section-intro">6 pasos rediseñados para que un viajero enfermo pueda llegar al médico sin perderse en el camino.</p>
         </div>
 
         <!-- Flujo principal: 6 pasos -->
         <h3 class="text-sm font-bold uppercase tracking-widest text-body mb-6">Flujo principal: del síntoma a la atención</h3>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
           <div class="bg-white p-4 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
-            <h4 class="text-sm font-bold text-midnight mb-2"><span class="inline-flex w-6 h-6 bg-chip text-body font-semibold rounded-md items-center justify-center text-xs font-bold mr-2">1</span>Acceso a la plataforma</h4>
-            <p class="text-xs text-body">Entrada simple y directa al servicio con credenciales del plan.</p>
+            <h4 class="text-sm font-bold text-midnight mb-2"><span class="inline-flex w-6 h-6 bg-chip text-body font-semibold rounded-md items-center justify-center text-xs font-bold mr-2">1</span>Acceso</h4>
+            <p class="text-xs text-body">Entrada directa con un enlace del email de la cita. Sin contraseñas.</p>
           </div>
           <div class="bg-white p-4 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
-            <h4 class="text-sm font-bold text-midnight mb-2"><span class="inline-flex w-6 h-6 bg-chip text-body font-semibold rounded-md items-center justify-center text-xs font-bold mr-2">2</span>Validación de beneficio</h4>
-            <p class="text-xs text-body">Verificación rápida de cobertura médica con indicador claro.</p>
+            <h4 class="text-sm font-bold text-midnight mb-2"><span class="inline-flex w-6 h-6 bg-chip text-body font-semibold rounded-md items-center justify-center text-xs font-bold mr-2">2</span>Verificar cobertura</h4>
+            <p class="text-xs text-body">El paciente ve de inmediato qué servicios tiene disponibles.</p>
           </div>
           <div class="bg-white p-4 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
-            <h4 class="text-sm font-bold text-midnight mb-2"><span class="inline-flex w-6 h-6 bg-chip text-body font-semibold rounded-md items-center justify-center text-xs font-bold mr-2">3</span>Registro de síntomas</h4>
-            <p class="text-xs text-body">Selección intuitiva de síntomas actuales con jerarquía clara.</p>
+            <h4 class="text-sm font-bold text-midnight mb-2"><span class="inline-flex w-6 h-6 bg-chip text-body font-semibold rounded-md items-center justify-center text-xs font-bold mr-2">3</span>Describir síntomas</h4>
+            <p class="text-xs text-body">Selección visual de síntomas. Sin campos abiertos.</p>
           </div>
           <div class="bg-white p-4 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
             <h4 class="text-sm font-bold text-midnight mb-2"><span class="inline-flex w-6 h-6 bg-chip text-body font-semibold rounded-md items-center justify-center text-xs font-bold mr-2">4</span>Tipo de atención</h4>
-            <p class="text-xs text-body">Orientación basada en los síntomas registrados por el usuario.</p>
+            <p class="text-xs text-body">El sistema sugiere llamada o videollamada según la gravedad.</p>
           </div>
           <div class="bg-white p-4 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
-            <h4 class="text-sm font-bold text-midnight mb-2"><span class="inline-flex w-6 h-6 bg-chip text-body font-semibold rounded-md items-center justify-center text-xs font-bold mr-2">5</span>Conexión con médico</h4>
-            <p class="text-xs text-body">Llamada o videollamada según preferencia y disponibilidad.</p>
+            <h4 class="text-sm font-bold text-midnight mb-2"><span class="inline-flex w-6 h-6 bg-chip text-body font-semibold rounded-md items-center justify-center text-xs font-bold mr-2">5</span>Conectar con médico</h4>
+            <p class="text-xs text-body">Llamada o videollamada según lo que el paciente prefiera.</p>
           </div>
           <div class="bg-white p-4 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
-            <h4 class="text-sm font-bold text-midnight mb-2"><span class="inline-flex w-6 h-6 bg-midnight text-white rounded-md items-center justify-center text-xs font-bold mr-2">6</span>Recomendaciones + NPS</h4>
-            <p class="text-xs text-body">Indicaciones médicas claras y encuesta NPS al cierre.</p>
+            <h4 class="text-sm font-bold text-midnight mb-2"><span class="inline-flex w-6 h-6 bg-midnight text-white rounded-md items-center justify-center text-xs font-bold mr-2">6</span>Recomendaciones</h4>
+            <p class="text-xs text-body">Indicaciones claras y encuesta breve de satisfacción al cierre.</p>
           </div>
         </div>
 
@@ -457,31 +457,31 @@
       <div class="max-w-6xl mx-auto px-6">
         <div class="section-header fade-in mb-12 text-center">
           <span class="section-number">04</span>
-          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-4">Impacto: -60% tiempo, +90% claridad</h2>
-          <p class="text-lg text-body">12 usuarios validaron la experiencia en crisis simuladas.</p>
+          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-4">Lo que cambió tras el lanzamiento</h2>
+          <p class="text-lg text-body">Validado con 12 usuarios en escenarios de crisis simulada antes de salir a producción.</p>
         </div>
 
-        <!-- Métricas grandes -->
+        <!-- Métricas grandes (lenguaje natural) -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 divide-x divide-borderline py-16 w-full max-w-6xl mx-auto border border-borderline rounded-[2.5rem] bg-surface shadow-inner mb-16">
           <div class="text-center px-8">
-            <span class="font-display text-7xl md:text-9xl font-black text-highlight tracking-tight block leading-[0.85]">-60%</span>
+            <span class="font-display text-6xl md:text-7xl font-black text-highlight tracking-tight block leading-[0.95]">−60%</span>
             <div class="mt-4">
-              <h3 class="text-sm font-bold text-body uppercase tracking-widest">Tiempo de acceso</h3>
-              <p class="text-sm text-slate-400 mt-2">Entre necesidad y atención médica</p>
+              <h3 class="text-sm font-bold text-body uppercase tracking-widest">Menos tiempo</h3>
+              <p class="text-sm text-slate-400 mt-2">Entre que el viajero pide ayuda y un médico lo atiende</p>
             </div>
           </div>
           <div class="text-center px-8">
-            <span class="font-display text-7xl md:text-9xl font-black text-highlight tracking-tight block leading-[0.85]">+90%</span>
+            <span class="font-display text-6xl md:text-7xl font-black text-highlight tracking-tight block leading-[0.95]">+90%</span>
             <div class="mt-4">
-              <h3 class="text-sm font-bold text-body uppercase tracking-widest">Claridad del proceso</h3>
-              <p class="text-sm text-slate-400 mt-2">Pasos recordados sin ayuda: 1.2 → 4.5 de 6</p>
+              <h3 class="text-sm font-bold text-body uppercase tracking-widest">Más claridad</h3>
+              <p class="text-sm text-slate-400 mt-2">Pasos recordados sin ayuda: de 1.2 a 4.5 de 6</p>
             </div>
           </div>
           <div class="text-center px-8">
-            <span class="font-display text-7xl md:text-9xl font-black text-highlight tracking-tight block leading-[0.85]">100%</span>
+            <span class="font-display text-6xl md:text-7xl font-black text-highlight tracking-tight block leading-[0.95]">100%</span>
             <div class="mt-4">
               <h3 class="text-sm font-bold text-body uppercase tracking-widest">Cobertura visible</h3>
-              <p class="text-sm text-slate-400 mt-2">Usuario sabe qué servicios tiene</p>
+              <p class="text-sm text-slate-400 mt-2">El usuario siempre sabe qué servicios tiene</p>
             </div>
           </div>
         </div>
@@ -507,92 +507,96 @@
       </div>
     </section>
 
-    <!-- 6. APRENDIZAJES & NEXT STEPS -->
+    <!-- 6. RIGOR DEL PROYECTO (colapsable) -->
     <section class="case-section">
-      <div class="max-w-6xl mx-auto px-6">
-        <div class="section-header fade-in mb-12">
+      <div class="max-w-5xl mx-auto px-6">
+        <div class="section-header fade-in mb-12 text-center">
           <span class="section-number">05</span>
-          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-8">4 lecciones, 4 iteraciones, escalabilidad multi-país</h2>
-          <p class="section-intro">Lo que aprendí sobre tiempo, claridad y decisiones bajo presión. Roadmap ordenado por impacto.</p>
+          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-8">Lo que aprendimos bajo presión</h2>
+          <p class="section-intro">6 semanas, 12 usuarios y un servicio que no podía fallar.</p>
         </div>
 
-        <!-- 4 lecciones -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
-          <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
-            <span class="text-2xl font-black text-borderline mb-3 block">01</span>
-            <p class="text-sm text-slate-700 leading-relaxed"><strong>En crisis cada segundo cuenta.</strong> Descubrimos que flujo corto no es mejor: en emergencias, los usuarios prefieren ver todas las opciones para sentirse en control.</p>
-          </div>
-          <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
-            <span class="text-2xl font-black text-borderline mb-3 block">02</span>
-            <p class="text-sm text-slate-700 leading-relaxed"><strong>Claridad mata ansiedad.</strong> Los usuarios necesitaban ver todos los pasos desde el inicio para sentirse en control. Eso cambió la arquitectura del flujo.</p>
-          </div>
-          <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
-            <span class="text-2xl font-black text-borderline mb-3 block">03</span>
-            <p class="text-sm text-slate-700 leading-relaxed"><strong>Stakeholders internos importan.</strong> Los médicos tenían objeciones distintas a los pacientes. Identificar ambos grupos desde el inicio previno retrabajo.</p>
-          </div>
-          <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
-            <span class="text-2xl font-black text-borderline mb-3 block">04</span>
-            <p class="text-sm text-slate-700 leading-relaxed"><strong>HTML acelera validación.</strong> Crear prototipos clickeables en código redujo el ciclo de feedback de días a horas. Stakeholders podían ver y tocar el flujo antes de construirlo.</p>
-          </div>
-        </div>
-
-        <!-- Lecciones aprendidas -->
-        <div class="failures-section fade-in w-full max-w-5xl mx-auto bg-zinc-50 border-l-4 border-primary border border-borderline rounded-2xl p-6 md:p-7 mb-10">
-          <div class="flex items-start gap-4">
-            <div class="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center shrink-0">
-              <Lightbulb :size="18" class="text-primary" />
-            </div>
+        <DetrasDeEscena title="Lecciones, errores y próximos pasos">
+          <div class="space-y-8">
             <div>
-              <h4 class="text-sm font-bold text-midnight mb-3">Lo que intentamos y no funcionó</h4>
-              <ul class="space-y-2 text-base text-slate-700">
+              <h4 class="text-sm font-bold uppercase tracking-widest text-midnight mb-4">4 aprendizajes del proyecto</h4>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="bg-surface p-5 rounded-2xl">
+                  <span class="text-xs font-bold text-primary uppercase tracking-widest">01</span>
+                  <p class="text-sm text-slate-700 leading-relaxed mt-2"><strong>En crisis cada segundo cuenta.</strong> En emergencias, los usuarios prefieren ver todas las opciones para sentirse en control.</p>
+                </div>
+                <div class="bg-surface p-5 rounded-2xl">
+                  <span class="text-xs font-bold text-primary uppercase tracking-widest">02</span>
+                  <p class="text-sm text-slate-700 leading-relaxed mt-2"><strong>Claridad mata ansiedad.</strong> Los usuarios necesitaban ver todos los pasos desde el inicio. Eso cambió el flujo.</p>
+                </div>
+                <div class="bg-surface p-5 rounded-2xl">
+                  <span class="text-xs font-bold text-primary uppercase tracking-widest">03</span>
+                  <p class="text-sm text-slate-700 leading-relaxed mt-2"><strong>Stakeholders internos importan.</strong> Los médicos tenían objeciones distintas a los pacientes. Identificarlos al inicio previno retrabajo.</p>
+                </div>
+                <div class="bg-surface p-5 rounded-2xl">
+                  <span class="text-xs font-bold text-primary uppercase tracking-widest">04</span>
+                  <p class="text-sm text-slate-700 leading-relaxed mt-2"><strong>HTML acelera validación.</strong> Prototipos clickeables en código redujeron el ciclo de feedback de días a horas.</p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h4 class="text-sm font-bold uppercase tracking-widest text-midnight mb-4">Lo que probamos primero y descartamos</h4>
+              <ul class="space-y-2 text-sm text-slate-700">
                 <li class="flex items-start gap-2">
-                  <span class="text-primary mt-0.5">✗</span>
-                  <span><strong>Flujo ultracorto:</strong> En crisis, usuarios necesitan ver el mapa completo.</span>
+                  <span class="text-primary mt-0.5 font-bold">✗</span>
+                  <span><strong>Flujo ultracorto:</strong> En crisis, los usuarios necesitan ver el mapa completo del proceso.</span>
                 </li>
                 <li class="flex items-start gap-2">
-                  <span class="text-primary mt-0.5">✗</span>
-                  <span><strong>Chatbot primero:</strong> En salud, quieren un humano ya.</span>
+                  <span class="text-primary mt-0.5 font-bold">✗</span>
+                  <span><strong>Chatbot primero:</strong> En salud, las personas quieren hablar con un humano desde el primer momento.</span>
                 </li>
                 <li class="flex items-start gap-2">
-                  <span class="text-primary mt-0.5">✗</span>
-                  <span><strong>Minimalismo extremo:</strong> Botones pequeños no funcionan en estrés. Agrandamos todo +200%.</span>
+                  <span class="text-primary mt-0.5 font-bold">✗</span>
+                  <span><strong>Minimalismo extremo:</strong> Los botones pequeños no funcionan bajo estrés. Agrandamos todo un 200%.</span>
                 </li>
               </ul>
             </div>
-          </div>
-        </div>
 
-        <!-- Next steps: 4 iteraciones -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-          <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
-            <div class="w-10 h-10 bg-secondary/20 rounded-xl flex items-center justify-center mb-3">
-              <BarChart2 :size="20" class="text-secondary" />
+            <div>
+              <h4 class="text-sm font-bold uppercase tracking-widest text-midnight mb-4">Próximos pasos priorizados</h4>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                <div class="flex items-start gap-3 p-3 rounded-xl bg-surface">
+                  <BarChart2 :size="18" class="text-primary mt-0.5 shrink-0" />
+                  <div>
+                    <p class="text-sm font-bold text-midnight">Microsoft Clarity</p>
+                    <p class="text-xs text-body">Mapas de calor y grabaciones de sesión.</p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-3 p-3 rounded-xl bg-surface">
+                  <Activity :size="18" class="text-primary mt-0.5 shrink-0" />
+                  <div>
+                    <p class="text-sm font-bold text-midnight">Iteración con NPS</p>
+                    <p class="text-xs text-body">Optimizar la experiencia del médico según satisfacción.</p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-3 p-3 rounded-xl bg-surface">
+                  <UserCheck :size="18" class="text-primary mt-0.5 shrink-0" />
+                  <div>
+                    <p class="text-sm font-bold text-midnight">Pruebas en contexto real</p>
+                    <p class="text-xs text-body">Validar flujos con viajeros reales en el extranjero.</p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-3 p-3 rounded-xl bg-surface">
+                  <Layers :size="18" class="text-primary mt-0.5 shrink-0" />
+                  <div>
+                    <p class="text-sm font-bold text-midnight">Escalabilidad multi-país</p>
+                    <p class="text-xs text-body">Adaptar la plataforma a nuevos mercados.</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <h4 class="text-sm font-bold text-midnight mb-1">Microsoft Clarity</h4>
-            <p class="text-xs text-body">Mapas de calor y grabaciones de sesión para entender el comportamiento real.</p>
-          </div>
-          <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
-            <div class="w-10 h-10 bg-secondary/20 rounded-xl flex items-center justify-center mb-3">
-              <Activity :size="20" class="text-secondary" />
+
+            <div class="text-xs text-slate-400 italic border-t border-borderline pt-4">
+              <p><strong>Detalle técnico:</strong> Investigación con 12 usuarios en crisis simuladas. Análisis cuantitativo de 6 dimensiones de usabilidad (eficiencia, errores, satisfacción). Sitemap de 3 roles + 6 flujos validados.</p>
             </div>
-            <h4 class="text-sm font-bold text-midnight mb-1">Iteración NPS</h4>
-            <p class="text-xs text-body">Optimizar la experiencia del médico según datos de satisfacción recolectados.</p>
           </div>
-          <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
-            <div class="w-10 h-10 bg-secondary/20 rounded-xl flex items-center justify-center mb-3">
-              <UserCheck :size="20" class="text-secondary" />
-            </div>
-            <h4 class="text-sm font-bold text-midnight mb-1">Testing en contexto real</h4>
-            <p class="text-xs text-body">Validar flujos críticos con viajeros reales en el extranjero.</p>
-          </div>
-          <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
-            <div class="w-10 h-10 bg-secondary/20 rounded-xl flex items-center justify-center mb-3">
-              <Layers :size="20" class="text-secondary" />
-            </div>
-            <h4 class="text-sm font-bold text-midnight mb-1">Escalabilidad Multi-país</h4>
-            <p class="text-xs text-body">Adaptar la plataforma a nuevos mercados y jurisdicciones regulatorias.</p>
-          </div>
-        </div>
+        </DetrasDeEscena>
       </div>
     </section>
 
@@ -632,6 +636,7 @@
 <script setup>
 import { useScrollAnimations } from '@/composables/useScrollAnimations'
 import CaseStudyHero from '@/components/case-study/CaseStudyHero.vue'
+import DetrasDeEscena from '@/components/case-study/DetrasDeEscena.vue'
 import heroXentralImg from '/public/assets/images/home/hero-xentral-full.jpg'
 import {
   HeartPulse, Plane, Stethoscope, MapPin, ShieldOff, Languages, Clock, MessageSquare,

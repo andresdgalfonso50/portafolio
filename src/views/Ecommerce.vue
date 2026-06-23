@@ -4,18 +4,18 @@
     <CaseStudyHero
       case-slug="ecommerce"
       :icon="Layers"
-      title="El cotizador web que multiplicó el checkout 4x."
+      title="Multiplicamos por 4 la conversión del checkout de Continental Assist."
       highlight=""
       badge="E-commerce"
-      subtitle="Cómo transformamos un flujo de 12 campos a 4 para multiplicar los ingresos por 4."
+      subtitle="De un formulario de 12 campos que el 64% abandonaba, a un flujo claro de 4 pasos. Producto: cotizador web de asistencia en viaje. Mi rol: liderar diseño y prototipado. Resultado: ingresos mensuales casi cuadruplicados en 3 meses."
       :hero-image="heroEcomImg"
       hero-image-alt="Checkout de asistencia en viaje"
-      :hero-badge="{ value: '+4x', label: 'conversión' }"
+      :hero-badge="{ value: '4x', label: 'ingresos' }"
       :meta="[
         { value: 'Product Designer', label: 'Mi Rol' },
         { value: '3 Meses', label: 'Duración' },
         { value: 'PM + 3 Devs', label: 'Equipo' },
-        { value: '+4x Ingresos', label: 'Impacto', emphasis: true }
+        { value: '4× Ingresos', label: 'Impacto', emphasis: true }
       ]"
     />
 
@@ -24,8 +24,8 @@
       <div class="max-w-6xl mx-auto px-6">
         <div class="section-header fade-in mb-12">
           <span class="section-number">01</span>
-          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-8">64.5% abandonaba. 12 campos. 0 confianza.</h2>
-          <p class="section-intro">5 fricciones medidas con analytics + UI anterior con 4 problemas de jerarquía.</p>
+          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-8">El problema: 2 de cada 3 visitantes se iban sin comprar.</h2>
+          <p class="section-intro">Un formulario de 12 campos. Sin señales de confianza. UX pensada para desktop cuando el 64% llegaba del móvil.</p>
         </div>
 
         <!-- Métricas clave -->
@@ -137,8 +137,8 @@
               </div>
               <div>
                 <span class="text-xs font-bold uppercase tracking-widest text-secondary mb-1 block">El momento "aha"</span>
-                <h4 class="text-xl font-bold text-midnight mb-2">El problema no era el diseño, era el flujo</h4>
-                <p class="text-sm text-body leading-relaxed">73% abandonaba en el primer paso. El usuario esperaba ver el resumen antes del pago. <strong>Mostrábamos el formulario primero.</strong></p>
+              <h4 class="text-xl font-bold text-midnight mb-2">El usuario quería ver antes de pagar</h4>
+              <p class="text-sm text-body leading-relaxed">El 73% abandonaba en el primer paso. Esperaban ver el resumen antes del pago. <strong>El formulario aparecía antes que el resumen.</strong></p>
               </div>
             </div>
           </div>
@@ -181,7 +181,7 @@
           </div>
         </div>
         <div class="conclusion-box fade-in p-6 md:p-7 rounded-xl mb-12">
-          <p class="text-sm"><strong>Conclusión:</strong> Necesitábamos flujo simple + contexto claro + señales de confianza.</p>
+          <p class="text-sm"><strong>Conclusión:</strong> Flujo simple, contexto claro y señales de confianza visibles eran la fórmula.</p>
         </div>
 
         <!-- Estrategia: 4 principios -->
@@ -229,8 +229,8 @@
       <div class="max-w-6xl mx-auto px-6">
         <div class="section-header fade-in mb-12">
           <span class="section-number">03</span>
-          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-8">El flujo optimizado paso a paso</h2>
-          <p class="section-intro">5 pasos rediseñados. Cada fricción eliminada con un test A/B y validación con usuarios.</p>
+          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-8">El nuevo flujo, paso a paso</h2>
+          <p class="section-intro">5 pantallas que reemplazan las 7 del flujo anterior. Cada decisión validada con usuarios reales.</p>
         </div>
 
         <div class="steps-container">
@@ -242,8 +242,8 @@
             </div>
             <div class="step-content w-full md:w-1/2 order-1 md:order-2">
               <span class="step-number">01</span>
-              <h3 class="text-2xl font-bold text-midnight mb-3">Selección de plan clara</h3>
-              <p class="text-sm text-body leading-relaxed">Jerarquía visual inmediata para comparar beneficios y precios de un vistazo.</p>
+              <h3 class="text-2xl font-bold text-midnight mb-3">Selección del plan</h3>
+              <p class="text-sm text-body leading-relaxed">Comparar beneficios y precios de un vistazo, sin scroll infinito.</p>
             </div>
           </div>
           <div class="step-item flex flex-col md:flex-row items-center gap-8 md:gap-16 mb-12 md:mb-16 fade-in">
@@ -254,8 +254,8 @@
             </div>
             <div class="step-content w-full md:w-1/2 order-1 md:order-1">
               <span class="step-number">02</span>
-              <h3 class="text-2xl font-bold text-midnight mb-3">Entrada de datos inteligente</h3>
-              <p class="text-sm text-body leading-relaxed">Validación en tiempo real para prevenir errores y mantener al usuario en el flujo.</p>
+              <h3 class="text-2xl font-bold text-midnight mb-3">Datos del viajero</h3>
+              <p class="text-sm text-body leading-relaxed">Solo 4 campos. El sistema completa el resto con validaciones en tiempo real.</p>
             </div>
           </div>
           <div class="step-item flex flex-col md:flex-row items-center gap-8 md:gap-16 mb-12 md:mb-16 fade-in">
@@ -266,8 +266,8 @@
             </div>
             <div class="step-content w-full md:w-1/2 order-1 md:order-2">
               <span class="step-number">03</span>
-              <h3 class="text-2xl font-bold text-midnight mb-3">Revisión transparente</h3>
-              <p class="text-sm text-body leading-relaxed">Resumen detallado antes del pago para eliminar ansiedad y aumentar confianza.</p>
+              <h3 class="text-2xl font-bold text-midnight mb-3">Resumen antes de pagar</h3>
+              <p class="text-sm text-body leading-relaxed">El usuario ve el costo total y coberturas antes del pago. Cero sorpresas.</p>
             </div>
           </div>
           <div class="step-item flex flex-col md:flex-row items-center gap-8 md:gap-16 mb-12 md:mb-16 fade-in">
@@ -278,8 +278,8 @@
             </div>
             <div class="step-content w-full md:w-1/2 order-1 md:order-1">
               <span class="step-number">04</span>
-              <h3 class="text-2xl font-bold text-midnight mb-3">Pago fluido</h3>
-              <p class="text-sm text-body leading-relaxed">Métodos populares con interfaz limpia para minimizar distracciones.</p>
+              <h3 class="text-2xl font-bold text-midnight mb-3">Pago</h3>
+              <p class="text-sm text-body leading-relaxed">Tarjeta o métodos populares. Interfaz limpia, sin distracciones.</p>
             </div>
           </div>
           <div class="step-item flex flex-col md:flex-row items-center gap-8 md:gap-16 fade-in">
@@ -290,8 +290,8 @@
             </div>
             <div class="step-content w-full md:w-1/2 order-1 md:order-2">
               <span class="step-number">05</span>
-              <h3 class="text-2xl font-bold text-midnight mb-3">Confirmación instantánea</h3>
-              <p class="text-sm text-body leading-relaxed">Cerré el ciclo de confianza con confirmación inmediata y clara.</p>
+              <h3 class="text-2xl font-bold text-midnight mb-3">Confirmación</h3>
+              <p class="text-sm text-body leading-relaxed">Cierre del flujo con confirmación inmediata. La póliza llega al email en segundos.</p>
             </div>
           </div>
         </div>
@@ -303,8 +303,8 @@
       <div class="max-w-6xl mx-auto px-6">
         <div class="section-header fade-in mb-12 text-center">
           <span class="section-number">04</span>
-          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-4">El flujo de cotización optimizado</h2>
-          <p class="text-lg text-body">8 usuarios validaron el nuevo flujo en testing. Métricas auditables 3 meses después.</p>
+          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-4">Lo que cambió tras el lanzamiento</h2>
+          <p class="text-lg text-body">8 usuarios validaron el nuevo flujo antes del lanzamiento. Métricas reales a 3 meses.</p>
         </div>
 
         <!-- Antes vs Después -->
@@ -312,27 +312,27 @@
           <img src="/assets/images/ecommerce/antes-despues.jpg" alt="Comparación Antes y Después del rediseño" class="w-full h-auto object-cover" width="2652" height="1360">
         </div>
 
-        <!-- Métricas grandes -->
+        <!-- Métricas grandes (lenguaje natural) -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 divide-x divide-borderline py-16 w-full max-w-6xl mx-auto border border-borderline rounded-[2.5rem] bg-surface shadow-inner mb-16">
           <div class="text-center px-8">
-            <span class="font-display text-7xl md:text-9xl font-black text-highlight tracking-tight block leading-[0.85]">+4x</span>
+            <span class="font-display text-6xl md:text-7xl font-black text-highlight tracking-tight block leading-[0.95]">4×</span>
             <div class="mt-4">
-              <h3 class="text-sm font-bold text-body uppercase tracking-widest">Ingresos</h3>
+              <h3 class="text-sm font-bold text-body uppercase tracking-widest">Más ingresos</h3>
               <p class="text-sm text-slate-400 mt-2">De ~2K USD a ~9K USD mensuales</p>
             </div>
           </div>
           <div class="text-center px-8">
-            <span class="font-display text-7xl md:text-9xl font-black text-highlight tracking-tight block leading-[0.85]">-40%</span>
+            <span class="font-display text-6xl md:text-7xl font-black text-highlight tracking-tight block leading-[0.95]">−40%</span>
             <div class="mt-4">
-              <h3 class="text-sm font-bold text-body uppercase tracking-widest">Abandono</h3>
-              <p class="text-sm text-slate-400 mt-2">Reducción en el checkout</p>
+              <h3 class="text-sm font-bold text-body uppercase tracking-widest">Menos abandono</h3>
+              <p class="text-sm text-slate-400 mt-2">Usuarios que completan la compra</p>
             </div>
           </div>
           <div class="text-center px-8">
-            <span class="font-display text-7xl md:text-9xl font-black text-highlight tracking-tight block leading-[0.85]">73</span>
+            <span class="font-display text-6xl md:text-7xl font-black text-highlight tracking-tight block leading-[0.95]">73</span>
             <div class="mt-4">
-              <h3 class="text-sm font-bold text-body uppercase tracking-widest">NPS final</h3>
-              <p class="text-sm text-slate-400 mt-2">Net Promoter Score post-rediseño</p>
+              <h3 class="text-sm font-bold text-body uppercase tracking-widest">Recomendación</h3>
+              <p class="text-sm text-slate-400 mt-2">NPS post-rediseño (de 31 inicial)</p>
             </div>
           </div>
         </div>
@@ -365,59 +365,13 @@
       </div>
     </section>
 
-    <!-- 6. APRENDIZAJES & NEXT STEPS -->
+    <!-- 6. RESULTADO CLAVE -->
     <section class="case-section">
       <div class="max-w-6xl mx-auto px-6">
         <div class="section-header fade-in mb-12">
           <span class="section-number">05</span>
-          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-8">Lecciones aprendidas</h2>
-          <p class="section-intro">Lo que aprendí sobre CRO y los próximos pasos para llegar a 5% de conversión.</p>
-        </div>
-
-        <!-- 4 lecciones -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 fade-in stagger-1 mb-12">
-          <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
-            <span class="text-2xl font-bold text-slate-300 mb-4 block">01</span>
-            <p class="text-sm text-slate-700 leading-relaxed"><strong>Decidir qué NO diseñar.</strong> Redujimos 12 campos a 4. Menos fue más: cada campo eliminado redujo la fricción percibida.</p>
-          </div>
-          <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
-            <span class="text-2xl font-bold text-slate-300 mb-4 block">02</span>
-            <p class="text-sm text-slate-700 leading-relaxed"><strong>Modelo mental del usuario, no proceso interno.</strong> Los usuarios querían ver el resumen antes de pagar. Resumen antes del pago = menos abandono.</p>
-          </div>
-          <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
-            <span class="text-2xl font-bold text-slate-300 mb-4 block">03</span>
-            <p class="text-sm text-slate-700 leading-relaxed"><strong>La confianza se diseña, no se asume.</strong> Se iban por incertidumbre: no sabían cuánto iban a pagar ni qué iban a obtener.</p>
-          </div>
-          <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
-            <span class="text-2xl font-bold text-slate-300 mb-4 block">04</span>
-            <p class="text-sm text-slate-700 leading-relaxed"><strong>Mobile-first = rediseñar desde cero.</strong> 64.5% tráfico mobile exigía jerarquía táctil, gestos nativos e IA diferente a desktop.</p>
-          </div>
-        </div>
-
-        <!-- Lo que no funcionó — diseño premium Apple-style con border-l-4 -->
-        <div class="failures-section fade-in w-full max-w-5xl mx-auto bg-zinc-50 border-l-4 border-primary p-6 md:p-8 mb-10">
-          <div class="flex items-start gap-6">
-            <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center shrink-0">
-              <Lightbulb :size="24" class="text-primary" />
-            </div>
-            <div>
-              <h4 class="text-xl font-bold text-midnight mb-3">Lo que intentamos primero y no funcionó</h4>
-              <ul class="space-y-2 text-lg text-slate-700">
-                <li class="flex items-start gap-2">
-                  <span class="text-primary mt-0.5">✗</span>
-                  <span><strong>Más onboarding:</strong> Más educación = más fricción. Lo eliminamos.</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-primary mt-0.5">✗</span>
-                  <span><strong>Modal de confirmación:</strong> Fricción sin valor. Lo eliminamos.</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-primary mt-0.5">✗</span>
-                  <span><strong>Carousel en checkout:</strong> 12% cancelaban al verlo. Lo quitamos.</span>
-                </li>
-              </ul>
-            </div>
-          </div>
+          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-8">El resultado para el negocio</h2>
+          <p class="section-intro">Cuadruplicamos ingresos en 3 meses. Estos son los próximos pasos para llegar al 5% de conversión.</p>
         </div>
 
         <!-- Next steps -->
@@ -426,8 +380,8 @@
             <div class="w-10 h-10 bg-secondary/20 rounded-xl flex items-center justify-center mb-3">
               <Split :size="20" class="text-secondary" />
             </div>
-            <h4 class="text-base font-bold text-midnight mb-1">Testeo A/B</h4>
-            <p class="text-sm text-body">Variaciones del flujo para optimizar conversión.</p>
+            <h4 class="text-base font-bold text-midnight mb-1">Test A/B continuo</h4>
+            <p class="text-sm text-body">Variaciones del flujo para seguir optimizando conversión.</p>
           </div>
           <div class="bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
             <div class="w-10 h-10 bg-secondary/20 rounded-xl flex items-center justify-center mb-3">
@@ -441,10 +395,62 @@
               <CreditCard :size="20" class="text-secondary" />
             </div>
             <h4 class="text-base font-bold text-midnight mb-1">Checkout express</h4>
-            <p class="text-sm text-body">Implementar one-click checkout para usuarios returning.</p>
+            <p class="text-sm text-body">Pago en un toque para usuarios que ya compraron antes.</p>
           </div>
         </div>
 
+        <!-- Detrás de escena: lecciones + lo que no funcionó -->
+        <div class="max-w-5xl mx-auto mb-12">
+          <DetrasDeEscena title="Rigor del proyecto: lo que aprendimos">
+            <div class="space-y-6">
+              <p class="text-sm text-body leading-relaxed">Decisiones que no se ven a primera vista. Lo que probamos, lo que falló y lo que decidimos dejar fuera.</p>
+
+              <div>
+                <h4 class="text-sm font-bold uppercase tracking-widest text-midnight mb-4">4 principios que guiaron cada decisión</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div class="bg-surface p-5 rounded-2xl">
+                    <span class="text-xs font-bold text-secondary uppercase tracking-widest">01</span>
+                    <p class="text-sm text-slate-700 leading-relaxed mt-2"><strong>Decidir qué NO diseñar.</strong> De 12 campos pasamos a 4. Cada campo eliminado bajó la fricción.</p>
+                  </div>
+                  <div class="bg-surface p-5 rounded-2xl">
+                    <span class="text-xs font-bold text-secondary uppercase tracking-widest">02</span>
+                    <p class="text-sm text-slate-700 leading-relaxed mt-2"><strong>El modelo mental va primero.</strong> Los usuarios querían ver el resumen antes del pago. Resumen antes del pago = menos abandono.</p>
+                  </div>
+                  <div class="bg-surface p-5 rounded-2xl">
+                    <span class="text-xs font-bold text-secondary uppercase tracking-widest">03</span>
+                    <p class="text-sm text-slate-700 leading-relaxed mt-2"><strong>La confianza se diseña.</strong> Se iban por incertidumbre. Hoy el flujo muestra exactamente cuánto pagan y qué obtienen.</p>
+                  </div>
+                  <div class="bg-surface p-5 rounded-2xl">
+                    <span class="text-xs font-bold text-secondary uppercase tracking-widest">04</span>
+                    <p class="text-sm text-slate-700 leading-relaxed mt-2"><strong>Mobile-first fue rehacer desde cero.</strong> El 64% del tráfico llegaba de móviles. La versión anterior era desktop comprimida.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <h4 class="text-sm font-bold uppercase tracking-widest text-midnight mb-4">Lo que probamos primero y descartamos</h4>
+                <ul class="space-y-2 text-sm text-slate-700">
+                  <li class="flex items-start gap-2">
+                    <span class="text-secondary mt-0.5 font-bold">✗</span>
+                    <span><strong>Más onboarding:</strong> Más educación = más fricción. Lo eliminamos.</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-secondary mt-0.5 font-bold">✗</span>
+                    <span><strong>Modal de confirmación:</strong> Fricción sin valor. Lo eliminamos.</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-secondary mt-0.5 font-bold">✗</span>
+                    <span><strong>Carousel de productos en el checkout:</strong> 12% cancelaban al verlo. Lo quitamos.</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="text-xs text-slate-400 italic border-t border-borderline pt-4">
+                <p><strong>Detalle técnico:</strong> Tests A/B con muestras de 1.200 sesiones por variante. Validación con 8 usuarios en sesiones de 30 minutos. Métricas auditables vía Google Analytics + Hotjar.</p>
+              </div>
+            </div>
+          </DetrasDeEscena>
+        </div>
       </div>
     </section>
 
@@ -466,7 +472,7 @@
               <ArrowRight :size="20" />
             </div>
           </RouterLink>
-          <RouterLink to="/app-web" class="group flex items-center justify-between bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-300 hover:border-secondary hover:shadow-xl hover:-translate-y-1">
+          <RouterLink to="/telemedicina" class="group flex items-center justify-between bg-white p-6 md:p-7 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-300 hover:border-secondary hover:shadow-xl hover:-translate-y-1">
             <div class="flex flex-col">
               <span class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Siguiente caso</span>
               <h4 class="text-lg font-bold text-midnight group-hover:text-secondary transition-colors">Xentral Health</h4>
@@ -485,6 +491,7 @@
 import { RouterLink } from 'vue-router'
 import { useScrollAnimations } from '@/composables/useScrollAnimations'
 import CaseStudyHero from '@/components/case-study/CaseStudyHero.vue'
+import DetrasDeEscena from '@/components/case-study/DetrasDeEscena.vue'
 import heroEcomImg from '/public/assets/images/home/hero-ecommerce-full.jpg'
 import {
   Layers, GitBranch, ClipboardList, ShieldOff, Smartphone, Package,

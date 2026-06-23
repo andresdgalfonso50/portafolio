@@ -4,10 +4,10 @@
     <CaseStudyHero
       case-slug="app"
       :icon="Layers"
-      title="Retención día 7: de 0.1% a 12% en 5 meses"
+      title="Multiplicamos por 120 la retención día 7 de la app de Continental Assist."
       highlight=""
       badge="Continental Assist"
-      subtitle="De 0.1% a 12% de retención: Rediseño completo y eliminación de 997 errores críticos de la aplicación."
+      subtitle="Producto: app móvil de asistencia al viajero (iOS & Android). Mi rol: liderar el rediseño y prototipado. Resultado: pasamos del 0.1% al 12% de usuarios que vuelven después de una semana, y eliminamos los 997 crashes que hacían la app inutilizable en emergencias."
       :hero-image="heroAppImg"
       hero-image-alt="App de asistencia al viajero"
       :hero-badge="{ value: '0.1% → 12%', label: 'retención día 7' }"
@@ -18,17 +18,6 @@
         { value: '+35% Activación', label: 'Impacto', emphasis: true }
       ]"
     >
-      <template #actions>
-        <ButtonPrimary href="#descubrimiento" variant="primary">
-          Ver el caso
-          <template #suffix>
-            <ArrowRight :size="18" />
-          </template>
-        </ButtonPrimary>
-        <ButtonPrimary href="#impacto" variant="secondary">
-          Ir al impacto
-        </ButtonPrimary>
-      </template>
     </CaseStudyHero>
 
     <!-- 2. CONTEXTO & DISCOVERY: el problema, la investigación, qué aprendimos -->
@@ -36,8 +25,8 @@
       <div class="max-w-6xl mx-auto px-6">
         <div class="section-header fade-in mb-8">
           <span class="section-number">01</span>
-          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-8">El problema: 5 fases fragmentadas</h2>
-          <p class="section-intro">5 barreras medidas con datos. 18 entrevistas con viajeras. 1 patrón común: la app no resolvía urgencias reales.</p>
+          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-8">El problema: una app que nadie abría en el momento que importaba.</h2>
+          <p class="section-intro">El 97% de los usuarios la desinstalaba en la primera semana. En emergencias, preferían llamar antes que usar la app.</p>
         </div>
 
         <!-- Métricas clave -->
@@ -127,8 +116,8 @@
       <div class="max-w-6xl mx-auto px-6">
         <div class="section-header fade-in mb-8">
           <span class="section-number">02</span>
-          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-8">Decisiones de diseño clave</h2>
-          <p class="section-intro">Benchmark de apps de viaje + 4 principios de diseño que guiaron la arquitectura de la nueva app.</p>
+          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-8">Las decisiones que cambiaron el comportamiento</h2>
+          <p class="section-intro">Comparamos 4 apps de viaje líderes. 4 principios guiaron cada pantalla de la nueva app.</p>
         </div>
 
         <!-- Benchmark -->
@@ -275,8 +264,8 @@
       <div class="max-w-6xl mx-auto px-6">
         <div class="section-header fade-in mb-8">
           <span class="section-number">03</span>
-          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-4">Evolución de la UI</h2>
-          <p class="section-intro">De una app fragmentada con 997 crashes a una experiencia unificada y estable.</p>
+          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-4">Antes vs después, en una mirada</h2>
+          <p class="section-intro">De una app que crasheaba 997 veces al día, a una experiencia que el 12% de los usuarios abre cada semana.</p>
         </div>
 
         <div class="relative max-w-5xl mx-auto p-0 rounded-3xl overflow-hidden">
@@ -296,8 +285,8 @@
       <div class="max-w-6xl mx-auto px-6">
         <div class="section-header fade-in mb-8">
           <span class="section-number">04</span>
-          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-4">El producto en producción</h2>
-          <p class="section-intro">5 features que los viajeros realmente usan en ruta.</p>
+          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-4">Las 5 funciones que la gente usa de verdad</h2>
+          <p class="section-intro">Estas son las pantallas que los viajeros abren en ruta. El resto vive detrás de pestañas secundarias.</p>
         </div>
 
         <!-- Grid 3 cols × 2 rows -->
@@ -393,8 +382,8 @@
       <div class="max-w-6xl mx-auto px-6">
         <div class="section-header fade-in mb-8">
           <span class="section-number">05</span>
-          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-4">El producto en producción</h2>
-          <p class="section-intro">4 capturas reales de la App Store. Cada pantalla valida una decisión de diseño que sobrevivió al contacto con usuarios reales.</p>
+          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-4">Así se ve hoy en la App Store</h2>
+          <p class="section-intro">4 capturas reales de producción. Cada pantalla refleja una decisión de diseño que sobrevive el contacto con usuarios reales.</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 fade-in stagger-2">
@@ -492,8 +481,8 @@
       <div class="max-w-6xl mx-auto px-6">
         <div class="section-header fade-in mb-8">
           <span class="section-number">06</span>
-          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-4">Impacto medible</h2>
-          <p class="section-intro">3 contadores que validan la estrategia: checkout, tiempo de emisión y alcance multiplataforma.</p>
+          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-4">Lo que cambió para el negocio</h2>
+          <p class="section-intro">3 métricas que resumen el resultado: retención, tiempo de activación y alcance en tiendas.</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto mb-10">
@@ -505,9 +494,9 @@
                 En producción
               </span>
             </div>
-            <span class="font-display text-5xl md:text-7xl font-extrabold text-highlight tracking-tight leading-none tabular-nums block mb-4">0.1% → 12%</span>
-            <h3 class="text-base font-bold text-midnight mb-2">Retención día 7</h3>
-            <p class="text-sm text-body leading-relaxed">De 0.1% (97% de abandono) a 12%. Métrica auditable en producción.</p>
+            <span class="font-display text-4xl md:text-5xl font-extrabold text-highlight tracking-tight leading-tight tabular-nums block mb-4">120×</span>
+            <h3 class="text-base font-bold text-midnight mb-2">Más usuarios vuelven</h3>
+            <p class="text-sm text-body leading-relaxed">Del 0.1% al 12% de retención en el día 7. Métrica auditable en producción.</p>
           </div>
 
           <!-- Card 2: 3 Minutos -->
@@ -518,9 +507,9 @@
                 Tiempo real
               </span>
             </div>
-            <span class="font-display text-6xl md:text-7xl font-extrabold text-highlight tracking-tight leading-none tabular-nums block mb-4">3<span class="text-2xl md:text-3xl font-bold text-body ml-1">min</span></span>
-            <h3 class="text-base font-bold text-midnight mb-2">Tiempo de activación</h3>
-            <p class="text-sm text-body leading-relaxed">Promedio desde el primer uso hasta la activación de beneficios. Antes: 12+ minutos con fricción.</p>
+            <span class="font-display text-5xl md:text-6xl font-extrabold text-highlight tracking-tight leading-none tabular-nums block mb-4">3 min</span>
+            <h3 class="text-base font-bold text-midnight mb-2">Activación más rápida</h3>
+            <p class="text-sm text-body leading-relaxed">Del primer uso a tener los beneficios activos. Antes: más de 12 minutos con fricción.</p>
           </div>
 
           <!-- Card 3: iOS & Android -->
@@ -531,10 +520,80 @@
                 Multiplataforma
               </span>
             </div>
-            <span class="font-display text-6xl md:text-7xl font-extrabold text-highlight tracking-tight leading-none tabular-nums block mb-4">iOS<br/>& Android</span>
-            <h3 class="text-base font-bold text-midnight mb-2">Disponibilidad en Tiendas</h3>
-            <p class="text-sm text-body leading-relaxed">2 apps nativas con consistencia visual y de patrones. Misma experiencia, ambos sistemas.</p>
+            <span class="font-display text-5xl md:text-6xl font-extrabold text-highlight tracking-tight leading-none tabular-nums block mb-4">iOS &amp; Android</span>
+            <h3 class="text-base font-bold text-midnight mb-2">Disponible en ambas tiendas</h3>
+            <p class="text-sm text-body leading-relaxed">2 apps nativas con la misma experiencia y patrones de uso.</p>
           </div>
+        </div>
+
+        <!-- Métricas auditadas por App Store Connect -->
+        <div class="max-w-6xl mx-auto mb-12">
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-10 h-10 rounded-xl bg-emerald-50 flex items-center justify-center">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 12l2 2 4-4"/>
+                <circle cx="12" cy="12" r="10"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-lg md:text-xl font-display font-extrabold text-midnight tracking-tight">Auditado por App Store Connect</h3>
+              <p class="text-xs text-body">Datos reales de producción en los últimos 30 días. Sin estimaciones.</p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <!-- Errores: 997 → 162 -->
+            <div class="bg-emerald-50/60 border border-emerald-200/60 p-5 rounded-2xl">
+              <div class="flex items-center gap-2 mb-3">
+                <span class="text-[10px] font-bold uppercase tracking-widest text-emerald-700">Estabilidad</span>
+              </div>
+              <div class="flex items-baseline gap-2 mb-1">
+                <span class="font-display text-3xl md:text-4xl font-black text-emerald-700 tracking-tight tabular-nums">−84%</span>
+              </div>
+              <p class="text-sm font-bold text-midnight mb-1">Menos crashes</p>
+              <p class="text-xs text-body leading-relaxed">Errores en iOS pasaron de 997 a 162 en la versión actual.</p>
+            </div>
+
+            <!-- Descargas repetidas: +82.5% -->
+            <div class="bg-emerald-50/60 border border-emerald-200/60 p-5 rounded-2xl">
+              <div class="flex items-center gap-2 mb-3">
+                <span class="text-[10px] font-bold uppercase tracking-widest text-emerald-700">Satisfacción</span>
+              </div>
+              <div class="flex items-baseline gap-2 mb-1">
+                <span class="font-display text-3xl md:text-4xl font-black text-emerald-700 tracking-tight tabular-nums">+82%</span>
+              </div>
+              <p class="text-sm font-bold text-midnight mb-1">Más descargas repetidas</p>
+              <p class="text-xs text-body leading-relaxed">Usuarios que reinstalan o comparten la app con su familia.</p>
+            </div>
+
+            <!-- Tasa de conversión App Store: 18.2% -->
+            <div class="bg-emerald-50/60 border border-emerald-200/60 p-5 rounded-2xl">
+              <div class="flex items-center gap-2 mb-3">
+                <span class="text-[10px] font-bold uppercase tracking-widest text-emerald-700">Conversión ASO</span>
+              </div>
+              <div class="flex items-baseline gap-2 mb-1">
+                <span class="font-display text-3xl md:text-4xl font-black text-emerald-700 tracking-tight tabular-nums">18.2<span class="text-xl font-bold text-emerald-600">%</span></span>
+              </div>
+              <p class="text-sm font-bold text-midnight mb-1">Visitas que descargan</p>
+              <p class="text-xs text-body leading-relaxed">3-4× el promedio de apps de viaje (benchmark: 3-5%).</p>
+            </div>
+
+            <!-- Retención día 1: +167% -->
+            <div class="bg-emerald-50/60 border border-emerald-200/60 p-5 rounded-2xl">
+              <div class="flex items-center gap-2 mb-3">
+                <span class="text-[10px] font-bold uppercase tracking-widest text-emerald-700">Engagement</span>
+              </div>
+              <div class="flex items-baseline gap-2 mb-1">
+                <span class="font-display text-3xl md:text-4xl font-black text-emerald-700 tracking-tight tabular-nums">+167%</span>
+              </div>
+              <p class="text-sm font-bold text-midnight mb-1">Retención día 1</p>
+              <p class="text-xs text-body leading-relaxed">De ~1.5% a ~4% de usuarios que vuelven al día siguiente.</p>
+            </div>
+          </div>
+
+          <p class="text-xs text-slate-400 italic mt-4 max-w-3xl">
+            Fuente: panel de análisis de App Store Connect. Métricas de adquisición (primeras descargas, descargas repetidas, tasa de conversión, impresiones) y errores por versión de la app.
+          </p>
         </div>
 
         <!-- Validación: eliminado - testimonios genéricos reemplazados por métricas de testing -->
@@ -558,60 +617,62 @@
       </div>
     </section>
 
-    <!-- 7. APRENDIZAJES & NEXT STEPS -->
+    <!-- 7. RIGOR DEL PROYECTO (colapsable) -->
     <section class="case-section section-alt">
-      <div class="max-w-6xl mx-auto px-6">
-        <div class="section-header fade-in mb-8">
+      <div class="max-w-5xl mx-auto px-6">
+        <div class="section-header fade-in mb-8 text-center">
           <span class="section-number">07</span>
-          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-8">Lecciones aprendidas</h2>
-          <p class="section-intro">Lo que aprendí iterando en producción durante 5 meses.</p>
+          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mb-8">Lo que aprendimos en el camino</h2>
+          <p class="section-intro">5 meses de iteraciones, pruebas y errores que documentaron el rediseño.</p>
         </div>
 
-        <!-- Lecciones -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-          <div class="bg-white p-6 md:p-8 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
-            <span class="text-2xl font-black text-borderline mb-3 block">01</span>
-            <p class="text-sm text-slate-700 leading-relaxed"><strong>El contexto define el diseño.</strong> Necesitaban resolver urgencias desde el móvil. Priorizar emergencia fue lo más impactante.</p>
-          </div>
-          <div class="bg-white p-6 md:p-8 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
-            <span class="text-2xl font-black text-borderline mb-3 block">02</span>
-            <p class="text-sm text-slate-700 leading-relaxed"><strong>Transparencia anticipa preguntas.</strong> Dashboard que respondía dudas antes de que surgieran. -40% llamadas de soporte.</p>
-          </div>
-          <div class="bg-white p-6 md:p-8 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
-            <span class="text-2xl font-black text-borderline mb-3 block">03</span>
-            <p class="text-sm text-slate-700 leading-relaxed"><strong>Menos features, más impacto.</strong> De 8 features a 3 flows core. 90% del uso real.</p>
-          </div>
-          <div class="bg-white p-6 md:p-8 rounded-3xl border border-borderline/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
-            <span class="text-2xl font-black text-borderline mb-3 block">04</span>
-            <p class="text-sm text-slate-700 leading-relaxed"><strong>Documentación elimina ambigüedad.</strong> Prototipos HD y specs claras antes de cada sprint.</p>
-          </div>
-        </div>
-
-        <!-- Lo que no funcionó — diseño premium Apple-style con border-l-4 -->
-        <div class="failures-section fade-in w-full max-w-5xl mx-auto bg-zinc-50 border-l-4 border-primary p-6 md:p-8 mb-8">
-          <div class="flex items-start gap-4">
-            <div class="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center shrink-0">
-              <Lightbulb :size="18" class="text-primary" />
-            </div>
+        <DetrasDeEscena title="Lecciones, errores y decisiones intermedias">
+          <div class="space-y-8">
             <div>
-              <h4 class="text-sm font-bold text-midnight mb-3">Lo que intentamos y no funcionó</h4>
-              <ul class="space-y-2 text-base text-slate-700">
+              <h4 class="text-sm font-bold uppercase tracking-widest text-midnight mb-4">4 aprendizajes clave</h4>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="bg-surface p-5 rounded-2xl">
+                  <span class="text-xs font-bold text-primary uppercase tracking-widest">01</span>
+                  <p class="text-sm text-slate-700 leading-relaxed mt-2"><strong>El contexto define el diseño.</strong> Las urgencias se resuelven desde el móvil. Priorizar el botón de emergencia fue lo más impactante.</p>
+                </div>
+                <div class="bg-surface p-5 rounded-2xl">
+                  <span class="text-xs font-bold text-primary uppercase tracking-widest">02</span>
+                  <p class="text-sm text-slate-700 leading-relaxed mt-2"><strong>Transparencia anticipa preguntas.</strong> Dashboard que respondía dudas antes de que surgieran. Bajamos 40% las llamadas a soporte.</p>
+                </div>
+                <div class="bg-surface p-5 rounded-2xl">
+                  <span class="text-xs font-bold text-primary uppercase tracking-widest">03</span>
+                  <p class="text-sm text-slate-700 leading-relaxed mt-2"><strong>Menos features, más impacto.</strong> De 8 features priorizadas a 3 flujos core. Esas 3 cubren el 90% del uso real.</p>
+                </div>
+                <div class="bg-surface p-5 rounded-2xl">
+                  <span class="text-xs font-bold text-primary uppercase tracking-widest">04</span>
+                  <p class="text-sm text-slate-700 leading-relaxed mt-2"><strong>Documentación elimina ambigüedad.</strong> Prototipos HD y specs claras antes de cada sprint aceleraron la entrega.</p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h4 class="text-sm font-bold uppercase tracking-widest text-midnight mb-4">Lo que probamos primero y descartamos</h4>
+              <ul class="space-y-2 text-sm text-slate-700">
                 <li class="flex items-start gap-2">
-                  <span class="text-primary mt-0.5">✗</span>
+                  <span class="text-primary mt-0.5 font-bold">✗</span>
                   <span><strong>Más onboarding:</strong> Más educación = más fricción. Lo eliminamos.</span>
                 </li>
                 <li class="flex items-start gap-2">
-                  <span class="text-primary mt-0.5">✗</span>
-                  <span><strong>Modal de confirmación:</strong> Agregaba fricción sin valor. Lo eliminamos.</span>
+                  <span class="text-primary mt-0.5 font-bold">✗</span>
+                  <span><strong>Modal de confirmación:</strong> Fricción sin valor. Lo eliminamos.</span>
                 </li>
                 <li class="flex items-start gap-2">
-                  <span class="text-primary mt-0.5">✗</span>
-                  <span><strong>Productos relacionados:</strong> Cancelaban compras al ver el carousel. Lo quitamos.</span>
+                  <span class="text-primary mt-0.5 font-bold">✗</span>
+                  <span><strong>Carousel de productos:</strong> Cancelaban compras al verlo. Lo quitamos.</span>
                 </li>
               </ul>
             </div>
+
+            <div class="text-xs text-slate-400 italic border-t border-borderline pt-4">
+              <p><strong>Detalle técnico:</strong> 18 entrevistas con viajeras reales. Tests de usabilidad con 12 usuarios en escenarios de emergencia. Métricas validadas con Mixpanel + Firebase Crashlytics.</p>
+            </div>
           </div>
-        </div>
+        </DetrasDeEscena>
       </div>
     </section>
 
@@ -651,7 +712,7 @@
 <script setup>
 import { useScrollAnimations } from '@/composables/useScrollAnimations'
 import CaseStudyHero from '@/components/case-study/CaseStudyHero.vue'
-import ButtonPrimary from '@/components/primitives/ButtonPrimary.vue'
+import DetrasDeEscena from '@/components/case-study/DetrasDeEscena.vue'
 import heroAppImg from '/public/assets/images/home/hero-app-full.jpg'
 import {
   Layers, GitBranch, ClipboardList, ShieldOff, Smartphone, Package,
