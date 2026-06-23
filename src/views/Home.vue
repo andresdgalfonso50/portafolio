@@ -21,16 +21,13 @@
                   <ArrowRight :size="18" />
                 </template>
               </ButtonPrimary>
-              <ButtonPrimary href="/contacto" variant="secondary">
-                Hablemos de tu producto
-              </ButtonPrimary>
             </div>
             <!-- Especialidades como chips de alto valor -->
             <div class="flex flex-wrap items-center gap-2">
               <span class="text-[10px] font-bold uppercase tracking-widest text-slate-400 mr-1">Especialidades</span>
               <span class="px-3 py-1.5 bg-chip text-body text-xs font-bold rounded-full">CRO & Analytics</span>
               <span class="px-3 py-1.5 bg-chip text-body text-xs font-bold rounded-full">E-commerce</span>
-              <span class="px-3 py-1.5 bg-primary text-white text-xs font-bold rounded-full">Mobile Apps</span>
+              <span class="px-3 py-1.5 bg-chip text-body text-xs font-bold rounded-full">Mobile Apps</span>
               <span class="px-3 py-1.5 bg-chip text-body text-xs font-bold rounded-full">Design Systems</span>
               <span class="px-3 py-1.5 bg-chip text-body text-xs font-bold rounded-full">IA aplicada a UX</span>
               <span class="px-3 py-1.5 bg-chip text-body text-xs font-bold rounded-full">Prototipos en Código</span>
@@ -99,8 +96,8 @@
     <section id="proyectos" class="w-full bg-surface py-24">
       <div class="container">
         <div class="mb-16 max-w-3xl mx-auto text-center">
-          <h2 class="font-display text-4xl md:text-5xl font-extrabold tracking-tight text-midnight">3 casos · 1 método</h2>
-          <p class="text-lg text-body mt-4">App de viaje, e-commerce, telemedicina. Métricas auditables en cada uno.</p>
+          <h2 class="font-display text-4xl md:text-5xl font-extrabold tracking-tight text-midnight">3 productos digitales diseñados para crecer con datos</h2>
+          <p class="text-lg text-body mt-4">App móvil, e-commerce y telemedicina. Cada caso con métricas reales de negocio.</p>
         </div>
 
         <div class="space-y-20">
@@ -108,11 +105,11 @@
           <article class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             <div class="lg:col-span-5 order-2 lg:order-1">
               <span class="text-xs font-bold uppercase tracking-widest text-primary">Continental Assist · App</span>
-              <h3 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mt-3 mb-4 leading-tight">
-                Retención día 7: de 0.1% a 12% en 5 meses
+              <h3 class="font-display text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight text-midnight mt-3 mb-4 leading-tight">
+                Rediseño de la app móvil para mejorar la retención de usuarios
               </h3>
               <p class="text-base text-body leading-relaxed mb-6">
-                Rediseño del flujo transaccional y selector de planes reduciendo la tasa de abandono al 12% global.
+                Optimizamos la experiencia de Continental Assist logrando que los usuarios vuelvan de forma constante a la aplicación en sus primeros meses.
               </p>
               <ul class="space-y-2 mb-8">
                 <li class="text-sm text-slate-700 font-semibold flex items-center gap-2">
@@ -163,11 +160,11 @@
             </div>
             <div class="lg:col-span-5">
               <span class="text-xs font-bold uppercase tracking-widest text-primary">Continental Assist · E-commerce</span>
-              <h3 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mt-3 mb-4 leading-tight">
-                +4x incremento en checkout
+              <h3 class="font-display text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight text-midnight mt-3 mb-4 leading-tight">
+                Optimización del proceso de compra y cotización web
               </h3>
               <p class="text-base text-body leading-relaxed mb-6">
-                Optimización de la arquitectura de información y consistencia UI implementando un sistema de diseño modular en 3 meses.
+                Simplificamos el flujo de venta digital para multiplicar por cuatro las conversiones finalizadas con éxito.
               </p>
               <ul class="space-y-2 mb-8">
                 <li class="text-sm text-slate-700 font-semibold flex items-center gap-2">
@@ -194,11 +191,11 @@
           <article class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             <div class="lg:col-span-5 order-2 lg:order-1">
               <span class="text-xs font-bold uppercase tracking-widest text-primary">Xentral Health · Health Tech</span>
-              <h3 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-midnight mt-3 mb-4 leading-tight">
-                -60% tiempo de espera en telemedicina
+              <h3 class="font-display text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight text-midnight mt-3 mb-4 leading-tight">
+                Plataforma digital para agilizar la atención médica
               </h3>
               <p class="text-base text-body leading-relaxed mb-6">
-                Simplificación del flujo crítico de conexión entre médico y paciente de 5 minutos a solo 2 minutos en entornos de crisis.
+                Diseñamos el ecosistema de telemedicina de Xentral Health, reduciendo a menos de la mitad el tiempo de espera de los pacientes.
               </p>
               <ul class="space-y-2 mb-8">
                 <li class="text-sm text-slate-700 font-semibold flex items-center gap-2">
@@ -214,7 +211,7 @@
                   NPS por médico en tiempo real
                 </li>
               </ul>
-              <ButtonPrimary to="/app-web" variant="secondary">
+              <ButtonPrimary to="/telemedicina" variant="secondary">
                 Ver caso
                 <template #suffix><ArrowRight :size="18" /></template>
               </ButtonPrimary>
