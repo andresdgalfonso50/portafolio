@@ -70,12 +70,29 @@ defineProps({
 .skill-pillar--emerald .skill-pillar-icon { background: rgba(16, 185, 129, 0.12); color: #10b981; }
 .skill-pillar--amber .skill-pillar-icon { background: rgba(245, 158, 11, 0.12); color: #f59e0b; }
 
-/* Featured pillar: subtle gradient border + accent icon */
+/* Featured pillar: gradient border + accent icon + subtle badge feel */
 .skill-pillar--featured {
   background:
     linear-gradient(#fff, #fff) padding-box,
-    linear-gradient(135deg, rgba(0, 113, 227, 0.35) 0%, rgba(109, 40, 217, 0.35) 100%) border-box;
-  border: 1px solid transparent;
+    linear-gradient(135deg, rgba(0, 113, 227, 0.5) 0%, rgba(109, 40, 217, 0.5) 100%) border-box;
+  border-width: 2px;
+  border-style: solid;
+  border-color: transparent;
+  box-shadow: 0 1px 0 rgba(0, 113, 227, 0.04), 0 8px 24px -16px rgba(0, 113, 227, 0.18);
+}
+
+.skill-pillar--featured::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(0, 113, 227, 0.04) 0%, rgba(109, 40, 217, 0.04) 100%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.skill-pillar--featured:hover {
+  box-shadow: 0 1px 0 rgba(0, 113, 227, 0.06), 0 24px 48px -20px rgba(0, 113, 227, 0.22);
 }
 
 .skill-pillar--featured .skill-pillar-icon {
