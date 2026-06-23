@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Security headers via meta tags (GitHub Pages doesn't allow custom HTTP headers) -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.hotjar.com; style-src 'self' 'unsafe-inline' https://*.hotjar.com; img-src 'self' data: https: https://*.hotjar.com; font-src 'self' data:; connect-src 'self' https://formsubmit.co https://*.hotjar.com https://vc.hotjar.io; frame-ancestors 'none'; base-uri 'self'; form-action 'self' https://formsubmit.co;">
+    <!--
+      Content Security Policy via meta. Note: frame-ancestors and X-Frame-Options
+      are IGNORED when delivered via <meta> — they must be sent as HTTP headers.
+      For GitHub Pages we cannot set custom headers, so anti-clickjacking for
+      <iframe> embedding cannot be enforced from the page itself. The directives
+      below cover everything CSP can actually enforce here.
+    -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.hotjar.com; style-src 'self' 'unsafe-inline' https://*.hotjar.com; img-src 'self' data: https: https://*.hotjar.com; font-src 'self' data:; connect-src 'self' https://formsubmit.co https://*.hotjar.com https://vc.hotjar.io; base-uri 'self'; form-action 'self' https://formsubmit.co;">
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta http-equiv="X-Frame-Options" content="DENY">
     <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
     <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), interest-cohort=()">
     <meta http-equiv="X-XSS-Protection" content="1; mode=block">

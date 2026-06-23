@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="app-shell">
+  <div class="app-shell">
     <a href="#main-content" class="skip-to-content">Saltar al contenido</a>
     <header>
       <NavBar />

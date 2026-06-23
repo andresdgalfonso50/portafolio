@@ -22,24 +22,33 @@
         </svg>
       </button>
       <nav v-if="mobileMenuOpen" aria-label="Menú principal">
-        <router-link to="/" @click="closeMobileMenu">Home</router-link>
-        <router-link to="/app" @click="closeMobileMenu">App</router-link>
-        <router-link to="/ecommerce" @click="closeMobileMenu">E-commerce</router-link>
-        <router-link to="/app-web" @click="closeMobileMenu">Telemedicina</router-link>
-        <router-link to="/sobre-mi" @click="closeMobileMenu">Sobre mí</router-link>
-        <router-link to="/contacto" @click="closeMobileMenu">Contacto</router-link>
+        <router-link to="/" @click="closeMobileMenu" :aria-current="ariaCurrent('/')">Home</router-link>
+        <router-link to="/app" @click="closeMobileMenu" :aria-current="ariaCurrent('/app')">App</router-link>
+        <router-link to="/ecommerce" @click="closeMobileMenu" :aria-current="ariaCurrent('/ecommerce')">E-commerce</router-link>
+        <router-link to="/telemedicina" @click="closeMobileMenu" :aria-current="ariaCurrent('/telemedicina')">Telemedicina</router-link>
+        <router-link to="/sobre-mi" @click="closeMobileMenu" :aria-current="ariaCurrent('/sobre-mi')">Sobre mí</router-link>
+        <router-link to="/contacto" @click="closeMobileMenu" :aria-current="ariaCurrent('/contacto')">Contacto</router-link>
       </nav>
     </div>
   </Teleport>
 </template>
 
 <script setup>
-import { ref, watch, onMounted, onUnmounted, nextTick } from 'vue'
+import { ref, watch, onMounted, onUnmounted, nextTick, computed } from 'vue'
+import { useRoute } from 'vue-router'
 import { useMobileMenu } from '@/composables/useMobileMenu'
 
+const route = useRoute()
 const { mobileMenuOpen, closeMobileMenu } = useMobileMenu()
 const menuRef = ref(null)
 const closeButtonRef = ref(null)
+
+function ariaCurrent(path) {
+  if (path === '/telemedicina') {
+    return route.path === '/telemedicina' || route.path === '/app-web' ? 'page' : null
+  }
+  return route.path === path ? 'page' : null
+}
 
 function handleKeydown(e) {
   if (e.key === 'Escape' && mobileMenuOpen.value) {

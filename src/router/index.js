@@ -31,13 +31,18 @@ const routes = [
     }
   },
   {
-    path: '/app-web',
-    name: 'AppWeb',
+    path: '/telemedicina',
+    name: 'Telemedicina',
     component: () => import('@/views/XentralHealth.vue'),
     meta: {
       title: 'Xentral Health: Ecosistema de Telemedicina | Case Study',
       description: 'Xentral Health: ecosistema de telemedicina que integra la asistencia médica telefónica con un app web para viajeros en emergencia. -60% tiempo de atención.'
     }
+  },
+  {
+    // Legacy alias — keep old /app-web bookmarks working.
+    path: '/app-web',
+    redirect: '/telemedicina'
   },
   {
     path: '/sobre-mi',
