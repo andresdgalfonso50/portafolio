@@ -23,7 +23,6 @@
               <div class="contact-details">
                 <span class="contact-label">Email</span>
                 <span class="contact-value">andresdgalfonso@gmail.com</span>
-                <span class="inline-block mt-1 px-2 py-0.5 bg-chip text-body text-[10px] font-bold uppercase tracking-widest rounded-full">Email personal</span>
               </div>
             </a>
             <a href="tel:+573125673243" class="contact-link">
