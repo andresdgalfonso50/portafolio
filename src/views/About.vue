@@ -10,13 +10,13 @@
           <div class="about-hero-content fade-in">
             <span class="label text-primary">Product Designer · Bogotá</span>
             <h1 class="font-display text-5xl md:text-6xl font-extrabold tracking-tight leading-[1.1] text-midnight mb-6">
-              Diseño
-              <span class="text-gradient-primary">productos</span>
-              que el negocio defiende con
-              <span class="font-light italic text-primary">números</span>
+              Diseño con
+              <span class="text-gradient-primary">criterio</span>,
+              no solo con
+              <span class="font-light italic text-primary">estética</span>
             </h1>
             <p class="text-lg md:text-xl text-body mt-6 max-w-lg leading-relaxed">
-              +4x ingresos. 0.1% → 12% retención. Resultados que defiendo con datos.
+              Cada pantalla la defiendo con un número. 4+ años entre research, código y producto, con un foco: que el diseño mueva métricas reales, no solo opinión.
             </p>
             <div class="about-meta">
               <span class="about-meta-item">
@@ -142,6 +142,22 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 fade-in">
           <SkillPillar
+            title="Frontend Bridge"
+            description="Prototipos funcionales en código. El ciclo de feedback pasa de días a horas. Paso producto a desarrollo con menos fricción."
+            :tags="['HTML/CSS', 'Vue.js', 'Tailwind', 'Figma to code', 'Dev collaboration', 'QA review']"
+            :icon="Code2"
+            color="violet"
+            featured
+          />
+          <SkillPillar
+            title="IA & Agentic"
+            description="Diseño y prototipado asistido con IA para iterar más rápido."
+            :tags="['Prompt Engineering', 'Claude', 'ChatGPT', 'Cursor', 'Figma AI', 'Validación asistida']"
+            :icon="Sparkles"
+            color="blue"
+            featured
+          />
+          <SkillPillar
             title="UX/UI Design"
             description="Interfaces que priorizan claridad y conversión."
             :tags="['Figma', 'Adobe XD', 'User flows', 'Wireframes', 'Prototyping', 'Design System']"
@@ -169,22 +185,6 @@
             :icon="Workflow"
             color="amber"
           />
-          <SkillPillar
-            title="Frontend Bridge"
-            description="Prototipos funcionales en código. El ciclo de feedback pasa de días a horas. Paso producto a desarrollo con menos fricción."
-            :tags="['HTML/CSS', 'Vue.js', 'Tailwind', 'Figma to code', 'Dev collaboration', 'QA review']"
-            :icon="Code2"
-            color="violet"
-            featured
-          />
-          <SkillPillar
-            title="IA & Agentic"
-            description="Diseño y prototipado asistido con IA para iterar más rápido."
-            :tags="['Prompt Engineering', 'Claude', 'ChatGPT', 'Cursor', 'Figma AI', 'Validación asistida']"
-            :icon="Sparkles"
-            color="blue"
-            featured
-          />
         </div>
       </div>
     </section>
@@ -207,7 +207,12 @@
             </template>
             Conversemos
           </ButtonPrimary>
-          <CVButton variant="ghost" label="Descargar CV" />
+          <ButtonPrimary to="/contacto" variant="ghost" size="lg">
+            <template #icon>
+              <ArrowRight :size="18" />
+            </template>
+            Ver proyectos
+          </ButtonPrimary>
         </div>
       </div>
     </AuroraBg>
@@ -215,12 +220,11 @@
 </template>
 
 <script setup>
-import { MapPin, GraduationCap, Palette, BarChart2, Code2, PenTool, Mail, Compass, Workflow, Sparkles } from 'lucide-vue-next'
+import { MapPin, GraduationCap, Palette, BarChart2, Code2, PenTool, Mail, Compass, Workflow, Sparkles, ArrowRight } from 'lucide-vue-next'
 import { useScrollAnimations } from '@/composables/useScrollAnimations'
 import AuroraBg from '@/components/primitives/AuroraBg.vue'
 import ButtonPrimary from '@/components/primitives/ButtonPrimary.vue'
 import AvailabilityBadge from '@/components/AvailabilityBadge.vue'
-import CVButton from '@/components/CVButton.vue'
 import ExperienceTimeline from '@/components/ExperienceTimeline.vue'
 import PrinciplesSection from '@/components/PrinciplesSection.vue'
 import SkillPillar from '@/components/SkillPillar.vue'
