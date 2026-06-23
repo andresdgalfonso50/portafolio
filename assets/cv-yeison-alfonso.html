@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV - Yeison Alfonso - UX/UI Product Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-primary: #FFFFFF;
+      --bg-secondary: #F5F5F7;
+      --bg-tertiary: #FAFAFA;
+      --text-primary: #1d1d1f;
+      --text-secondary: #86868b;
+      --text-muted: #9CA3AF;
+      --accent: #0071e3;
+      --accent-hover: #0077ed;
+      --accent-light: #EFF6FF;
+      --border: #e5e5e5;
+      --sidebar-bg: #1d1d1f;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    @page { size: A4; margin: 0; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 10pt;
+      line-height: 1.5;
+      color: var(--text-primary);
+      background: var(--bg-primary);
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 70mm 1fr;
+      background: var(--bg-primary);
+    }
+    .sidebar {
+      background: var(--sidebar-bg);
+      color: white;
+      padding: 32px 20px;
+    }
+    .sidebar-photo {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      background: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28pt;
+      font-weight: 800;
+      color: white;
+      margin: 0 auto 20px;
+    }
+    .sidebar-name { text-align: center; font-size: 13pt; font-weight: 700; margin-bottom: 4px; }
+    .sidebar-title { text-align: center; font-size: 8pt; color: var(--accent); font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 24px; }
+    .sidebar-section { margin-bottom: 20px; }
+    .sidebar-heading { font-size: 7pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--accent); margin-bottom: 10px; padding-bottom: 6px; border-bottom: 1px solid rgba(255,255,255,0.15); }
+    .contact-item { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; font-size: 8.5pt; color: rgba(255,255,255,0.85); }
+    .contact-item .icon { width: 14px; height: 14px; flex-shrink: 0; stroke: var(--accent); }
+    .contact-item a { color: rgba(255,255,255,0.85); text-decoration: none; }
+    .skill-category { margin-bottom: 10px; }
+    .skill-category-name { font-size: 8pt; font-weight: 600; color: white; margin-bottom: 4px; }
+    .skill-tags { display: flex; flex-wrap: wrap; gap: 4px; }
+    .skill-tag { font-size: 7pt; padding: 2px 8px; background: rgba(255,255,255,0.1); border-radius: 10px; color: rgba(255,255,255,0.75); }
+    .education-item { margin-bottom: 10px; }
+    .education-degree { font-size: 8.5pt; font-weight: 600; color: white; margin-bottom: 2px; }
+    .education-school { font-size: 7.5pt; color: rgba(255,255,255,0.6); }
+    .education-year { font-size: 7pt; color: var(--accent); font-weight: 500; }
+    .cert-item { margin-bottom: 6px; font-size: 8pt; color: rgba(255,255,255,0.8); }
+    .cert-name { font-weight: 500; }
+    .cert-source { font-size: 7pt; color: rgba(255,255,255,0.5); }
+    .lang-item { display: flex; justify-content: space-between; margin-bottom: 4px; font-size: 8.5pt; }
+    .lang-name { color: white; font-weight: 500; }
+    .lang-level { color: rgba(255,255,255,0.5); font-size: 7.5pt; }
+    .main { padding: 32px 28px; }
+    .main-section { margin-bottom: 22px; }
+    .main-heading { font-size: 10pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); margin-bottom: 12px; padding-bottom: 6px; border-bottom: 2px solid var(--accent); }
+    .profile-text { font-size: 9.5pt; color: var(--text-secondary); line-height: 1.65; }
+    .profile-text strong { color: var(--text-primary); font-weight: 600; }
+    .exp-item { margin-bottom: 16px; }
+    .exp-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2px; }
+    .exp-company { font-size: 10pt; font-weight: 700; color: var(--text-primary); }
+    .exp-date { font-size: 7.5pt; color: var(--text-muted); font-weight: 500; white-space: nowrap; }
+    .exp-role { font-size: 8.5pt; color: var(--accent); font-weight: 600; margin-bottom: 6px; }
+    .exp-bullets { list-style: none; padding: 0; }
+    .exp-bullets li { font-size: 8.5pt; color: var(--text-secondary); margin-bottom: 3px; padding-left: 12px; position: relative; line-height: 1.5; }
+    .exp-bullets li::before { content: ''; position: absolute; left: 0; top: 6px; width: 4px; height: 4px; background: var(--accent); border-radius: 50%; }
+    .exp-bullets li strong { color: var(--text-primary); font-weight: 600; }
+    .exp-bullets li .metric { color: var(--accent); font-weight: 600; }
+    @media print { body { margin: 0; } .page { box-shadow: none; } }
+    @media screen { body { background: #e5e5e5; } .page { box-shadow: 0 4px 24px rgba(0,0,0,0.12); margin: 40px auto; } }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <aside class="sidebar">
+      <div class="sidebar-photo">YA</div>
+      <div class="sidebar-name">Yeison Alfonso</div>
+      <div class="sidebar-title">UX/UI Product Designer</div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-heading">Contacto</div>
+        <div class="contact-item">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" fill="none" stroke="currentColor" stroke-width="2"/><polyline points="22,6 12,13 2,6" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+          <a href="mailto:andresdgalfonso@gmail.com">andresdgalfonso@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+          <span>312 567 3243</span>
+        </div>
+        <div class="contact-item">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="3" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+          <span>Bogotá, Colombia</span>
+        </div>
+        <div class="contact-item">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" fill="none" stroke="currentColor" stroke-width="2"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+          <a href="https://yeisonalfonso.com">yeisonalfonso.com</a>
+        </div>
+        <div class="contact-item">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z" fill="none" stroke="currentColor" stroke-width="2"/><rect x="2" y="9" width="4" height="12" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="4" cy="4" r="2" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+          <a href="https://www.linkedin.com/in/yeison-alfonso-product-designer">LinkedIn: yeison-alfonso-product-designer</a>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-heading">Habilidades</div>
+        <div class="skill-category">
+          <div class="skill-category-name">UX / Producto</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Investigación</span>
+            <span class="skill-tag">Arquitectura de info.</span>
+            <span class="skill-tag">User flows</span>
+            <span class="skill-tag">Wireframes</span>
+            <span class="skill-tag">Prototipos</span>
+            <span class="skill-tag">Heurística</span>
+            <span class="skill-tag">Journey maps</span>
+            <span class="skill-tag">Product thinking</span>
+            <span class="skill-tag">End-to-end</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-category-name">UI / Herramientas</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Figma</span>
+            <span class="skill-tag">Adobe XD</span>
+            <span class="skill-tag">Illustrator</span>
+            <span class="skill-tag">Photoshop</span>
+            <span class="skill-tag">InDesign</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-category-name">Data / Conversión</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Google Analytics</span>
+            <span class="skill-tag">Microsoft Clarity</span>
+            <span class="skill-tag">Análisis de comportamiento</span>
+            <span class="skill-tag">CRO</span>
+            <span class="skill-tag">Data-driven</span>
+          </div>
+        </div>
+      </div>
+
+      
+
+      <div class="sidebar-section">
+        <div class="sidebar-heading">Formación</div>
+        <div class="education-item">
+          <div class="education-degree">Máster en UX/UI</div>
+          <div class="education-school">Univ. Int. de La Rioja, España</div>
+          <div class="education-year">2023 - 2024</div>
+        </div>
+        <div class="education-item">
+          <div class="education-degree">Diseño Gráfico Profesional</div>
+          <div class="education-school">Escuela de Artes y Letras</div>
+          <div class="education-year">2018</div>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-heading">Certificaciones</div>
+        <div class="cert-item">
+          <div class="cert-name">Certificate in Leadership</div>
+          <div class="cert-source">MIU City University Miami</div>
+        </div>
+        <div class="cert-item">
+          <div class="cert-name">Adobe XD, Ilustración digital, Premiere Pro</div>
+          <div class="cert-source">Platzi</div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <section class="main-section">
+        <h2 class="main-heading">Perfil Profesional</h2>
+        <p class="profile-text">
+          <strong>UX/UI Product Designer con Maestría en Diseño UX/UI</strong> y experiencia en diseño de productos digitales para e-commerce y apps mobile. Especialista en conversión (CRO), experiencia de usuario y proyectos end-to-end. He incrementado ingresos <strong>4x</strong> mediante rediseño UX y análisis de comportamiento con <strong>Google Analytics</strong> y <strong>Microsoft Clarity</strong>. Trabajo de la mano con equipos de desarrollo, validando soluciones en producción. Enfocado en construir productos funcionales, intuitivos y alineados a objetivos de negocio.
+        </p>
+      </section>
+
+      <section class="main-section">
+        <h2 class="main-heading">Experiencia Profesional</h2>
+
+        <div class="exp-item">
+          <div class="exp-header">
+            <span class="exp-company">Continental Assist</span>
+            <span class="exp-date">Ago 2025 - Actualidad</span>
+          </div>
+          <div class="exp-role">Product Designer (UX/UI)</div>
+          <ul class="exp-bullets">
+            <li>Lideré el rediseño del e-commerce, incrementando ingresos mensuales de <span class="metric">~2K a 9K USD (crecimiento 4x)</span> mediante optimización del flujo de compra y reducción de fricción en el checkout.</li>
+            <li>Diseñé app de asistencia en viajes <strong>desde cero (0 a producción)</strong>, centralizando telemedicina, vouchers y reembolsos en una sola plataforma para viajeros.</li>
+            <li>Definí arquitectura de información, user flows y experiencia completa basada en investigación de usuarios, benchmark competitivo y análisis de comportamiento con <strong>Google Analytics</strong> y <strong>Microsoft Clarity</strong>.</li>
+            <li>Colaboré directamente con el equipo de desarrollo, participando en QA y validando implementación en producción para asegurar calidad del producto final.</li>
+          </ul>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-header">
+            <span class="exp-company">ASSA ABLOY (YALE)</span>
+            <span class="exp-date">Feb 2024 - Jun 2024</span>
+          </div>
+          <div class="exp-role">Diseñador UX/UI</div>
+          <ul class="exp-bullets">
+            <li>Participé en el rediseño del e-commerce de Yale, mejorando la experiencia de usuario y alineando la interfaz con estándares de la marca global.</li>
+            <li>Diseñé wireframes y prototipos de alta fidelidad para flujos de compra, optimizando la navegación y reduciendo pasos en el checkout.</li>
+            <li>Apoyé procesos de investigación con journey maps y evaluaciones heurísticas para identificar puntos de fricción.</li>
+          </ul>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-header">
+            <span class="exp-company">Azzorti (Dupree)</span>
+            <span class="exp-date">Feb 2021 - Ago 2025</span>
+          </div>
+          <div class="exp-role">Diseñador Gráfico</div>
+          <ul class="exp-bullets">
+            <li>Diseñé y optimicé recursos visuales para la línea hogar, adaptando piezas a mercados de <strong>Colombia, Perú, Ecuador, Bolivia y Guatemala</strong>.</li>
+            <li>Desarrollé empaques y material gráfico manteniendo consistencia de marca regional en 5 países.</li>
+            <li>Coordiné con equipos internacionales en procesos de innovación y conceptualización de productos.</li>
+          </ul>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-header">
+            <span class="exp-company">Experiencia previa en Diseño Gráfico</span>
+            <span class="exp-date">2018 - 2020</span>
+          </div>
+          <div class="exp-role">Diseñador Gráfico · Univ. de los Andes · Doodles · Univ. Central</div>
+          <ul class="exp-bullets">
+            <li>Diseño de material gráfico institucional, piezas digitales para web y redes sociales, y producción de material publicitario para diversas organizaciones.</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

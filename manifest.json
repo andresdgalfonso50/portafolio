@@ -1,0 +1,19 @@
+{
+  "name": "Yeison Alfonso | UX/UI Product Designer",
+  "short_name": "Yeison Alfonso",
+  "description": "UX/UI Product Designer con Maestría en UX/UI. +4x ingresos en e-commerce, diseño de apps y telemedicina.",
+  "start_url": "/portafolio/",
+  "scope": "/portafolio/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0071e3",
+  "lang": "es-CO",
+  "icons": [
+    {
+      "src": "/portafolio/assets/images/logos/Favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

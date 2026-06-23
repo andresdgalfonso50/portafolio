@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Disallow: /CVs/
+
+Sitemap: https://andresdgalfonso50.github.io/portafolio/sitemap.xml
