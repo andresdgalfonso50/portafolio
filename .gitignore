@@ -19,9 +19,15 @@ PSD/
 test-results/
 playwright-report/
 playwright/.cache/
+coverage/
 
 # Local snapshots
 snapshots/
+
+# Temp verification scripts (created during dev)
+verify-*.cjs
+v.cjs
+snap.cjs
 
 # OS
 Thumbs.db
